@@ -1,24 +1,21 @@
 function simStruct = processSimData(sim_path)
-% Convert a simulation file into a struct containing all data
-% Input: sim_path: absolute path for a simulation (.asim) file
-% Output: simStruct: struct containing all output data references in simulation file
+    % Convert a simulation file into a struct containing all data
+    
+    % Input: sim_path (char or string): absolute path for a simulation (.asim) file
+    % Output: simStruct: struct containing all output data references in simulation file
     if nargin ~= 1
-        error('run_simfile: Enter the path to an .asim file.')
+        error('Enter the path to an .asim file.')
     end
 
     if isstring(sim_path)
         sim_path = char(sim_path);
         if ~contains(sim_path,'.asim')
-            error('procesSimData: Provided file path is not an .asim file.')
+            error('Provided file path is not an .asim file.')
         end
     end
    
     if ~isfile(sim_path)
-        error('processSimData: Sim file doesn''t exist.')
-    end
-
-    if isstring(sim_path)
-        sim_path = char(sim_path);
+        error('Sim file doesn''t exist.')
     end
     
     % Pre-process .asim file to ensure that mesh filepaths and mass values are correct
@@ -26,14 +23,31 @@ function simStruct = processSimData(sim_path)
 %     massCheck(sim_path);
     
     % Run the simulation file
-    sour_folder = 'C:\AnimatLabSDK\AnimatLabPublicSource\bin';
-    %sour_folder = 'C:\Program Files (x86)\NeuroRobotic Technologies\AnimatLab\bin';
-    executable = ['"',sour_folder,'\AnimatSimulator" "',sim_path,'"'];
-    [status, message] = system(executable);
-    if status
-        error(message)
-        return
+    nativeSimPath = 'C:\Program Files (x86)\NeuroRobotic Technologies\AnimatLab\bin\AnimatSimulator.exe';
+    VSSimPath = 'C:\AnimatLabSDK\AnimatLabPublicSource\bin\AnimatSimulator.exe';
+    whichSimulator2Use = [isfile(nativeSimPath) isfile(VSSimPath)];
+    if whichSimulator2Use(2) == 1
+        simulatorPath = VSSimPath;
+    else
+        if whichSimulator2Use(1) == 1
+            simulatorPath = nativeSimPath;
+        else
+            error('No simulator detected. Is Animatlab installed on this system?')
+        end
     end
+    
+    executable = [string(simulatorPath),string(sim_path)];
+    [res,out,err] = jsystem(executable);
+    if ~isempty(err)
+        error(err)
+    end
+    
+%     executable = ['"',simulatorPath,'" "',sim_path,'"'];
+%     [status, message] = system(executable);
+%     if status
+%         error(message)
+%         return
+%     end
 
     % Process output simulation rsults, as stored in .txt files related to the .aform datatools
     sim_text = importdata(sim_path);
@@ -59,7 +73,7 @@ function simStruct = processSimData(sim_path)
                 counter = counter+1;
             end
         else
-            warning('%s does not exist. Try running the simulation file first. Set to_run to 1 and run again.\n',filenames{ii})
+            warning('%s does not exist.\n',filenames{ii})
         end
     end
 end

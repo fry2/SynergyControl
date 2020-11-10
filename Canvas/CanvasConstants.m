@@ -30,6 +30,7 @@ classdef CanvasConstants < handle
         NEURON_tonicnoise = 0;
         
         MUSCLE_size = [25 116.25];
+        MUSCLE_transp = 'True';
         
         ADAPTER_size = [26 26];
         ADAPTER_gain_profile_ID = 'gainID';

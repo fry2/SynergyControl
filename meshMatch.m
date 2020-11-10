@@ -12,10 +12,6 @@ function out_text = meshMatch(docpath)
         %% Store the document text as a cell array
         doc_text = importdata(docpath);
         write2file = 1;
-%         fid = fopen(docpath);
-%         doc_text = textscan(fid,'%s','delimiter','\n');
-%         fclose(fid);
-%         doc_text = [doc_text{:}];
     end
     
     %% Update all MeshFiles
@@ -46,11 +42,6 @@ function out_text = meshMatch(docpath)
     if write2file == 1
         fid = fopen(docpath,'w');
         fprintf(fid,'%s\n',doc_text{:});
-    %     formatSpec = '%s\n';
-    %     nrows = size(doc_text,1);
-    %     for row = 1:nrows
-    %         fprintf(fid,formatSpec,doc_text{row,:});
-    %     end
         fclose(fid);
         out_text = -1;
     else

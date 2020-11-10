@@ -85,7 +85,7 @@ classdef CanvasModel < handle
             %so that the object doesn't go out of bounds
             
 %             pos = CanvasConstants.ConstrainedPosition(type_char, pos);
-            pos = obj.ConstrainedPosition(type_char, pos, bounds);
+            %pos = obj.ConstrainedPosition(type_char, pos, bounds);
             
             if type_char == 'n' %neuron
                 obj.neurons_positions(end+1,:) = pos;
@@ -223,7 +223,7 @@ classdef CanvasModel < handle
             if any(ismember(link_obj_holders,'neuron_objects')) && any(ismember(link_obj_holders,'muscle_objects'))
                 neuron = nodes{ismember(link_obj_holders,'neuron_objects')};
                 muscle = nodes{ismember(link_obj_holders,'muscle_objects')};
-                adLoc = round((neuron.location+muscle.location)/2);
+                adLoc = [muscle.location(1) (neuron.location(2)+muscle.location(2))/2];
                 obj.addAdapter(neuron,muscle,adLoc)
                 adInd = size(obj.adapter_objects,1);
                 obj.addLink(neuron,obj.adapter_objects(adInd),'adapter')
@@ -645,8 +645,6 @@ classdef CanvasModel < handle
         %% create_neuron
         function neuron = create_neuron(obj,pos)
             neuron = struct;
-%             codestring = ['A':'Z' '0':'9';];
-%             id_char_length = 7;
             numNeurons = obj.num_neurons;
             try obj.neuron_objects(1).name;            
                 while sum(strcmp({obj.neuron_objects.name}, ['neur',num2str(numNeurons)]))
@@ -831,23 +829,11 @@ classdef CanvasModel < handle
         end
         %% create_animatlab project
         function create_animatlab_project(obj,proj_file)
-%             file_dir = fileparts(mfilename('fullpath'));
-%             
-%     % For pre-determined Animatlab file save location (to be included while testing)
-% %             proj_file = fullfile(file_dir,...
-% %                 CanvasConstants.DATA_RELATIVE_PATH,...
-% %                 'animatlab_files\EmptySystem\EmptySystem.aproj');
-             %proj_file = [fileparts(fileparts(mfilename('fullpath'))),'\Animatlab\SynergyWalking\SynergyWalking20200109.aproj'];
-             revised_file = strcat(proj_file(1:end-6),'_fake.aproj');
+            revised_file = strcat(proj_file(1:end-6),'_fake.aproj');
 
             if size(revised_file,2) <= 7
                 return
             end
-
-%             fid = fopen(proj_file);
-%             original_text = textscan(fid,'%s','delimiter','\n');
-%             fclose(fid);
-%             original_text = [original_text{:}];
             original_text = importdata(proj_file);
             modified_text = original_text;
             
@@ -920,18 +906,15 @@ classdef CanvasModel < handle
                 
                 for i = 1:numDatatools
                     datatool = obj.datatool_objects(i);
-                    datatool_holder = CanvasText(obj).build_datatool(datatool);
-                    datatool_text = [datatool_text;datatool_holder];
-                    aform_path = [fileparts(proj_file),'\',datatool.name,'.aform'];
-                    aform_text = CanvasText(obj).build_aform_text(datatool,'project');
-                        fileID = fopen(aform_path,'w');
-                        fprintf(fileID,'%s\n',aform_text{:});
-%                         formatSpec = '%s\n';
-%                         nrows1 = size(aform_text,1);
-%                         for row1 = 1:nrows1
-%                             fprintf(fileID,formatSpec,aform_text{row1,:});
-%                         end
-                        fclose(fileID);
+                    if isempty(find(contains(modified_text,['<Name>',datatool.name,'</Name>']),1))
+                        datatool_holder = CanvasText(obj).build_datatool(datatool);
+                        datatool_text = [datatool_text;datatool_holder];
+                        aform_path = [fileparts(proj_file),'\',datatool.name,'.aform'];
+                        aform_text = CanvasText(obj).build_aform_text(datatool,'project');
+                            fileID = fopen(aform_path,'w');
+                            fprintf(fileID,'%s\n',aform_text{:});
+                            fclose(fileID);
+                    end
                 end
                 datatool_text{end+1,1} = '</ToolViewers>';
                 modified_text = [modified_text(1:datatool_inject-1);...
@@ -989,12 +972,19 @@ classdef CanvasModel < handle
             end
             
             %%%Overwrite the <TabbedGroupsConfig> Information
+            % First, find the existing DTs that you want to preserve and append them to the ns_tab_text
+            for ii = 1:length(extDTs)
+                dt1 = find(contains(modified_text,['Page Title="',extDTs{ii},'"']),1);
+                dt2 = find(contains(modified_text,['Page Title="',extDTs{ii},'"']),1)+12;
+                snip = modified_text(dt1:dt2);
+                ns_tab_text = [ns_tab_text;snip];
+            end
+            
             tab_inject_start = find(contains(modified_text,'&lt;SubSystemID&gt'),1,'first')-9;
-            tab_inject_end_holder = find(contains(modified_text,'&lt;/Page&gt;'));
-            tab_inject_end = tab_inject_end_holder(tab_inject_end_holder>tab_inject_start);
+            tab_inject_end = find(contains(modified_text,'&lt;/Leaf&gt;'),1,'first');
             modified_text = [modified_text(1:tab_inject_start-1,1);...
                             ns_tab_text;...
-                            modified_text(tab_inject_end+1:end,1)];
+                            modified_text(tab_inject_end:end,1)];
             leaf_num = size(find(contains(modified_text,'&lt;Page Title="')),1);
             leafInd = find(contains(modified_text,'&lt;Leaf Count'));
             modified_text{leafInd} = ['&lt;Leaf Count="',num2str(leaf_num),'" Unique="7" Space="100"&gt;'];
@@ -1006,7 +996,7 @@ classdef CanvasModel < handle
             fclose(fileID);
         end
         %% create_animatlab simulation
-        function create_animatlab_simulation(obj,sim_file,sim_file_revised)
+        function create_animatlab_simulation(obj,sim_file)
 
             original_text = importdata(sim_file);
             modified_text = original_text;
@@ -1164,7 +1154,7 @@ classdef CanvasModel < handle
                                 modified_text(stimuli_inject_1:end)];
             end
             
-            %sim_file_revised = strcat(sim_file(1:end-5),'_fake.asim');
+            sim_file_revised = strcat(sim_file(1:end-5),'_fake.asim');
             %sim_file_revised = [pwd,'\Animatlab\SynergyWalking\muscleStim.asim'];
             [~,simName,simExt] = fileparts(sim_file_revised);
             %disp(['Simulation file ',simName,simExt,' has been updated.'])

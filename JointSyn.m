@@ -2,11 +2,21 @@ classdef JointSyn < matlab.mixin.SetGet
     properties
         name
         index
-        sim_position_profile
+        init_pos
+        init_pos_w
+        init_rot
+        Cabs
+        CR
+        joint_rotmat_profile
+        enable_limit = 0;
+        euler_angs
+        fricCoeff
+        limits
+        rec_angle_time
         rec_angle_profile
         rec_angleDot_profile
         rec_torque_profile
-        euler_angs
+        sim_position_profile
         type
         uu_joint
         uu_joint2
@@ -14,14 +24,6 @@ classdef JointSyn < matlab.mixin.SetGet
         uuw_joint
         uuw_joint2
         uuw_joint3
-        init_pos
-        init_pos_w
-        joint_rotmat_profile
-        rec_angle_time
-        limits
-        fricCoeff
-        init_rot
-        enable_limit = 0;
     end
     methods
         function obj = JointSyn(Jname)

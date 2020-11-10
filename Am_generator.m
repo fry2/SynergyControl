@@ -15,11 +15,12 @@ function [Am_musc,V_musc,Al_musc_all] = Am_generator(obj,forces)
     [forces_dot,forces_doty] = gradient(forces,dt);
     numMuscles = length(obj.musc_obj);
 
-    fl = @(Lm,Lr,Lw) max(1-((Lm-Lr).^2./Lw^2),0);
-    %Am = @(Al,b,ks,T_dot,kp,delL,L_dot,T) (1./Al).*((b./ks).*T_dot-kp.*delL-b.*L_dot+(1+kp./ks).*T);
-    Am = @(Al,b,ks,T_dot,kp,delL,L_dot,T) (1./Al).*((b./ks).*T_dot+(1+kp./ks).*T);
+    fl = @(Lm,Lr,Lw) max(1-((Lm-Lr).^2./Lw^2),.7);
+    Am = @(Al,b,ks,T_dot,kp,delL,L_dot,T) (1./Al).*((b./ks).*T_dot-kp.*delL-b.*L_dot+(1+kp./ks).*T);
+    %force_eq = @(Al,b,ks,Am,kp,delL,L_dot,T) (ks./b).*(kp.*delL+b.*L_dot-(1+kp./ks).*T+Al.*Am);
+    %Am = @(Al,b,ks,T_dot,kp,delL,L_dot,T) (1./Al).*((b./ks).*T_dot+(1+kp./ks).*T);
     V = @(A1,A2,A3,A4,A) A1-(1./A3).*log(((A2)./(A-A4))-1);
-    st_curve = @(Fmax,steepness,xoff,V,yoff) (Fmax./(1+exp(steepness*(xoff-V))))+yoff;
+    st_curve = @(ST_max,steepness,xoff,V,yoff) (ST_max./(1+exp(steepness*(xoff-V))))+yoff;
     ssTeqn = @(Am,ks,kp,mL,Lr,Al) (ks/(ks+kp)).*max(kp.*(mL-Lr)+Al.*Am,0);
     Am_musc = zeros(size(forces));
     Al_musc_all = Am_musc;
@@ -27,14 +28,16 @@ function [Am_musc,V_musc,Al_musc_all] = Am_generator(obj,forces)
 
     for ii = 1:numMuscles
        [b,ks,kp,Lw,Lr,xoff,Fmax,steepness,mL,mV,ST_max,yoff] = getMuscParams(obj,ii,beg,ennd);
-       delL_musc = abs(Lr-mL);
+       delL_musc = max(mL-Lr,0);
        Al_musc = fl(mL,Lr,Lw);
-       Tdot = forces_dot(ii,:);
+       %Tdot = forces_dot(ii,:);
+       Tdot = smoothdata(forces_dot(ii,:),'gaussian',150);
        T = forces(ii,:);
        Am_musc(ii,:) = Am(Al_musc',b,ks,Tdot,kp,delL_musc',mV',T);
        Am_musc(ii,Am_musc(ii,:)<0) = 0;
        V_musc(ii,:) = real(V(xoff,ST_max,steepness,yoff,Am_musc(ii,:)));
        V_musc(ii,V_musc(ii,:)<-.06) = -.06;
+       V_musc(ii,V_musc(ii,:)>-.04) = -.04;
        Al_musc_all(ii,:) = Al_musc;
        %% For loop plotter 1: Plot 5 subplot fig of tension equation
        if 0
@@ -87,6 +90,7 @@ function [Am_musc,V_musc,Al_musc_all] = Am_generator(obj,forces)
         plot(forces')
         title('Original forces trying to recreate')
     end
+end
     %% inputAmoutputT
     function outT = inputAmoutputT(obj,Am,Al,dt,beg,ennd,numMuscles)
         if any(any(Am<0))
@@ -163,4 +167,3 @@ function [Am_musc,V_musc,Al_musc_all] = Am_generator(obj,forces)
             [soln(k,:),fval(k,1)] = fsolve(lloydopt,pts(k,:),opts); % find solutions
         end
     end
-end

@@ -1,16 +1,6 @@
-function [nsys] = indivProjectBuilder(projPath,simPath,current2inject,forces,obj)
+function [nsys] = indivProjectBuilder(projPath,simPath,forces,obj)
 
-    %projPath = [pwd,'\Animatlab\SynergyWalking\SynergyWalking20200109.aproj'];
-    %projPath = 'G:\My Drive\Rat\SynergyControl\Animatlab\SynergyWalking\SynergyWalking_reduced.aproj';
-    %simPath = 'G:\My Drive\Rat\SynergyControl\Animatlab\SynergyWalking\SynergyWalking_reduced_Standalone.asim';
-
-    %simPath = [pwd,'\Animatlab\SynergyWalking\muscleStim.asim'];
-
-
-    %projPath = [pwd,'\Animatlab\SynergyWalking\SynergyWalking_reduced.aproj'];
-    %simPath = [pwd,'\Animatlab\SynergyWalking\SynergyWalking_reduced_Standalone.asim'];
-    %projPath = 'G:\My Drive\Rat\SynergyControl\Animatlab\SynergyWalking\SynergyWalking20200109.aproj';
-    %simPath = 'G:\My Drive\Rat\SynergyControl\Animatlab\SynergyWalking\SynergyWalking20200109_Standalone.asim';
+    simPath = char(simPath); projPath = char(projPath);
     muscle_out = scrapeFileForMuscleInfo(simPath);
     numMuscles = length(muscle_out);
     [docDir,docName,docType] = fileparts(simPath);
@@ -31,12 +21,14 @@ function [nsys] = indivProjectBuilder(projPath,simPath,current2inject,forces,obj
     nsys.proj_params.simendtime = simTime+.01;
     nsys.proj_params.physicstimestep = 1000*(obj.dt_motion); % dt in ms
 
+    [~,V_musc] = Am_generator(obj,forces');
+    current2inject = 1000.*(V_musc+.06);
     ci2 = movmean(current2inject',floor(length(current2inject)/3));
     constvals = mean(ci2);
 
     %Build a line of motor neurons and muscles first
     for ii = 1:numMuscles
-        neurpos = [(ii)*25.90 250];
+        neurpos = [(ii)*27 250];
         nsys.addItem('n', neurpos, [1000 1000])
         nsys.addMuscle([muscle_out{ii,2},'-neural'],muscle_out{ii,3},neurpos+[-25.9 150])
         nsys.addLink(nsys.neuron_objects(ii),nsys.muscle_objects(ii),'adapter')
@@ -48,19 +40,10 @@ function [nsys] = indivProjectBuilder(projPath,simPath,current2inject,forces,obj
             nsys.stimulus_objects(ii).simeq = equations{ii,1};
             nsys.stimulus_objects(ii).projeq = equations{ii,2};
         else
-            %inputWave = mean(current2inject(ii,length(current2inject)*.1:length(current2inject)*.9));
             inputWave = current2inject(ii,:);
-            %nsys.stimulus_objects(ii).simeq = generate_synergy_eq(constvals(ii),simTime,obj.dt_motion,0);
-            %nsys.stimulus_objects(ii).projeq = generate_synergy_eq(constvals(ii),simTime,obj.dt_motion,1);
-            %nsys.stimulus_objects(ii).eq = generate_synergy_eq(inputWave,simTime,obj.dt_motion,0);
             [outData,stimPath] = generate_direct_current_file(nsys,inputWave,nsys.stimulus_objects(ii).name);
             nsys.stimulus_objects(ii).current_wave = outData;
             nsys.stimulus_objects(ii).current_data_file = stimPath;
-            %equations{ii,1} = nsys.stimulus_objects(ii).simeq;
-            %equations{ii,2} = nsys.stimulus_objects(ii).projeq;
-            %if  ii == 38
-            %    save([pwd,'\Data\indiv_equations.mat'],'equations')
-            %end
         end
     end
 
@@ -88,7 +71,7 @@ function [nsys] = indivProjectBuilder(projPath,simPath,current2inject,forces,obj
     nsys.create_animatlab_simulation(simPath);
     nsys.create_animatlab_project(projPath);
     %disp(['Animatlab ',docType,' file "',docName,docType,' created.'])
-
+%%
     function equation = generate_synergy_eq(bigH,simTime,dt,projBool)
         %dt = .00054;
         time = (0:dt:simTime)';
@@ -110,7 +93,7 @@ function [nsys] = indivProjectBuilder(projPath,simPath,current2inject,forces,obj
             equation = sum_of_sines_maker(coeffs,projBool);
         end
     end
-
+%%
     function waveformsBig = interpolate_for_time(time,waveforms)
         % Interpolate the undersampled input to match the required time vector
         waveforms = waveforms';

@@ -2,6 +2,7 @@ classdef Muscle < matlab.mixin.SetGet
     properties
       muscle_name
       muscle_index
+      enabled
       pos_attachments
       pos_attachments_w
       x_off %X offset in V (-.04=-40mV)

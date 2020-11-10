@@ -1,107 +1,94 @@
-file_dir = fileparts(mfilename('fullpath'));
-proj_file = [pwd,'\Animatlab\SynergyWalking\SynergyWalking20200109.aproj'];
-meshMatch(proj_file)
-revised_file = strcat(proj_file(1:end-6),'_fake.aproj');
+projPath = [pwd,'\Animatlab\SynergyWalking\SynergyControl.aproj'];
+meshMatch(projPath);
+revised_file = strcat(projPath(1:end-6),'_fake.aproj');
 [projDir,projName,ext] = fileparts(revised_file);
 disp(['Starting to build Animatlab project ',projName,ext])
 delete([projDir,'\Trace*'])
-
-original_text = importdata(proj_file);
-muscleIDs = find(contains(original_text,'<PartType>AnimatGUI.DataObjects.Physical.Bodies.LinearHillMuscle</PartType>'))-2;
-muscle_out = scrape_project_for_musc_info(original_text);
-numMuscles = length(muscleIDs);
+%%
+original_text = importdata(projPath);
+muscle_info = scrapeFileForMuscleInfo(projPath);
+numMuscles = length(muscle_info);
+numZones = 6;
+muscZones = zoning_sorter(original_text,numZones);
+muscle_info(:,4) = muscZones(:,2); clear muscZones
 
 nsys = CanvasModel;
 neurpos = [];
 
 %% The Time Debacle
-[beg,ennd] = obj.find_step_indices;
-times = obj.theta_motion_time([obj.sampling_vector(1),obj.sampling_vector(end)]);
-simTime = diff(times);
-%simTime = 10;
+simTime = 10;
 nsys.proj_params.simendtime = simTime+.01;
-nsys.proj_params.physicstimestep = 1000*(obj.dt_motion); % dt in ms
+nsys.proj_params.physicstimestep = .54; % dt in ms
 
 %Build a line of motor neurons and muscles first
 for ii = 1:numMuscles
-    neurpos = [(ii)*25.90 250];
+    neurpos = [(ii)*26 250];
     nsys.addItem('n', neurpos, [1000 1000])
-    nsys.addMuscle([muscle_out{ii,2},'-neural'],muscle_out{ii,3},neurpos+[-25.9 150])
+    nsys.addMuscle([muscle_info{ii,2},'-neural'],muscle_info{ii,3},neurpos+[-25.9 150])
     nsys.addLink(nsys.neuron_objects(ii),nsys.muscle_objects(ii),'adapter')
 end
 
+%% Create the synergy neurons
 % Generate color palette for synergy nodes
-cm = jet(3*size(W,2));
-cm = round(cm(3:3:end,:)*255);
+% cm = jet(3*numZones);
+% cm = round(cm(3:3:end,:)*255);
+    cm = round([0,1,0;...
+          1,0,0;...
+          0.9216,0.8235,0.2039;...
+          0,0,1;...
+          1,0,1;...
+          0,1,1].*255);
 
-syngap = (958.5-size(W,2)*(25))/(size(W,2)+1);
-
-relW = W./max(W);
-bigH = (H'.*max(W))';
-
-gsyn = arrayfun(@(x) (x*20)/(194-x*20),relW);
-equations = cell(size(W,2),1);
+syngap = (958.5-numZones*(25))/(numZones+1);
 nsys.addDatatool('SynergyStim');
 
-%Build synergy neurons and connections
-for ii = 1:size(W,2)
+for ii = 1:numZones
     synpos = [(ii-1)*25+(ii)*syngap 100];
     nsys.addItem('n', synpos, [1000 1000]);
     colordec = rgb2anim(cm(ii,:));
     nsys.neuron_objects(numMuscles+ii).color = colordec;
-    for jj = 1:length(W)
-        if W(jj,ii) ~= 0 
-            nsys.addLink(nsys.neuron_objects(ii+length(W)),nsys.neuron_objects(jj),'SignalTransmission1')
-            nsys.createSynapseType({['Syn-',num2str(ii+numMuscles),'-',num2str(jj)],'delE',194,'k',relW(jj,ii)})
-            %gsyn = (20*W(jj,ii))/(size(W,2)*194);
-            %nsys.createSynapseType({['Syn-',num2str(ii+numMuscles),'-',num2str(jj)],'delE',194,'max_syn_cond',gsyn})
-            numLinks = size(nsys.link_objects,1);
-            numSyns = size(nsys.synapse_types,1);
-%             nsys.synapse_types(numSyns).presyn_thresh = -120;
-%             nsys.synapse_types(numSyns).presyn_sat = 0;
-            nsys.link_objects(numLinks).synaptictype = nsys.synapse_types(numSyns).name;
-        end
-    end
-    nsys.addStimulus(nsys.neuron_objects(numMuscles+ii))
+    nsys.neuron_objects(numMuscles+ii).name = ['Syn ',num2str(ii)];
+    nsys.neuron_objects(numMuscles+ii).nsize = [100,100];
+    nsys.addDTaxes(nsys.datatool_objects(1),nsys.neuron_objects(numMuscles+ii),'MembraneVoltage');
+    nsys.addStimulus(nsys.neuron_objects(numMuscles+ii),'tc')
     nsys.stimulus_objects(ii).starttime = 0;
-    nsys.stimulus_objects(ii).endtime = 10;
-    if isfile([file_dir,'\Data\h_equations.mat'])
-        load([file_dir,'\Data\h_equations.mat'])
-        nsys.stimulus_objects(ii).eq = equations{ii};
-    else
-        nsys.stimulus_objects(ii).eq = generate_synergy_eq(bigH(ii,:),simTime);
-        equations{ii} = nsys.stimulus_objects(ii).eq;
-        if  ii == size(W,2)
-            save([file_dir,'\Data\h_equations.mat'],'equations')
-        end
-    end
-    nsys.addDTaxes(nsys.datatool_objects(1),nsys.neuron_objects(numMuscles+ii),'MembraneVoltage')
+    nsys.stimulus_objects(ii).endtime = simTime;
+end
+
+%% Connect synergy neurons to correct MNs
+for ii = 1:numMuscles
+    mn = mn_from_musc_name(nsys,muscle_info{ii,2});
+    zoneNum = muscle_info{ii,4};
+    synNeur = nsys.neuron_objects(zoneNum+numMuscles);
+            nsys.addLink(synNeur,mn,'SignalTransmission1')
+            synapseName = ['Syn-',num2str(zoneNum+numMuscles),'-',num2str(ii)];
+            nsys.createSynapseType({synapseName,'delE',194,'k',1})
+            numLinks = size(nsys.link_objects,1);
+            nsys.link_objects(numLinks).synaptictype = synapseName;
 end
 
 % Build datatool viewers for high action muscles to provide insight into motorneuron and muscle activity
-[muscForces,muscInds] = sortrows(max(forces)',1,'descend');
-muscles2check = muscInds(1:5);
+%[muscForces,muscInds] = sortrows(max(forces)',1,'descend');
+muscles2check = 1:38;%muscInds(1:5);
 %muscles2check = 1:38;
 numDTs = size(nsys.datatool_objects,1);
-nsys.addDatatool('KeyMNs')
-nsys.addDatatool('KeyMuscles')
-nsys.addDatatool('KeyMuscTen')
-nsys.addDatatool('KeyMuscAct')
+nsys.addDatatool({'KeyMNs','endtime',nsys.proj_params.simendtime-.01})
+nsys.addDatatool({'KeyMuscleLen','endtime',nsys.proj_params.simendtime-.01})
+nsys.addDatatool({'KeyMuscTen','endtime',nsys.proj_params.simendtime-.01})
+nsys.addDatatool({'KeyMuscAct','endtime',nsys.proj_params.simendtime-.01})
+nsys.addDatatool({'KeyMuscAl','endtime',nsys.proj_params.simendtime-.01})
 % For a given muscle, find that muscle's adapter information and then find the *neuron* that's feeding that adapter
 for ii = 1:length(muscles2check)
     adInd = find(contains({nsys.adapter_objects(:).destination_node_ID},nsys.muscle_objects(muscles2check(ii)).ID));
     nInd = find(contains({nsys.neuron_objects(:).ID},nsys.adapter_objects(adInd).origin_node_ID));
-    nsys.addDTaxes(nsys.datatool_objects(numDTs+1),nsys.neuron_objects(nInd),'MembraneVoltage')
-    nsys.addDTaxes(nsys.datatool_objects(numDTs+2),nsys.muscle_objects(muscles2check(ii)),'MembraneVoltage')
-    nsys.addDTaxes(nsys.datatool_objects(numDTs+3),nsys.muscle_objects(muscles2check(ii)),'Tension')
-    nsys.addDTaxes(nsys.datatool_objects(numDTs+4),nsys.muscle_objects(muscles2check(ii)),'Activation')
+    nsys.addDTaxes('KeyMNs',nsys.neuron_objects(nInd),'MembraneVoltage')
+    nsys.addDTaxes('KeyMuscleLen',nsys.muscle_objects(muscles2check(ii)),'MuscleLength')
+    nsys.addDTaxes('KeyMuscTen',nsys.muscle_objects(muscles2check(ii)),'Tension')
+    nsys.addDTaxes('KeyMuscAct',nsys.muscle_objects(muscles2check(ii)),'Activation')
+    nsys.addDTaxes('KeyMuscAl',nsys.muscle_objects(muscles2check(ii)),'Tl')
 end
 
-for ii = 1:size(nsys.datatool_objects,1)
-    nsys.datatool_objects(ii).endtime = simTime-.01;
-end
-
-nsys.create_animatlab_project(proj_file);
+nsys.create_animatlab_project(projPath);
 disp(['Animatlab project file ',projName,ext,' created.'])
 
 function equation = generate_synergy_eq(bigH,simTime)
@@ -136,18 +123,9 @@ function waveformsBig = interpolate_for_time(time,waveforms)
     waveformsBig = waveformsBig';
 end
 
-function muscle_out = scrape_project_for_musc_info(input_text)
-    % Scrape text for muscle information
-    % Input: input_text: cell array of text from an Animatlab project
-    % Output: muscle_out: cell array containing muscle indices, muscle names, and muscle ID's
-    muscleInds = find(contains(input_text,'<PartType>AnimatGUI.DataObjects.Physical.Bodies.LinearHillMuscle</PartType>'))-2;
-    if isempty(muscleInds)
-        error('No muscles in input text')
-    end
-    muscle_out = cell(length(muscleInds),3);
-    for ii = 1:length(muscleInds)
-        muscle_out{ii,1} = muscleInds(ii);
-        muscle_out{ii,2} = lower(input_text{muscleInds(ii)-1}(7:end-7));
-        muscle_out{ii,3} = input_text{muscleInds(ii)}(5:end-5);
-    end
+function mn = mn_from_musc_name(nsys,muscName)
+    adInd = find(contains({nsys.adapter_objects.destination_node_ID},muscName));
+    mnID = nsys.adapter_objects(adInd).origin_node_ID;
+    neurInd = find(contains({nsys.neuron_objects.ID},mnID));
+    mn = nsys.neuron_objects(neurInd);
 end

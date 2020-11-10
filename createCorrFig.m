@@ -30,7 +30,7 @@ function [corrFig,cdata1] = createCorrFig(cdata1,sorted)
     end
     
     % Create figure
-    corrFig = figure('name','CorrFig','Position',[-951,129,944,988]);
+    corrFig = figure('name','CorrFig','Position',[2,2,958,994]);
 
     % Create axes
     axes1 = axes('Parent',corrFig);

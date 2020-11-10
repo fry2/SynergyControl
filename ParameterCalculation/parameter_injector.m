@@ -137,7 +137,14 @@ function parameter_injector(fPath,params)
         if contains(old_line,'None')
             actual = value;
         else
-            modifier = old_line(quote_inds(3)+1:quote_inds(4)-1);
+            if contains(old_line,'<RestingLength')
+                actual = num2str(number/100);
+                new_line = [old_line(1:quote_inds(1)),value,old_line(quote_inds(2):quote_inds(3)),'centi',old_line(quote_inds(4):quote_inds(5)),...
+                    actual,old_line(quote_inds(6):end)];
+                return
+            else
+                modifier = old_line(quote_inds(3)+1:quote_inds(4)-1);
+            end
             switch modifier
                 case 'milli'
                     actual = num2str(number/1000);

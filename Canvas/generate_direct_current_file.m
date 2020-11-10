@@ -1,4 +1,4 @@
-function outData = generate_direct_current_file(inObj,inWave,stimPath)
+function [outData,stimPath] = generate_direct_current_file(inObj,inWave,stimPath)
     % For an input data vector, generate a .txt file that Animatlab can read from using a
     % inverse muscle dynamics current stimulus
 
@@ -46,7 +46,7 @@ function outData = generate_direct_current_file(inObj,inWave,stimPath)
 %         outText{ii1,1} = [strTime{ii1-1},sprintf('\t'),strCurrent{ii1-1}];
 %     end
 
-    %stimPath = [pwd,'\Data\InjectedCurrent\',stimName,'.txt'];
+    stimPath = [pwd,'\Data\InjectedCurrent\',stimPath,'.txt'];
     fileID = fopen(stimPath,'w');
     fprintf(fileID,'%s\n',outText{:});
     fclose(fileID);

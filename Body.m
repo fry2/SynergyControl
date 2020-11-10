@@ -2,15 +2,21 @@ classdef Body < matlab.mixin.SetGet
     properties
         name
         id
-        position
-        rotation
-        density
-        mass
+        Cabs
+        CR
         com
+        density
+        length
+        mass
         meshfile
         convexmeshfile
+        position
+        position_w = [0;0;0]
+        position_w_profile
+        pos_attachments
+        pos_attachments_w
+        rotation
         scale
-        length
     end
     methods
         function obj = Body(Bname)
