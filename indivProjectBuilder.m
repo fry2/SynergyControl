@@ -18,7 +18,7 @@ function [nsys] = indivProjectBuilder(projPath,simPath,forces,obj)
     times = obj.theta_motion_time([obj.sampling_vector(1),obj.sampling_vector(end)]);
     simTime = diff(times);
     %simTime = max(obj.theta_motion_time);
-    nsys.proj_params.simendtime = simTime+.01;
+    nsys.proj_params.simendtime = simTime;
     nsys.proj_params.physicstimestep = 1000*(obj.dt_motion); % dt in ms
 
     [~,V_musc] = Am_generator(obj,forces');
@@ -35,16 +35,9 @@ function [nsys] = indivProjectBuilder(projPath,simPath,forces,obj)
         nsys.addStimulus(nsys.neuron_objects(ii),'dc')
         nsys.stimulus_objects(ii).starttime = 0;
         nsys.stimulus_objects(ii).endtime = simTime;
-        if isfile([pwd,'\Data\indiv_equations.mat'])
-            load([pwd,'\Data\indiv_equations.mat'])
-            nsys.stimulus_objects(ii).simeq = equations{ii,1};
-            nsys.stimulus_objects(ii).projeq = equations{ii,2};
-        else
-            inputWave = current2inject(ii,:);
-            [outData,stimPath] = generate_direct_current_file(nsys,inputWave,nsys.stimulus_objects(ii).name);
-            nsys.stimulus_objects(ii).current_wave = outData;
-            nsys.stimulus_objects(ii).current_data_file = stimPath;
-        end
+        [outData,stimPath] = generate_direct_current_file(nsys,current2inject(ii,:),nsys.stimulus_objects(ii).name);
+        nsys.stimulus_objects(ii).current_wave = outData;
+        nsys.stimulus_objects(ii).current_data_file = stimPath;
     end
 
     % Build datatool viewers for high action muscles to provide insight into motorneuron and muscle activity

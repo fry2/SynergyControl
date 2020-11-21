@@ -13,8 +13,8 @@
 <EnableSimRecording>True</EnableSimRecording>
 <SetSimEnd>True</SetSimEnd>
 <APIFile/>
-<SimEndTime Value="10.0151" Scale="None" Actual="10.0151"/>
-<PlaybackControlMode>FastestPossible</PlaybackControlMode>
+<SimEndTime Value="9.9889" Scale="None" Actual="9.9889"/>
+<PlaybackControlMode>MatchPhysicsStep</PlaybackControlMode>
 <PresetPlaybackTimeStep Value="3" Scale="milli" Actual="0.003"/>
 <Environment>
 <PhysicsTimeStep Value="0.54" Scale="milli" Actual="0.00054"/>
@@ -2976,7 +2976,7 @@
 <Relaxation5>
 <AssemblyFile>AnimatGUI.dll</AssemblyFile>
 <ClassName>AnimatGUI.DataObjects.Physical.ConstraintRelaxationVortex</ClassName>
-<ID>81218ed3-094c-47e3-b2c4-0a51e96d0fd8</ID>
+<ID>6bf52e77-7364-40a8-8640-a438744f0df4</ID>
 <Enabled>False</Enabled>
 <CoordinateID>4</CoordinateID>
 <Stiffness Value="100" Scale="Kilo" Actual="100000"/>
@@ -2985,7 +2985,7 @@
 <Relaxation6>
 <AssemblyFile>AnimatGUI.dll</AssemblyFile>
 <ClassName>AnimatGUI.DataObjects.Physical.ConstraintRelaxationVortex</ClassName>
-<ID>3923bb97-7d42-4093-8f17-dc02956b5977</ID>
+<ID>773f87c6-3b1c-4cda-8d32-09097bc57ec4</ID>
 <Enabled>False</Enabled>
 <CoordinateID>5</CoordinateID>
 <Stiffness Value="100" Scale="Kilo" Actual="100000"/>
@@ -3405,8 +3405,8 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-10.558" Scale="milli" Actual="-0.010558"/>
-<Y Value="0.266" Scale="milli" Actual="0.000266"/>
+<X Value="-9.664" Scale="milli" Actual="-0.009664"/>
+<Y Value="0.916" Scale="milli" Actual="0.000916"/>
 <Z Value="33.229" Scale="milli" Actual="0.033229"/>
 </LocalPosition>
 <Rotation>
@@ -3414,7 +3414,7 @@
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.10558,0.00266,0.33229,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.09664,0.00916,0.33229,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -3476,6 +3476,7 @@
 <Attachments>
 <AttachID>c9945070-32b4-4104-8347-2a701bc74c70</AttachID>
 <AttachID>3cb22bbd-6500-47bf-9791-b9cfe0c3462d</AttachID>
+<AttachID>9899a99f-fb48-491c-a566-47cace9825bf</AttachID>
 <AttachID>afb88b6f-5ef0-4808-87db-cd475f805f46</AttachID>
 <AttachID>1f477509-9025-405e-847b-7d048271333c</AttachID>
 </Attachments>
@@ -3821,14 +3822,14 @@
 <LocalPosition>
 <X Value="-12.657" Scale="milli" Actual="-0.012657"/>
 <Y Value="-2.802" Scale="milli" Actual="-0.002802"/>
-<Z Value="31.648" Scale="milli" Actual="0.031648"/>
+<Z Value="32.316" Scale="milli" Actual="0.032316"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.12657,-0.02802,0.31648,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.12657,-0.02802,0.32316,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -3884,7 +3885,7 @@
 <Simulation>0</Simulation>
 </Transparencies>
 <IsVisible>True</IsVisible>
-<Enabled>False</Enabled>
+<Enabled>True</Enabled>
 <Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
 <Diffuse Red="1" Green="0.501961" Blue="0" Alpha="1"/>
 <Attachments>
@@ -4164,16 +4165,16 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-12.095" Scale="milli" Actual="-0.012095"/>
-<Y Value="-7" Scale="milli" Actual="-0.007"/>
-<Z Value="30.424" Scale="milli" Actual="0.030424"/>
+<X Value="-12.74" Scale="milli" Actual="-0.01274"/>
+<Y Value="-5.68" Scale="milli" Actual="-0.00568"/>
+<Z Value="29.888" Scale="milli" Actual="0.029888"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.12095,-0.07,0.30424,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.1274,-0.0568,0.29888,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -4313,7 +4314,7 @@
 <SynchWithRobot>False</SynchWithRobot>
 <SynchUpdateInterval Value="0" Scale="milli" Actual="0"/>
 <Size Value="0.001" Scale="None" Actual="0.001"/>
-<EnableLimits>False</EnableLimits>
+<EnableLimits>True</EnableLimits>
 <Relaxation1>
 <AssemblyFile>AnimatGUI.dll</AssemblyFile>
 <ClassName>AnimatGUI.DataObjects.Physical.ConstraintRelaxationVortex</ClassName>
@@ -4353,7 +4354,7 @@
 <Relaxation5>
 <AssemblyFile>AnimatGUI.dll</AssemblyFile>
 <ClassName>AnimatGUI.DataObjects.Physical.ConstraintRelaxationVortex</ClassName>
-<ID>dbf25a6b-94ce-4692-abf6-01f59b084130</ID>
+<ID>cf5245c6-d16e-4f63-8b4e-3abab9cac90b</ID>
 <Enabled>False</Enabled>
 <CoordinateID>4</CoordinateID>
 <Stiffness Value="100" Scale="Kilo" Actual="100000"/>
@@ -4362,7 +4363,7 @@
 <Relaxation6>
 <AssemblyFile>AnimatGUI.dll</AssemblyFile>
 <ClassName>AnimatGUI.DataObjects.Physical.ConstraintRelaxationVortex</ClassName>
-<ID>cae26d18-8cb4-4083-ac97-6120b9cb1120</ID>
+<ID>06e0b0d3-2bbc-4ea2-94c2-42dc48ce638e</ID>
 <Enabled>False</Enabled>
 <CoordinateID>5</CoordinateID>
 <Stiffness Value="100" Scale="Kilo" Actual="100000"/>
@@ -4383,7 +4384,7 @@
 <LowerLimit>
 <Name>abcb0a99-8144-49f1-b4a6-46e488badf9d</Name>
 <ID>abcb0a99-8144-49f1-b4a6-46e488badf9d</ID>
-<LimitPos Value="-25" Scale="None" Actual="-25"/>
+<LimitPos Value="-68.75" Scale="None" Actual="-68.75"/>
 <Damping Value="0.1" Scale="None" Actual="0.1"/>
 <Restitution Value="0.01" Scale="None" Actual="0.01"/>
 <Stiffness Value="0.01" Scale="None" Actual="0.01"/>
@@ -4391,7 +4392,7 @@
 <UpperLimit>
 <Name>3a8c13b0-99eb-4705-84d1-05672e9cbf8d</Name>
 <ID>3a8c13b0-99eb-4705-84d1-05672e9cbf8d</ID>
-<LimitPos Value="25" Scale="None" Actual="25"/>
+<LimitPos Value="28.65" Scale="None" Actual="28.65"/>
 <Damping Value="50" Scale="None" Actual="50"/>
 <Restitution Value="0.4" Scale="None" Actual="0.4"/>
 <Stiffness Value="0.01" Scale="None" Actual="0.01"/>
@@ -4420,6 +4421,75 @@
 </Joint>
 <ChildBodies>
 <RigidBody>
+<Name>SoleusViaOne Tibia LH_AnkleZ Ext</Name>
+<ID>0c6fa134-3f79-49ed-8990-35e0a94dc04d</ID>
+<Description/>
+<Transparencies>
+<Graphics>0</Graphics>
+<Collisions>50</Collisions>
+<Joints>50</Joints>
+<RecFields>50</RecFields>
+<Simulation>0</Simulation>
+</Transparencies>
+<IsVisible>True</IsVisible>
+<Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
+<Diffuse Red="0.752941" Green="0" Blue="0.752941" Alpha="1"/>
+<Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
+<Shininess>64</Shininess>
+<Texture/>
+<LocalPosition>
+<X Value="-0.175" Scale="milli" Actual="-0.000175"/>
+<Y Value="-41.618" Scale="milli" Actual="-0.041618"/>
+<Z Value="-6.197" Scale="milli" Actual="-0.006197"/>
+</LocalPosition>
+<Rotation>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</Rotation>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.00175,-0.41618,-0.06197,1</LocalMatrix>
+<DraggerSize Value="-1" Scale="None" Actual="-1"/>
+<Type>Attachment</Type>
+<PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
+<SynchWithRobot>False</SynchWithRobot>
+<SynchUpdateInterval Value="0" Scale="milli" Actual="0"/>
+<IsContactSensor>False</IsContactSensor>
+<IsCollisionObject>False</IsCollisionObject>
+<BuoyancyCenter>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</BuoyancyCenter>
+<BuoyancyScale>1</BuoyancyScale>
+<LinearDrag>
+<X Value="1" Scale="None" Actual="1"/>
+<Y Value="1" Scale="None" Actual="1"/>
+<Z Value="1" Scale="None" Actual="1"/>
+</LinearDrag>
+<AngularDrag>
+<X Value="50" Scale="milli" Actual="0.05"/>
+<Y Value="50" Scale="milli" Actual="0.05"/>
+<Z Value="50" Scale="milli" Actual="0.05"/>
+</AngularDrag>
+<MaxHydroForce Value="50" Scale="None" Actual="50"/>
+<MaxHydroTorque Value="20" Scale="None" Actual="20"/>
+<Magnus>0</Magnus>
+<EnableFluids>False</EnableFluids>
+<Density Value="1" Scale="None" Actual="1"/>
+<Mass Value="0" Scale="None" Actual="0"/>
+<COM>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</COM>
+<MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
+<Freeze>False</Freeze>
+<FoodSource>False</FoodSource>
+<Radius Value="0.25" Scale="milli" Actual="0.00025"/>
+<LatitudeSegments>20</LatitudeSegments>
+<LongtitudeSegments>20</LongtitudeSegments>
+</RigidBody>
+<RigidBody>
 <Name>PopliteusViaTwo Tibia LH_AnkleZ Ext</Name>
 <ID>0fd7ba66-7083-4d08-a41c-79e3e8fcfd0a</ID>
 <Description/>
@@ -4437,16 +4507,16 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-0.539" Scale="milli" Actual="-0.000539"/>
-<Y Value="-4.239" Scale="milli" Actual="-0.004239"/>
-<Z Value="3.748" Scale="milli" Actual="0.003748"/>
+<X Value="-0.151" Scale="milli" Actual="-0.000151"/>
+<Y Value="-6.323" Scale="milli" Actual="-0.006323"/>
+<Z Value="3.876" Scale="milli" Actual="0.003876"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.00539,-0.04239,0.03748,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.00151,-0.06323,0.03876,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -4489,7 +4559,7 @@
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>LateralGastrocnemiusVia Tibia LH_AnkleZ Ext</Name>
+<Name>LateralGastrocnemiusViaOne Tibia LH_AnkleZ Ext</Name>
 <ID>0ffaf428-e533-43d3-82e0-8ca859542e97</ID>
 <Description/>
 <Transparencies>
@@ -4691,12 +4761,12 @@
 <MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
 <Freeze>False</Freeze>
 <FoodSource>False</FoodSource>
-<Radius Value="0.5" Scale="milli" Actual="0.0005"/>
+<Radius Value="0.25" Scale="milli" Actual="0.00025"/>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>MedialGastrocnemiusIns Tibia LH_Knee Flx</Name>
+<Name>MedialGastrocnemiusViaOne Tibia LH_Knee Flx</Name>
 <ID>3cb22bbd-6500-47bf-9791-b9cfe0c3462d</ID>
 <Description/>
 <Transparencies>
@@ -4713,16 +4783,16 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-3.783" Scale="milli" Actual="-0.003783"/>
+<X Value="-4.896" Scale="milli" Actual="-0.004896"/>
 <Y Value="-6.148" Scale="milli" Actual="-0.006148"/>
-<Z Value="2.931" Scale="milli" Actual="0.002931"/>
+<Z Value="1.111" Scale="milli" Actual="0.001111"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.03783,-0.06148,0.02931,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.04896,-0.06148,0.01111,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -4853,6 +4923,7 @@
 <Attachments>
 <AttachID>6894dc8d-f315-4a99-9d4c-3299694a122a</AttachID>
 <AttachID>48c91d7c-5fc8-4b97-a7e0-048c8ba879db</AttachID>
+<AttachID>52a6093b-f37d-4e2e-9bec-88bf112a5809</AttachID>
 <AttachID>133e1a3f-cef5-4d76-b844-02e5856589d1</AttachID>
 <AttachID>89b0223f-ffcf-4883-aea1-eb8755e79b9b</AttachID>
 <AttachID>1746fbf9-71a0-48f5-811c-ab7e44335eb6</AttachID>
@@ -5042,7 +5113,7 @@
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>PlantarisVia Tibia LH_AnkleZ Ext</Name>
+<Name>PlantarisViaOne Tibia LH_AnkleZ Ext</Name>
 <ID>47455171-acf1-4f7c-b55c-db9e35135a42</ID>
 <Description/>
 <Transparencies>
@@ -5201,16 +5272,16 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-2.266" Scale="milli" Actual="-0.002266"/>
+<X Value="-1.952" Scale="milli" Actual="-0.001952"/>
 <Y Value="-41.859" Scale="milli" Actual="-0.041859"/>
-<Z Value="-6.419" Scale="milli" Actual="-0.006419"/>
+<Z Value="-6.38" Scale="milli" Actual="-0.00638"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.02266,-0.41859,-0.06419,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.01952,-0.41859,-0.0638,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -5248,7 +5319,7 @@
 <MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
 <Freeze>False</Freeze>
 <FoodSource>False</FoodSource>
-<Radius Value="0.5" Scale="milli" Actual="0.0005"/>
+<Radius Value="0.25" Scale="milli" Actual="0.00025"/>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5480,6 +5551,7 @@
 <Attachments>
 <AttachID>2774d280-281c-411c-be99-beef44cb8916</AttachID>
 <AttachID>340833f5-4e2a-483f-954c-835680ad54ac</AttachID>
+<AttachID>1049455e-0955-4578-bb53-e23ca05a7bce</AttachID>
 <AttachID>f2a82a96-15d0-4b05-9792-c8f2ead5d63c</AttachID>
 <AttachID>266d96f2-624e-4e9a-adbd-c496236b2cb7</AttachID>
 <AttachID>8832da50-2f06-4b55-93f0-59245990024a</AttachID>
@@ -5617,16 +5689,16 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="0.751" Scale="milli" Actual="0.000751"/>
-<Y Value="62.661" Scale="micro" Actual="6.2661e-005"/>
-<Z Value="-2.968" Scale="milli" Actual="-0.002968"/>
+<X Value="1.159" Scale="milli" Actual="0.001159"/>
+<Y Value="1.022" Scale="milli" Actual="0.001022"/>
+<Z Value="-1.799" Scale="milli" Actual="-0.001799"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.00751,0.00062661,-0.02968,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.01159,0.01022,-0.01799,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -5686,16 +5758,16 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-2.479" Scale="milli" Actual="-0.002479"/>
-<Y Value="0.802" Scale="milli" Actual="0.000802"/>
-<Z Value="-2.726" Scale="milli" Actual="-0.002726"/>
+<X Value="-3.916" Scale="milli" Actual="-0.003916"/>
+<Y Value="0.713" Scale="milli" Actual="0.000713"/>
+<Z Value="-2.615" Scale="milli" Actual="-0.002615"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.02479,0.00802,-0.02726,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.03916,0.00713,-0.02615,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -5755,16 +5827,16 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="3.365" Scale="milli" Actual="0.003365"/>
-<Y Value="-3.655" Scale="milli" Actual="-0.003655"/>
-<Z Value="0.486" Scale="milli" Actual="0.000486"/>
+<X Value="3.324" Scale="milli" Actual="0.003324"/>
+<Y Value="-2.75" Scale="milli" Actual="-0.00275"/>
+<Z Value="1.114" Scale="milli" Actual="0.001114"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.03365,-0.03655,0.00486,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.03324,-0.0275,0.01114,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -5827,6 +5899,7 @@
 <AttachID>b51db4e0-45fd-4bd7-8026-b2a34eb98193</AttachID>
 <AttachID>e92a5dab-148f-437d-97f4-822f8963ac98</AttachID>
 <AttachID>982c28d6-e198-44b3-8e87-250b27cdbcb0</AttachID>
+<AttachID>775c5af8-24b4-493a-8f21-9c1a0f231f4c</AttachID>
 <AttachID>0bffeea5-0ea8-4a79-a7ea-36f92f4d0611</AttachID>
 </Attachments>
 <StimulusTension>
@@ -6151,7 +6224,7 @@
 <Relaxation5>
 <AssemblyFile>AnimatGUI.dll</AssemblyFile>
 <ClassName>AnimatGUI.DataObjects.Physical.ConstraintRelaxationVortex</ClassName>
-<ID>197a1ebc-4989-4a44-8351-d8d6732c4fa8</ID>
+<ID>ac23bacb-c1d1-4944-91d5-10bae22ec5a7</ID>
 <Enabled>False</Enabled>
 <CoordinateID>4</CoordinateID>
 <Stiffness Value="100" Scale="Kilo" Actual="100000"/>
@@ -6160,7 +6233,7 @@
 <Relaxation6>
 <AssemblyFile>AnimatGUI.dll</AssemblyFile>
 <ClassName>AnimatGUI.DataObjects.Physical.ConstraintRelaxationVortex</ClassName>
-<ID>d4112a5d-396b-4dff-91b0-5943ea4868e9</ID>
+<ID>e139eac1-1165-465b-a5d1-f974801077a2</ID>
 <Enabled>False</Enabled>
 <CoordinateID>5</CoordinateID>
 <Stiffness Value="100" Scale="Kilo" Actual="100000"/>
@@ -6181,7 +6254,7 @@
 <LowerLimit>
 <Name>fbfd6b5c-77a2-4f7f-96e2-08c4d4994b65</Name>
 <ID>fbfd6b5c-77a2-4f7f-96e2-08c4d4994b65</ID>
-<LimitPos Value="-20" Scale="None" Actual="-20"/>
+<LimitPos Value="-97.4" Scale="None" Actual="-97.4"/>
 <Damping Value="1" Scale="None" Actual="1"/>
 <Restitution Value="0.1" Scale="None" Actual="0.1"/>
 <Stiffness Value="5" Scale="None" Actual="5"/>
@@ -6189,7 +6262,7 @@
 <UpperLimit>
 <Name>cb3f8858-cd4b-4ecb-934e-c131ca5e03ff</Name>
 <ID>cb3f8858-cd4b-4ecb-934e-c131ca5e03ff</ID>
-<LimitPos Value="40.7527" Scale="None" Actual="40.7527"/>
+<LimitPos Value="34.37" Scale="None" Actual="34.37"/>
 <Damping Value="0.1" Scale="None" Actual="0.1"/>
 <Restitution Value="0.01" Scale="None" Actual="0.01"/>
 <Stiffness Value="0.01" Scale="None" Actual="0.01"/>
@@ -6235,16 +6308,16 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="18.966" Scale="milli" Actual="0.018966"/>
-<Y Value="-7.09" Scale="milli" Actual="-0.00709"/>
-<Z Value="-1.639" Scale="milli" Actual="-0.001639"/>
+<X Value="19.248" Scale="milli" Actual="0.019248"/>
+<Y Value="-6.962" Scale="milli" Actual="-0.006962"/>
+<Z Value="1.465" Scale="milli" Actual="0.001465"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.18966,-0.0709,-0.01639,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.19248,-0.06962,0.01465,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -6282,7 +6355,7 @@
 <MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
 <Freeze>False</Freeze>
 <FoodSource>False</FoodSource>
-<Radius Value="0.5" Scale="milli" Actual="0.0005"/>
+<Radius Value="0.25" Scale="milli" Actual="0.00025"/>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6304,16 +6377,16 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="4.82" Scale="milli" Actual="0.00482"/>
-<Y Value="-1.139" Scale="milli" Actual="-0.001139"/>
-<Z Value="0.376" Scale="milli" Actual="0.000376"/>
+<X Value="4.347" Scale="milli" Actual="0.004347"/>
+<Y Value="-0.954" Scale="milli" Actual="-0.000954"/>
+<Z Value="0.908" Scale="milli" Actual="0.000908"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.0482,-0.01139,0.00376,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.04347,-0.00954,0.00908,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -6351,12 +6424,12 @@
 <MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
 <Freeze>False</Freeze>
 <FoodSource>False</FoodSource>
-<Radius Value="0.5" Scale="milli" Actual="0.0005"/>
+<Radius Value="0.25" Scale="milli" Actual="0.00025"/>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>TibialisAntIns Foot LH_AnkleZ Flx</Name>
+<Name>TibialisAnteriorIns Foot LH_AnkleZ Flx</Name>
 <ID>0bffeea5-0ea8-4a79-a7ea-36f92f4d0611</ID>
 <Description/>
 <Transparencies>
@@ -6420,12 +6493,81 @@
 <MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
 <Freeze>False</Freeze>
 <FoodSource>False</FoodSource>
-<Radius Value="0.5" Scale="milli" Actual="0.0005"/>
+<Radius Value="0.25" Scale="milli" Actual="0.00025"/>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>FlexorHallucisLongusViaTwo Foot LH_AnkleZ Ext</Name>
+<Name>PeroneiViaTwo Foot LH_AnkleZ Ext</Name>
+<ID>1049455e-0955-4578-bb53-e23ca05a7bce</ID>
+<Description/>
+<Transparencies>
+<Graphics>0</Graphics>
+<Collisions>50</Collisions>
+<Joints>50</Joints>
+<RecFields>50</RecFields>
+<Simulation>0</Simulation>
+</Transparencies>
+<IsVisible>True</IsVisible>
+<Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
+<Diffuse Red="0.752941" Green="0" Blue="0" Alpha="1"/>
+<Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
+<Shininess>64</Shininess>
+<Texture/>
+<LocalPosition>
+<X Value="-3.636" Scale="milli" Actual="-0.003636"/>
+<Y Value="-1.164" Scale="milli" Actual="-0.001164"/>
+<Z Value="1.761" Scale="milli" Actual="0.001761"/>
+</LocalPosition>
+<Rotation>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</Rotation>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.03636,-0.01164,0.01761,1</LocalMatrix>
+<DraggerSize Value="-1" Scale="None" Actual="-1"/>
+<Type>Attachment</Type>
+<PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
+<SynchWithRobot>False</SynchWithRobot>
+<SynchUpdateInterval Value="0" Scale="milli" Actual="0"/>
+<IsContactSensor>False</IsContactSensor>
+<IsCollisionObject>False</IsCollisionObject>
+<BuoyancyCenter>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</BuoyancyCenter>
+<BuoyancyScale>1</BuoyancyScale>
+<LinearDrag>
+<X Value="1" Scale="None" Actual="1"/>
+<Y Value="1" Scale="None" Actual="1"/>
+<Z Value="1" Scale="None" Actual="1"/>
+</LinearDrag>
+<AngularDrag>
+<X Value="50" Scale="milli" Actual="0.05"/>
+<Y Value="50" Scale="milli" Actual="0.05"/>
+<Z Value="50" Scale="milli" Actual="0.05"/>
+</AngularDrag>
+<MaxHydroForce Value="50" Scale="None" Actual="50"/>
+<MaxHydroTorque Value="20" Scale="None" Actual="20"/>
+<Magnus>0</Magnus>
+<EnableFluids>False</EnableFluids>
+<Density Value="1" Scale="None" Actual="1"/>
+<Mass Value="0" Scale="None" Actual="0"/>
+<COM>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</COM>
+<MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
+<Freeze>False</Freeze>
+<FoodSource>False</FoodSource>
+<Radius Value="0.25" Scale="milli" Actual="0.00025"/>
+<LatitudeSegments>20</LatitudeSegments>
+<LongtitudeSegments>20</LongtitudeSegments>
+</RigidBody>
+<RigidBody>
+<Name>FlexorHallucisLongusViaThree Foot LH_AnkleZ Ext</Name>
 <ID>133e1a3f-cef5-4d76-b844-02e5856589d1</ID>
 <Description/>
 <Transparencies>
@@ -6437,21 +6579,21 @@
 </Transparencies>
 <IsVisible>True</IsVisible>
 <Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
-<Diffuse Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<Diffuse Red="1" Green="0" Blue="0" Alpha="1"/>
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-1.441" Scale="milli" Actual="-0.001441"/>
-<Y Value="-2.915" Scale="milli" Actual="-0.002915"/>
-<Z Value="-0.775" Scale="milli" Actual="-0.000775"/>
+<X Value="-1.153" Scale="milli" Actual="-0.001153"/>
+<Y Value="-3.211" Scale="milli" Actual="-0.003211"/>
+<Z Value="-0.656" Scale="milli" Actual="-0.000656"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.01441,-0.02915,-0.00775,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.01153,-0.03211,-0.00656,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -6511,16 +6653,16 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="19.645" Scale="milli" Actual="0.019645"/>
+<X Value="19.135" Scale="milli" Actual="0.019135"/>
 <Y Value="-7.09" Scale="milli" Actual="-0.00709"/>
-<Z Value="0.72" Scale="milli" Actual="0.00072"/>
+<Z Value="-1.929" Scale="milli" Actual="-0.001929"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.19645,-0.0709,0.0072,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.19135,-0.0709,-0.01929,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -6558,7 +6700,7 @@
 <MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
 <Freeze>False</Freeze>
 <FoodSource>False</FoodSource>
-<Radius Value="0.5" Scale="milli" Actual="0.0005"/>
+<Radius Value="0.25" Scale="milli" Actual="0.00025"/>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6644,7 +6786,7 @@
 </Transparencies>
 <IsVisible>True</IsVisible>
 <Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
-<Diffuse Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<Diffuse Red="1" Green="0" Blue="0" Alpha="1"/>
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
@@ -6701,7 +6843,7 @@
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>PeroneiViaTwo Foot LH_AnkleZ Ext</Name>
+<Name>PeroneiViaFour Foot LH_AnkleZ Ext</Name>
 <ID>266d96f2-624e-4e9a-adbd-c496236b2cb7</ID>
 <Description/>
 <Transparencies>
@@ -6718,16 +6860,16 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="2.98" Scale="milli" Actual="0.00298"/>
-<Y Value="-4.406" Scale="milli" Actual="-0.004406"/>
-<Z Value="11.5" Scale="micro" Actual="1.15e-005"/>
+<X Value="2.433" Scale="milli" Actual="0.002433"/>
+<Y Value="-3.706" Scale="milli" Actual="-0.003706"/>
+<Z Value="2.352" Scale="milli" Actual="0.002352"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.0298,-0.04406,0.000115,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.02433,-0.03706,0.02352,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -6770,7 +6912,7 @@
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>TibialisPostVia Foot LH_AnkleZ Ext</Name>
+<Name>TibialisPostViaTwo Foot LH_AnkleZ Ext</Name>
 <ID>2fc93427-b4d6-427b-be14-b1613ee0b197</ID>
 <Description/>
 <Transparencies>
@@ -6787,16 +6929,16 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-0.405" Scale="milli" Actual="-0.000405"/>
-<Y Value="-3.266" Scale="milli" Actual="-0.003266"/>
-<Z Value="-1.062" Scale="milli" Actual="-0.001062"/>
+<X Value="-1.159" Scale="milli" Actual="-0.001159"/>
+<Y Value="-3.222" Scale="milli" Actual="-0.003222"/>
+<Z Value="-0.103" Scale="milli" Actual="-0.000103"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.00405,-0.03266,-0.01062,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.01159,-0.03222,-0.00103,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -6834,7 +6976,7 @@
 <MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
 <Freeze>False</Freeze>
 <FoodSource>False</FoodSource>
-<Radius Value="0.5" Scale="milli" Actual="0.0005"/>
+<Radius Value="0.25" Scale="milli" Actual="0.00025"/>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6857,15 +6999,15 @@
 <Texture/>
 <LocalPosition>
 <X Value="20.581" Scale="milli" Actual="0.020581"/>
-<Y Value="-5.067" Scale="milli" Actual="-0.005067"/>
-<Z Value="-1.895" Scale="milli" Actual="-0.001895"/>
+<Y Value="-4.657" Scale="milli" Actual="-0.004657"/>
+<Z Value="1.023" Scale="milli" Actual="0.001023"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.20581,-0.05067,-0.01895,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.20581,-0.04657,0.01023,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -6903,12 +7045,81 @@
 <MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
 <Freeze>False</Freeze>
 <FoodSource>False</FoodSource>
-<Radius Value="0.5" Scale="milli" Actual="0.0005"/>
+<Radius Value="0.25" Scale="milli" Actual="0.00025"/>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>FlexorDigitorumLongusViaThree Foot LH_AnkleZ Ext</Name>
+<Name>FlexorDigitorumLongusViaTwo Foot LH_AnkleZ Ext</Name>
+<ID>411baffe-9c06-4cfb-9dde-883eb3b5086a</ID>
+<Description/>
+<Transparencies>
+<Graphics>0</Graphics>
+<Collisions>50</Collisions>
+<Joints>50</Joints>
+<RecFields>50</RecFields>
+<Simulation>0</Simulation>
+</Transparencies>
+<IsVisible>True</IsVisible>
+<Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
+<Diffuse Red="1" Green="0" Blue="0" Alpha="1"/>
+<Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
+<Shininess>64</Shininess>
+<Texture/>
+<LocalPosition>
+<X Value="-4.207" Scale="milli" Actual="-0.004207"/>
+<Y Value="-1.497" Scale="milli" Actual="-0.001497"/>
+<Z Value="-66.03" Scale="micro" Actual="-6.603e-005"/>
+</LocalPosition>
+<Rotation>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</Rotation>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.04207,-0.01497,-0.0006603,1</LocalMatrix>
+<DraggerSize Value="-1" Scale="None" Actual="-1"/>
+<Type>Attachment</Type>
+<PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
+<SynchWithRobot>False</SynchWithRobot>
+<SynchUpdateInterval Value="0" Scale="milli" Actual="0"/>
+<IsContactSensor>False</IsContactSensor>
+<IsCollisionObject>False</IsCollisionObject>
+<BuoyancyCenter>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</BuoyancyCenter>
+<BuoyancyScale>1</BuoyancyScale>
+<LinearDrag>
+<X Value="1" Scale="None" Actual="1"/>
+<Y Value="1" Scale="None" Actual="1"/>
+<Z Value="1" Scale="None" Actual="1"/>
+</LinearDrag>
+<AngularDrag>
+<X Value="50" Scale="milli" Actual="0.05"/>
+<Y Value="50" Scale="milli" Actual="0.05"/>
+<Z Value="50" Scale="milli" Actual="0.05"/>
+</AngularDrag>
+<MaxHydroForce Value="50" Scale="None" Actual="50"/>
+<MaxHydroTorque Value="20" Scale="None" Actual="20"/>
+<Magnus>0</Magnus>
+<EnableFluids>False</EnableFluids>
+<Density Value="1" Scale="None" Actual="1"/>
+<Mass Value="0" Scale="None" Actual="0"/>
+<COM>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</COM>
+<MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
+<Freeze>False</Freeze>
+<FoodSource>False</FoodSource>
+<Radius Value="0.25" Scale="milli" Actual="0.00025"/>
+<LatitudeSegments>20</LatitudeSegments>
+<LongtitudeSegments>20</LongtitudeSegments>
+</RigidBody>
+<RigidBody>
+<Name>FlexorDigitorumLongusViaFour Foot LH_AnkleZ Ext</Name>
 <ID>51c3934b-6b47-459a-b85c-fa918e66f03e</ID>
 <Description/>
 <Transparencies>
@@ -6920,7 +7131,7 @@
 </Transparencies>
 <IsVisible>True</IsVisible>
 <Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
-<Diffuse Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<Diffuse Red="1" Green="0" Blue="0" Alpha="1"/>
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
@@ -6935,6 +7146,75 @@
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
 <LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.02079,-0.04229,-0.00263,1</LocalMatrix>
+<DraggerSize Value="-1" Scale="None" Actual="-1"/>
+<Type>Attachment</Type>
+<PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
+<SynchWithRobot>False</SynchWithRobot>
+<SynchUpdateInterval Value="0" Scale="milli" Actual="0"/>
+<IsContactSensor>False</IsContactSensor>
+<IsCollisionObject>False</IsCollisionObject>
+<BuoyancyCenter>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</BuoyancyCenter>
+<BuoyancyScale>1</BuoyancyScale>
+<LinearDrag>
+<X Value="1" Scale="None" Actual="1"/>
+<Y Value="1" Scale="None" Actual="1"/>
+<Z Value="1" Scale="None" Actual="1"/>
+</LinearDrag>
+<AngularDrag>
+<X Value="50" Scale="milli" Actual="0.05"/>
+<Y Value="50" Scale="milli" Actual="0.05"/>
+<Z Value="50" Scale="milli" Actual="0.05"/>
+</AngularDrag>
+<MaxHydroForce Value="50" Scale="None" Actual="50"/>
+<MaxHydroTorque Value="20" Scale="None" Actual="20"/>
+<Magnus>0</Magnus>
+<EnableFluids>False</EnableFluids>
+<Density Value="1" Scale="None" Actual="1"/>
+<Mass Value="0" Scale="None" Actual="0"/>
+<COM>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</COM>
+<MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
+<Freeze>False</Freeze>
+<FoodSource>False</FoodSource>
+<Radius Value="0.25" Scale="milli" Actual="0.00025"/>
+<LatitudeSegments>20</LatitudeSegments>
+<LongtitudeSegments>20</LongtitudeSegments>
+</RigidBody>
+<RigidBody>
+<Name>FlexorHallucisLongusViaTwo Foot LH_AnkleZ Ext</Name>
+<ID>52a6093b-f37d-4e2e-9bec-88bf112a5809</ID>
+<Description/>
+<Transparencies>
+<Graphics>0</Graphics>
+<Collisions>50</Collisions>
+<Joints>50</Joints>
+<RecFields>50</RecFields>
+<Simulation>0</Simulation>
+</Transparencies>
+<IsVisible>True</IsVisible>
+<Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
+<Diffuse Red="1" Green="0" Blue="0" Alpha="1"/>
+<Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
+<Shininess>64</Shininess>
+<Texture/>
+<LocalPosition>
+<X Value="-3.882" Scale="milli" Actual="-0.003882"/>
+<Y Value="-1.681" Scale="milli" Actual="-0.001681"/>
+<Z Value="-0.496" Scale="milli" Actual="-0.000496"/>
+</LocalPosition>
+<Rotation>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</Rotation>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.03882,-0.01681,-0.00496,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -6996,14 +7276,152 @@
 <LocalPosition>
 <X Value="-3.09" Scale="milli" Actual="-0.00309"/>
 <Y Value="-2.356" Scale="milli" Actual="-0.002356"/>
-<Z Value="1.708" Scale="milli" Actual="0.001708"/>
+<Z Value="1.447" Scale="milli" Actual="0.001447"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.0309,-0.02356,0.01708,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.0309,-0.02356,0.01447,1</LocalMatrix>
+<DraggerSize Value="-1" Scale="None" Actual="-1"/>
+<Type>Attachment</Type>
+<PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
+<SynchWithRobot>False</SynchWithRobot>
+<SynchUpdateInterval Value="0" Scale="milli" Actual="0"/>
+<IsContactSensor>False</IsContactSensor>
+<IsCollisionObject>False</IsCollisionObject>
+<BuoyancyCenter>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</BuoyancyCenter>
+<BuoyancyScale>1</BuoyancyScale>
+<LinearDrag>
+<X Value="1" Scale="None" Actual="1"/>
+<Y Value="1" Scale="None" Actual="1"/>
+<Z Value="1" Scale="None" Actual="1"/>
+</LinearDrag>
+<AngularDrag>
+<X Value="50" Scale="milli" Actual="0.05"/>
+<Y Value="50" Scale="milli" Actual="0.05"/>
+<Z Value="50" Scale="milli" Actual="0.05"/>
+</AngularDrag>
+<MaxHydroForce Value="50" Scale="None" Actual="50"/>
+<MaxHydroTorque Value="20" Scale="None" Actual="20"/>
+<Magnus>0</Magnus>
+<EnableFluids>False</EnableFluids>
+<Density Value="1" Scale="None" Actual="1"/>
+<Mass Value="0" Scale="None" Actual="0"/>
+<COM>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</COM>
+<MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
+<Freeze>False</Freeze>
+<FoodSource>False</FoodSource>
+<Radius Value="0.25" Scale="milli" Actual="0.00025"/>
+<LatitudeSegments>20</LatitudeSegments>
+<LongtitudeSegments>20</LongtitudeSegments>
+</RigidBody>
+<RigidBody>
+<Name>TibialisAnteriorViaThree Foot LH_AnkleZ Flx</Name>
+<ID>775c5af8-24b4-493a-8f21-9c1a0f231f4c</ID>
+<Description/>
+<Transparencies>
+<Graphics>0</Graphics>
+<Collisions>50</Collisions>
+<Joints>50</Joints>
+<RecFields>50</RecFields>
+<Simulation>0</Simulation>
+</Transparencies>
+<IsVisible>True</IsVisible>
+<Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
+<Diffuse Red="0.752941" Green="0" Blue="0" Alpha="1"/>
+<Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
+<Shininess>64</Shininess>
+<Texture/>
+<LocalPosition>
+<X Value="4.773" Scale="milli" Actual="0.004773"/>
+<Y Value="-1.062" Scale="milli" Actual="-0.001062"/>
+<Z Value="-1.312" Scale="milli" Actual="-0.001312"/>
+</LocalPosition>
+<Rotation>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</Rotation>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.04773,-0.01062,-0.01312,1</LocalMatrix>
+<DraggerSize Value="-1" Scale="None" Actual="-1"/>
+<Type>Attachment</Type>
+<PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
+<SynchWithRobot>False</SynchWithRobot>
+<SynchUpdateInterval Value="0" Scale="milli" Actual="0"/>
+<IsContactSensor>False</IsContactSensor>
+<IsCollisionObject>False</IsCollisionObject>
+<BuoyancyCenter>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</BuoyancyCenter>
+<BuoyancyScale>1</BuoyancyScale>
+<LinearDrag>
+<X Value="1" Scale="None" Actual="1"/>
+<Y Value="1" Scale="None" Actual="1"/>
+<Z Value="1" Scale="None" Actual="1"/>
+</LinearDrag>
+<AngularDrag>
+<X Value="50" Scale="milli" Actual="0.05"/>
+<Y Value="50" Scale="milli" Actual="0.05"/>
+<Z Value="50" Scale="milli" Actual="0.05"/>
+</AngularDrag>
+<MaxHydroForce Value="50" Scale="None" Actual="50"/>
+<MaxHydroTorque Value="20" Scale="None" Actual="20"/>
+<Magnus>0</Magnus>
+<EnableFluids>False</EnableFluids>
+<Density Value="1" Scale="None" Actual="1"/>
+<Mass Value="0" Scale="None" Actual="0"/>
+<COM>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</COM>
+<MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
+<Freeze>False</Freeze>
+<FoodSource>False</FoodSource>
+<Radius Value="0.25" Scale="milli" Actual="0.00025"/>
+<LatitudeSegments>20</LatitudeSegments>
+<LongtitudeSegments>20</LongtitudeSegments>
+</RigidBody>
+<RigidBody>
+<Name>TibialisPostViaOne Foot LH_AnkleZ Ext</Name>
+<ID>85f56ae0-c17d-473b-88a0-4003c8dc04a1</ID>
+<Description/>
+<Transparencies>
+<Graphics>0</Graphics>
+<Collisions>50</Collisions>
+<Joints>50</Joints>
+<RecFields>50</RecFields>
+<Simulation>0</Simulation>
+</Transparencies>
+<IsVisible>True</IsVisible>
+<Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
+<Diffuse Red="0.752941" Green="0" Blue="0" Alpha="1"/>
+<Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
+<Shininess>64</Shininess>
+<Texture/>
+<LocalPosition>
+<X Value="-4.358" Scale="milli" Actual="-0.004358"/>
+<Y Value="-1.609" Scale="milli" Actual="-0.001609"/>
+<Z Value="-0.337" Scale="milli" Actual="-0.000337"/>
+</LocalPosition>
+<Rotation>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</Rotation>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.04358,-0.01609,-0.00337,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -7063,16 +7481,16 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="6.718" Scale="milli" Actual="0.006718"/>
-<Y Value="-5.445" Scale="milli" Actual="-0.005445"/>
-<Z Value="-51.369" Scale="micro" Actual="-5.1369e-005"/>
+<X Value="6.056" Scale="milli" Actual="0.006056"/>
+<Y Value="-4.665" Scale="milli" Actual="-0.004665"/>
+<Z Value="0.846" Scale="milli" Actual="0.000846"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.06718,-0.05445,-0.00051369,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.06056,-0.04665,0.00846,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -7110,12 +7528,12 @@
 <MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
 <Freeze>False</Freeze>
 <FoodSource>False</FoodSource>
-<Radius Value="0.5" Scale="milli" Actual="0.0005"/>
+<Radius Value="0.25" Scale="milli" Actual="0.00025"/>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>FlexorHallucisLongusViaThree Foot LH_AnkleZ Ext</Name>
+<Name>FlexorHallucisLongusViaFour Foot LH_AnkleZ Ext</Name>
 <ID>89b0223f-ffcf-4883-aea1-eb8755e79b9b</ID>
 <Description/>
 <Transparencies>
@@ -7127,7 +7545,7 @@
 </Transparencies>
 <IsVisible>True</IsVisible>
 <Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
-<Diffuse Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<Diffuse Red="1" Green="0" Blue="0" Alpha="1"/>
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
@@ -7184,7 +7602,7 @@
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>PlantarisViaTwo Foot LH_AnkleZ Ext</Name>
+<Name>PlantarisViaThree Foot LH_AnkleZ Ext</Name>
 <ID>a066a7b7-1482-4e86-950c-e6481511357c</ID>
 <Description/>
 <Transparencies>
@@ -7201,16 +7619,16 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-4.582" Scale="milli" Actual="-0.004582"/>
-<Y Value="0.581" Scale="milli" Actual="0.000581"/>
-<Z Value="0.505" Scale="milli" Actual="0.000505"/>
+<X Value="-4.157" Scale="milli" Actual="-0.004157"/>
+<Y Value="-1.334" Scale="milli" Actual="-0.001334"/>
+<Z Value="0.796" Scale="milli" Actual="0.000796"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.04582,0.00581,0.00505,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.04157,-0.01334,0.00796,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -7317,12 +7735,12 @@
 <MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
 <Freeze>False</Freeze>
 <FoodSource>False</FoodSource>
-<Radius Value="0.5" Scale="milli" Actual="0.0005"/>
+<Radius Value="0.25" Scale="milli" Actual="0.00025"/>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>FlexorDigitorumLongusViaTwo Foot LH_AnkleZ Ext</Name>
+<Name>FlexorDigitorumLongusViaThree Foot LH_AnkleZ Ext</Name>
 <ID>abe8a305-3f67-4396-a90d-7013b39035bc</ID>
 <Description/>
 <Transparencies>
@@ -7334,21 +7752,21 @@
 </Transparencies>
 <IsVisible>True</IsVisible>
 <Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
-<Diffuse Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<Diffuse Red="1" Green="0" Blue="0" Alpha="1"/>
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-1.328" Scale="milli" Actual="-0.001328"/>
-<Y Value="-3.328" Scale="milli" Actual="-0.003328"/>
-<Z Value="-0.359" Scale="milli" Actual="-0.000359"/>
+<X Value="-1.484" Scale="milli" Actual="-0.001484"/>
+<Y Value="-2.881" Scale="milli" Actual="-0.002881"/>
+<Z Value="0.159" Scale="milli" Actual="0.000159"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.01328,-0.03328,-0.00359,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.01484,-0.02881,0.00159,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -7403,7 +7821,7 @@
 </Transparencies>
 <IsVisible>True</IsVisible>
 <Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
-<Diffuse Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<Diffuse Red="1" Green="0" Blue="0" Alpha="1"/>
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
@@ -7460,7 +7878,7 @@
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>MedialGastrocnemiusViaTwo Foot LH_AnkleZ Ext</Name>
+<Name>MedialGastrocnemiusViaThree Foot LH_AnkleZ Ext</Name>
 <ID>afb88b6f-5ef0-4808-87db-cd475f805f46</ID>
 <Description/>
 <Transparencies>
@@ -7472,21 +7890,21 @@
 </Transparencies>
 <IsVisible>True</IsVisible>
 <Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
-<Diffuse Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<Diffuse Red="1" Green="0" Blue="0" Alpha="1"/>
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-4.572" Scale="milli" Actual="-0.004572"/>
-<Y Value="0.105" Scale="milli" Actual="0.000105"/>
-<Z Value="-0.612" Scale="milli" Actual="-0.000612"/>
+<X Value="-3.545" Scale="milli" Actual="-0.003545"/>
+<Y Value="-1.398" Scale="milli" Actual="-0.001398"/>
+<Z Value="-0.546" Scale="milli" Actual="-0.000546"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.04572,0.00105,-0.00612,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.03545,-0.01398,-0.00546,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -7615,16 +8033,16 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-4.582" Scale="milli" Actual="-0.004582"/>
-<Y Value="0.581" Scale="milli" Actual="0.000581"/>
-<Z Value="0.165" Scale="milli" Actual="0.000165"/>
+<X Value="-4.129" Scale="milli" Actual="-0.004129"/>
+<Y Value="-1.414" Scale="milli" Actual="-0.001414"/>
+<Z Value="0.39" Scale="milli" Actual="0.00039"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.04582,0.00581,0.00165,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.04129,-0.01414,0.0039,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -7679,7 +8097,7 @@
 </Transparencies>
 <IsVisible>True</IsVisible>
 <Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
-<Diffuse Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<Diffuse Red="1" Green="0" Blue="0" Alpha="1"/>
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
@@ -7753,16 +8171,16 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-4.703" Scale="milli" Actual="-0.004703"/>
-<Y Value="0.568" Scale="milli" Actual="0.000568"/>
-<Z Value="1.213" Scale="milli" Actual="0.001213"/>
+<X Value="-4.147" Scale="milli" Actual="-0.004147"/>
+<Y Value="-1.234" Scale="milli" Actual="-0.001234"/>
+<Z Value="1.309" Scale="milli" Actual="0.001309"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.04703,0.00568,0.01213,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.04147,-0.01234,0.01309,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -7878,7 +8296,7 @@
 </Scale>
 </RigidBody>
 <RigidBody>
-<Name>PeroneiViaTwo Foot LH_AnkleZ Ext</Name>
+<Name>PeroneiViaThree Foot LH_AnkleZ Ext</Name>
 <ID>f2a82a96-15d0-4b05-9792-c8f2ead5d63c</ID>
 <Description/>
 <Transparencies>
@@ -7895,16 +8313,16 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-1.821" Scale="milli" Actual="-0.001821"/>
-<Y Value="-2.527" Scale="milli" Actual="-0.002527"/>
-<Z Value="0.257" Scale="milli" Actual="0.000257"/>
+<X Value="-0.692" Scale="milli" Actual="-0.000692"/>
+<Y Value="-2.568" Scale="milli" Actual="-0.002568"/>
+<Z Value="2.037" Scale="milli" Actual="0.002037"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.01821,-0.02527,0.00257,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.00692,-0.02568,0.02037,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -8113,7 +8531,7 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-1.437" Scale="milli" Actual="-0.001437"/>
+<X Value="-1.716" Scale="milli" Actual="-0.001716"/>
 <Y Value="0.815" Scale="milli" Actual="0.000815"/>
 <Z Value="-2.518" Scale="milli" Actual="-0.002518"/>
 </LocalPosition>
@@ -8122,7 +8540,7 @@
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.01437,0.00815,-0.02518,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.01716,0.00815,-0.02518,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -8182,7 +8600,7 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="0.118" Scale="milli" Actual="0.000118"/>
+<X Value="-0.527" Scale="milli" Actual="-0.000527"/>
 <Y Value="-3.598" Scale="milli" Actual="-0.003598"/>
 <Z Value="-5" Scale="milli" Actual="-0.005"/>
 </LocalPosition>
@@ -8191,7 +8609,7 @@
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.00118,-0.03598,-0.05,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.00527,-0.03598,-0.05,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -8234,7 +8652,7 @@
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>TibialisAnteriorVia Tibia  LH_AnkleZ Flx</Name>
+<Name>TibialisAnteriorViaTwo Tibia  LH_AnkleZ Flx</Name>
 <ID>982c28d6-e198-44b3-8e87-250b27cdbcb0</ID>
 <Description/>
 <Transparencies>
@@ -8251,16 +8669,16 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-0.83" Scale="milli" Actual="-0.00083"/>
-<Y Value="-40.429" Scale="milli" Actual="-0.040429"/>
-<Z Value="-9.276" Scale="milli" Actual="-0.009276"/>
+<X Value="-1.431" Scale="milli" Actual="-0.001431"/>
+<Y Value="-39.204" Scale="milli" Actual="-0.039204"/>
+<Z Value="-9.245" Scale="milli" Actual="-0.009245"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.0083,-0.40429,-0.09276,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.01431,-0.39204,-0.09245,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -8298,7 +8716,145 @@
 <MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
 <Freeze>False</Freeze>
 <FoodSource>False</FoodSource>
-<Radius Value="0.5" Scale="milli" Actual="0.0005"/>
+<Radius Value="0.25" Scale="milli" Actual="0.00025"/>
+<LatitudeSegments>20</LatitudeSegments>
+<LongtitudeSegments>20</LongtitudeSegments>
+</RigidBody>
+<RigidBody>
+<Name>MedialGastrocnemiusViaTwo Tibia LH_AnkleZ Ext</Name>
+<ID>9899a99f-fb48-491c-a566-47cace9825bf</ID>
+<Description/>
+<Transparencies>
+<Graphics>0</Graphics>
+<Collisions>50</Collisions>
+<Joints>50</Joints>
+<RecFields>50</RecFields>
+<Simulation>0</Simulation>
+</Transparencies>
+<IsVisible>True</IsVisible>
+<Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
+<Diffuse Red="0.752941" Green="0" Blue="0.752941" Alpha="1"/>
+<Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
+<Shininess>64</Shininess>
+<Texture/>
+<LocalPosition>
+<X Value="-2.257" Scale="milli" Actual="-0.002257"/>
+<Y Value="-42.328" Scale="milli" Actual="-0.042328"/>
+<Z Value="-6.557" Scale="milli" Actual="-0.006557"/>
+</LocalPosition>
+<Rotation>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</Rotation>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.02257,-0.42328,-0.06557,1</LocalMatrix>
+<DraggerSize Value="-1" Scale="None" Actual="-1"/>
+<Type>Attachment</Type>
+<PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
+<SynchWithRobot>False</SynchWithRobot>
+<SynchUpdateInterval Value="0" Scale="milli" Actual="0"/>
+<IsContactSensor>False</IsContactSensor>
+<IsCollisionObject>False</IsCollisionObject>
+<BuoyancyCenter>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</BuoyancyCenter>
+<BuoyancyScale>1</BuoyancyScale>
+<LinearDrag>
+<X Value="1" Scale="None" Actual="1"/>
+<Y Value="1" Scale="None" Actual="1"/>
+<Z Value="1" Scale="None" Actual="1"/>
+</LinearDrag>
+<AngularDrag>
+<X Value="50" Scale="milli" Actual="0.05"/>
+<Y Value="50" Scale="milli" Actual="0.05"/>
+<Z Value="50" Scale="milli" Actual="0.05"/>
+</AngularDrag>
+<MaxHydroForce Value="50" Scale="None" Actual="50"/>
+<MaxHydroTorque Value="20" Scale="None" Actual="20"/>
+<Magnus>0</Magnus>
+<EnableFluids>False</EnableFluids>
+<Density Value="1" Scale="None" Actual="1"/>
+<Mass Value="0" Scale="None" Actual="0"/>
+<COM>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</COM>
+<MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
+<Freeze>False</Freeze>
+<FoodSource>False</FoodSource>
+<Radius Value="0.25" Scale="milli" Actual="0.00025"/>
+<LatitudeSegments>20</LatitudeSegments>
+<LongtitudeSegments>20</LongtitudeSegments>
+</RigidBody>
+<RigidBody>
+<Name>LateralGastrocnemiusViaTwo Tibia LH_AnkleZ Ext</Name>
+<ID>9bdc2573-06fd-4026-af6e-d535e9d8c218</ID>
+<Description/>
+<Transparencies>
+<Graphics>0</Graphics>
+<Collisions>50</Collisions>
+<Joints>50</Joints>
+<RecFields>50</RecFields>
+<Simulation>0</Simulation>
+</Transparencies>
+<IsVisible>True</IsVisible>
+<Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
+<Diffuse Red="0.752941" Green="0" Blue="0.752941" Alpha="1"/>
+<Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
+<Shininess>64</Shininess>
+<Texture/>
+<LocalPosition>
+<X Value="0.963" Scale="milli" Actual="0.000963"/>
+<Y Value="-41.618" Scale="milli" Actual="-0.041618"/>
+<Z Value="-6.197" Scale="milli" Actual="-0.006197"/>
+</LocalPosition>
+<Rotation>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</Rotation>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.00963,-0.41618,-0.06197,1</LocalMatrix>
+<DraggerSize Value="-1" Scale="None" Actual="-1"/>
+<Type>Attachment</Type>
+<PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
+<SynchWithRobot>False</SynchWithRobot>
+<SynchUpdateInterval Value="0" Scale="milli" Actual="0"/>
+<IsContactSensor>False</IsContactSensor>
+<IsCollisionObject>False</IsCollisionObject>
+<BuoyancyCenter>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</BuoyancyCenter>
+<BuoyancyScale>1</BuoyancyScale>
+<LinearDrag>
+<X Value="1" Scale="None" Actual="1"/>
+<Y Value="1" Scale="None" Actual="1"/>
+<Z Value="1" Scale="None" Actual="1"/>
+</LinearDrag>
+<AngularDrag>
+<X Value="50" Scale="milli" Actual="0.05"/>
+<Y Value="50" Scale="milli" Actual="0.05"/>
+<Z Value="50" Scale="milli" Actual="0.05"/>
+</AngularDrag>
+<MaxHydroForce Value="50" Scale="None" Actual="50"/>
+<MaxHydroTorque Value="20" Scale="None" Actual="20"/>
+<Magnus>0</Magnus>
+<EnableFluids>False</EnableFluids>
+<Density Value="1" Scale="None" Actual="1"/>
+<Mass Value="0" Scale="None" Actual="0"/>
+<COM>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</COM>
+<MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
+<Freeze>False</Freeze>
+<FoodSource>False</FoodSource>
+<Radius Value="0.25" Scale="milli" Actual="0.00025"/>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -8459,6 +9015,7 @@
 <Diffuse Red="1" Green="0" Blue="1" Alpha="1"/>
 <Attachments>
 <AttachID>f66dd162-4b03-4ccd-ab7d-dcdf6454ef46</AttachID>
+<AttachID>0c6fa134-3f79-49ed-8990-35e0a94dc04d</AttachID>
 <AttachID>d4991346-7cd6-4ea5-abfe-d560205e123d</AttachID>
 <AttachID>ad504c42-3448-4011-a6b3-46f09ba4df7f</AttachID>
 </Attachments>
@@ -8597,6 +9154,7 @@
 <Attachments>
 <AttachID>43baaf7c-7001-4774-b995-5d03c8f96a3e</AttachID>
 <AttachID>c202baf0-f1f3-49bb-8d29-8857ce66a887</AttachID>
+<AttachID>411baffe-9c06-4cfb-9dde-883eb3b5086a</AttachID>
 <AttachID>abe8a305-3f67-4396-a90d-7013b39035bc</AttachID>
 <AttachID>51c3934b-6b47-459a-b85c-fa918e66f03e</AttachID>
 <AttachID>00e6153c-bdde-4b67-9688-f6f06d59d04c</AttachID>
@@ -8665,16 +9223,16 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="0.415" Scale="milli" Actual="0.000415"/>
-<Y Value="-40.373" Scale="milli" Actual="-0.040373"/>
-<Z Value="-9" Scale="milli" Actual="-0.009"/>
+<X Value="0.622" Scale="milli" Actual="0.000622"/>
+<Y Value="-39.443" Scale="milli" Actual="-0.039443"/>
+<Z Value="-9.139" Scale="milli" Actual="-0.009139"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.00415,-0.40373,-0.09,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.00622,-0.39443,-0.09139,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -8712,7 +9270,7 @@
 <MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
 <Freeze>False</Freeze>
 <FoodSource>False</FoodSource>
-<Radius Value="0.5" Scale="milli" Actual="0.0005"/>
+<Radius Value="0.25" Scale="milli" Actual="0.00025"/>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -8734,7 +9292,7 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-1.419" Scale="milli" Actual="-0.001419"/>
+<X Value="-1.135" Scale="milli" Actual="-0.001135"/>
 <Y Value="-41.666" Scale="milli" Actual="-0.041666"/>
 <Z Value="-6.5" Scale="milli" Actual="-0.0065"/>
 </LocalPosition>
@@ -8743,7 +9301,7 @@
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.01419,-0.41666,-0.065,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.01135,-0.41666,-0.065,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -8781,7 +9339,7 @@
 <MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
 <Freeze>False</Freeze>
 <FoodSource>False</FoodSource>
-<Radius Value="0.5" Scale="milli" Actual="0.0005"/>
+<Radius Value="0.25" Scale="milli" Actual="0.00025"/>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -8803,16 +9361,16 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="2.046" Scale="milli" Actual="0.002046"/>
+<X Value="1.844" Scale="milli" Actual="0.001844"/>
 <Y Value="-10.149" Scale="milli" Actual="-0.010149"/>
-<Z Value="2.264" Scale="milli" Actual="0.002264"/>
+<Z Value="2.876" Scale="milli" Actual="0.002876"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.02046,-0.10149,0.02264,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.01844,-0.10149,0.02876,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -8872,16 +9430,16 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-0.65" Scale="milli" Actual="-0.00065"/>
-<Y Value="-0.104" Scale="milli" Actual="-0.000104"/>
-<Z Value="-4.042" Scale="milli" Actual="-0.004042"/>
+<X Value="-0.29" Scale="milli" Actual="-0.00029"/>
+<Y Value="0.756" Scale="milli" Actual="0.000756"/>
+<Z Value="-2.082" Scale="milli" Actual="-0.002082"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.0065,-0.00104,-0.04042,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.0029,0.00756,-0.02082,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -8993,6 +9551,75 @@
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
+<Name>PlantarisViaTwo Tibia LH_AnkleZ Ext</Name>
+<ID>eb5a872e-5ac8-4d79-a1c4-1af7d0d5ef83</ID>
+<Description/>
+<Transparencies>
+<Graphics>0</Graphics>
+<Collisions>50</Collisions>
+<Joints>50</Joints>
+<RecFields>50</RecFields>
+<Simulation>0</Simulation>
+</Transparencies>
+<IsVisible>True</IsVisible>
+<Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
+<Diffuse Red="0.752941" Green="0" Blue="0.752941" Alpha="1"/>
+<Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
+<Shininess>64</Shininess>
+<Texture/>
+<LocalPosition>
+<X Value="0.508" Scale="milli" Actual="0.000508"/>
+<Y Value="-41.618" Scale="milli" Actual="-0.041618"/>
+<Z Value="-6.197" Scale="milli" Actual="-0.006197"/>
+</LocalPosition>
+<Rotation>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</Rotation>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.00508,-0.41618,-0.06197,1</LocalMatrix>
+<DraggerSize Value="-1" Scale="None" Actual="-1"/>
+<Type>Attachment</Type>
+<PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
+<SynchWithRobot>False</SynchWithRobot>
+<SynchUpdateInterval Value="0" Scale="milli" Actual="0"/>
+<IsContactSensor>False</IsContactSensor>
+<IsCollisionObject>False</IsCollisionObject>
+<BuoyancyCenter>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</BuoyancyCenter>
+<BuoyancyScale>1</BuoyancyScale>
+<LinearDrag>
+<X Value="1" Scale="None" Actual="1"/>
+<Y Value="1" Scale="None" Actual="1"/>
+<Z Value="1" Scale="None" Actual="1"/>
+</LinearDrag>
+<AngularDrag>
+<X Value="50" Scale="milli" Actual="0.05"/>
+<Y Value="50" Scale="milli" Actual="0.05"/>
+<Z Value="50" Scale="milli" Actual="0.05"/>
+</AngularDrag>
+<MaxHydroForce Value="50" Scale="None" Actual="50"/>
+<MaxHydroTorque Value="20" Scale="None" Actual="20"/>
+<Magnus>0</Magnus>
+<EnableFluids>False</EnableFluids>
+<Density Value="1" Scale="None" Actual="1"/>
+<Mass Value="0" Scale="None" Actual="0"/>
+<COM>
+<X Value="0" Scale="None" Actual="0"/>
+<Y Value="0" Scale="None" Actual="0"/>
+<Z Value="0" Scale="None" Actual="0"/>
+</COM>
+<MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
+<Freeze>False</Freeze>
+<FoodSource>False</FoodSource>
+<Radius Value="0.25" Scale="milli" Actual="0.00025"/>
+<LatitudeSegments>20</LatitudeSegments>
+<LongtitudeSegments>20</LongtitudeSegments>
+</RigidBody>
+<RigidBody>
 <Name>BicepsFemorisPosteriorVia Tibia LH_Knee Ext</Name>
 <ID>f4ca9152-9dff-45f1-a2c5-12c599221a75</ID>
 <Description/>
@@ -9011,15 +9638,15 @@
 <Texture/>
 <LocalPosition>
 <X Value="0.864" Scale="milli" Actual="0.000864"/>
-<Y Value="-13.757" Scale="milli" Actual="-0.013757"/>
-<Z Value="1.866" Scale="milli" Actual="0.001866"/>
+<Y Value="-15.061" Scale="milli" Actual="-0.015061"/>
+<Z Value="2.014" Scale="milli" Actual="0.002014"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.00864,-0.13757,0.01866,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,0.00864,-0.15061,0.02014,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -9217,7 +9844,7 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-1.772" Scale="milli" Actual="-0.001772"/>
+<X Value="-1.554" Scale="milli" Actual="-0.001554"/>
 <Y Value="-42.19" Scale="milli" Actual="-0.04219"/>
 <Z Value="-6.45" Scale="milli" Actual="-0.00645"/>
 </LocalPosition>
@@ -9226,7 +9853,7 @@
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.01772,-0.4219,-0.0645,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.01554,-0.4219,-0.0645,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -9264,7 +9891,7 @@
 <MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
 <Freeze>False</Freeze>
 <FoodSource>False</FoodSource>
-<Radius Value="0.5" Scale="milli" Actual="0.0005"/>
+<Radius Value="0.25" Scale="milli" Actual="0.00025"/>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -9288,6 +9915,7 @@
 <Attachments>
 <AttachID>4f8ee650-619c-4365-9994-d7c675fe02f5</AttachID>
 <AttachID>fb8bf424-39b8-47ae-9273-f2995042bc15</AttachID>
+<AttachID>85f56ae0-c17d-473b-88a0-4003c8dc04a1</AttachID>
 <AttachID>2fc93427-b4d6-427b-be14-b1613ee0b197</AttachID>
 <AttachID>a9808242-9c41-438b-8846-3add8792c2a9</AttachID>
 </Attachments>
@@ -9436,8 +10064,8 @@
 <Diffuse Red="1" Green="0" Blue="1" Alpha="1"/>
 <Attachments>
 <AttachID>b4504fa6-46bf-4954-b787-2384658e634c</AttachID>
-<AttachID>cd1ca1c0-a17a-4db8-9185-2a17573ee348</AttachID>
 <AttachID>47455171-acf1-4f7c-b55c-db9e35135a42</AttachID>
+<AttachID>eb5a872e-5ac8-4d79-a1c4-1af7d0d5ef83</AttachID>
 <AttachID>a066a7b7-1482-4e86-950c-e6481511357c</AttachID>
 <AttachID>d680b12f-b8d0-4a04-b486-a79771fc0b7f</AttachID>
 </Attachments>
@@ -9570,7 +10198,7 @@
 <Simulation>0</Simulation>
 </Transparencies>
 <IsVisible>True</IsVisible>
-<Enabled>False</Enabled>
+<Enabled>True</Enabled>
 <Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
 <Diffuse Red="1" Green="0.501961" Blue="0" Alpha="1"/>
 <Attachments>
@@ -9856,6 +10484,7 @@
 <Attachments>
 <AttachID>bfda3e65-5737-4660-a7cc-47291dee5f3e</AttachID>
 <AttachID>0ffaf428-e533-43d3-82e0-8ca859542e97</AttachID>
+<AttachID>9bdc2573-06fd-4026-af6e-d535e9d8c218</AttachID>
 <AttachID>e26d6ff7-cec5-48ca-91f3-471273d3359f</AttachID>
 <AttachID>6cdb89b0-e2df-4f8b-8b5e-184529c90b7f</AttachID>
 </Attachments>
@@ -9993,7 +10622,7 @@
 <Texture/>
 <LocalPosition>
 <X Value="-12" Scale="milli" Actual="-0.012"/>
-<Y Value="-3.994" Scale="milli" Actual="-0.003994"/>
+<Y Value="-3.766" Scale="milli" Actual="-0.003766"/>
 <Z Value="28.916" Scale="milli" Actual="0.028916"/>
 </LocalPosition>
 <Rotation>
@@ -10001,7 +10630,7 @@
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.12,-0.03994,0.28916,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.12,-0.03766,0.28916,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -10130,16 +10759,16 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-8.886" Scale="milli" Actual="-0.008886"/>
-<Y Value="1.288" Scale="milli" Actual="0.001288"/>
-<Z Value="32.775" Scale="milli" Actual="0.032775"/>
+<X Value="-7.386" Scale="milli" Actual="-0.007386"/>
+<Y Value="36.067" Scale="micro" Actual="3.6067e-005"/>
+<Z Value="33.844" Scale="milli" Actual="0.033844"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.08886,0.01288,0.32775,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.07386,0.00036067,0.33844,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -10268,16 +10897,16 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-11.869" Scale="milli" Actual="-0.011869"/>
-<Y Value="0.4" Scale="milli" Actual="0.0004"/>
-<Z Value="31.364" Scale="milli" Actual="0.031364"/>
+<X Value="-12.538" Scale="milli" Actual="-0.012538"/>
+<Y Value="-0.655" Scale="milli" Actual="-0.000655"/>
+<Z Value="33.545" Scale="milli" Actual="0.033545"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.11869,0.004,0.31364,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.12538,-0.00655,0.33545,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -10337,7 +10966,7 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-5.559" Scale="milli" Actual="-0.005559"/>
+<X Value="-5.6" Scale="milli" Actual="-0.0056"/>
 <Y Value="-2.026" Scale="milli" Actual="-0.002026"/>
 <Z Value="32.495" Scale="milli" Actual="0.032495"/>
 </LocalPosition>
@@ -10346,76 +10975,7 @@
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.05559,-0.02026,0.32495,1</LocalMatrix>
-<DraggerSize Value="-1" Scale="None" Actual="-1"/>
-<Type>Attachment</Type>
-<PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
-<SynchWithRobot>False</SynchWithRobot>
-<SynchUpdateInterval Value="0" Scale="milli" Actual="0"/>
-<IsContactSensor>False</IsContactSensor>
-<IsCollisionObject>False</IsCollisionObject>
-<BuoyancyCenter>
-<X Value="0" Scale="None" Actual="0"/>
-<Y Value="0" Scale="None" Actual="0"/>
-<Z Value="0" Scale="None" Actual="0"/>
-</BuoyancyCenter>
-<BuoyancyScale>1</BuoyancyScale>
-<LinearDrag>
-<X Value="1" Scale="None" Actual="1"/>
-<Y Value="1" Scale="None" Actual="1"/>
-<Z Value="1" Scale="None" Actual="1"/>
-</LinearDrag>
-<AngularDrag>
-<X Value="50" Scale="milli" Actual="0.05"/>
-<Y Value="50" Scale="milli" Actual="0.05"/>
-<Z Value="50" Scale="milli" Actual="0.05"/>
-</AngularDrag>
-<MaxHydroForce Value="50" Scale="None" Actual="50"/>
-<MaxHydroTorque Value="20" Scale="None" Actual="20"/>
-<Magnus>0</Magnus>
-<EnableFluids>False</EnableFluids>
-<Density Value="1" Scale="None" Actual="1"/>
-<Mass Value="0" Scale="None" Actual="0"/>
-<COM>
-<X Value="0" Scale="None" Actual="0"/>
-<Y Value="0" Scale="None" Actual="0"/>
-<Z Value="0" Scale="None" Actual="0"/>
-</COM>
-<MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
-<Freeze>False</Freeze>
-<FoodSource>False</FoodSource>
-<Radius Value="0.5" Scale="milli" Actual="0.0005"/>
-<LatitudeSegments>20</LatitudeSegments>
-<LongtitudeSegments>20</LongtitudeSegments>
-</RigidBody>
-<RigidBody>
-<Name>PlantarisViaOne Femur LH_AnkleZ Ext</Name>
-<ID>cd1ca1c0-a17a-4db8-9185-2a17573ee348</ID>
-<Description/>
-<Transparencies>
-<Graphics>0</Graphics>
-<Collisions>50</Collisions>
-<Joints>50</Joints>
-<RecFields>50</RecFields>
-<Simulation>0</Simulation>
-</Transparencies>
-<IsVisible>True</IsVisible>
-<Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
-<Diffuse Red="0" Green="0.752941" Blue="0.752941" Alpha="1"/>
-<Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
-<Shininess>64</Shininess>
-<Texture/>
-<LocalPosition>
-<X Value="-11.512" Scale="milli" Actual="-0.011512"/>
-<Y Value="-6.581" Scale="milli" Actual="-0.006581"/>
-<Z Value="30.147" Scale="milli" Actual="0.030147"/>
-</LocalPosition>
-<Rotation>
-<X Value="0" Scale="None" Actual="0"/>
-<Y Value="0" Scale="None" Actual="0"/>
-<Z Value="0" Scale="None" Actual="0"/>
-</Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.11512,-0.06581,0.30147,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.056,-0.02026,0.32495,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -12468,11 +13028,11 @@
 <NervousSystem>
 <NeuralModules>
 <Node>
-<ID>C60QN5J-module</ID>
+<ID>B35WYXL-module</ID>
 <AssemblyFile>IntegrateFireGUI.dll</AssemblyFile>
 <ClassName>IntegrateFireGUI.DataObjects.Behavior.NeuralModule</ClassName>
 <TimeStep Value="0.54" Scale="milli" Actual="0.00054"/>
-<ID>C60QN5J-module</ID>
+<ID>B35WYXL-module</ID>
 <AHPEquilibriumPotential Value="-70" Scale="milli" Actual="-0.07"/>
 <SpikePeak Value="0" Scale="milli" Actual="0"/>
 <SpikeStrength>1</SpikeStrength>
@@ -12691,7 +13251,7 @@
 <Node>
 <AssemblyFile>AnimatGUI.dll</AssemblyFile>
 <ClassName>AnimatGUI.DataObjects.Behavior.Nodes.Subsystem</ClassName>
-<ID>C60QN5J-ID</ID>
+<ID>B35WYXL-ID</ID>
 <Alignment>CenterMiddle</Alignment>
 <AutoSize>None</AutoSize>
 <BackMode>Transparent</BackMode>
@@ -12717,7 +13277,7 @@
 <Shape>Rectangle</Shape>
 <ShapeOrientation>Angle0</ShapeOrientation>
 <Size Width="40" Height="40"/>
-<Text>C60QN5J</Text>
+<Text>B35WYXL</Text>
 <TextColor>-16777216</TextColor>
 <TextMargin Width="0" Height="0"/>
 <ToolTip/>
@@ -23950,10 +24510,10 @@
 </Links>
 <DiagramXml><![CDATA[<Root>
 <Diagram>
-<ID>C60QN5J-cdata</ID>
+<ID>B35WYXL-cdata</ID>
 <AssemblyFile>LicensedAnimatGUI.dll</AssemblyFile>
 <ClassName>LicensedAnimatGUI.Forms.Behavior.AddFlowDiagram</ClassName>
-<PageName>C60QN5J</PageName>
+<PageName>B35WYXL</PageName>
 <ZoomX>1</ZoomX>
 <ZoomY>1</ZoomY>
 <BackColor Red="1" Green="1" Blue="1" Alpha="1"/>
@@ -26438,6 +26998,13 @@
 </Environment>
 <ToolViewers>
 <ToolHolder>
+<ID>dt-KeyMuscleLen-ID</ID>
+<Name>KeyMuscleLen</Name>
+<BaseAssemblyFile>LicensedAnimatGUI.dll</BaseAssemblyFile>
+<BaseClassName>LicensedAnimatGUI.Forms.Charts.LineChart</BaseClassName>
+<ToolFormID>dt-KeyMuscleLen-tfID</ToolFormID>
+</ToolHolder>
+<ToolHolder>
 <ID>dt-KeyMuscAct-ID</ID>
 <Name>KeyMuscAct</Name>
 <BaseAssemblyFile>LicensedAnimatGUI.dll</BaseAssemblyFile>
@@ -26459,13 +27026,6 @@
 <ToolFormID>dt-KeyMuscAl-tfID</ToolFormID>
 </ToolHolder>
 <ToolHolder>
-<ID>05cf2c0d-3c28-44b1-ae86-c58f4e717d5c</ID>
-<Name>JointMotion</Name>
-<BaseAssemblyFile>LicensedAnimatGUI.dll</BaseAssemblyFile>
-<BaseClassName>LicensedAnimatGUI.Forms.Charts.LineChart</BaseClassName>
-<ToolFormID>1b1bb75a-f9ae-4839-8124-5172f1dbddcf</ToolFormID>
-</ToolHolder>
-<ToolHolder>
 <ID>dt-KeyMuscTen-ID</ID>
 <Name>KeyMuscTen</Name>
 <BaseAssemblyFile>LicensedAnimatGUI.dll</BaseAssemblyFile>
@@ -26480,11 +27040,11 @@
 <ToolFormID>dt-KeyMNs-tfID</ToolFormID>
 </ToolHolder>
 <ToolHolder>
-<ID>dt-KeyMuscleLen-ID</ID>
-<Name>KeyMuscleLen</Name>
+<ID>05cf2c0d-3c28-44b1-ae86-c58f4e717d5c</ID>
+<Name>JointMotion</Name>
 <BaseAssemblyFile>LicensedAnimatGUI.dll</BaseAssemblyFile>
 <BaseClassName>LicensedAnimatGUI.Forms.Charts.LineChart</BaseClassName>
-<ToolFormID>dt-KeyMuscleLen-tfID</ToolFormID>
+<ToolFormID>1b1bb75a-f9ae-4839-8124-5172f1dbddcf</ToolFormID>
 </ToolHolder>
 </ToolViewers>
 <Stimuli>
@@ -26692,7 +27252,7 @@
 <AlwaysActive>True</AlwaysActive>
 <Enabled>False</Enabled>
 <ValueType>Equation</ValueType>
-<Equation>-.25+.45*sin(t)</Equation>
+<Equation>-.25+.85*sin(t)</Equation>
 <StructureID>e40d2c4f-9c31-49f8-8a5c-5688fb768225</StructureID>
 <PartID>b2919ff8-3efa-4549-97b4-a4bc77ad6e0a</PartID>
 <Velocity Value="0" Scale="None" Actual="0"/>
@@ -26728,13 +27288,13 @@
 <StartTime Value="1.49" Scale="None" Actual="1.49"/>
 <EndTime Value="1.75" Scale="None" Actual="1.75"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
-<AlwaysActive>False</AlwaysActive>
+<AlwaysActive>True</AlwaysActive>
 <Enabled>False</Enabled>
 <ValueType>Constant</ValueType>
 <Equation>0</Equation>
 <StructureID>e40d2c4f-9c31-49f8-8a5c-5688fb768225</StructureID>
 <PartID>c7df3511-7e4c-411e-be1f-1b71ff30c530</PartID>
-<Velocity Value="0.35311" Scale="None" Actual="0.35311"/>
+<Velocity Value="0.6" Scale="None" Actual="0.6"/>
 <DisableMotorWhenDone>True</DisableMotorWhenDone>
 </Stimulus>
 <Stimulus>
@@ -26850,10 +27410,10 @@
 <StartTime Value="0" Scale="None" Actual="0"/>
 <EndTime Value="3.33" Scale="None" Actual="3.33"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
-<AlwaysActive>False</AlwaysActive>
+<AlwaysActive>True</AlwaysActive>
 <Enabled>False</Enabled>
 <ValueType>Equation</ValueType>
-<Equation>-.55+1.15*sin(4*t)</Equation>
+<Equation>-.55+1.15*sin(t)</Equation>
 <StructureID>e40d2c4f-9c31-49f8-8a5c-5688fb768225</StructureID>
 <PartID>c7df3511-7e4c-411e-be1f-1b71ff30c530</PartID>
 <Velocity Value="0" Scale="None" Actual="0"/>
@@ -27077,6 +27637,28 @@
 <Stimulus>
 <AssemblyFile>AnimatGUI.dll</AssemblyFile>
 <ClassName>AnimatGUI.DataObjects.ExternalStimuli.TonicCurrent</ClassName>
+<Name>stTC1-neur37</Name>
+<ID>stTC1-neur37-ID</ID>
+<StartTime Value="0" Scale="None" Actual="0"/>
+<EndTime Value="10" Scale="None" Actual="10"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>False</Enabled>
+<ValueType>Constant</ValueType>
+<Equation>8.9437*sin(0*t+1.5708)</Equation>
+<OrganismID>e40d2c4f-9c31-49f8-8a5c-5688fb768225</OrganismID>
+<NodeID>neur37-ID</NodeID>
+<CurrentOn Value="0" Scale="nano" Actual="0"/>
+<CurrentOff Value="0" Scale="nano" Actual="0"/>
+<CurrentBurstOff Value="0" Scale="nano" Actual="0"/>
+<CycleOnDuration Value="10" Scale="None" Actual="10"/>
+<CycleOffDuration Value="0" Scale="None" Actual="0"/>
+<BurstOnDuration Value="10" Scale="None" Actual="10"/>
+<BurstOffDuration Value="0" Scale="None" Actual="0"/>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>AnimatGUI.dll</AssemblyFile>
+<ClassName>AnimatGUI.DataObjects.ExternalStimuli.TonicCurrent</ClassName>
 <Name>stTC1-neur10</Name>
 <ID>stTC1-neur10-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
@@ -27134,28 +27716,6 @@
 <PartID>b2919ff8-3efa-4549-97b4-a4bc77ad6e0a</PartID>
 <Velocity Value="0" Scale="None" Actual="0"/>
 <DisableMotorWhenDone>False</DisableMotorWhenDone>
-</Stimulus>
-<Stimulus>
-<AssemblyFile>AnimatGUI.dll</AssemblyFile>
-<ClassName>AnimatGUI.DataObjects.ExternalStimuli.TonicCurrent</ClassName>
-<Name>stTC1-neur2</Name>
-<ID>stTC1-neur2-ID</ID>
-<StartTime Value="3.21" Scale="None" Actual="3.21"/>
-<EndTime Value="3.71" Scale="None" Actual="3.71"/>
-<StepInterval Value="0" Scale="milli" Actual="0"/>
-<AlwaysActive>False</AlwaysActive>
-<Enabled>False</Enabled>
-<ValueType>Constant</ValueType>
-<Equation>0.81608*sin(0*t+1.5708)</Equation>
-<OrganismID>e40d2c4f-9c31-49f8-8a5c-5688fb768225</OrganismID>
-<NodeID>neur2-ID</NodeID>
-<CurrentOn Value="20" Scale="nano" Actual="2e-008"/>
-<CurrentOff Value="0" Scale="nano" Actual="0"/>
-<CurrentBurstOff Value="0" Scale="nano" Actual="0"/>
-<CycleOnDuration Value="50" Scale="centi" Actual="0.5"/>
-<CycleOffDuration Value="0" Scale="None" Actual="0"/>
-<BurstOnDuration Value="50" Scale="centi" Actual="0.5"/>
-<BurstOffDuration Value="0" Scale="None" Actual="0"/>
 </Stimulus>
 <Stimulus>
 <AssemblyFile>AnimatGUI.dll</AssemblyFile>
@@ -27226,13 +27786,13 @@
 <StartTime Value="1.49" Scale="None" Actual="1.49"/>
 <EndTime Value="1.75" Scale="None" Actual="1.75"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
-<AlwaysActive>False</AlwaysActive>
+<AlwaysActive>True</AlwaysActive>
 <Enabled>False</Enabled>
 <ValueType>Constant</ValueType>
 <Equation>0</Equation>
 <StructureID>e40d2c4f-9c31-49f8-8a5c-5688fb768225</StructureID>
 <PartID>55af1c5f-e200-4870-b3fa-0501ab0b22dd</PartID>
-<Velocity Value="0.19934" Scale="None" Actual="0.19934"/>
+<Velocity Value="0.5" Scale="None" Actual="0.5"/>
 <DisableMotorWhenDone>True</DisableMotorWhenDone>
 </Stimulus>
 <Stimulus>
@@ -27304,23 +27864,23 @@
 <Stimulus>
 <AssemblyFile>AnimatGUI.dll</AssemblyFile>
 <ClassName>AnimatGUI.DataObjects.ExternalStimuli.TonicCurrent</ClassName>
-<Name>stTC1-neur37</Name>
-<ID>stTC1-neur37-ID</ID>
-<StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10" Scale="None" Actual="10"/>
+<Name>stTC1-neur2</Name>
+<ID>stTC1-neur2-ID</ID>
+<StartTime Value="3.21" Scale="None" Actual="3.21"/>
+<EndTime Value="3.71" Scale="None" Actual="3.71"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>False</Enabled>
 <ValueType>Constant</ValueType>
-<Equation>8.9437*sin(0*t+1.5708)</Equation>
+<Equation>0.81608*sin(0*t+1.5708)</Equation>
 <OrganismID>e40d2c4f-9c31-49f8-8a5c-5688fb768225</OrganismID>
-<NodeID>neur37-ID</NodeID>
-<CurrentOn Value="0" Scale="nano" Actual="0"/>
+<NodeID>neur2-ID</NodeID>
+<CurrentOn Value="20" Scale="nano" Actual="2e-008"/>
 <CurrentOff Value="0" Scale="nano" Actual="0"/>
 <CurrentBurstOff Value="0" Scale="nano" Actual="0"/>
-<CycleOnDuration Value="10" Scale="None" Actual="10"/>
+<CycleOnDuration Value="50" Scale="centi" Actual="0.5"/>
 <CycleOffDuration Value="0" Scale="None" Actual="0"/>
-<BurstOnDuration Value="10" Scale="None" Actual="10"/>
+<BurstOnDuration Value="50" Scale="centi" Actual="0.5"/>
 <BurstOffDuration Value="0" Scale="None" Actual="0"/>
 </Stimulus>
 <Stimulus>
@@ -27483,7 +28043,7 @@
 <Name>stDC1-neur1</Name>
 <ID>stDC1-neur1-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27502,7 +28062,7 @@
 <Name>stDC1-neur2</Name>
 <ID>stDC1-neur2-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27521,7 +28081,7 @@
 <Name>stDC1-neur3</Name>
 <ID>stDC1-neur3-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27540,7 +28100,7 @@
 <Name>stDC1-neur4</Name>
 <ID>stDC1-neur4-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27559,7 +28119,7 @@
 <Name>stDC1-neur5</Name>
 <ID>stDC1-neur5-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27578,7 +28138,7 @@
 <Name>stDC1-neur6</Name>
 <ID>stDC1-neur6-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27597,7 +28157,7 @@
 <Name>stDC1-neur7</Name>
 <ID>stDC1-neur7-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27616,7 +28176,7 @@
 <Name>stDC1-neur8</Name>
 <ID>stDC1-neur8-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27635,7 +28195,7 @@
 <Name>stDC1-neur9</Name>
 <ID>stDC1-neur9-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27654,7 +28214,7 @@
 <Name>stDC1-neur10</Name>
 <ID>stDC1-neur10-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27673,7 +28233,7 @@
 <Name>stDC1-neur11</Name>
 <ID>stDC1-neur11-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27692,7 +28252,7 @@
 <Name>stDC1-neur12</Name>
 <ID>stDC1-neur12-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27711,7 +28271,7 @@
 <Name>stDC1-neur13</Name>
 <ID>stDC1-neur13-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27730,7 +28290,7 @@
 <Name>stDC1-neur14</Name>
 <ID>stDC1-neur14-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27749,7 +28309,7 @@
 <Name>stDC1-neur15</Name>
 <ID>stDC1-neur15-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27768,7 +28328,7 @@
 <Name>stDC1-neur16</Name>
 <ID>stDC1-neur16-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27787,7 +28347,7 @@
 <Name>stDC1-neur17</Name>
 <ID>stDC1-neur17-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27806,7 +28366,7 @@
 <Name>stDC1-neur18</Name>
 <ID>stDC1-neur18-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27825,7 +28385,7 @@
 <Name>stDC1-neur19</Name>
 <ID>stDC1-neur19-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27844,7 +28404,7 @@
 <Name>stDC1-neur20</Name>
 <ID>stDC1-neur20-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27863,7 +28423,7 @@
 <Name>stDC1-neur21</Name>
 <ID>stDC1-neur21-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27882,7 +28442,7 @@
 <Name>stDC1-neur22</Name>
 <ID>stDC1-neur22-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27901,7 +28461,7 @@
 <Name>stDC1-neur23</Name>
 <ID>stDC1-neur23-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27920,7 +28480,7 @@
 <Name>stDC1-neur24</Name>
 <ID>stDC1-neur24-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27939,7 +28499,7 @@
 <Name>stDC1-neur25</Name>
 <ID>stDC1-neur25-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27958,7 +28518,7 @@
 <Name>stDC1-neur26</Name>
 <ID>stDC1-neur26-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27977,7 +28537,7 @@
 <Name>stDC1-neur27</Name>
 <ID>stDC1-neur27-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -27996,7 +28556,7 @@
 <Name>stDC1-neur28</Name>
 <ID>stDC1-neur28-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -28015,7 +28575,7 @@
 <Name>stDC1-neur29</Name>
 <ID>stDC1-neur29-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -28034,7 +28594,7 @@
 <Name>stDC1-neur30</Name>
 <ID>stDC1-neur30-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -28053,7 +28613,7 @@
 <Name>stDC1-neur31</Name>
 <ID>stDC1-neur31-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -28072,7 +28632,7 @@
 <Name>stDC1-neur32</Name>
 <ID>stDC1-neur32-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -28091,7 +28651,7 @@
 <Name>stDC1-neur33</Name>
 <ID>stDC1-neur33-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -28110,7 +28670,7 @@
 <Name>stDC1-neur34</Name>
 <ID>stDC1-neur34-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -28129,7 +28689,7 @@
 <Name>stDC1-neur35</Name>
 <ID>stDC1-neur35-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -28148,7 +28708,7 @@
 <Name>stDC1-neur36</Name>
 <ID>stDC1-neur36-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -28167,7 +28727,7 @@
 <Name>stDC1-neur37</Name>
 <ID>stDC1-neur37-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -28186,7 +28746,7 @@
 <Name>stDC1-neur38</Name>
 <ID>stDC1-neur38-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10.0051" Scale="None" Actual="10.0051"/>
+<EndTime Value="9.9889" Scale="None" Actual="9.9889"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>True</Enabled>
@@ -28202,8 +28762,8 @@
 </Stimuli>
 <HudItems>
 <HudItem>
-<Name>067f4758-c618-475a-902b-c840d65c2f03</Name>
-<ID>067f4758-c618-475a-902b-c840d65c2f03</ID>
+<Name>c6ddbbda-3afe-4fcc-bd02-db4853608fa9</Name>
+<ID>c6ddbbda-3afe-4fcc-bd02-db4853608fa9</ID>
 <Type>HudText</Type>
 <CharSize>30</CharSize>
 <Text>Time: %3.3f</Text>
@@ -28289,9 +28849,9 @@
 <AutomaticTimeScale>True</AutomaticTimeScale>
 <DivisionMarkFactor>4</DivisionMarkFactor>
 <Divisions>10</Divisions>
-<MajorInterval>1</MajorInterval>
+<MajorInterval>500</MajorInterval>
 <MiddleMarkFactor>3</MiddleMarkFactor>
-<TimeScale>Seconds</TimeScale>
+<TimeScale>MilliSeconds</TimeScale>
 </Form>
 <Form>
 <ID>1b017d76-832a-49f4-b2ac-cbe969fb62f2</ID>
@@ -28316,7 +28876,7 @@
 <DockingConfig>&lt;?xml version="1.0" encoding="us-ascii"?&gt;
 &lt;!-- DotNetMagic, The User Interface library for .NET (www.crownwood.net) --&gt;
 &lt;!-- Modifying this generated file will probably render it invalid --&gt;
-&lt;DockingConfig FormatVersion="10" InsideFill="False" InnerMinimum="20, 20" SavedAt="11/10/2020 16:09:10"&gt;
+&lt;DockingConfig FormatVersion="10" InsideFill="False" InnerMinimum="20, 20" SavedAt="11/12/2020 11:59:29"&gt;
   &lt;Content Name="Playback Control" Visible="False" Docked="True" AutoHidden="False" CaptionBar="True" CloseButton="False" DisplaySize="150, 150" DisplayLocation="150, 150" AutoHideSize="150, 150" FloatingSize="150, 150" FullTitle="Playback Control" Office2003BackColor="Base" UniqueName="" Office2007BackColor="Base" MediaPlayerBackColor="Base"&gt;
     &lt;DefaultRestore Type="Crownwood.DotNetMagic.Docking.RestoreContentState"&gt;
       &lt;Content Name="Playback Control" UniqueName="" /&gt;
@@ -28424,7 +28984,7 @@
       &lt;Child Type="null" /&gt;
     &lt;/FloatingRestore&gt;
   &lt;/Content&gt;
-  &lt;Content Name="Workspace" Visible="True" Docked="True" AutoHidden="False" CaptionBar="True" CloseButton="False" DisplaySize="343, 150" DisplayLocation="150, 150" AutoHideSize="200, 150" FloatingSize="150, 150" FullTitle="Workspace" Office2003BackColor="Base" UniqueName="" Office2007BackColor="Base" MediaPlayerBackColor="Base"&gt;
+  &lt;Content Name="Workspace" Visible="True" Docked="True" AutoHidden="False" CaptionBar="True" CloseButton="False" DisplaySize="328, 150" DisplayLocation="150, 150" AutoHideSize="200, 150" FloatingSize="150, 150" FullTitle="Workspace" Office2003BackColor="Base" UniqueName="" Office2007BackColor="Base" MediaPlayerBackColor="Base"&gt;
     &lt;DefaultRestore Type="Crownwood.DotNetMagic.Docking.RestoreContentState"&gt;
       &lt;Content Name="Workspace" UniqueName="" /&gt;
       &lt;State Value="DockLeft" /&gt;
@@ -28438,7 +28998,7 @@
     &lt;DockingRestore Type="Crownwood.DotNetMagic.Docking.RestoreContentDockingAffinity"&gt;
       &lt;Content Name="Workspace" UniqueName="" /&gt;
       &lt;State Value="DockLeft" /&gt;
-      &lt;Position Size="343, 150" Location="150, 150" /&gt;
+      &lt;Position Size="328, 150" Location="150, 150" /&gt;
       &lt;Best Count="1"&gt;
         &lt;Item Name="Workspace" /&gt;
       &lt;/Best&gt;
@@ -28471,7 +29031,7 @@
       &lt;Child Type="null" /&gt;
     &lt;/FloatingRestore&gt;
   &lt;/Content&gt;
-  &lt;Content Name="Properties" Visible="True" Docked="True" AutoHidden="False" CaptionBar="True" CloseButton="False" DisplaySize="324, 150" DisplayLocation="150, 150" AutoHideSize="200, 150" FloatingSize="150, 150" FullTitle="Properties" Office2003BackColor="Base" UniqueName="" Office2007BackColor="Base" MediaPlayerBackColor="Base"&gt;
+  &lt;Content Name="Properties" Visible="True" Docked="True" AutoHidden="False" CaptionBar="True" CloseButton="False" DisplaySize="307, 150" DisplayLocation="150, 150" AutoHideSize="200, 150" FloatingSize="150, 150" FullTitle="Properties" Office2003BackColor="Base" UniqueName="" Office2007BackColor="Base" MediaPlayerBackColor="Base"&gt;
     &lt;DefaultRestore Type="Crownwood.DotNetMagic.Docking.RestoreContentState"&gt;
       &lt;Content Name="Properties" UniqueName="" /&gt;
       &lt;State Value="DockLeft" /&gt;
@@ -28485,7 +29045,7 @@
     &lt;DockingRestore Type="Crownwood.DotNetMagic.Docking.RestoreContentDockingAffinity"&gt;
       &lt;Content Name="Properties" UniqueName="" /&gt;
       &lt;State Value="DockRight" /&gt;
-      &lt;Position Size="324, 150" Location="150, 150" /&gt;
+      &lt;Position Size="307, 150" Location="150, 150" /&gt;
       &lt;Best Count="1"&gt;
         &lt;Item Name="Properties" /&gt;
       &lt;/Best&gt;
@@ -28812,7 +29372,7 @@
   &lt;CustomGlobalData /&gt;
   &lt;Sequence Count="1" Unique="0" Space="100" Direction="Horizontal"&gt;
 &lt;Leaf Count="9" Unique="7" Space="100"&gt;
-      &lt;Page Title="Sim Window" ImageList="True" ImageIndex="0" Selected="False" Control="null" UniqueName=""&gt;
+      &lt;Page Title="Sim Window" ImageList="True" ImageIndex="0" Selected="True" Control="null" UniqueName=""&gt;
         &lt;CustomPageData&gt;&lt;![CDATA[&lt;TabPage&gt;
 &lt;Form&gt;
 &lt;ID&gt;b1c3eb6f-fc15-4560-8750-275c275ef964&lt;/ID&gt;
@@ -28825,16 +29385,16 @@
 &lt;/TabPage&gt;
 ]]&gt;&lt;/CustomPageData&gt;
       &lt;/Page&gt;
-      &lt;Page Title="C60QN5J" ImageList="True" ImageIndex="1" Selected="True" Control="null" UniqueName=""&gt;
+      &lt;Page Title="B35WYXL" ImageList="True" ImageIndex="1" Selected="True" Control="null" UniqueName=""&gt;
         &lt;CustomPageData&gt;&lt;![CDATA[&lt;TabPage&gt;
 &lt;Form&gt;
-&lt;ID&gt;C60QN5J-cdata&lt;/ID&gt;
-&lt;Title&gt;C60QN5J&lt;/Title&gt;
-&lt;TabPageName&gt;C60QN5J&lt;/TabPageName&gt;
+&lt;ID&gt;B35WYXL-cdata&lt;/ID&gt;
+&lt;Title&gt;B35WYXL&lt;/Title&gt;
+&lt;TabPageName&gt;B35WYXL&lt;/TabPageName&gt;
 &lt;AssemblyFile&gt;LicensedAnimatGUI.dll&lt;/AssemblyFile&gt;
 &lt;ClassName&gt;LicensedAnimatGUI.Forms.Behavior.AddFlowDiagram&lt;/ClassName&gt;
 &lt;OrganismID&gt;e40d2c4f-9c31-49f8-8a5c-5688fb768225&lt;/OrganismID&gt;
-&lt;SubSystemID&gt;C60QN5J-ID&lt;/SubSystemID&gt;
+&lt;SubSystemID&gt;B35WYXL-ID&lt;/SubSystemID&gt;
 &lt;/Form&gt;
 &lt;/TabPage&gt;
 ]]&gt;&lt;/CustomPageData&gt;
@@ -28904,7 +29464,7 @@
 &lt;/TabPage&gt;
 ]]&gt;&lt;/CustomPageData&gt;
 &lt;/Page&gt;
-      &lt;Page Title="JointMotion" ImageList="True" ImageIndex="2" Selected="True" Control="null" UniqueName=""&gt;
+      &lt;Page Title="JointMotion" ImageList="True" ImageIndex="2" Selected="False" Control="null" UniqueName=""&gt;
         &lt;CustomPageData&gt;&lt;![CDATA[&lt;TabPage&gt;
 &lt;Form&gt;
 &lt;ID&gt;1b1bb75a-f9ae-4839-8124-5172f1dbddcf&lt;/ID&gt;

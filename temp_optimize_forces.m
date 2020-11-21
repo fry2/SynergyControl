@@ -14,10 +14,10 @@ simPath = 'G:\My Drive\Rat\SynergyControl\Animatlab\SynergyWalking\SynergyContro
 %         fileID = fopen(simPath,'w');
 %         fprintf(fileID,'%s\n',simfile{:});
 %         fclose(fileID);
-%%
+%% Create the FullLeg object and run the force optimization
 obj = design_synergy(simPath);
 results_cell = pedotti_optimization(obj);
-%%
+%% Generate a force-driven project
 fa = results_cell{3,2}';
 [nsys] = indivProjectBuilder(projPath,simPath,results_cell{2,2}',obj);
 sim_file_revised = strcat(simPath(1:end-5),'_fake.asim');
@@ -53,7 +53,7 @@ titlesize = 15; axsize = 12; legsize = 12;
 subplot(4,1,1)
     plot(time,shifted_jm,'LineWidth',3)
     for ii = 1:length(xliner)
-        xline(xliner(ii))
+        xline(time(xliner(ii)))
     end
     title('Desired Joint Motion','FontSize',titlesize)
     ylim(jointLims)

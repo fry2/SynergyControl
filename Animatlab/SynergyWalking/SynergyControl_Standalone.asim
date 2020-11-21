@@ -7,7 +7,7 @@
 <SetSimEnd>True</SetSimEnd>
 <APIFile/>
 <SimEndTime>10.01</SimEndTime>
-<PlaybackControlMode>0</PlaybackControlMode>
+<PlaybackControlMode>1</PlaybackControlMode>
 <PresetPlaybackTimeStep>0.003</PresetPlaybackTimeStep>
 <Environment>
 <PhysicsTimeStep>0.00054</PhysicsTimeStep>
@@ -110,7 +110,7 @@
 <Magnus>0</Magnus>
 <EnableFluids>False</EnableFluids>
 <Density>3</Density>
-<Mass>3.1824e-008</Mass>
+<Mass>255</Mass>
 <COM x="0" y="0" z="0"/>
 <Freeze>True</Freeze>
 <MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
@@ -157,7 +157,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -203,7 +203,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -295,7 +295,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -341,7 +341,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -592,7 +592,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -638,7 +638,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -684,7 +684,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -781,7 +781,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -827,7 +827,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -924,7 +924,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -1016,7 +1016,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -1266,7 +1266,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -1358,7 +1358,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -1456,7 +1456,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -1555,7 +1555,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -1698,7 +1698,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -1744,7 +1744,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -1790,7 +1790,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -1889,7 +1889,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -1935,7 +1935,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2025,7 +2025,7 @@
 <Magnus>0</Magnus>
 <EnableFluids>False</EnableFluids>
 <Density>8.26</Density>
-<Mass>14.141</Mass>
+<Mass>382</Mass>
 <COM x="-0.008315" y="-0.001975" z="0.015642"/>
 <Freeze>False</Freeze>
 <MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
@@ -2052,7 +2052,7 @@
 <SynchWithRobot>False</SynchWithRobot>
 <SynchUpdateInterval>0</SynchUpdateInterval>
 <Size>0.001</Size>
-<EnableLimits>False</EnableLimits>
+<EnableLimits>True</EnableLimits>
 <Relaxation1>
 <ID>63ac8fec-bc87-4e4a-b0a6-d520498eeb63</ID>
 <Name>X Axis Displacement</Name>
@@ -2094,7 +2094,7 @@
 <Loss>0</Loss>
 </Relaxation4>
 <Relaxation5>
-<ID>81218ed3-094c-47e3-b2c4-0a51e96d0fd8</ID>
+<ID>d1095561-379b-458c-8ef2-244e2ec3ea2f</ID>
 <Name>Y Axis Rotation</Name>
 <Type>Default</Type>
 <Enabled>False</Enabled>
@@ -2104,7 +2104,7 @@
 <Loss>0</Loss>
 </Relaxation5>
 <Relaxation6>
-<ID>3923bb97-7d42-4093-8f17-dc02956b5977</ID>
+<ID>410e3c12-f3fe-4d6e-90f0-04a7a9a42ed4</ID>
 <Name>Z Axis Rotation</Name>
 <Type>Default</Type>
 <Enabled>False</Enabled>
@@ -2126,7 +2126,7 @@
 <LowerLimit>
 <Name>82082205-6db6-4c04-af54-a42cced50e61</Name>
 <ID>82082205-6db6-4c04-af54-a42cced50e61</ID>
-<LimitPos>-0.174533</LimitPos>
+<LimitPos>-1.09956</LimitPos>
 <Damping>30</Damping>
 <Restitution>0.01</Restitution>
 <Stiffness>0.01</Stiffness>
@@ -2134,7 +2134,7 @@
 <UpperLimit>
 <Name>a9d6c2db-1833-47b8-a00b-ba446cf8ee29</Name>
 <ID>a9d6c2db-1833-47b8-a00b-ba446cf8ee29</ID>
-<LimitPos>0.279253</LimitPos>
+<LimitPos>0.599992</LimitPos>
 <Damping>0.1</Damping>
 <Restitution>0.01</Restitution>
 <Stiffness>0.01</Stiffness>
@@ -2241,7 +2241,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2287,7 +2287,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2333,7 +2333,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2379,7 +2379,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2398,7 +2398,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.010558" y="0.000266" z="0.033229"/>
+<Position x="-0.009664" y="0.000916" z="0.033229"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -2425,7 +2425,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2447,6 +2447,7 @@
 <Attachments>
 <AttachID>c9945070-32b4-4104-8347-2a701bc74c70</AttachID>
 <AttachID>3cb22bbd-6500-47bf-9791-b9cfe0c3462d</AttachID>
+<AttachID>9899a99f-fb48-491c-a566-47cace9825bf</AttachID>
 <AttachID>afb88b6f-5ef0-4808-87db-cd475f805f46</AttachID>
 <AttachID>1f477509-9025-405e-847b-7d048271333c</AttachID>
 </Attachments>
@@ -2524,7 +2525,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2570,7 +2571,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2616,7 +2617,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2662,7 +2663,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2681,7 +2682,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.012657" y="-0.002802" z="0.031648"/>
+<Position x="-0.012657" y="-0.002802" z="0.032316"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -2708,7 +2709,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2853,7 +2854,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2899,7 +2900,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2918,7 +2919,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.012095" y="-0.007" z="0.030424"/>
+<Position x="-0.01274" y="-0.00568" z="0.029888"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -2945,7 +2946,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2982,7 +2983,7 @@
 <Magnus>0</Magnus>
 <EnableFluids>False</EnableFluids>
 <Density>2.471</Density>
-<Mass>3.339</Mass>
+<Mass>26.715</Mass>
 <COM x="-0.001833" y="-0.017219" z="-0.00501"/>
 <Freeze>False</Freeze>
 <MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
@@ -3009,7 +3010,7 @@
 <SynchWithRobot>False</SynchWithRobot>
 <SynchUpdateInterval>0</SynchUpdateInterval>
 <Size>0.001</Size>
-<EnableLimits>False</EnableLimits>
+<EnableLimits>True</EnableLimits>
 <Relaxation1>
 <ID>872a82a9-9c7b-4a8e-8ac5-cbc888584a6a</ID>
 <Name>X Axis Displacement</Name>
@@ -3051,7 +3052,7 @@
 <Loss>0</Loss>
 </Relaxation4>
 <Relaxation5>
-<ID>dbf25a6b-94ce-4692-abf6-01f59b084130</ID>
+<ID>9b53cb6a-e865-4442-bd96-535181762c6e</ID>
 <Name>Y Axis Rotation</Name>
 <Type>Default</Type>
 <Enabled>False</Enabled>
@@ -3061,7 +3062,7 @@
 <Loss>0</Loss>
 </Relaxation5>
 <Relaxation6>
-<ID>cae26d18-8cb4-4083-ac97-6120b9cb1120</ID>
+<ID>1dd6633b-dbf4-4369-b14c-fb8ce139675c</ID>
 <Name>Z Axis Rotation</Name>
 <Type>Default</Type>
 <Enabled>False</Enabled>
@@ -3083,7 +3084,7 @@
 <LowerLimit>
 <Name>abcb0a99-8144-49f1-b4a6-46e488badf9d</Name>
 <ID>abcb0a99-8144-49f1-b4a6-46e488badf9d</ID>
-<LimitPos>-0.436332</LimitPos>
+<LimitPos>-1.19991</LimitPos>
 <Damping>0.1</Damping>
 <Restitution>0.01</Restitution>
 <Stiffness>0.01</Stiffness>
@@ -3091,7 +3092,7 @@
 <UpperLimit>
 <Name>3a8c13b0-99eb-4705-84d1-05672e9cbf8d</Name>
 <ID>3a8c13b0-99eb-4705-84d1-05672e9cbf8d</ID>
-<LimitPos>0.436332</LimitPos>
+<LimitPos>0.500037</LimitPos>
 <Damping>50</Damping>
 <Restitution>0.4</Restitution>
 <Stiffness>0.01</Stiffness>
@@ -3104,8 +3105,8 @@
 </Joint>
 <ChildBodies>
 <RigidBody>
-<Name>PopliteusViaTwo Tibia LH_AnkleZ Ext</Name>
-<ID>0fd7ba66-7083-4d08-a41c-79e3e8fcfd0a</ID>
+<Name>SoleusViaOne Tibia LH_AnkleZ Ext</Name>
+<ID>0c6fa134-3f79-49ed-8990-35e0a94dc04d</ID>
 <Description/>
 <GraphicsAlpha>1</GraphicsAlpha>
 <CollisionsAlpha>0.5</CollisionsAlpha>
@@ -3118,7 +3119,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.000539" y="-0.004239" z="0.003748"/>
+<Position x="-0.000175" y="-0.041618" z="-0.006197"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -3145,12 +3146,58 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>LateralGastrocnemiusVia Tibia LH_AnkleZ Ext</Name>
+<Name>PopliteusViaTwo Tibia LH_AnkleZ Ext</Name>
+<ID>0fd7ba66-7083-4d08-a41c-79e3e8fcfd0a</ID>
+<Description/>
+<GraphicsAlpha>1</GraphicsAlpha>
+<CollisionsAlpha>0.5</CollisionsAlpha>
+<JointsAlpha>0.5</JointsAlpha>
+<ReceptiveFieldsAlpha>0.5</ReceptiveFieldsAlpha>
+<SimulationAlpha>1</SimulationAlpha>
+<IsVisible>True</IsVisible>
+<Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
+<Diffuse Red="0.752941" Green="0" Blue="0.752941" Alpha="1"/>
+<Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
+<Shininess>64</Shininess>
+<Texture/>
+<Position x="-0.000151" y="-0.006323" z="0.003876"/>
+<Rotation x="0" y="0" z="0"/>
+<DraggerSize>-1</DraggerSize>
+<Type>Attachment</Type>
+<PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
+<SynchWithRobot>False</SynchWithRobot>
+<SynchUpdateInterval>0</SynchUpdateInterval>
+<IsContactSensor>False</IsContactSensor>
+<IsCollisionObject>False</IsCollisionObject>
+<BuoyancyCenter x="0" y="0" z="0"/>
+<BuoyancyScale>1</BuoyancyScale>
+<LinearDrag x="1" y="1" z="1"/>
+<AngularDrag x="0.05" y="0.05" z="0.05"/>
+<MaxHydroForce>50</MaxHydroForce>
+<MaxHydroTorque>20</MaxHydroTorque>
+<Magnus>0</Magnus>
+<EnableFluids>False</EnableFluids>
+<Density>1</Density>
+<Mass>0</Mass>
+<COM x="0" y="0" z="0"/>
+<Freeze>False</Freeze>
+<MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
+<FoodSource>False</FoodSource>
+<FoodQuantity>100</FoodQuantity>
+<MaxFoodQuantity>10000</MaxFoodQuantity>
+<FoodReplenishRate>1</FoodReplenishRate>
+<FoodEnergyContent>1000</FoodEnergyContent>
+<Radius>0.00025</Radius>
+<LatitudeSegments>20</LatitudeSegments>
+<LongtitudeSegments>20</LongtitudeSegments>
+</RigidBody>
+<RigidBody>
+<Name>LateralGastrocnemiusViaOne Tibia LH_AnkleZ Ext</Name>
 <ID>0ffaf428-e533-43d3-82e0-8ca859542e97</ID>
 <Description/>
 <GraphicsAlpha>1</GraphicsAlpha>
@@ -3191,7 +3238,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -3237,7 +3284,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -3283,12 +3330,12 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>MedialGastrocnemiusIns Tibia LH_Knee Flx</Name>
+<Name>MedialGastrocnemiusViaOne Tibia LH_AnkleZ Ext</Name>
 <ID>3cb22bbd-6500-47bf-9791-b9cfe0c3462d</ID>
 <Description/>
 <GraphicsAlpha>1</GraphicsAlpha>
@@ -3302,7 +3349,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.003783" y="-0.006148" z="0.002931"/>
+<Position x="-0.004896" y="-0.006148" z="0.001111"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -3329,7 +3376,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -3375,7 +3422,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -3397,6 +3444,7 @@
 <Attachments>
 <AttachID>6894dc8d-f315-4a99-9d4c-3299694a122a</AttachID>
 <AttachID>48c91d7c-5fc8-4b97-a7e0-048c8ba879db</AttachID>
+<AttachID>52a6093b-f37d-4e2e-9bec-88bf112a5809</AttachID>
 <AttachID>133e1a3f-cef5-4d76-b844-02e5856589d1</AttachID>
 <AttachID>89b0223f-ffcf-4883-aea1-eb8755e79b9b</AttachID>
 <AttachID>1746fbf9-71a0-48f5-811c-ab7e44335eb6</AttachID>
@@ -3475,7 +3523,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -3526,7 +3574,7 @@
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>PlantarisVia Tibia LH_AnkleZ Ext</Name>
+<Name>PlantarisViaOne Tibia LH_AnkleZ Ext</Name>
 <ID>47455171-acf1-4f7c-b55c-db9e35135a42</ID>
 <Description/>
 <GraphicsAlpha>1</GraphicsAlpha>
@@ -3567,7 +3615,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -3632,7 +3680,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.002266" y="-0.041859" z="-0.006419"/>
+<Position x="-0.001952" y="-0.041859" z="-0.00638"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -3659,7 +3707,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -3705,7 +3753,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -3805,7 +3853,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -3827,6 +3875,7 @@
 <Attachments>
 <AttachID>2774d280-281c-411c-be99-beef44cb8916</AttachID>
 <AttachID>340833f5-4e2a-483f-954c-835680ad54ac</AttachID>
+<AttachID>1049455e-0955-4578-bb53-e23ca05a7bce</AttachID>
 <AttachID>f2a82a96-15d0-4b05-9792-c8f2ead5d63c</AttachID>
 <AttachID>266d96f2-624e-4e9a-adbd-c496236b2cb7</AttachID>
 <AttachID>8832da50-2f06-4b55-93f0-59245990024a</AttachID>
@@ -3905,7 +3954,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -3924,7 +3973,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.000751" y="6.2661e-005" z="-0.002968"/>
+<Position x="0.001159" y="0.001022" z="-0.001799"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -3951,7 +4000,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -3970,7 +4019,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.002479" y="0.000802" z="-0.002726"/>
+<Position x="-0.003916" y="0.000713" z="-0.002615"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -3997,7 +4046,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -4016,7 +4065,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.003365" y="-0.003655" z="0.000486"/>
+<Position x="0.003324" y="-0.00275" z="0.001114"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4043,7 +4092,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -4066,6 +4115,7 @@
 <AttachID>b51db4e0-45fd-4bd7-8026-b2a34eb98193</AttachID>
 <AttachID>e92a5dab-148f-437d-97f4-822f8963ac98</AttachID>
 <AttachID>982c28d6-e198-44b3-8e87-250b27cdbcb0</AttachID>
+<AttachID>775c5af8-24b4-493a-8f21-9c1a0f231f4c</AttachID>
 <AttachID>0bffeea5-0ea8-4a79-a7ea-36f92f4d0611</AttachID>
 </Attachments>
 <StimulusTension>
@@ -4142,7 +4192,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -4188,7 +4238,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -4225,7 +4275,7 @@
 <Magnus>0</Magnus>
 <EnableFluids>False</EnableFluids>
 <Density>3</Density>
-<Mass>1.571</Mass>
+<Mass>5.301</Mass>
 <COM x="0.005833" y="-0.003" z="0.000298"/>
 <Freeze>False</Freeze>
 <MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
@@ -4252,7 +4302,7 @@
 <SynchWithRobot>False</SynchWithRobot>
 <SynchUpdateInterval>0</SynchUpdateInterval>
 <Size>0.001</Size>
-<EnableLimits>False</EnableLimits>
+<EnableLimits>True</EnableLimits>
 <Relaxation1>
 <ID>a1e13d3d-18af-4fe3-8a0b-0a9a58a2326d</ID>
 <Name>X Axis Displacement</Name>
@@ -4294,7 +4344,7 @@
 <Loss>0</Loss>
 </Relaxation4>
 <Relaxation5>
-<ID>197a1ebc-4989-4a44-8351-d8d6732c4fa8</ID>
+<ID>27264064-8d07-4572-bc0b-7c6850c95548</ID>
 <Name>Y Axis Rotation</Name>
 <Type>Default</Type>
 <Enabled>False</Enabled>
@@ -4304,7 +4354,7 @@
 <Loss>0</Loss>
 </Relaxation5>
 <Relaxation6>
-<ID>d4112a5d-396b-4dff-91b0-5943ea4868e9</ID>
+<ID>d36de1e6-3f13-44f1-9667-34e57932f37f</ID>
 <Name>Z Axis Rotation</Name>
 <Type>Default</Type>
 <Enabled>False</Enabled>
@@ -4326,7 +4376,7 @@
 <LowerLimit>
 <Name>fbfd6b5c-77a2-4f7f-96e2-08c4d4994b65</Name>
 <ID>fbfd6b5c-77a2-4f7f-96e2-08c4d4994b65</ID>
-<LimitPos>-0.349066</LimitPos>
+<LimitPos>-1.69995</LimitPos>
 <Damping>1</Damping>
 <Restitution>0.1</Restitution>
 <Stiffness>5</Stiffness>
@@ -4334,7 +4384,7 @@
 <UpperLimit>
 <Name>cb3f8858-cd4b-4ecb-934e-c131ca5e03ff</Name>
 <ID>cb3f8858-cd4b-4ecb-934e-c131ca5e03ff</ID>
-<LimitPos>0.711269</LimitPos>
+<LimitPos>0.719948</LimitPos>
 <Damping>0.1</Damping>
 <Restitution>0.01</Restitution>
 <Stiffness>0.01</Stiffness>
@@ -4361,7 +4411,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.018966" y="-0.00709" z="-0.001639"/>
+<Position x="0.019248" y="-0.006962" z="0.001465"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4388,7 +4438,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -4407,7 +4457,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.00482" y="-0.001139" z="0.000376"/>
+<Position x="0.004347" y="-0.000954" z="0.000908"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4434,12 +4484,12 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>TibialisAntIns Foot LH_AnkleZ Flx</Name>
+<Name>TibialisAnteriorIns Foot LH_AnkleZ Flx</Name>
 <ID>0bffeea5-0ea8-4a79-a7ea-36f92f4d0611</ID>
 <Description/>
 <GraphicsAlpha>1</GraphicsAlpha>
@@ -4480,12 +4530,58 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>FlexorHallucisLongusViaTwo Foot LH_AnkleZ Ext</Name>
+<Name>PeroneiViaTwo Foot LH_AnkleZ Ext</Name>
+<ID>1049455e-0955-4578-bb53-e23ca05a7bce</ID>
+<Description/>
+<GraphicsAlpha>1</GraphicsAlpha>
+<CollisionsAlpha>0.5</CollisionsAlpha>
+<JointsAlpha>0.5</JointsAlpha>
+<ReceptiveFieldsAlpha>0.5</ReceptiveFieldsAlpha>
+<SimulationAlpha>1</SimulationAlpha>
+<IsVisible>True</IsVisible>
+<Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
+<Diffuse Red="0.752941" Green="0" Blue="0" Alpha="1"/>
+<Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
+<Shininess>64</Shininess>
+<Texture/>
+<Position x="-0.003636" y="-0.001164" z="0.001761"/>
+<Rotation x="0" y="0" z="0"/>
+<DraggerSize>-1</DraggerSize>
+<Type>Attachment</Type>
+<PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
+<SynchWithRobot>False</SynchWithRobot>
+<SynchUpdateInterval>0</SynchUpdateInterval>
+<IsContactSensor>False</IsContactSensor>
+<IsCollisionObject>False</IsCollisionObject>
+<BuoyancyCenter x="0" y="0" z="0"/>
+<BuoyancyScale>1</BuoyancyScale>
+<LinearDrag x="1" y="1" z="1"/>
+<AngularDrag x="0.05" y="0.05" z="0.05"/>
+<MaxHydroForce>50</MaxHydroForce>
+<MaxHydroTorque>20</MaxHydroTorque>
+<Magnus>0</Magnus>
+<EnableFluids>False</EnableFluids>
+<Density>1</Density>
+<Mass>0</Mass>
+<COM x="0" y="0" z="0"/>
+<Freeze>False</Freeze>
+<MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
+<FoodSource>False</FoodSource>
+<FoodQuantity>100</FoodQuantity>
+<MaxFoodQuantity>10000</MaxFoodQuantity>
+<FoodReplenishRate>1</FoodReplenishRate>
+<FoodEnergyContent>1000</FoodEnergyContent>
+<Radius>0.00025</Radius>
+<LatitudeSegments>20</LatitudeSegments>
+<LongtitudeSegments>20</LongtitudeSegments>
+</RigidBody>
+<RigidBody>
+<Name>FlexorHallucisLongusViaThree Foot LH_AnkleZ Ext</Name>
 <ID>133e1a3f-cef5-4d76-b844-02e5856589d1</ID>
 <Description/>
 <GraphicsAlpha>1</GraphicsAlpha>
@@ -4495,11 +4591,11 @@
 <SimulationAlpha>1</SimulationAlpha>
 <IsVisible>True</IsVisible>
 <Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
-<Diffuse Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<Diffuse Red="1" Green="0" Blue="0" Alpha="1"/>
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.001441" y="-0.002915" z="-0.000775"/>
+<Position x="-0.001153" y="-0.003211" z="-0.000656"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4545,7 +4641,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.019645" y="-0.00709" z="0.00072"/>
+<Position x="0.019135" y="-0.00709" z="-0.001929"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4572,7 +4668,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -4633,7 +4729,7 @@
 <SimulationAlpha>1</SimulationAlpha>
 <IsVisible>True</IsVisible>
 <Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
-<Diffuse Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<Diffuse Red="1" Green="0" Blue="0" Alpha="1"/>
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
@@ -4669,7 +4765,7 @@
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>PeroneiViaTwo Foot LH_AnkleZ Ext</Name>
+<Name>PeroneiViaFour Foot LH_AnkleZ Ext</Name>
 <ID>266d96f2-624e-4e9a-adbd-c496236b2cb7</ID>
 <Description/>
 <GraphicsAlpha>1</GraphicsAlpha>
@@ -4683,7 +4779,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.00298" y="-0.004406" z="1.15e-005"/>
+<Position x="0.002433" y="-0.003706" z="0.002352"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4715,7 +4811,7 @@
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>TibialisPostVia Foot LH_AnkleZ Ext</Name>
+<Name>TibialisPostViaTwo Foot LH_AnkleZ Ext</Name>
 <ID>2fc93427-b4d6-427b-be14-b1613ee0b197</ID>
 <Description/>
 <GraphicsAlpha>1</GraphicsAlpha>
@@ -4729,7 +4825,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.000405" y="-0.003266" z="-0.001062"/>
+<Position x="-0.001159" y="-0.003222" z="-0.000103"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4756,7 +4852,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -4775,7 +4871,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.020581" y="-0.005067" z="-0.001895"/>
+<Position x="0.020581" y="-0.004657" z="0.001023"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4802,12 +4898,58 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>FlexorDigitorumLongusViaThree Foot LH_AnkleZ Ext</Name>
+<Name>FlexorDigitorumLongusViaTwo Foot LH_AnkleZ Ext</Name>
+<ID>411baffe-9c06-4cfb-9dde-883eb3b5086a</ID>
+<Description/>
+<GraphicsAlpha>1</GraphicsAlpha>
+<CollisionsAlpha>0.5</CollisionsAlpha>
+<JointsAlpha>0.5</JointsAlpha>
+<ReceptiveFieldsAlpha>0.5</ReceptiveFieldsAlpha>
+<SimulationAlpha>1</SimulationAlpha>
+<IsVisible>True</IsVisible>
+<Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
+<Diffuse Red="1" Green="0" Blue="0" Alpha="1"/>
+<Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
+<Shininess>64</Shininess>
+<Texture/>
+<Position x="-0.004207" y="-0.001497" z="-6.603e-005"/>
+<Rotation x="0" y="0" z="0"/>
+<DraggerSize>-1</DraggerSize>
+<Type>Attachment</Type>
+<PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
+<SynchWithRobot>False</SynchWithRobot>
+<SynchUpdateInterval>0</SynchUpdateInterval>
+<IsContactSensor>False</IsContactSensor>
+<IsCollisionObject>False</IsCollisionObject>
+<BuoyancyCenter x="0" y="0" z="0"/>
+<BuoyancyScale>1</BuoyancyScale>
+<LinearDrag x="1" y="1" z="1"/>
+<AngularDrag x="0.05" y="0.05" z="0.05"/>
+<MaxHydroForce>50</MaxHydroForce>
+<MaxHydroTorque>20</MaxHydroTorque>
+<Magnus>0</Magnus>
+<EnableFluids>False</EnableFluids>
+<Density>1</Density>
+<Mass>0</Mass>
+<COM x="0" y="0" z="0"/>
+<Freeze>False</Freeze>
+<MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
+<FoodSource>False</FoodSource>
+<FoodQuantity>100</FoodQuantity>
+<MaxFoodQuantity>10000</MaxFoodQuantity>
+<FoodReplenishRate>1</FoodReplenishRate>
+<FoodEnergyContent>1000</FoodEnergyContent>
+<Radius>0.00025</Radius>
+<LatitudeSegments>20</LatitudeSegments>
+<LongtitudeSegments>20</LongtitudeSegments>
+</RigidBody>
+<RigidBody>
+<Name>FlexorDigitorumLongusViaFour Foot LH_AnkleZ Ext</Name>
 <ID>51c3934b-6b47-459a-b85c-fa918e66f03e</ID>
 <Description/>
 <GraphicsAlpha>1</GraphicsAlpha>
@@ -4817,11 +4959,57 @@
 <SimulationAlpha>1</SimulationAlpha>
 <IsVisible>True</IsVisible>
 <Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
-<Diffuse Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<Diffuse Red="1" Green="0" Blue="0" Alpha="1"/>
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
 <Position x="0.002079" y="-0.004229" z="-0.000263"/>
+<Rotation x="0" y="0" z="0"/>
+<DraggerSize>-1</DraggerSize>
+<Type>Attachment</Type>
+<PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
+<SynchWithRobot>False</SynchWithRobot>
+<SynchUpdateInterval>0</SynchUpdateInterval>
+<IsContactSensor>False</IsContactSensor>
+<IsCollisionObject>False</IsCollisionObject>
+<BuoyancyCenter x="0" y="0" z="0"/>
+<BuoyancyScale>1</BuoyancyScale>
+<LinearDrag x="1" y="1" z="1"/>
+<AngularDrag x="0.05" y="0.05" z="0.05"/>
+<MaxHydroForce>50</MaxHydroForce>
+<MaxHydroTorque>20</MaxHydroTorque>
+<Magnus>0</Magnus>
+<EnableFluids>False</EnableFluids>
+<Density>1</Density>
+<Mass>0</Mass>
+<COM x="0" y="0" z="0"/>
+<Freeze>False</Freeze>
+<MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
+<FoodSource>False</FoodSource>
+<FoodQuantity>100</FoodQuantity>
+<MaxFoodQuantity>10000</MaxFoodQuantity>
+<FoodReplenishRate>1</FoodReplenishRate>
+<FoodEnergyContent>1000</FoodEnergyContent>
+<Radius>0.00025</Radius>
+<LatitudeSegments>20</LatitudeSegments>
+<LongtitudeSegments>20</LongtitudeSegments>
+</RigidBody>
+<RigidBody>
+<Name>FlexorHallucisLongusViaTwo Foot LH_AnkleZ Ext</Name>
+<ID>52a6093b-f37d-4e2e-9bec-88bf112a5809</ID>
+<Description/>
+<GraphicsAlpha>1</GraphicsAlpha>
+<CollisionsAlpha>0.5</CollisionsAlpha>
+<JointsAlpha>0.5</JointsAlpha>
+<ReceptiveFieldsAlpha>0.5</ReceptiveFieldsAlpha>
+<SimulationAlpha>1</SimulationAlpha>
+<IsVisible>True</IsVisible>
+<Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
+<Diffuse Red="1" Green="0" Blue="0" Alpha="1"/>
+<Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
+<Shininess>64</Shininess>
+<Texture/>
+<Position x="-0.003882" y="-0.001681" z="-0.000496"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4867,7 +5055,99 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00309" y="-0.002356" z="0.001708"/>
+<Position x="-0.00309" y="-0.002356" z="0.001447"/>
+<Rotation x="0" y="0" z="0"/>
+<DraggerSize>-1</DraggerSize>
+<Type>Attachment</Type>
+<PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
+<SynchWithRobot>False</SynchWithRobot>
+<SynchUpdateInterval>0</SynchUpdateInterval>
+<IsContactSensor>False</IsContactSensor>
+<IsCollisionObject>False</IsCollisionObject>
+<BuoyancyCenter x="0" y="0" z="0"/>
+<BuoyancyScale>1</BuoyancyScale>
+<LinearDrag x="1" y="1" z="1"/>
+<AngularDrag x="0.05" y="0.05" z="0.05"/>
+<MaxHydroForce>50</MaxHydroForce>
+<MaxHydroTorque>20</MaxHydroTorque>
+<Magnus>0</Magnus>
+<EnableFluids>False</EnableFluids>
+<Density>1</Density>
+<Mass>0</Mass>
+<COM x="0" y="0" z="0"/>
+<Freeze>False</Freeze>
+<MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
+<FoodSource>False</FoodSource>
+<FoodQuantity>100</FoodQuantity>
+<MaxFoodQuantity>10000</MaxFoodQuantity>
+<FoodReplenishRate>1</FoodReplenishRate>
+<FoodEnergyContent>1000</FoodEnergyContent>
+<Radius>0.00025</Radius>
+<LatitudeSegments>20</LatitudeSegments>
+<LongtitudeSegments>20</LongtitudeSegments>
+</RigidBody>
+<RigidBody>
+<Name>TibialisAnteriorViaThree Foot LH_AnkleZ Flx</Name>
+<ID>775c5af8-24b4-493a-8f21-9c1a0f231f4c</ID>
+<Description/>
+<GraphicsAlpha>1</GraphicsAlpha>
+<CollisionsAlpha>0.5</CollisionsAlpha>
+<JointsAlpha>0.5</JointsAlpha>
+<ReceptiveFieldsAlpha>0.5</ReceptiveFieldsAlpha>
+<SimulationAlpha>1</SimulationAlpha>
+<IsVisible>True</IsVisible>
+<Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
+<Diffuse Red="0.752941" Green="0" Blue="0" Alpha="1"/>
+<Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
+<Shininess>64</Shininess>
+<Texture/>
+<Position x="0.004773" y="-0.001062" z="-0.001312"/>
+<Rotation x="0" y="0" z="0"/>
+<DraggerSize>-1</DraggerSize>
+<Type>Attachment</Type>
+<PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
+<SynchWithRobot>False</SynchWithRobot>
+<SynchUpdateInterval>0</SynchUpdateInterval>
+<IsContactSensor>False</IsContactSensor>
+<IsCollisionObject>False</IsCollisionObject>
+<BuoyancyCenter x="0" y="0" z="0"/>
+<BuoyancyScale>1</BuoyancyScale>
+<LinearDrag x="1" y="1" z="1"/>
+<AngularDrag x="0.05" y="0.05" z="0.05"/>
+<MaxHydroForce>50</MaxHydroForce>
+<MaxHydroTorque>20</MaxHydroTorque>
+<Magnus>0</Magnus>
+<EnableFluids>False</EnableFluids>
+<Density>1</Density>
+<Mass>0</Mass>
+<COM x="0" y="0" z="0"/>
+<Freeze>False</Freeze>
+<MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
+<FoodSource>False</FoodSource>
+<FoodQuantity>100</FoodQuantity>
+<MaxFoodQuantity>10000</MaxFoodQuantity>
+<FoodReplenishRate>1</FoodReplenishRate>
+<FoodEnergyContent>1000</FoodEnergyContent>
+<Radius>0.00025</Radius>
+<LatitudeSegments>20</LatitudeSegments>
+<LongtitudeSegments>20</LongtitudeSegments>
+</RigidBody>
+<RigidBody>
+<Name>TibialisPostViaOne Foot LH_AnkleZ Ext</Name>
+<ID>85f56ae0-c17d-473b-88a0-4003c8dc04a1</ID>
+<Description/>
+<GraphicsAlpha>1</GraphicsAlpha>
+<CollisionsAlpha>0.5</CollisionsAlpha>
+<JointsAlpha>0.5</JointsAlpha>
+<ReceptiveFieldsAlpha>0.5</ReceptiveFieldsAlpha>
+<SimulationAlpha>1</SimulationAlpha>
+<IsVisible>True</IsVisible>
+<Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
+<Diffuse Red="0.752941" Green="0" Blue="0" Alpha="1"/>
+<Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
+<Shininess>64</Shininess>
+<Texture/>
+<Position x="-0.004358" y="-0.001609" z="-0.000337"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4913,7 +5193,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.006718" y="-0.005445" z="-5.1369e-005"/>
+<Position x="0.006056" y="-0.004665" z="0.000846"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4940,12 +5220,12 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>FlexorHallucisLongusViaThree Foot LH_AnkleZ Ext</Name>
+<Name>FlexorHallucisLongusViaFour Foot LH_AnkleZ Ext</Name>
 <ID>89b0223f-ffcf-4883-aea1-eb8755e79b9b</ID>
 <Description/>
 <GraphicsAlpha>1</GraphicsAlpha>
@@ -4955,7 +5235,7 @@
 <SimulationAlpha>1</SimulationAlpha>
 <IsVisible>True</IsVisible>
 <Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
-<Diffuse Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<Diffuse Red="1" Green="0" Blue="0" Alpha="1"/>
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
@@ -4991,7 +5271,7 @@
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>PlantarisViaTwo Foot LH_AnkleZ Ext</Name>
+<Name>PlantarisViaThree Foot LH_AnkleZ Ext</Name>
 <ID>a066a7b7-1482-4e86-950c-e6481511357c</ID>
 <Description/>
 <GraphicsAlpha>1</GraphicsAlpha>
@@ -5005,7 +5285,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.004582" y="0.000581" z="0.000505"/>
+<Position x="-0.004157" y="-0.001334" z="0.000796"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5078,12 +5358,12 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>FlexorDigitorumLongusViaTwo Foot LH_AnkleZ Ext</Name>
+<Name>FlexorDigitorumLongusViaThree Foot LH_AnkleZ Ext</Name>
 <ID>abe8a305-3f67-4396-a90d-7013b39035bc</ID>
 <Description/>
 <GraphicsAlpha>1</GraphicsAlpha>
@@ -5093,11 +5373,11 @@
 <SimulationAlpha>1</SimulationAlpha>
 <IsVisible>True</IsVisible>
 <Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
-<Diffuse Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<Diffuse Red="1" Green="0" Blue="0" Alpha="1"/>
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.001328" y="-0.003328" z="-0.000359"/>
+<Position x="-0.001484" y="-0.002881" z="0.000159"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5139,7 +5419,7 @@
 <SimulationAlpha>1</SimulationAlpha>
 <IsVisible>True</IsVisible>
 <Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
-<Diffuse Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<Diffuse Red="1" Green="0" Blue="0" Alpha="1"/>
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
@@ -5175,7 +5455,7 @@
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>MedialGastrocnemiusViaTwo Foot LH_AnkleZ Ext</Name>
+<Name>MedialGastrocnemiusViaThree Foot LH_AnkleZ Ext</Name>
 <ID>afb88b6f-5ef0-4808-87db-cd475f805f46</ID>
 <Description/>
 <GraphicsAlpha>1</GraphicsAlpha>
@@ -5185,11 +5465,11 @@
 <SimulationAlpha>1</SimulationAlpha>
 <IsVisible>True</IsVisible>
 <Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
-<Diffuse Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<Diffuse Red="1" Green="0" Blue="0" Alpha="1"/>
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.004572" y="0.000105" z="-0.000612"/>
+<Position x="-0.003545" y="-0.001398" z="-0.000546"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5281,7 +5561,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.004582" y="0.000581" z="0.000165"/>
+<Position x="-0.004129" y="-0.001414" z="0.00039"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5323,7 +5603,7 @@
 <SimulationAlpha>1</SimulationAlpha>
 <IsVisible>True</IsVisible>
 <Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
-<Diffuse Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<Diffuse Red="1" Green="0" Blue="0" Alpha="1"/>
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
@@ -5373,7 +5653,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.004703" y="0.000568" z="0.001213"/>
+<Position x="-0.004147" y="-0.001234" z="0.001309"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5451,7 +5731,7 @@
 <Scale x="1" y="1" z="1"/>
 </RigidBody>
 <RigidBody>
-<Name>PeroneiViaTwo Foot LH_AnkleZ Ext</Name>
+<Name>PeroneiViaThree Foot LH_AnkleZ Ext</Name>
 <ID>f2a82a96-15d0-4b05-9792-c8f2ead5d63c</ID>
 <Description/>
 <GraphicsAlpha>1</GraphicsAlpha>
@@ -5465,7 +5745,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.001821" y="-0.002527" z="0.000257"/>
+<Position x="-0.000692" y="-0.002568" z="0.002037"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5595,7 +5875,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5614,7 +5894,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.001437" y="0.000815" z="-0.002518"/>
+<Position x="-0.001716" y="0.000815" z="-0.002518"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5641,7 +5921,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5660,7 +5940,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.000118" y="-0.003598" z="-0.005"/>
+<Position x="-0.000527" y="-0.003598" z="-0.005"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5687,12 +5967,12 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>TibialisAnteriorVia Tibia  LH_AnkleZ Flx</Name>
+<Name>TibialisAnteriorViaTwo Tibia  LH_AnkleZ Flx</Name>
 <ID>982c28d6-e198-44b3-8e87-250b27cdbcb0</ID>
 <Description/>
 <GraphicsAlpha>1</GraphicsAlpha>
@@ -5706,7 +5986,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00083" y="-0.040429" z="-0.009276"/>
+<Position x="-0.001431" y="-0.039204" z="-0.009245"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5733,7 +6013,99 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
+<LatitudeSegments>20</LatitudeSegments>
+<LongtitudeSegments>20</LongtitudeSegments>
+</RigidBody>
+<RigidBody>
+<Name>MedialGastrocnemiusViaTwo Tibia LH_AnkleZ Ext</Name>
+<ID>9899a99f-fb48-491c-a566-47cace9825bf</ID>
+<Description/>
+<GraphicsAlpha>1</GraphicsAlpha>
+<CollisionsAlpha>0.5</CollisionsAlpha>
+<JointsAlpha>0.5</JointsAlpha>
+<ReceptiveFieldsAlpha>0.5</ReceptiveFieldsAlpha>
+<SimulationAlpha>1</SimulationAlpha>
+<IsVisible>True</IsVisible>
+<Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
+<Diffuse Red="0.752941" Green="0" Blue="0.752941" Alpha="1"/>
+<Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
+<Shininess>64</Shininess>
+<Texture/>
+<Position x="-0.002257" y="-0.042328" z="-0.006557"/>
+<Rotation x="0" y="0" z="0"/>
+<DraggerSize>-1</DraggerSize>
+<Type>Attachment</Type>
+<PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
+<SynchWithRobot>False</SynchWithRobot>
+<SynchUpdateInterval>0</SynchUpdateInterval>
+<IsContactSensor>False</IsContactSensor>
+<IsCollisionObject>False</IsCollisionObject>
+<BuoyancyCenter x="0" y="0" z="0"/>
+<BuoyancyScale>1</BuoyancyScale>
+<LinearDrag x="1" y="1" z="1"/>
+<AngularDrag x="0.05" y="0.05" z="0.05"/>
+<MaxHydroForce>50</MaxHydroForce>
+<MaxHydroTorque>20</MaxHydroTorque>
+<Magnus>0</Magnus>
+<EnableFluids>False</EnableFluids>
+<Density>1</Density>
+<Mass>0</Mass>
+<COM x="0" y="0" z="0"/>
+<Freeze>False</Freeze>
+<MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
+<FoodSource>False</FoodSource>
+<FoodQuantity>100</FoodQuantity>
+<MaxFoodQuantity>10000</MaxFoodQuantity>
+<FoodReplenishRate>1</FoodReplenishRate>
+<FoodEnergyContent>1000</FoodEnergyContent>
+<Radius>0.00025</Radius>
+<LatitudeSegments>20</LatitudeSegments>
+<LongtitudeSegments>20</LongtitudeSegments>
+</RigidBody>
+<RigidBody>
+<Name>LateralGastrocnemiusViaTwo Tibia LH_AnkleZ Ext</Name>
+<ID>9bdc2573-06fd-4026-af6e-d535e9d8c218</ID>
+<Description/>
+<GraphicsAlpha>1</GraphicsAlpha>
+<CollisionsAlpha>0.5</CollisionsAlpha>
+<JointsAlpha>0.5</JointsAlpha>
+<ReceptiveFieldsAlpha>0.5</ReceptiveFieldsAlpha>
+<SimulationAlpha>1</SimulationAlpha>
+<IsVisible>True</IsVisible>
+<Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
+<Diffuse Red="0.752941" Green="0" Blue="0.752941" Alpha="1"/>
+<Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
+<Shininess>64</Shininess>
+<Texture/>
+<Position x="0.000963" y="-0.041618" z="-0.006197"/>
+<Rotation x="0" y="0" z="0"/>
+<DraggerSize>-1</DraggerSize>
+<Type>Attachment</Type>
+<PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
+<SynchWithRobot>False</SynchWithRobot>
+<SynchUpdateInterval>0</SynchUpdateInterval>
+<IsContactSensor>False</IsContactSensor>
+<IsCollisionObject>False</IsCollisionObject>
+<BuoyancyCenter x="0" y="0" z="0"/>
+<BuoyancyScale>1</BuoyancyScale>
+<LinearDrag x="1" y="1" z="1"/>
+<AngularDrag x="0.05" y="0.05" z="0.05"/>
+<MaxHydroForce>50</MaxHydroForce>
+<MaxHydroTorque>20</MaxHydroTorque>
+<Magnus>0</Magnus>
+<EnableFluids>False</EnableFluids>
+<Density>1</Density>
+<Mass>0</Mass>
+<COM x="0" y="0" z="0"/>
+<Freeze>False</Freeze>
+<MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
+<FoodSource>False</FoodSource>
+<FoodQuantity>100</FoodQuantity>
+<MaxFoodQuantity>10000</MaxFoodQuantity>
+<FoodReplenishRate>1</FoodReplenishRate>
+<FoodEnergyContent>1000</FoodEnergyContent>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5846,6 +6218,7 @@
 <Diffuse Red="1" Green="0" Blue="1" Alpha="1"/>
 <Attachments>
 <AttachID>f66dd162-4b03-4ccd-ab7d-dcdf6454ef46</AttachID>
+<AttachID>0c6fa134-3f79-49ed-8990-35e0a94dc04d</AttachID>
 <AttachID>d4991346-7cd6-4ea5-abfe-d560205e123d</AttachID>
 <AttachID>ad504c42-3448-4011-a6b3-46f09ba4df7f</AttachID>
 </Attachments>
@@ -5923,7 +6296,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5945,6 +6318,7 @@
 <Attachments>
 <AttachID>43baaf7c-7001-4774-b995-5d03c8f96a3e</AttachID>
 <AttachID>c202baf0-f1f3-49bb-8d29-8857ce66a887</AttachID>
+<AttachID>411baffe-9c06-4cfb-9dde-883eb3b5086a</AttachID>
 <AttachID>abe8a305-3f67-4396-a90d-7013b39035bc</AttachID>
 <AttachID>51c3934b-6b47-459a-b85c-fa918e66f03e</AttachID>
 <AttachID>00e6153c-bdde-4b67-9688-f6f06d59d04c</AttachID>
@@ -5996,7 +6370,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.000415" y="-0.040373" z="-0.009"/>
+<Position x="0.000622" y="-0.039443" z="-0.009139"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -6023,7 +6397,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6042,7 +6416,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.001419" y="-0.041666" z="-0.0065"/>
+<Position x="-0.001135" y="-0.041666" z="-0.0065"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -6069,7 +6443,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6088,7 +6462,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.002046" y="-0.010149" z="0.002264"/>
+<Position x="0.001844" y="-0.008961" z="0.002876"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -6115,7 +6489,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6134,7 +6508,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00065" y="-0.000104" z="-0.004042"/>
+<Position x="-0.00029" y="0.000756" z="-0.002082"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -6161,7 +6535,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6207,13 +6581,13 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
 <RigidBody>
-<Name>BicepsFemorisPosteriorVia Tibia LH_Knee Ext</Name>
-<ID>f4ca9152-9dff-45f1-a2c5-12c599221a75</ID>
+<Name>PlantarisViaTwo Tibia LH_AnkleZ Ext</Name>
+<ID>eb5a872e-5ac8-4d79-a1c4-1af7d0d5ef83</ID>
 <Description/>
 <GraphicsAlpha>1</GraphicsAlpha>
 <CollisionsAlpha>0.5</CollisionsAlpha>
@@ -6226,7 +6600,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.000864" y="-0.013757" z="0.001866"/>
+<Position x="0.000508" y="-0.041618" z="-0.006197"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -6253,7 +6627,53 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
+<LatitudeSegments>20</LatitudeSegments>
+<LongtitudeSegments>20</LongtitudeSegments>
+</RigidBody>
+<RigidBody>
+<Name>BicepsFemorisPosteriorVia Tibia LH_Knee Ext</Name>
+<ID>f4ca9152-9dff-45f1-a2c5-12c599221a75</ID>
+<Description/>
+<GraphicsAlpha>1</GraphicsAlpha>
+<CollisionsAlpha>0.5</CollisionsAlpha>
+<JointsAlpha>0.5</JointsAlpha>
+<ReceptiveFieldsAlpha>0.5</ReceptiveFieldsAlpha>
+<SimulationAlpha>1</SimulationAlpha>
+<IsVisible>True</IsVisible>
+<Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
+<Diffuse Red="0.752941" Green="0" Blue="0.752941" Alpha="1"/>
+<Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
+<Shininess>64</Shininess>
+<Texture/>
+<Position x="0.000864" y="-0.015061" z="0.002014"/>
+<Rotation x="0" y="0" z="0"/>
+<DraggerSize>-1</DraggerSize>
+<Type>Attachment</Type>
+<PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
+<SynchWithRobot>False</SynchWithRobot>
+<SynchUpdateInterval>0</SynchUpdateInterval>
+<IsContactSensor>False</IsContactSensor>
+<IsCollisionObject>False</IsCollisionObject>
+<BuoyancyCenter x="0" y="0" z="0"/>
+<BuoyancyScale>1</BuoyancyScale>
+<LinearDrag x="1" y="1" z="1"/>
+<AngularDrag x="0.05" y="0.05" z="0.05"/>
+<MaxHydroForce>50</MaxHydroForce>
+<MaxHydroTorque>20</MaxHydroTorque>
+<Magnus>0</Magnus>
+<EnableFluids>False</EnableFluids>
+<Density>1</Density>
+<Mass>0</Mass>
+<COM x="0" y="0" z="0"/>
+<Freeze>False</Freeze>
+<MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
+<FoodSource>False</FoodSource>
+<FoodQuantity>100</FoodQuantity>
+<MaxFoodQuantity>10000</MaxFoodQuantity>
+<FoodReplenishRate>1</FoodReplenishRate>
+<FoodEnergyContent>1000</FoodEnergyContent>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6299,7 +6719,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6318,7 +6738,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.002449" y="-0.017631" z="-0.004147"/>
+<Position x="-0.002449" y="-0.013114" z="-0.003591"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -6345,7 +6765,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6364,7 +6784,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.001772" y="-0.04219" z="-0.00645"/>
+<Position x="-0.001554" y="-0.04219" z="-0.00645"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -6391,7 +6811,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6413,6 +6833,7 @@
 <Attachments>
 <AttachID>4f8ee650-619c-4365-9994-d7c675fe02f5</AttachID>
 <AttachID>fb8bf424-39b8-47ae-9273-f2995042bc15</AttachID>
+<AttachID>85f56ae0-c17d-473b-88a0-4003c8dc04a1</AttachID>
 <AttachID>2fc93427-b4d6-427b-be14-b1613ee0b197</AttachID>
 <AttachID>a9808242-9c41-438b-8846-3add8792c2a9</AttachID>
 </Attachments>
@@ -6529,8 +6950,8 @@
 <Diffuse Red="1" Green="0" Blue="1" Alpha="1"/>
 <Attachments>
 <AttachID>b4504fa6-46bf-4954-b787-2384658e634c</AttachID>
-<AttachID>cd1ca1c0-a17a-4db8-9185-2a17573ee348</AttachID>
 <AttachID>47455171-acf1-4f7c-b55c-db9e35135a42</AttachID>
+<AttachID>eb5a872e-5ac8-4d79-a1c4-1af7d0d5ef83</AttachID>
 <AttachID>a066a7b7-1482-4e86-950c-e6481511357c</AttachID>
 <AttachID>d680b12f-b8d0-4a04-b486-a79771fc0b7f</AttachID>
 </Attachments>
@@ -6753,7 +7174,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6821,6 +7242,7 @@
 <Attachments>
 <AttachID>bfda3e65-5737-4660-a7cc-47291dee5f3e</AttachID>
 <AttachID>0ffaf428-e533-43d3-82e0-8ca859542e97</AttachID>
+<AttachID>9bdc2573-06fd-4026-af6e-d535e9d8c218</AttachID>
 <AttachID>e26d6ff7-cec5-48ca-91f3-471273d3359f</AttachID>
 <AttachID>6cdb89b0-e2df-4f8b-8b5e-184529c90b7f</AttachID>
 </Attachments>
@@ -6898,7 +7320,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6917,7 +7339,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.012" y="-0.003994" z="0.028916"/>
+<Position x="-0.012" y="-0.003766" z="0.028916"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -6944,7 +7366,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6990,7 +7412,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7009,7 +7431,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.008886" y="0.001288" z="0.032775"/>
+<Position x="-0.007386" y="3.6067e-005" z="0.033844"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -7036,7 +7458,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7082,7 +7504,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7101,7 +7523,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.011869" y="0.0004" z="0.031364"/>
+<Position x="-0.012538" y="-0.000655" z="0.033545"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -7128,7 +7550,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7147,7 +7569,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.005559" y="-0.002026" z="0.032495"/>
+<Position x="-0.0056" y="-0.002026" z="0.032495"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -7174,53 +7596,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
-<LatitudeSegments>20</LatitudeSegments>
-<LongtitudeSegments>20</LongtitudeSegments>
-</RigidBody>
-<RigidBody>
-<Name>PlantarisViaOne Femur LH_AnkleZ Ext</Name>
-<ID>cd1ca1c0-a17a-4db8-9185-2a17573ee348</ID>
-<Description/>
-<GraphicsAlpha>1</GraphicsAlpha>
-<CollisionsAlpha>0.5</CollisionsAlpha>
-<JointsAlpha>0.5</JointsAlpha>
-<ReceptiveFieldsAlpha>0.5</ReceptiveFieldsAlpha>
-<SimulationAlpha>1</SimulationAlpha>
-<IsVisible>True</IsVisible>
-<Ambient Red="0.0980392" Green="0.0980392" Blue="0.0980392" Alpha="1"/>
-<Diffuse Red="0" Green="0.752941" Blue="0.752941" Alpha="1"/>
-<Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
-<Shininess>64</Shininess>
-<Texture/>
-<Position x="-0.011512" y="-0.006581" z="0.030147"/>
-<Rotation x="0" y="0" z="0"/>
-<DraggerSize>-1</DraggerSize>
-<Type>Attachment</Type>
-<PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
-<SynchWithRobot>False</SynchWithRobot>
-<SynchUpdateInterval>0</SynchUpdateInterval>
-<IsContactSensor>False</IsContactSensor>
-<IsCollisionObject>False</IsCollisionObject>
-<BuoyancyCenter x="0" y="0" z="0"/>
-<BuoyancyScale>1</BuoyancyScale>
-<LinearDrag x="1" y="1" z="1"/>
-<AngularDrag x="0.05" y="0.05" z="0.05"/>
-<MaxHydroForce>50</MaxHydroForce>
-<MaxHydroTorque>20</MaxHydroTorque>
-<Magnus>0</Magnus>
-<EnableFluids>False</EnableFluids>
-<Density>1</Density>
-<Mass>0</Mass>
-<COM x="0" y="0" z="0"/>
-<Freeze>False</Freeze>
-<MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
-<FoodSource>False</FoodSource>
-<FoodQuantity>100</FoodQuantity>
-<MaxFoodQuantity>10000</MaxFoodQuantity>
-<FoodReplenishRate>1</FoodReplenishRate>
-<FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7266,7 +7642,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7312,7 +7688,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7358,7 +7734,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7404,7 +7780,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7496,7 +7872,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7542,7 +7918,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7599,7 +7975,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7645,7 +8021,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7691,7 +8067,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7839,7 +8215,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7936,7 +8312,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -8028,7 +8404,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -8074,7 +8450,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -8270,7 +8646,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -8316,7 +8692,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -8612,7 +8988,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0005</Radius>
+<Radius>0.00025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -8625,7 +9001,7 @@
 <MeshFile>G:\My Drive\Rat\SynergyControl\Animatlab\Meshes\Rat\Body\Pelvis.stl</MeshFile>
 <MeshType>Convex</MeshType>
 <ConvexMeshFile>G:\My Drive\Rat\SynergyControl\Animatlab\Meshes\Rat\Body\Pelvis_Convex.osg</ConvexMeshFile>
-<Scale x="0.001" y="0.001" z="0.001"/>
+<Scale x="1" y="1" z="1"/>
 </RigidBody>
 <CollisionExclusionPairs/>
 <NervousSystem>
@@ -11253,7 +11629,7 @@
 <ID>824fa45f-843e-4710-bfd0-a8758c014904</ID>
 <Name>Walking_Knee</Name>
 <AlwaysActive>False</AlwaysActive>
-<Enabled>True</Enabled>
+<Enabled>False</Enabled>
 <ModuleName/>
 <Type>MotorPosition</Type>
 <StructureID>e40d2c4f-9c31-49f8-8a5c-5688fb768225</StructureID>
@@ -11295,7 +11671,7 @@
 <StartTime>6.67</StartTime>
 <EndTime>10</EndTime>
 <TargetID>Position</TargetID>
-<Equation>0,.25,.45,t,sin,*,+,-</Equation>
+<Equation>0,.25,.85,t,sin,*,+,-</Equation>
 <DisableMotorWhenDone>False</DisableMotorWhenDone>
 </Stimulus>
 <Stimulus>
@@ -11329,7 +11705,7 @@
 <StartTime>1.49</StartTime>
 <EndTime>1.75</EndTime>
 <TargetID>Position</TargetID>
-<Equation>0.35311</Equation>
+<Equation>0.6</Equation>
 <DisableMotorWhenDone>True</DisableMotorWhenDone>
 </Stimulus>
 <Stimulus>
@@ -11413,7 +11789,7 @@
 <ID>5f826170-822d-4722-9df4-ea27e8d88476</ID>
 <Name>Walking_xAnkle</Name>
 <AlwaysActive>False</AlwaysActive>
-<Enabled>True</Enabled>
+<Enabled>False</Enabled>
 <ModuleName/>
 <Type>MotorPosition</Type>
 <StructureID>e40d2c4f-9c31-49f8-8a5c-5688fb768225</StructureID>
@@ -11436,7 +11812,7 @@
 <StartTime>0</StartTime>
 <EndTime>3.33</EndTime>
 <TargetID>Position</TargetID>
-<Equation>0,.55,1.15,t,sin,*,+,-</Equation>
+<Equation>0,.49,1.21,t,sin,*,+,-</Equation>
 <DisableMotorWhenDone>False</DisableMotorWhenDone>
 </Stimulus>
 <Stimulus>
@@ -11667,7 +12043,7 @@
 <ID>de48c25f-7620-4ba2-bf8a-21b02bb6203e</ID>
 <Name>Walking_Hip</Name>
 <AlwaysActive>False</AlwaysActive>
-<Enabled>True</Enabled>
+<Enabled>False</Enabled>
 <ModuleName/>
 <Type>MotorPosition</Type>
 <StructureID>e40d2c4f-9c31-49f8-8a5c-5688fb768225</StructureID>
@@ -11762,7 +12138,7 @@
 <StartTime>1.49</StartTime>
 <EndTime>1.75</EndTime>
 <TargetID>Position</TargetID>
-<Equation>0.19934</Equation>
+<Equation>0.5</Equation>
 <DisableMotorWhenDone>True</DisableMotorWhenDone>
 </Stimulus>
 <Stimulus>
@@ -13575,7 +13951,7 @@
 <CollectTimeWindow>-1</CollectTimeWindow>
 <AlwaysActive>False</AlwaysActive>
 <StartTime>0</StartTime>
-<EndTime>10</EndTime>
+<EndTime>9.9789</EndTime>
 <CollectInterval>0.00054</CollectInterval>
 <DataColumns>
 <DataColumn>
@@ -13893,7 +14269,7 @@
 <CollectTimeWindow>-1</CollectTimeWindow>
 <AlwaysActive>False</AlwaysActive>
 <StartTime>0</StartTime>
-<EndTime>10</EndTime>
+<EndTime>9.9789</EndTime>
 <CollectInterval>0.00054</CollectInterval>
 <DataColumns>
 <DataColumn>
@@ -13930,8 +14306,8 @@
 <HudItem>
 <ModuleName/>
 <Type>HudText</Type>
-<Name>067f4758-c618-475a-902b-c840d65c2f03</Name>
-<ID>067f4758-c618-475a-902b-c840d65c2f03</ID>
+<Name>0acbcaae-a8e6-4ed4-8874-ccd00a36d8bd</Name>
+<ID>0acbcaae-a8e6-4ed4-8874-ccd00a36d8bd</ID>
 <Type>HudText</Type>
 <CharSize>30</CharSize>
 <Text>Time: %3.3f</Text>

@@ -2476,8 +2476,8 @@ classdef FullLeg < matlab.mixin.SetGet
 %                             grid on
                         
                        
-%                             set(gcf,'Position',[700 100 600 900])
-                            set(gcf,'Position',[-1910 130 1920 985])
+                             set(gcf,'Position',[700 100 600 900])
+                            %set(gcf,'Position',[-1910 130 1920 985])
                             pause(.5)
                             subApos = get(subA,'Position');
                             subBpos = get(subB,'Position');
@@ -3137,7 +3137,7 @@ classdef FullLeg < matlab.mixin.SetGet
                 %a = b/(ks*dt);
                 %Q(i,1) = (a/(1+a+kp/ks));
                 %lengthmat(i,:) = (1/a)*(Q(i,1)*kp*delLmat(i,:)+Q(i,1)*b*Vm');
-                % Uncomment seciton to apply "out fo plane penalty"
+                % Uncomment section to apply "out of plane penalty"
 %                 % This optimization is for sagittal plane forces and torques. In order to calculate full muscle forces (including out of plane muscle
 %                 % portions, we must "penalize" the sagittal plane upper bound values because they do not represent the true maximum tensions
 %                 % Determine which segment to use to determine "out of planeness", for the time being this is just the first free segment
@@ -3164,8 +3164,7 @@ classdef FullLeg < matlab.mixin.SetGet
             parfor i=1:3
                 moment_output(:,:,i) = compute_joint_moment_arms(obj,i,1);
             end
-            %force = zeros(nummuscles,length(xx));
-            force = [];
+            force = zeros(nummuscles,length(xx));
             momentArmsHip = moment_output(:,:,1);
             momentArmsKnee = moment_output(:,:,2);
             momentArmsAnkle = moment_output(:,:,3);
@@ -3173,16 +3172,13 @@ classdef FullLeg < matlab.mixin.SetGet
             exitflag = -10.*ones(1,length(xx));
             fvals = cell(1,length(xx));
             
-            parfor j = 1:length(xx)
-                p = [momentArmsHip(1:nummuscles,j),momentArmsKnee(1:nummuscles,j),momentArmsAnkle(1:nummuscles,j)]';
+            for j = 1:length(xx)
+                Aeq = [momentArmsHip(1:nummuscles,j),momentArmsKnee(1:nummuscles,j),momentArmsAnkle(1:nummuscles,j)]';
                 beq = 1000.*tau2(j,1:3);
-                Aeq = p;
-%                 if j>1
-%                     x0 = force(:,j-1);
-%                 end
-                x0 = lb(1:nummuscles,j);
-                [forceVec,fvals{j},exitflag(j)] = fmincon(fun,x0,[],[],Aeq,beq,lb(1:nummuscles,j),ub(1:nummuscles,j),[],options);
-                force = [force,forceVec];
+                if j>1
+                    x0 = force(:,j-1);
+                end
+                [force(:,j),fvals{j},exitflag(j)] = fmincon(fun,x0,[],[],Aeq,beq,lb(1:nummuscles,j),ub(1:nummuscles,j),[],options);
                 bb = 1;
             end
             
