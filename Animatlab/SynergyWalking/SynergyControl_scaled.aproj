@@ -14,8 +14,8 @@
 <SetSimEnd>True</SetSimEnd>
 <APIFile/>
 <SimEndTime Value="10.01" Scale="None" Actual="10.01"/>
-<PlaybackControlMode>MatchPhysicsStep</PlaybackControlMode>
-<PresetPlaybackTimeStep Value="3" Scale="milli" Actual="0.003"/>
+<PlaybackControlMode>FastestPossible</PlaybackControlMode>
+<PresetPlaybackTimeStep Value="2" Scale="milli" Actual="0.002"/>
 <Environment>
 <PhysicsTimeStep Value="0.54" Scale="milli" Actual="0.00054"/>
 <PhysicsSubsteps>1</PhysicsSubsteps>
@@ -547,13 +547,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="1.64" Scale="None" Actual="1.64"/>
+<UpperOutputScale Value="1.7" Scale="None" Actual="1.7"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="1.64" Scale="None" Actual="1.64"/>
+<B Value="1.7" Scale="None" Actual="1.7"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-16.45" Scale="milli" Actual="-0.01645"/>
+<D Value="-0.02" Scale="None" Actual="-0.02"/>
 </StimulusTension>
 <LengthTension>
 <ID>6a4e2475-0c0c-46d5-89fb-10ec0db8aa1c</ID>
@@ -576,9 +576,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="1.04" Scale="None" Actual="1.04"/>
-<Kse Value="8924.08" Scale="None" Actual="8924.08"/>
-<Kpe Value="5189.3" Scale="None" Actual="5189.3"/>
-<B Value="99.4437" Scale="None" Actual="99.4437"/>
+<Kse Value="9870.59" Scale="None" Actual="9870.59"/>
+<Kpe Value="6255.97" Scale="None" Actual="6255.97"/>
+<B Value="44.6224" Scale="None" Actual="44.6224"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -615,13 +615,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="164.29" Scale="None" Actual="164.29"/>
+<UpperOutputScale Value="21.94" Scale="None" Actual="21.94"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="164.29" Scale="None" Actual="164.29"/>
+<B Value="21.94" Scale="None" Actual="21.94"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-1643.07" Scale="milli" Actual="-1.64307"/>
+<D Value="-0.22" Scale="None" Actual="-0.22"/>
 </StimulusTension>
 <LengthTension>
 <ID>f5da0608-4767-4e83-b175-bd97358a1b81</ID>
@@ -644,9 +644,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="11.28" Scale="None" Actual="11.28"/>
-<Kse Value="20.3" Scale="None" Actual="20.3"/>
-<Kpe Value="275.36" Scale="None" Actual="275.36"/>
-<B Value="20.0827" Scale="None" Actual="20.0827"/>
+<Kse Value="1685.08" Scale="None" Actual="1685.08"/>
+<Kpe Value="1592.47" Scale="None" Actual="1592.47"/>
+<B Value="97.6431" Scale="None" Actual="97.6431"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -682,13 +682,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="9.32" Scale="None" Actual="9.32"/>
+<UpperOutputScale Value="26.65" Scale="None" Actual="26.65"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="9.32" Scale="None" Actual="9.32"/>
+<B Value="26.65" Scale="None" Actual="26.65"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-93.16" Scale="milli" Actual="-0.09316"/>
+<D Value="-0.27" Scale="None" Actual="-0.27"/>
 </StimulusTension>
 <LengthTension>
 <ID>ccabb86d-5b52-46e6-9224-cc7538a462a7</ID>
@@ -711,9 +711,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="9.23" Scale="None" Actual="9.23"/>
-<Kse Value="2127.83" Scale="None" Actual="2127.83"/>
-<Kpe Value="19.62" Scale="None" Actual="19.62"/>
-<B Value="47.2578" Scale="None" Actual="47.2578"/>
+<Kse Value="1132.96" Scale="None" Actual="1132.96"/>
+<Kpe Value="2137.72" Scale="None" Actual="2137.72"/>
+<B Value="89.3052" Scale="None" Actual="89.3052"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -749,13 +749,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="3.62" Scale="None" Actual="3.62"/>
+<UpperOutputScale Value="10.81" Scale="None" Actual="10.81"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="3.62" Scale="None" Actual="3.62"/>
+<B Value="10.81" Scale="None" Actual="10.81"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-36.21" Scale="milli" Actual="-0.03621"/>
+<D Value="-0.11" Scale="None" Actual="-0.11"/>
 </StimulusTension>
 <LengthTension>
 <ID>6817febd-8289-4df6-b19c-2bfd0722d0db</ID>
@@ -778,9 +778,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="1.55" Scale="None" Actual="1.55"/>
-<Kse Value="516.08" Scale="None" Actual="516.08"/>
-<Kpe Value="689.56" Scale="None" Actual="689.56"/>
-<B Value="2.0174" Scale="None" Actual="2.0174"/>
+<Kse Value="1570.7" Scale="None" Actual="1570.7"/>
+<Kpe Value="9382.13" Scale="None" Actual="9382.13"/>
+<B Value="4.6852" Scale="None" Actual="4.6852"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -1023,13 +1023,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="19.55" Scale="None" Actual="19.55"/>
+<UpperOutputScale Value="4.97" Scale="None" Actual="4.97"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="19.55" Scale="None" Actual="19.55"/>
+<B Value="4.97" Scale="None" Actual="4.97"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-195.53" Scale="milli" Actual="-0.19553"/>
+<D Value="-0.05" Scale="None" Actual="-0.05"/>
 </StimulusTension>
 <LengthTension>
 <ID>e36d0835-71ff-43c9-8072-92597686053f</ID>
@@ -1052,9 +1052,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="4.93" Scale="None" Actual="4.93"/>
-<Kse Value="2822.38" Scale="None" Actual="2822.38"/>
-<Kpe Value="8369.92" Scale="None" Actual="8369.92"/>
-<B Value="41.5757" Scale="None" Actual="41.5757"/>
+<Kse Value="6251.83" Scale="None" Actual="6251.83"/>
+<Kpe Value="53.62" Scale="None" Actual="53.62"/>
+<B Value="96.2746" Scale="None" Actual="96.2746"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -1228,13 +1228,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="1213.42" Scale="None" Actual="1213.42"/>
+<UpperOutputScale Value="8.93" Scale="None" Actual="8.93"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="1213.42" Scale="None" Actual="1213.42"/>
+<B Value="8.93" Scale="None" Actual="8.93"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-12135.7" Scale="milli" Actual="-12.1357"/>
+<D Value="-0.09" Scale="None" Actual="-0.09"/>
 </StimulusTension>
 <LengthTension>
 <ID>99e935de-5547-4835-9204-17bc3220c459</ID>
@@ -1257,9 +1257,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="7.39" Scale="None" Actual="7.39"/>
-<Kse Value="52.16" Scale="None" Actual="52.16"/>
-<Kpe Value="8512.42" Scale="None" Actual="8512.42"/>
-<B Value="3.1746" Scale="None" Actual="3.1746"/>
+<Kse Value="8591.19" Scale="None" Actual="8591.19"/>
+<Kpe Value="1792.37" Scale="None" Actual="1792.37"/>
+<B Value="16.9898" Scale="None" Actual="16.9898"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -1502,13 +1502,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="29.55" Scale="None" Actual="29.55"/>
+<UpperOutputScale Value="98.98" Scale="None" Actual="98.98"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="29.55" Scale="None" Actual="29.55"/>
+<B Value="98.98" Scale="None" Actual="98.98"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-295.57" Scale="milli" Actual="-0.29557"/>
+<D Value="-0.99" Scale="None" Actual="-0.99"/>
 </StimulusTension>
 <LengthTension>
 <ID>7eef83f8-81a1-4dae-ab0b-4ca9e9fdae96</ID>
@@ -1531,9 +1531,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="4.54" Scale="None" Actual="4.54"/>
-<Kse Value="65.55" Scale="None" Actual="65.55"/>
-<Kpe Value="361.16" Scale="None" Actual="361.16"/>
-<B Value="2.1745" Scale="None" Actual="2.1745"/>
+<Kse Value="101.44" Scale="None" Actual="101.44"/>
+<Kpe Value="2110.21" Scale="None" Actual="2110.21"/>
+<B Value="9.3131" Scale="None" Actual="9.3131"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -1569,13 +1569,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="34.18" Scale="None" Actual="34.18"/>
+<UpperOutputScale Value="15.42" Scale="None" Actual="15.42"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="34.18" Scale="None" Actual="34.18"/>
+<B Value="15.42" Scale="None" Actual="15.42"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-341.86" Scale="milli" Actual="-0.34186"/>
+<D Value="-0.15" Scale="None" Actual="-0.15"/>
 </StimulusTension>
 <LengthTension>
 <ID>c29c3498-5ad1-4346-9927-5f39d80bdbfc</ID>
@@ -1598,9 +1598,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="3.89" Scale="None" Actual="3.89"/>
-<Kse Value="20.3" Scale="None" Actual="20.3"/>
-<Kpe Value="158.08" Scale="None" Actual="158.08"/>
-<B Value="96.1802" Scale="None" Actual="96.1802"/>
+<Kse Value="326.1" Scale="None" Actual="326.1"/>
+<Kpe Value="966.56" Scale="None" Actual="966.56"/>
+<B Value="98.9245" Scale="None" Actual="98.9245"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -1636,13 +1636,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="15.78" Scale="None" Actual="15.78"/>
+<UpperOutputScale Value="13.58" Scale="None" Actual="13.58"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="15.78" Scale="None" Actual="15.78"/>
+<B Value="13.58" Scale="None" Actual="13.58"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-157.84" Scale="milli" Actual="-0.15784"/>
+<D Value="-0.14" Scale="None" Actual="-0.14"/>
 </StimulusTension>
 <LengthTension>
 <ID>ad3bd308-8401-474e-9863-12a6c94ad529</ID>
@@ -1665,9 +1665,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="7.17" Scale="None" Actual="7.17"/>
-<Kse Value="5229.61" Scale="None" Actual="5229.61"/>
-<Kpe Value="6281.77" Scale="None" Actual="6281.77"/>
-<B Value="75.0022" Scale="None" Actual="75.0022"/>
+<Kse Value="5183.29" Scale="None" Actual="5183.29"/>
+<Kpe Value="4637.35" Scale="None" Actual="4637.35"/>
+<B Value="88.7557" Scale="None" Actual="88.7557"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -1703,13 +1703,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="13.42" Scale="None" Actual="13.42"/>
+<UpperOutputScale Value="24.44" Scale="None" Actual="24.44"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="13.42" Scale="None" Actual="13.42"/>
+<B Value="24.44" Scale="None" Actual="24.44"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-134.24" Scale="milli" Actual="-0.13424"/>
+<D Value="-0.24" Scale="None" Actual="-0.24"/>
 </StimulusTension>
 <LengthTension>
 <ID>02732d6b-044c-4113-b387-adde4af97c90</ID>
@@ -1732,9 +1732,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="11.14" Scale="None" Actual="11.14"/>
-<Kse Value="9003.79" Scale="None" Actual="9003.79"/>
-<Kpe Value="1844.81" Scale="None" Actual="1844.81"/>
-<B Value="88.5741" Scale="None" Actual="88.5741"/>
+<Kse Value="8149.35" Scale="None" Actual="8149.35"/>
+<Kpe Value="9730.68" Scale="None" Actual="9730.68"/>
+<B Value="38.5079" Scale="None" Actual="38.5079"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -1978,13 +1978,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="171.63" Scale="None" Actual="171.63"/>
+<UpperOutputScale Value="81.68" Scale="None" Actual="81.68"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="171.63" Scale="None" Actual="171.63"/>
+<B Value="81.68" Scale="None" Actual="81.68"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-1716.5" Scale="milli" Actual="-1.7165"/>
+<D Value="-0.82" Scale="None" Actual="-0.82"/>
 </StimulusTension>
 <LengthTension>
 <ID>d13d23b7-6963-4ebe-b924-5eba8787310a</ID>
@@ -2007,9 +2007,9 @@
 <MinPeLength Value="0.01" Scale="None" Actual="0.01"/>
 </LengthTension>
 <MaximumTension Value="12.49" Scale="None" Actual="12.49"/>
-<Kse Value="29.35" Scale="None" Actual="29.35"/>
-<Kpe Value="373.96" Scale="None" Actual="373.96"/>
-<B Value="13.8805" Scale="None" Actual="13.8805"/>
+<Kse Value="108.36" Scale="None" Actual="108.36"/>
+<Kpe Value="600.29" Scale="None" Actual="600.29"/>
+<B Value="48.2377" Scale="None" Actual="48.2377"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -2116,13 +2116,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="31.64" Scale="None" Actual="31.64"/>
+<UpperOutputScale Value="32.86" Scale="None" Actual="32.86"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="31.64" Scale="None" Actual="31.64"/>
+<B Value="32.86" Scale="None" Actual="32.86"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-316.44" Scale="milli" Actual="-0.31644"/>
+<D Value="-0.33" Scale="None" Actual="-0.33"/>
 </StimulusTension>
 <LengthTension>
 <ID>8757187c-8706-40fe-be99-2c7ad594baed</ID>
@@ -2145,9 +2145,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="16.47" Scale="None" Actual="16.47"/>
-<Kse Value="1371.48" Scale="None" Actual="1371.48"/>
-<Kpe Value="1263.24" Scale="None" Actual="1263.24"/>
-<B Value="19.5478" Scale="None" Actual="19.5478"/>
+<Kse Value="9984.95" Scale="None" Actual="9984.95"/>
+<Kpe Value="9938.56" Scale="None" Actual="9938.56"/>
+<B Value="48.3687" Scale="None" Actual="48.3687"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -2321,13 +2321,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="35.27" Scale="None" Actual="35.27"/>
+<UpperOutputScale Value="17.69" Scale="None" Actual="17.69"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="35.27" Scale="None" Actual="35.27"/>
+<B Value="17.69" Scale="None" Actual="17.69"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-352.73" Scale="milli" Actual="-0.35273"/>
+<D Value="-0.18" Scale="None" Actual="-0.18"/>
 </StimulusTension>
 <LengthTension>
 <ID>1e96567d-4068-4926-95ed-ea7aefa471d6</ID>
@@ -2350,9 +2350,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="5" Scale="None" Actual="5"/>
-<Kse Value="20.3" Scale="None" Actual="20.3"/>
-<Kpe Value="122.89" Scale="None" Actual="122.89"/>
-<B Value="2.1005" Scale="None" Actual="2.1005"/>
+<Kse Value="1054.67" Scale="None" Actual="1054.67"/>
+<Kpe Value="2677.36" Scale="None" Actual="2677.36"/>
+<B Value="70.9363" Scale="None" Actual="70.9363"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -2597,13 +2597,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="40.32" Scale="None" Actual="40.32"/>
+<UpperOutputScale Value="8.93" Scale="None" Actual="8.93"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="40.32" Scale="None" Actual="40.32"/>
+<B Value="8.93" Scale="None" Actual="8.93"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-403.25" Scale="milli" Actual="-0.40325"/>
+<D Value="-0.09" Scale="None" Actual="-0.09"/>
 </StimulusTension>
 <LengthTension>
 <ID>6b5c3b8d-1531-4562-acb1-b2268f1bb2f1</ID>
@@ -2626,9 +2626,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="4.54" Scale="None" Actual="4.54"/>
-<Kse Value="47.45" Scale="None" Actual="47.45"/>
-<Kpe Value="373.96" Scale="None" Actual="373.96"/>
-<B Value="2.2333" Scale="None" Actual="2.2333"/>
+<Kse Value="705" Scale="None" Actual="705"/>
+<Kpe Value="682.05" Scale="None" Actual="682.05"/>
+<B Value="7.7062" Scale="None" Actual="7.7062"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -2804,13 +2804,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="29.35" Scale="None" Actual="29.35"/>
+<UpperOutputScale Value="2.98" Scale="None" Actual="2.98"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="29.35" Scale="None" Actual="29.35"/>
+<B Value="2.98" Scale="None" Actual="2.98"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-293.53" Scale="milli" Actual="-0.29353"/>
+<D Value="-0.03" Scale="None" Actual="-0.03"/>
 </StimulusTension>
 <LengthTension>
 <ID>0de9e525-800b-4afd-98b8-353815dd57f8</ID>
@@ -2833,9 +2833,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="2.06" Scale="None" Actual="2.06"/>
-<Kse Value="685.43" Scale="None" Actual="685.43"/>
-<Kpe Value="9080.2" Scale="None" Actual="9080.2"/>
-<B Value="4.5373" Scale="None" Actual="4.5373"/>
+<Kse Value="6661.53" Scale="None" Actual="6661.53"/>
+<Kpe Value="2962.38" Scale="None" Actual="2962.38"/>
+<B Value="98.0175" Scale="None" Actual="98.0175"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -2976,7 +2976,7 @@
 <Relaxation5>
 <AssemblyFile>AnimatGUI.dll</AssemblyFile>
 <ClassName>AnimatGUI.DataObjects.Physical.ConstraintRelaxationVortex</ClassName>
-<ID>38315c52-0da2-42d4-a6fe-5d65392995cc</ID>
+<ID>31806d79-5aee-41a5-897b-ec0310d74315</ID>
 <Enabled>False</Enabled>
 <CoordinateID>4</CoordinateID>
 <Stiffness Value="100" Scale="Kilo" Actual="100000"/>
@@ -2985,7 +2985,7 @@
 <Relaxation6>
 <AssemblyFile>AnimatGUI.dll</AssemblyFile>
 <ClassName>AnimatGUI.DataObjects.Physical.ConstraintRelaxationVortex</ClassName>
-<ID>d1095561-379b-458c-8ef2-244e2ec3ea2f</ID>
+<ID>7b272c46-5800-4bce-acd3-d401528f9c96</ID>
 <Enabled>False</Enabled>
 <CoordinateID>5</CoordinateID>
 <Stiffness Value="100" Scale="Kilo" Actual="100000"/>
@@ -3077,16 +3077,16 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="512.87" Scale="None" Actual="512.87"/>
+<UpperOutputScale Value="29.65" Scale="None" Actual="29.65"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="512.87" Scale="None" Actual="512.87"/>
+<B Value="29.65" Scale="None" Actual="29.65"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-5129.27" Scale="milli" Actual="-5.12927"/>
+<D Value="-0.3" Scale="None" Actual="-0.3"/>
 </StimulusTension>
 <LengthTension>
-<ID>a296924c-eaf2-4ea7-bfa2-ee52eb27cc97</ID>
+<ID>6269d02a-2e68-409a-ad27-a3207193feb0</ID>
 <Type>LengthTension</Type>
 <AssemblyFile>AnimatGUI.dll</AssemblyFile>
 <ClassName>AnimatGUI.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
@@ -3106,9 +3106,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="14.87" Scale="None" Actual="14.87"/>
-<Kse Value="62.02" Scale="None" Actual="62.02"/>
-<Kpe Value="2077.05" Scale="None" Actual="2077.05"/>
-<B Value="48.5406" Scale="None" Actual="48.5406"/>
+<Kse Value="9999.95" Scale="None" Actual="9999.95"/>
+<Kpe Value="9942.76" Scale="None" Actual="9942.76"/>
+<B Value="95.198" Scale="None" Actual="95.198"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -3492,13 +3492,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="79.57" Scale="None" Actual="79.57"/>
+<UpperOutputScale Value="14.44" Scale="None" Actual="14.44"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="79.57" Scale="None" Actual="79.57"/>
+<B Value="14.44" Scale="None" Actual="14.44"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-795.83" Scale="milli" Actual="-0.79583"/>
+<D Value="-0.14" Scale="None" Actual="-0.14"/>
 </StimulusTension>
 <LengthTension>
 <ID>3d1a42d6-63e4-451e-b92f-07c156410c08</ID>
@@ -3521,9 +3521,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="11.64" Scale="None" Actual="11.64"/>
-<Kse Value="813.07" Scale="None" Actual="813.07"/>
-<Kpe Value="4745.25" Scale="None" Actual="4745.25"/>
-<B Value="1.6968" Scale="None" Actual="1.6968"/>
+<Kse Value="1255.87" Scale="None" Actual="1255.87"/>
+<Kpe Value="302.39" Scale="None" Actual="302.39"/>
+<B Value="9.5907" Scale="None" Actual="9.5907"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -3751,7 +3751,7 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-0.012876" Scale="None" Actual="-0.012876"/>
+<X Value="-0.01388" Scale="None" Actual="-0.01388"/>
 <Y Value="-0.0072" Scale="None" Actual="-0.0072"/>
 <Z Value="0.030106" Scale="None" Actual="0.030106"/>
 </LocalPosition>
@@ -3760,7 +3760,7 @@
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.01288,-0.00720,0.03011,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.01388,-0.00720,0.03011,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -3906,16 +3906,16 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="3.03" Scale="None" Actual="3.03"/>
+<UpperOutputScale Value="4.93" Scale="None" Actual="4.93"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="3.03" Scale="None" Actual="3.03"/>
+<B Value="4.93" Scale="None" Actual="4.93"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-30.3" Scale="milli" Actual="-0.0303"/>
+<D Value="-0.05" Scale="None" Actual="-0.05"/>
 </StimulusTension>
 <LengthTension>
-<ID>17ab47e5-6f40-4e87-8616-116318f03409</ID>
+<ID>161a1d52-ecde-42d7-baf1-ee390cd362d3</ID>
 <Type>LengthTension</Type>
 <AssemblyFile>AnimatGUI.dll</AssemblyFile>
 <ClassName>AnimatGUI.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
@@ -3935,9 +3935,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="2.55" Scale="None" Actual="2.55"/>
-<Kse Value="7396.8" Scale="None" Actual="7396.8"/>
-<Kpe Value="1391.24" Scale="None" Actual="1391.24"/>
-<B Value="54.9314" Scale="None" Actual="54.9314"/>
+<Kse Value="9951.19" Scale="None" Actual="9951.19"/>
+<Kpe Value="9298.43" Scale="None" Actual="9298.43"/>
+<B Value="35.0063" Scale="None" Actual="35.0063"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -4027,8 +4027,8 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-0.01394" Scale="None" Actual="-0.01394"/>
-<Y Value="-0.000368" Scale="None" Actual="-0.000368"/>
+<X Value="-0.018032" Scale="None" Actual="-0.018032"/>
+<Y Value="-0.003086" Scale="None" Actual="-0.003086"/>
 <Z Value="0.01777" Scale="None" Actual="0.01777"/>
 </LocalPosition>
 <Rotation>
@@ -4036,7 +4036,7 @@
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.01394,-0.00037,0.01777,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.01803,-0.00309,0.01777,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -4354,7 +4354,7 @@
 <Relaxation5>
 <AssemblyFile>AnimatGUI.dll</AssemblyFile>
 <ClassName>AnimatGUI.DataObjects.Physical.ConstraintRelaxationVortex</ClassName>
-<ID>7b6ceb57-7d86-4a47-a1b6-9bda27c206bc</ID>
+<ID>97abe8d8-fbbb-4994-aeae-b01cd053f871</ID>
 <Enabled>False</Enabled>
 <CoordinateID>4</CoordinateID>
 <Stiffness Value="100" Scale="Kilo" Actual="100000"/>
@@ -4363,7 +4363,7 @@
 <Relaxation6>
 <AssemblyFile>AnimatGUI.dll</AssemblyFile>
 <ClassName>AnimatGUI.DataObjects.Physical.ConstraintRelaxationVortex</ClassName>
-<ID>9b53cb6a-e865-4442-bd96-535181762c6e</ID>
+<ID>754bfca2-9d13-4748-baea-a96df35e1460</ID>
 <Enabled>False</Enabled>
 <CoordinateID>5</CoordinateID>
 <Stiffness Value="100" Scale="Kilo" Actual="100000"/>
@@ -4374,7 +4374,7 @@
 <ClassName>AnimatGUI.DataObjects.Physical.ConstraintFriction</ClassName>
 <ID>00b42b7b-a001-4626-a69c-87c0beca56b3</ID>
 <Name/>
-<Enabled>False</Enabled>
+<Enabled>True</Enabled>
 <Proportional>False</Proportional>
 <Coefficient Value="0" Scale="None" Actual="0"/>
 <MaxForce Value="10000" Scale="None" Actual="10000"/>
@@ -4940,13 +4940,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="301.44" Scale="None" Actual="301.44"/>
+<UpperOutputScale Value="0.81" Scale="None" Actual="0.81"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="301.44" Scale="None" Actual="301.44"/>
+<B Value="0.81" Scale="None" Actual="0.81"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-3014.76" Scale="milli" Actual="-3.01476"/>
+<D Value="-0.01" Scale="None" Actual="-0.01"/>
 </StimulusTension>
 <LengthTension>
 <ID>0a7ee3d4-dfe7-44bf-99c9-c24473d6dff3</ID>
@@ -4969,9 +4969,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="0.44" Scale="None" Actual="0.44"/>
-<Kse Value="14.6" Scale="None" Actual="14.6"/>
-<Kpe Value="9987.72" Scale="None" Actual="9987.72"/>
-<B Value="2.8197" Scale="None" Actual="2.8197"/>
+<Kse Value="907.44" Scale="None" Actual="907.44"/>
+<Kpe Value="770.3" Scale="None" Actual="770.3"/>
+<B Value="20.9431" Scale="None" Actual="20.9431"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -5428,13 +5428,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="2.33" Scale="None" Actual="2.33"/>
+<UpperOutputScale Value="2.31" Scale="None" Actual="2.31"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="2.33" Scale="None" Actual="2.33"/>
+<B Value="2.31" Scale="None" Actual="2.31"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-23.27" Scale="milli" Actual="-0.02327"/>
+<D Value="-0.02" Scale="None" Actual="-0.02"/>
 </StimulusTension>
 <LengthTension>
 <ID>1667f329-623c-439e-b975-4fc2987f3a92</ID>
@@ -5457,9 +5457,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="2.21" Scale="None" Actual="2.21"/>
-<Kse Value="1545.95" Scale="None" Actual="1545.95"/>
-<Kpe Value="81.9" Scale="None" Actual="81.9"/>
-<B Value="9.7111" Scale="None" Actual="9.7111"/>
+<Kse Value="3706.03" Scale="None" Actual="3706.03"/>
+<Kpe Value="172.9" Scale="None" Actual="172.9"/>
+<B Value="75.5106" Scale="None" Actual="75.5106"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -5568,13 +5568,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="1636.3" Scale="None" Actual="1636.3"/>
+<UpperOutputScale Value="8.1" Scale="None" Actual="8.1"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="1636.3" Scale="None" Actual="1636.3"/>
+<B Value="8.1" Scale="None" Actual="8.1"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-16365" Scale="milli" Actual="-16.365"/>
+<D Value="-0.08" Scale="None" Actual="-0.08"/>
 </StimulusTension>
 <LengthTension>
 <ID>42acbd4d-5302-40a7-8594-8c6e7924c342</ID>
@@ -5597,9 +5597,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="3.96" Scale="None" Actual="3.96"/>
-<Kse Value="23.31" Scale="None" Actual="23.31"/>
-<Kpe Value="9608.56" Scale="None" Actual="9608.56"/>
-<B Value="2.6835" Scale="None" Actual="2.6835"/>
+<Kse Value="417.21" Scale="None" Actual="417.21"/>
+<Kpe Value="436.12" Scale="None" Actual="436.12"/>
+<B Value="10.8263" Scale="None" Actual="10.8263"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -5914,13 +5914,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="9.79" Scale="None" Actual="9.79"/>
+<UpperOutputScale Value="8.87" Scale="None" Actual="8.87"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="9.79" Scale="None" Actual="9.79"/>
+<B Value="8.87" Scale="None" Actual="8.87"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-97.87" Scale="milli" Actual="-0.09787"/>
+<D Value="-0.09" Scale="None" Actual="-0.09"/>
 </StimulusTension>
 <LengthTension>
 <ID>278e2bfa-2383-47ff-bfa0-1a100da06053</ID>
@@ -5943,9 +5943,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="8.6" Scale="None" Actual="8.6"/>
-<Kse Value="593.76" Scale="None" Actual="593.76"/>
-<Kpe Value="81.9" Scale="None" Actual="81.9"/>
-<B Value="0.70065" Scale="None" Actual="0.70065"/>
+<Kse Value="6032.34" Scale="None" Actual="6032.34"/>
+<Kpe Value="189.5" Scale="None" Actual="189.5"/>
+<B Value="1.8197" Scale="None" Actual="1.8197"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -6224,7 +6224,7 @@
 <Relaxation5>
 <AssemblyFile>AnimatGUI.dll</AssemblyFile>
 <ClassName>AnimatGUI.DataObjects.Physical.ConstraintRelaxationVortex</ClassName>
-<ID>f9db7e44-9958-4f15-9488-54597291dc71</ID>
+<ID>91044941-cd69-4fac-a7b4-36002809b3e6</ID>
 <Enabled>False</Enabled>
 <CoordinateID>4</CoordinateID>
 <Stiffness Value="100" Scale="Kilo" Actual="100000"/>
@@ -6233,7 +6233,7 @@
 <Relaxation6>
 <AssemblyFile>AnimatGUI.dll</AssemblyFile>
 <ClassName>AnimatGUI.DataObjects.Physical.ConstraintRelaxationVortex</ClassName>
-<ID>27264064-8d07-4572-bc0b-7c6850c95548</ID>
+<ID>e7751eac-c30e-4518-a7c3-dbe57e429b00</ID>
 <Enabled>False</Enabled>
 <CoordinateID>5</CoordinateID>
 <Stiffness Value="100" Scale="Kilo" Actual="100000"/>
@@ -9031,13 +9031,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="91.59" Scale="None" Actual="91.59"/>
+<UpperOutputScale Value="17.23" Scale="None" Actual="17.23"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="91.59" Scale="None" Actual="91.59"/>
+<B Value="17.23" Scale="None" Actual="17.23"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-916.04" Scale="milli" Actual="-0.91604"/>
+<D Value="-0.17" Scale="None" Actual="-0.17"/>
 </StimulusTension>
 <LengthTension>
 <ID>4b3722d5-4a00-4b08-bd39-df97b4f7f4bf</ID>
@@ -9060,9 +9060,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="1.42" Scale="None" Actual="1.42"/>
-<Kse Value="151.31" Scale="None" Actual="151.31"/>
-<Kpe Value="9608.56" Scale="None" Actual="9608.56"/>
-<B Value="3.5889" Scale="None" Actual="3.5889"/>
+<Kse Value="96.22" Scale="None" Actual="96.22"/>
+<Kpe Value="1071.43" Scale="None" Actual="1071.43"/>
+<B Value="10.7029" Scale="None" Actual="10.7029"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -9171,13 +9171,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="766.76" Scale="None" Actual="766.76"/>
+<UpperOutputScale Value="12.85" Scale="None" Actual="12.85"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="766.76" Scale="None" Actual="766.76"/>
+<B Value="12.85" Scale="None" Actual="12.85"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-7668.46" Scale="milli" Actual="-7.66846"/>
+<D Value="-0.13" Scale="None" Actual="-0.13"/>
 </StimulusTension>
 <LengthTension>
 <ID>5bc59ca3-e73c-48d2-9344-a20e4a453da9</ID>
@@ -9200,9 +9200,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="11.02" Scale="None" Actual="11.02"/>
-<Kse Value="105.51" Scale="None" Actual="105.51"/>
-<Kpe Value="7235.72" Scale="None" Actual="7235.72"/>
-<B Value="2.1968" Scale="None" Actual="2.1968"/>
+<Kse Value="727.82" Scale="None" Actual="727.82"/>
+<Kpe Value="121.1" Scale="None" Actual="121.1"/>
+<B Value="1.1215" Scale="None" Actual="1.1215"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -9931,13 +9931,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="4.32" Scale="None" Actual="4.32"/>
+<UpperOutputScale Value="7.3" Scale="None" Actual="7.3"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="4.32" Scale="None" Actual="4.32"/>
+<B Value="7.3" Scale="None" Actual="7.3"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-43.25" Scale="milli" Actual="-0.04325"/>
+<D Value="-0.07" Scale="None" Actual="-0.07"/>
 </StimulusTension>
 <LengthTension>
 <ID>7c1b3d99-7219-422f-8456-3a036343e4cf</ID>
@@ -9960,9 +9960,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="3.54" Scale="None" Actual="3.54"/>
-<Kse Value="553.51" Scale="None" Actual="553.51"/>
-<Kpe Value="122.63" Scale="None" Actual="122.63"/>
-<B Value="1.7736" Scale="None" Actual="1.7736"/>
+<Kse Value="111.72" Scale="None" Actual="111.72"/>
+<Kpe Value="118.7" Scale="None" Actual="118.7"/>
+<B Value="1.102" Scale="None" Actual="1.102"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 </ChildBodies>
@@ -10011,13 +10011,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="2.97" Scale="None" Actual="2.97"/>
+<UpperOutputScale Value="4.46" Scale="None" Actual="4.46"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="2.97" Scale="None" Actual="2.97"/>
+<B Value="4.46" Scale="None" Actual="4.46"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-29.7" Scale="milli" Actual="-0.0297"/>
+<D Value="-0.04" Scale="None" Actual="-0.04"/>
 </StimulusTension>
 <LengthTension>
 <ID>e44c4dfc-7309-4425-a627-f3ed3bc249ae</ID>
@@ -10040,9 +10040,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="2.92" Scale="None" Actual="2.92"/>
-<Kse Value="7146.8" Scale="None" Actual="7146.8"/>
-<Kpe Value="122.63" Scale="None" Actual="122.63"/>
-<B Value="9.1824" Scale="None" Actual="9.1824"/>
+<Kse Value="736.95" Scale="None" Actual="736.95"/>
+<Kpe Value="389.88" Scale="None" Actual="389.88"/>
+<B Value="1.9997" Scale="None" Actual="1.9997"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -10081,13 +10081,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="51.2" Scale="None" Actual="51.2"/>
+<UpperOutputScale Value="21.65" Scale="None" Actual="21.65"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="51.2" Scale="None" Actual="51.2"/>
+<B Value="21.65" Scale="None" Actual="21.65"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-512.03" Scale="milli" Actual="-0.51203"/>
+<D Value="-0.22" Scale="None" Actual="-0.22"/>
 </StimulusTension>
 <LengthTension>
 <ID>84eca5f1-52b1-47b9-9a44-c705fdd66609</ID>
@@ -10110,9 +10110,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="5.61" Scale="None" Actual="5.61"/>
-<Kse Value="681.51" Scale="None" Actual="681.51"/>
-<Kpe Value="5537.94" Scale="None" Actual="5537.94"/>
-<B Value="1.6968" Scale="None" Actual="1.6968"/>
+<Kse Value="905.94" Scale="None" Actual="905.94"/>
+<Kpe Value="2590.74" Scale="None" Actual="2590.74"/>
+<B Value="1.1689" Scale="None" Actual="1.1689"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -10219,13 +10219,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="9.12" Scale="None" Actual="9.12"/>
+<UpperOutputScale Value="9.16" Scale="None" Actual="9.16"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="9.12" Scale="None" Actual="9.12"/>
+<B Value="9.16" Scale="None" Actual="9.16"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-91.21" Scale="milli" Actual="-0.09121"/>
+<D Value="-0.09" Scale="None" Actual="-0.09"/>
 </StimulusTension>
 <LengthTension>
 <ID>4a2d93eb-251c-42b7-8f6d-a5215472079f</ID>
@@ -10248,9 +10248,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="6.08" Scale="None" Actual="6.08"/>
-<Kse Value="9839.89" Scale="None" Actual="9839.89"/>
-<Kpe Value="4920.34" Scale="None" Actual="4920.34"/>
-<B Value="99.9663" Scale="None" Actual="99.9663"/>
+<Kse Value="9989.95" Scale="None" Actual="9989.95"/>
+<Kpe Value="5053.39" Scale="None" Actual="5053.39"/>
+<B Value="98.99" Scale="None" Actual="98.99"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -10500,13 +10500,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="446.52" Scale="None" Actual="446.52"/>
+<UpperOutputScale Value="60.88" Scale="None" Actual="60.88"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="446.52" Scale="None" Actual="446.52"/>
+<B Value="60.88" Scale="None" Actual="60.88"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-4465.69" Scale="milli" Actual="-4.46569"/>
+<D Value="-0.61" Scale="None" Actual="-0.61"/>
 </StimulusTension>
 <LengthTension>
 <ID>91868d7e-39f5-4bbb-a3fe-a29939962411</ID>
@@ -10529,9 +10529,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="18.26" Scale="None" Actual="18.26"/>
-<Kse Value="425.51" Scale="None" Actual="425.51"/>
-<Kpe Value="9979.59" Scale="None" Actual="9979.59"/>
-<B Value="2.9055" Scale="None" Actual="2.9055"/>
+<Kse Value="4155.97" Scale="None" Actual="4155.97"/>
+<Kpe Value="9701.25" Scale="None" Actual="9701.25"/>
+<B Value="7.9432" Scale="None" Actual="7.9432"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -11104,8 +11104,8 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-0.019694" Scale="None" Actual="-0.019694"/>
-<Y Value="-0.001514" Scale="None" Actual="-0.001514"/>
+<X Value="-0.018278" Scale="None" Actual="-0.018278"/>
+<Y Value="-0.000982" Scale="None" Actual="-0.000982"/>
 <Z Value="0.040968" Scale="None" Actual="0.040968"/>
 </LocalPosition>
 <Rotation>
@@ -11113,7 +11113,7 @@
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.01969,-0.00151,0.04097,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.01828,-0.00098,0.04097,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -11173,16 +11173,16 @@
 <Shininess>64</Shininess>
 <Texture/>
 <LocalPosition>
-<X Value="-0.02" Scale="None" Actual="-0.02"/>
+<X Value="-0.021918" Scale="None" Actual="-0.021918"/>
 <Y Value="-0.006612" Scale="None" Actual="-0.006612"/>
-<Z Value="0.007954" Scale="None" Actual="0.007954"/>
+<Z Value="0.01694" Scale="None" Actual="0.01694"/>
 </LocalPosition>
 <Rotation>
 <X Value="0" Scale="None" Actual="0"/>
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.02000,-0.00661,0.00795,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.02192,-0.00661,0.01694,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -11243,7 +11243,7 @@
 <Texture/>
 <LocalPosition>
 <X Value="-0.015986" Scale="None" Actual="-0.015986"/>
-<Y Value="-0.0083" Scale="None" Actual="-0.0083"/>
+<Y Value="-0.007528" Scale="None" Actual="-0.007528"/>
 <Z Value="0.034" Scale="None" Actual="0.034"/>
 </LocalPosition>
 <Rotation>
@@ -11251,7 +11251,7 @@
 <Y Value="0" Scale="None" Actual="0"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </Rotation>
-<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.01599,-0.00830,0.03400,1</LocalMatrix>
+<LocalMatrix>1,0,0,0,-0,1,0,0,0,-0,1,0,-0.01599,-0.00753,0.03400,1</LocalMatrix>
 <DraggerSize Value="-1" Scale="None" Actual="-1"/>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
@@ -11751,13 +11751,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="236.2" Scale="None" Actual="236.2"/>
+<UpperOutputScale Value="46.04" Scale="None" Actual="46.04"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="236.2" Scale="None" Actual="236.2"/>
+<B Value="46.04" Scale="None" Actual="46.04"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-2362.33" Scale="milli" Actual="-2.36233"/>
+<D Value="-0.46" Scale="None" Actual="-0.46"/>
 </StimulusTension>
 <LengthTension>
 <ID>c123b9f6-ff7f-40fb-bab0-1637b5057a57</ID>
@@ -11780,9 +11780,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="3.02" Scale="None" Actual="3.02"/>
-<Kse Value="47.45" Scale="None" Actual="47.45"/>
-<Kpe Value="3663.78" Scale="None" Actual="3663.78"/>
-<B Value="22.9199" Scale="None" Actual="22.9199"/>
+<Kse Value="579.36" Scale="None" Actual="579.36"/>
+<Kpe Value="8252.84" Scale="None" Actual="8252.84"/>
+<B Value="4.0167" Scale="None" Actual="4.0167"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -11818,13 +11818,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="2066.39" Scale="None" Actual="2066.39"/>
+<UpperOutputScale Value="191.55" Scale="None" Actual="191.55"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="2066.39" Scale="None" Actual="2066.39"/>
+<B Value="191.55" Scale="None" Actual="191.55"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-20666.3" Scale="milli" Actual="-20.6663"/>
+<D Value="-1.92" Scale="None" Actual="-1.92"/>
 </StimulusTension>
 <LengthTension>
 <ID>2a1c4c48-1406-4ee8-a987-b0a5ca48d9c9</ID>
@@ -11847,9 +11847,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="10.22" Scale="None" Actual="10.22"/>
-<Kse Value="48.14" Scale="None" Actual="48.14"/>
-<Kpe Value="9685.31" Scale="None" Actual="9685.31"/>
-<B Value="46.859" Scale="None" Actual="46.859"/>
+<Kse Value="561.01" Scale="None" Actual="561.01"/>
+<Kpe Value="9953.78" Scale="None" Actual="9953.78"/>
+<B Value="4.2466" Scale="None" Actual="4.2466"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -11954,13 +11954,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="16.1" Scale="None" Actual="16.1"/>
+<UpperOutputScale Value="13.04" Scale="None" Actual="13.04"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="16.1" Scale="None" Actual="16.1"/>
+<B Value="13.04" Scale="None" Actual="13.04"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-161.04" Scale="milli" Actual="-0.16104"/>
+<D Value="-0.13" Scale="None" Actual="-0.13"/>
 </StimulusTension>
 <LengthTension>
 <ID>c7316e9a-c0cd-4299-97fe-1181b96c462b</ID>
@@ -11983,9 +11983,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="12.21" Scale="None" Actual="12.21"/>
-<Kse Value="1190.29" Scale="None" Actual="1190.29"/>
-<Kpe Value="379.39" Scale="None" Actual="379.39"/>
-<B Value="54.9942" Scale="None" Actual="54.9942"/>
+<Kse Value="5838.07" Scale="None" Actual="5838.07"/>
+<Kpe Value="395.61" Scale="None" Actual="395.61"/>
+<B Value="98.0611" Scale="None" Actual="98.0611"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -12368,13 +12368,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="237.93" Scale="None" Actual="237.93"/>
+<UpperOutputScale Value="392.15" Scale="None" Actual="392.15"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="237.93" Scale="None" Actual="237.93"/>
+<B Value="392.15" Scale="None" Actual="392.15"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-2379.57" Scale="milli" Actual="-2.37957"/>
+<D Value="-3.92" Scale="None" Actual="-3.92"/>
 </StimulusTension>
 <LengthTension>
 <ID>957fc15a-51f8-499a-b37f-24d0fac6af78</ID>
@@ -12397,9 +12397,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="10" Scale="None" Actual="10"/>
-<Kse Value="47.45" Scale="None" Actual="47.45"/>
-<Kpe Value="1081.52" Scale="None" Actual="1081.52"/>
-<B Value="1.2379" Scale="None" Actual="1.2379"/>
+<Kse Value="249.04" Scale="None" Actual="249.04"/>
+<Kpe Value="9517.14" Scale="None" Actual="9517.14"/>
+<B Value="81.6033" Scale="None" Actual="81.6033"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -12435,13 +12435,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="2.98" Scale="None" Actual="2.98"/>
+<UpperOutputScale Value="34.48" Scale="None" Actual="34.48"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="2.98" Scale="None" Actual="2.98"/>
+<B Value="34.48" Scale="None" Actual="34.48"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-29.82" Scale="milli" Actual="-0.02982"/>
+<D Value="-0.34" Scale="None" Actual="-0.34"/>
 </StimulusTension>
 <LengthTension>
 <ID>b6af827f-3e2e-4251-bd1b-f92eb986361e</ID>
@@ -12464,9 +12464,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="2.85" Scale="None" Actual="2.85"/>
-<Kse Value="6249.83" Scale="None" Actual="6249.83"/>
-<Kpe Value="288.45" Scale="None" Actual="288.45"/>
-<B Value="95.392" Scale="None" Actual="95.392"/>
+<Kse Value="743.07" Scale="None" Actual="743.07"/>
+<Kpe Value="8247.81" Scale="None" Actual="8247.81"/>
+<B Value="93.8174" Scale="None" Actual="93.8174"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -12640,13 +12640,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="167.12" Scale="None" Actual="167.12"/>
+<UpperOutputScale Value="5.81" Scale="None" Actual="5.81"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="167.12" Scale="None" Actual="167.12"/>
+<B Value="5.81" Scale="None" Actual="5.81"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-1671.45" Scale="milli" Actual="-1.67145"/>
+<D Value="-0.06" Scale="None" Actual="-0.06"/>
 </StimulusTension>
 <LengthTension>
 <ID>6827ca48-05d3-42a6-b7d8-0a68c32c26b1</ID>
@@ -12669,9 +12669,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="2.35" Scale="None" Actual="2.35"/>
-<Kse Value="47.45" Scale="None" Actual="47.45"/>
-<Kpe Value="3327.05" Scale="None" Actual="3327.05"/>
-<B Value="5.9623" Scale="None" Actual="5.9623"/>
+<Kse Value="5058.56" Scale="None" Actual="5058.56"/>
+<Kpe Value="7451.25" Scale="None" Actual="7451.25"/>
+<B Value="11.4042" Scale="None" Actual="11.4042"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -12776,13 +12776,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="25462.1" Scale="None" Actual="25462.1"/>
+<UpperOutputScale Value="16.56" Scale="None" Actual="16.56"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="25462.1" Scale="None" Actual="25462.1"/>
+<B Value="16.56" Scale="None" Actual="16.56"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-254651" Scale="milli" Actual="-254.651"/>
+<D Value="-0.17" Scale="None" Actual="-0.17"/>
 </StimulusTension>
 <LengthTension>
 <ID>b828d40c-04c4-4664-af0f-e7028ac01045</ID>
@@ -12805,9 +12805,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="3.01" Scale="None" Actual="3.01"/>
-<Kse Value="1.18" Scale="None" Actual="1.18"/>
-<Kpe Value="9980.63" Scale="None" Actual="9980.63"/>
-<B Value="80.5755" Scale="None" Actual="80.5755"/>
+<Kse Value="449.19" Scale="None" Actual="449.19"/>
+<Kpe Value="2021.75" Scale="None" Actual="2021.75"/>
+<B Value="99.3563" Scale="None" Actual="99.3563"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -12843,13 +12843,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="19.82" Scale="None" Actual="19.82"/>
+<UpperOutputScale Value="34.82" Scale="None" Actual="34.82"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="19.82" Scale="None" Actual="19.82"/>
+<B Value="34.82" Scale="None" Actual="34.82"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-198.19" Scale="milli" Actual="-0.19819"/>
+<D Value="-0.35" Scale="None" Actual="-0.35"/>
 </StimulusTension>
 <LengthTension>
 <ID>ac1ded0f-0dba-48fc-9162-988c9c53a17c</ID>
@@ -12872,9 +12872,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="18.74" Scale="None" Actual="18.74"/>
-<Kse Value="7684.17" Scale="None" Actual="7684.17"/>
-<Kpe Value="441.28" Scale="None" Actual="441.28"/>
-<B Value="50.6144" Scale="None" Actual="50.6144"/>
+<Kse Value="9921.82" Scale="None" Actual="9921.82"/>
+<Kpe Value="8510.92" Scale="None" Actual="8510.92"/>
+<B Value="36.063" Scale="None" Actual="36.063"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -12910,13 +12910,13 @@
 <LowerLimitScale Value="-60" Scale="milli" Actual="-0.06"/>
 <UpperLimitScale Value="-40" Scale="milli" Actual="-0.04"/>
 <LowerOutputScale Value="0" Scale="None" Actual="0"/>
-<UpperOutputScale Value="3.28" Scale="None" Actual="3.28"/>
+<UpperOutputScale Value="5.11" Scale="None" Actual="5.11"/>
 <IndependentUnits>Membrane Voltage (V)</IndependentUnits>
 <DependentUnits>Contractile Tension (N)</DependentUnits>
 <A Value="-50" Scale="milli" Actual="-0.05"/>
-<B Value="3.28" Scale="None" Actual="3.28"/>
+<B Value="5.11" Scale="None" Actual="5.11"/>
 <C Value="459.5" Scale="None" Actual="459.5"/>
-<D Value="-32.76" Scale="milli" Actual="-0.03276"/>
+<D Value="-0.05" Scale="None" Actual="-0.05"/>
 </StimulusTension>
 <LengthTension>
 <ID>b5a8704d-7f84-43aa-a981-4e4bb9328f62</ID>
@@ -12939,9 +12939,9 @@
 <MinPeLength Value="5" Scale="None" Actual="5"/>
 </LengthTension>
 <MaximumTension Value="3" Scale="None" Actual="3"/>
-<Kse Value="7912.13" Scale="None" Actual="7912.13"/>
-<Kpe Value="726.36" Scale="None" Actual="726.36"/>
-<B Value="83.182" Scale="None" Actual="83.182"/>
+<Kse Value="730.21" Scale="None" Actual="730.21"/>
+<Kpe Value="513.63" Scale="None" Actual="513.63"/>
+<B Value="82.1697" Scale="None" Actual="82.1697"/>
 <IbDischarge Value="100" Scale="None" Actual="100"/>
 </RigidBody>
 <RigidBody>
@@ -26757,7 +26757,7 @@
 <Texture/>
 <LocalPosition>
 <X Value="0" Scale="None" Actual="0"/>
-<Y Value="-10.2" Scale="centi" Actual="-0.102"/>
+<Y Value="-0.21191" Scale="None" Actual="-0.21191"/>
 <Z Value="0" Scale="None" Actual="0"/>
 </LocalPosition>
 <Rotation>
@@ -26922,13 +26922,6 @@
 </Environment>
 <ToolViewers>
 <ToolHolder>
-<ID>dt-KeyMuscleLen-ID</ID>
-<Name>KeyMuscleLen</Name>
-<BaseAssemblyFile>LicensedAnimatGUI.dll</BaseAssemblyFile>
-<BaseClassName>LicensedAnimatGUI.Forms.Charts.LineChart</BaseClassName>
-<ToolFormID>dt-KeyMuscleLen-tfID</ToolFormID>
-</ToolHolder>
-<ToolHolder>
 <ID>dt-KeyMuscAct-ID</ID>
 <Name>KeyMuscAct</Name>
 <BaseAssemblyFile>LicensedAnimatGUI.dll</BaseAssemblyFile>
@@ -26950,6 +26943,13 @@
 <ToolFormID>dt-KeyMuscAl-tfID</ToolFormID>
 </ToolHolder>
 <ToolHolder>
+<ID>05cf2c0d-3c28-44b1-ae86-c58f4e717d5c</ID>
+<Name>JointMotion_injected</Name>
+<BaseAssemblyFile>LicensedAnimatGUI.dll</BaseAssemblyFile>
+<BaseClassName>LicensedAnimatGUI.Forms.Charts.LineChart</BaseClassName>
+<ToolFormID>1b1bb75a-f9ae-4839-8124-5172f1dbddcf</ToolFormID>
+</ToolHolder>
+<ToolHolder>
 <ID>dt-KeyMuscTen-ID</ID>
 <Name>KeyMuscTen</Name>
 <BaseAssemblyFile>LicensedAnimatGUI.dll</BaseAssemblyFile>
@@ -26964,11 +26964,11 @@
 <ToolFormID>dt-KeyMNs-tfID</ToolFormID>
 </ToolHolder>
 <ToolHolder>
-<ID>05cf2c0d-3c28-44b1-ae86-c58f4e717d5c</ID>
-<Name>JointMotion</Name>
+<ID>dt-KeyMuscleLen-ID</ID>
+<Name>KeyMuscleLen</Name>
 <BaseAssemblyFile>LicensedAnimatGUI.dll</BaseAssemblyFile>
 <BaseClassName>LicensedAnimatGUI.Forms.Charts.LineChart</BaseClassName>
-<ToolFormID>1b1bb75a-f9ae-4839-8124-5172f1dbddcf</ToolFormID>
+<ToolFormID>dt-KeyMuscleLen-tfID</ToolFormID>
 </ToolHolder>
 </ToolViewers>
 <Stimuli>
@@ -27209,7 +27209,7 @@
 <ClassName>AnimatGUI.DataObjects.ExternalStimuli.MotorPosition</ClassName>
 <Name>ConstantxAnkle</Name>
 <ID>4f309ad9-7dea-4ec2-bde8-6077cc6b1d05</ID>
-<StartTime Value="1.49" Scale="None" Actual="1.49"/>
+<StartTime Value="1.47" Scale="None" Actual="1.47"/>
 <EndTime Value="1.75" Scale="None" Actual="1.75"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>True</AlwaysActive>
@@ -27218,7 +27218,7 @@
 <Equation>0</Equation>
 <StructureID>e40d2c4f-9c31-49f8-8a5c-5688fb768225</StructureID>
 <PartID>c7df3511-7e4c-411e-be1f-1b71ff30c530</PartID>
-<Velocity Value="0.6" Scale="None" Actual="0.6"/>
+<Velocity Value="0.42788" Scale="None" Actual="0.42788"/>
 <DisableMotorWhenDone>True</DisableMotorWhenDone>
 </Stimulus>
 <Stimulus>
@@ -27297,8 +27297,8 @@
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>True</AlwaysActive>
 <Enabled>False</Enabled>
-<ValueType>Equation</ValueType>
-<Equation>10+10*sin(t)</Equation>
+<ValueType>Constant</ValueType>
+<Equation>10+10*sin(3*t)</Equation>
 <OrganismID>e40d2c4f-9c31-49f8-8a5c-5688fb768225</OrganismID>
 <NodeID>neur11-ID</NodeID>
 <CurrentOn Value="20" Scale="nano" Actual="2e-008"/>
@@ -27348,16 +27348,16 @@
 <ClassName>AnimatGUI.DataObjects.ExternalStimuli.MotorPosition</ClassName>
 <Name>ConstantHip</Name>
 <ID>e5ed3fa1-29be-4581-ba2a-2bef6d533aba</ID>
-<StartTime Value="1.49" Scale="None" Actual="1.49"/>
+<StartTime Value="1.47" Scale="None" Actual="1.47"/>
 <EndTime Value="1.75" Scale="None" Actual="1.75"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
-<AlwaysActive>False</AlwaysActive>
+<AlwaysActive>True</AlwaysActive>
 <Enabled>False</Enabled>
 <ValueType>Constant</ValueType>
 <Equation>0</Equation>
 <StructureID>e40d2c4f-9c31-49f8-8a5c-5688fb768225</StructureID>
 <PartID>b2919ff8-3efa-4549-97b4-a4bc77ad6e0a</PartID>
-<Velocity Value="0.00484" Scale="None" Actual="0.00484"/>
+<Velocity Value="0.058448" Scale="None" Actual="0.058448"/>
 <DisableMotorWhenDone>True</DisableMotorWhenDone>
 </Stimulus>
 <Stimulus>
@@ -27561,28 +27561,6 @@
 <Stimulus>
 <AssemblyFile>AnimatGUI.dll</AssemblyFile>
 <ClassName>AnimatGUI.DataObjects.ExternalStimuli.TonicCurrent</ClassName>
-<Name>stTC1-neur37</Name>
-<ID>stTC1-neur37-ID</ID>
-<StartTime Value="0" Scale="None" Actual="0"/>
-<EndTime Value="10" Scale="None" Actual="10"/>
-<StepInterval Value="0" Scale="milli" Actual="0"/>
-<AlwaysActive>False</AlwaysActive>
-<Enabled>False</Enabled>
-<ValueType>Constant</ValueType>
-<Equation>8.9437*sin(0*t+1.5708)</Equation>
-<OrganismID>e40d2c4f-9c31-49f8-8a5c-5688fb768225</OrganismID>
-<NodeID>neur37-ID</NodeID>
-<CurrentOn Value="0" Scale="nano" Actual="0"/>
-<CurrentOff Value="0" Scale="nano" Actual="0"/>
-<CurrentBurstOff Value="0" Scale="nano" Actual="0"/>
-<CycleOnDuration Value="10" Scale="None" Actual="10"/>
-<CycleOffDuration Value="0" Scale="None" Actual="0"/>
-<BurstOnDuration Value="10" Scale="None" Actual="10"/>
-<BurstOffDuration Value="0" Scale="None" Actual="0"/>
-</Stimulus>
-<Stimulus>
-<AssemblyFile>AnimatGUI.dll</AssemblyFile>
-<ClassName>AnimatGUI.DataObjects.ExternalStimuli.TonicCurrent</ClassName>
 <Name>stTC1-neur10</Name>
 <ID>stTC1-neur10-ID</ID>
 <StartTime Value="0" Scale="None" Actual="0"/>
@@ -27640,6 +27618,28 @@
 <PartID>b2919ff8-3efa-4549-97b4-a4bc77ad6e0a</PartID>
 <Velocity Value="0" Scale="None" Actual="0"/>
 <DisableMotorWhenDone>False</DisableMotorWhenDone>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>AnimatGUI.dll</AssemblyFile>
+<ClassName>AnimatGUI.DataObjects.ExternalStimuli.TonicCurrent</ClassName>
+<Name>stTC1-neur2</Name>
+<ID>stTC1-neur2-ID</ID>
+<StartTime Value="3.21" Scale="None" Actual="3.21"/>
+<EndTime Value="3.71" Scale="None" Actual="3.71"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>False</Enabled>
+<ValueType>Constant</ValueType>
+<Equation>0.81608*sin(0*t+1.5708)</Equation>
+<OrganismID>e40d2c4f-9c31-49f8-8a5c-5688fb768225</OrganismID>
+<NodeID>neur2-ID</NodeID>
+<CurrentOn Value="20" Scale="nano" Actual="2e-008"/>
+<CurrentOff Value="0" Scale="nano" Actual="0"/>
+<CurrentBurstOff Value="0" Scale="nano" Actual="0"/>
+<CycleOnDuration Value="50" Scale="centi" Actual="0.5"/>
+<CycleOffDuration Value="0" Scale="None" Actual="0"/>
+<BurstOnDuration Value="50" Scale="centi" Actual="0.5"/>
+<BurstOffDuration Value="0" Scale="None" Actual="0"/>
 </Stimulus>
 <Stimulus>
 <AssemblyFile>AnimatGUI.dll</AssemblyFile>
@@ -27707,7 +27707,7 @@
 <ClassName>AnimatGUI.DataObjects.ExternalStimuli.MotorPosition</ClassName>
 <Name>ConstantKnee</Name>
 <ID>1400e503-ed4c-426a-915b-496accf246b2</ID>
-<StartTime Value="1.49" Scale="None" Actual="1.49"/>
+<StartTime Value="1.47" Scale="None" Actual="1.47"/>
 <EndTime Value="1.75" Scale="None" Actual="1.75"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>True</AlwaysActive>
@@ -27716,7 +27716,7 @@
 <Equation>0</Equation>
 <StructureID>e40d2c4f-9c31-49f8-8a5c-5688fb768225</StructureID>
 <PartID>55af1c5f-e200-4870-b3fa-0501ab0b22dd</PartID>
-<Velocity Value="0.5" Scale="None" Actual="0.5"/>
+<Velocity Value="-0.9" Scale="None" Actual="-0.9"/>
 <DisableMotorWhenDone>True</DisableMotorWhenDone>
 </Stimulus>
 <Stimulus>
@@ -27788,23 +27788,23 @@
 <Stimulus>
 <AssemblyFile>AnimatGUI.dll</AssemblyFile>
 <ClassName>AnimatGUI.DataObjects.ExternalStimuli.TonicCurrent</ClassName>
-<Name>stTC1-neur2</Name>
-<ID>stTC1-neur2-ID</ID>
-<StartTime Value="3.21" Scale="None" Actual="3.21"/>
-<EndTime Value="3.71" Scale="None" Actual="3.71"/>
+<Name>stTC1-neur37</Name>
+<ID>stTC1-neur37-ID</ID>
+<StartTime Value="0" Scale="None" Actual="0"/>
+<EndTime Value="10" Scale="None" Actual="10"/>
 <StepInterval Value="0" Scale="milli" Actual="0"/>
 <AlwaysActive>False</AlwaysActive>
 <Enabled>False</Enabled>
 <ValueType>Constant</ValueType>
-<Equation>0.81608*sin(0*t+1.5708)</Equation>
+<Equation>8.9437*sin(0*t+1.5708)</Equation>
 <OrganismID>e40d2c4f-9c31-49f8-8a5c-5688fb768225</OrganismID>
-<NodeID>neur2-ID</NodeID>
-<CurrentOn Value="20" Scale="nano" Actual="2e-008"/>
+<NodeID>neur37-ID</NodeID>
+<CurrentOn Value="0" Scale="nano" Actual="0"/>
 <CurrentOff Value="0" Scale="nano" Actual="0"/>
 <CurrentBurstOff Value="0" Scale="nano" Actual="0"/>
-<CycleOnDuration Value="50" Scale="centi" Actual="0.5"/>
+<CycleOnDuration Value="10" Scale="None" Actual="10"/>
 <CycleOffDuration Value="0" Scale="None" Actual="0"/>
-<BurstOnDuration Value="50" Scale="centi" Actual="0.5"/>
+<BurstOnDuration Value="10" Scale="None" Actual="10"/>
 <BurstOffDuration Value="0" Scale="None" Actual="0"/>
 </Stimulus>
 <Stimulus>
@@ -27964,8 +27964,8 @@
 </Stimuli>
 <HudItems>
 <HudItem>
-<Name>56446d7f-01b9-44a1-9e9d-08700295ae51</Name>
-<ID>56446d7f-01b9-44a1-9e9d-08700295ae51</ID>
+<Name>ef24f6c6-415a-4538-9d91-46afcfbf6d7f</Name>
+<ID>ef24f6c6-415a-4538-9d91-46afcfbf6d7f</ID>
 <Type>HudText</Type>
 <CharSize>30</CharSize>
 <Text>Time: %3.3f</Text>
@@ -28078,7 +28078,7 @@
 <DockingConfig>&lt;?xml version="1.0" encoding="us-ascii"?&gt;
 &lt;!-- DotNetMagic, The User Interface library for .NET (www.crownwood.net) --&gt;
 &lt;!-- Modifying this generated file will probably render it invalid --&gt;
-&lt;DockingConfig FormatVersion="10" InsideFill="False" InnerMinimum="20, 20" SavedAt="11/19/2020 15:27:18"&gt;
+&lt;DockingConfig FormatVersion="10" InsideFill="False" InnerMinimum="20, 20" SavedAt="12/03/2020 13:04:53"&gt;
   &lt;Content Name="Playback Control" Visible="False" Docked="True" AutoHidden="False" CaptionBar="True" CloseButton="False" DisplaySize="150, 150" DisplayLocation="150, 150" AutoHideSize="150, 150" FloatingSize="150, 150" FullTitle="Playback Control" Office2003BackColor="Base" UniqueName="" Office2007BackColor="Base" MediaPlayerBackColor="Base"&gt;
     &lt;DefaultRestore Type="Crownwood.DotNetMagic.Docking.RestoreContentState"&gt;
       &lt;Content Name="Playback Control" UniqueName="" /&gt;
@@ -28574,7 +28574,7 @@
   &lt;CustomGlobalData /&gt;
   &lt;Sequence Count="1" Unique="0" Space="100" Direction="Horizontal"&gt;
     &lt;Leaf Count="9" Unique="7" Space="100"&gt;
-      &lt;Page Title="Sim Window" ImageList="True" ImageIndex="0" Selected="True" Control="null" UniqueName=""&gt;
+      &lt;Page Title="Sim Window" ImageList="True" ImageIndex="0" Selected="False" Control="null" UniqueName=""&gt;
         &lt;CustomPageData&gt;&lt;![CDATA[&lt;TabPage&gt;
 &lt;Form&gt;
 &lt;ID&gt;b1c3eb6f-fc15-4560-8750-275c275ef964&lt;/ID&gt;
@@ -28666,7 +28666,7 @@
 &lt;/TabPage&gt;
 ]]&gt;&lt;/CustomPageData&gt;
       &lt;/Page&gt;
-      &lt;Page Title="PassiveTension" ImageList="True" ImageIndex="2" Selected="False" Control="null" UniqueName=""&gt;
+      &lt;Page Title="PassiveTension" ImageList="True" ImageIndex="2" Selected="True" Control="null" UniqueName=""&gt;
         &lt;CustomPageData&gt;&lt;![CDATA[&lt;TabPage&gt;
 &lt;Form&gt;
 &lt;ID&gt;dt-PassiveTension-tfID&lt;/ID&gt;
@@ -28679,15 +28679,15 @@
 &lt;/TabPage&gt;
 ]]&gt;&lt;/CustomPageData&gt;
       &lt;/Page&gt;
-      &lt;Page Title="JointMotion" ImageList="True" ImageIndex="2" Selected="False" Control="null" UniqueName=""&gt;
+      &lt;Page Title="JointMotion_injected" ImageList="True" ImageIndex="2" Selected="False" Control="null" UniqueName=""&gt;
         &lt;CustomPageData&gt;&lt;![CDATA[&lt;TabPage&gt;
 &lt;Form&gt;
 &lt;ID&gt;1b1bb75a-f9ae-4839-8124-5172f1dbddcf&lt;/ID&gt;
-&lt;Title&gt;JointMotion&lt;/Title&gt;
-&lt;TabPageName&gt;JointMotion&lt;/TabPageName&gt;
+&lt;Title&gt;JointMotion_injected&lt;/Title&gt;
+&lt;TabPageName&gt;JointMotion_injected&lt;/TabPageName&gt;
 &lt;AssemblyFile&gt;LicensedAnimatGUI.dll&lt;/AssemblyFile&gt;
 &lt;ClassName&gt;LicensedAnimatGUI.Forms.Charts.LineChart&lt;/ClassName&gt;
-&lt;ExternalFile&gt;JointMotion.aform&lt;/ExternalFile&gt;
+&lt;ExternalFile&gt;JointMotion_injected.aform&lt;/ExternalFile&gt;
 &lt;/Form&gt;
 &lt;/TabPage&gt;
 ]]&gt;&lt;/CustomPageData&gt;

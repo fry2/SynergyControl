@@ -26,7 +26,11 @@ function sim_eqn = sum_of_sines_maker(coefficients,project_file,dType)
                 if a >= 0 && i ~=1
                     astring = ['+',num2str(a)];
                 else
-                    astring = num2str(a);
+                    if a < 0
+                        error('Animatlab can''t handle negative ''a'' values for some reason. Change cftool bounds on ''a'' and run again.')
+                    else
+                        astring = num2str(a);
+                    end
                 end
                 if c > 0
                     cstring = ['+',num2str(c)];

@@ -1,4 +1,9 @@
 function legScaler(normal_project_path)
+    % For an input project path, scale the leg up by a certain factor
+    % Input: normal_project_path (char): full path to the project to be scaled
+    factor = 2;
+    
+    % Import project text
     if ~ischar(normal_project_path)
         normal_project_path = char(normal_project_path);
     end
@@ -11,10 +16,8 @@ function legScaler(normal_project_path)
             orgpos(counter) = double(extractBetween(string(projtext{ii}),'Actual="','"'));
             counter = counter + 1;
         end
-        
-    factor = 2;
     
-    % Update all scaling factors first
+    % Update all scaling factors in the project text
     scaleIndVec = find(contains(projtext,'<Scale>'));
     for ii = 1:length(scaleIndVec)
         scaleInd = scaleIndVec(ii);
@@ -23,7 +26,7 @@ function legScaler(normal_project_path)
         end
     end
     
-    % Update all locoal positions
+    % Update all local positions based on new scale
     rbIndVec = find(contains(projtext,'<RigidBody>'));
     for ii = 1:length(rbIndVec)
         rb1 = rbIndVec(ii);
@@ -66,6 +69,15 @@ function legScaler(normal_project_path)
         projtext{massInd} = replacePositionInLine(projtext{massInd},factor^3*mass);
     end
     
+    % Move floor down
+        scaledYVal = getYVal(projtext,'<ID>1adc8754-4d4b-4b4f-8085-53b73bf2a758</ID>');
+        projObj = FullLeg(normal_project_path,[],[]);
+        attachCell = projObj.musc_obj{19}.pos_attachments(6,:);
+        attachCell{1} = [0;scaledYVal;0];
+        toeYVal = projObj.att_pos_on_demand([0;0;0],attachCell);
+        toeYVal = toeYVal(2);
+        projtext = setYVal(projtext,'67e38fba-f56d-4448-b9a9-0b5cc7c62789',toeYVal+factor*toeYVal);
+    
     % Write new project file
         % define new project name
         [projPath,projName,projExt] = fileparts(normal_project_path);
@@ -76,6 +88,27 @@ function legScaler(normal_project_path)
         fileID = fopen(scaledProjectName,'w');
         fprintf(fileID,'%s\n',projtext{:});
         fclose(fileID);
+end
+
+function yVal = getYVal(projtext,objID)
+    % Input: projtext: cell array of project text
+    % Input: objID: char: ID of object pulling Y position from
+    objInd = find(contains(projtext,objID));
+    yValLine = projtext{find(contains(projtext(objInd:end),'<Y Value="'),1,'first')+objInd-1};
+    yVal = extractBetween(yValLine,'"','"');
+    yVal = str2double(yVal{1});
+end
+
+function projtext = setYVal(projtext,objID,yVal)
+    % Input: projtext: cell array of project text
+    % Input: objID: char: ID of object to set Y position of
+    % yVal: double: y value to set to
+    objInd = find(contains(projtext,objID));
+    yValInd = find(contains(projtext(objInd:end),'<Y Value="'),1,'first')+objInd-1;
+    %yValLine = projtext{yValInd};
+    %yLineOut = replaceBetween(yValLine,'Value="','"',num2str(yVal));
+    yTemp = @(inVal) ['<Y Value="',num2str(inVal),'" Scale="None" Actual="',num2str(inVal),'"/>'];
+    projtext{yValInd} = yTemp(yVal);
 end
 
 function newLine = replacePositionInLine(oldLine,newVal)

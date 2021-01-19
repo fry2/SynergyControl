@@ -35,6 +35,14 @@ function simStruct = processSimData(sim_path)
             error('No simulator detected. Is Animatlab installed on this system?')
         end
     end
+
+    % Check is jsystem is on the Matlab file path. If not, add it.
+    pathCell = regexp(path, pathsep, 'split');
+    jSystemOnPath = any(strcmpi([pwd,'\Plugins\jsystem\src'], pathCell));
+    
+    if ~jSystemOnPath
+        addpath([pwd,'\Plugins\jsystem\src'])
+    end
     
     executable = [string(simulatorPath),string(sim_path)];
     [res,out,err] = jsystem(executable);

@@ -22,9 +22,17 @@ function [obj,joint_profile,passive_tension] = design_synergy(sim_path)
     % Run .asim file with system
     sdata = processSimData(sim_path);
     aForms = {'JointMotion';'PassiveTension'};
+    formInds = [find(contains({sdata.name},aForms{1})),find(contains({sdata.name},aForms{2}))];
+    if length(sdata(formInds(1)).time)~=length(sdata(formInds(2)).time)
+        error('The end time for Joint Motion and Passive Tension are different. Make sure they have the same end time.')
+    end
     for ii = 1:length(aForms)
-        tempInd = find(contains({sdata.name},aForms{ii}));
-        data = sdata(tempInd).data;
+        tempInd = formInds(ii);
+        if isempty(sdata(tempInd).data)
+            error(['The ',aForms{ii},' data didn''t come through in the simulation.'])
+        else
+            data = sdata(tempInd).data;
+        end
         col_head_slice = sdata(tempInd).data_cols;
         switch aForms{ii}
             case 'JointMotion'

@@ -3,23 +3,20 @@ projPath = 'G:\My Drive\Rat\SynergyControl\Animatlab\SynergyWalking\SynergyContr
 simPath = 'G:\My Drive\Rat\SynergyControl\Animatlab\SynergyWalking\SynergyControl_Standalone.asim';
 
 %%
-% simfile = importdata(simPath);
-% kneebounds = [-.6 2*.05155];
-% kneecoeffs = [sum(kneebounds)/2 sum(abs(kneebounds))/2];
-% %kneecoeffs_signs = sign(kneecoeffs);
-% %kneecoeffs = cellfun(@num2str,num2cell(abs(kneecoeffs)),'UniformOutput',false);
-% eqInd = find(contains(simfile,'<Name>zMaxMinKnee</Name>'))+10;
-% newKneeEq = ['<Equation>0,',num2str(abs(kneecoeffs(1))),',',num2str(kneecoeffs(2)),',t,sin,*,+,-</Equation>'];
-% simfile{eqInd} = newKneeEq;
-%         fileID = fopen(simPath,'w');
-%         fprintf(fileID,'%s\n',simfile{:});
-%         fclose(fileID);
+%     simfile = importdata(simPath);
+%     fmaxinds = find(contains(simfile,'<MaximumTension>'));
+%     for ii = 1:length(fmaxinds)
+%         simfile{fmaxinds(ii)} = '<MaximumTension>10000</MaximumTension>';
+%     end
+%     fileID = fopen(simPath,'w');
+%     fprintf(fileID,'%s\n',simfile{:});
+%     fclose(fileID);
 %% Create the FullLeg object and run the force optimization
 obj = design_synergy(simPath);
 results_cell = pedotti_optimization(obj);
 %% Generate a force-driven project
-fa = results_cell{3,2}';
-[nsys] = indivProjectBuilder(projPath,simPath,results_cell{2,2}',obj);
+%fa = results_cell{3,2};
+nsys = indivProjectBuilder(projPath,simPath,results_cell{2,2},obj);
 sim_file_revised = strcat(simPath(1:end-5),'_fake.asim');
 sdata = processSimData(sim_file_revised);
 clear force_jm
@@ -41,17 +38,24 @@ t1 = find(gradient(ef)==1.5);
 t1 = t1(1:2:end);
 t2 = find(gradient(ef)==-1.5);
 t2 = t2(1:2:end);
-xliner = sort([t1,t2]);
+
 figure('Position',[962,2,958,994]);
 minlen = min([length(obj.theta_motion),length(force_jm)]);
-shifted_jm = obj.theta_motion(1:minlen,:).*(180/pi)+[98.4373 102.226 116.2473];
-force_jm = force_jm(1:minlen,:);
-jointLims = [min([shifted_jm;force_jm],[],'all'), max([shifted_jm;force_jm],[],'all')];
-actLims = 1.1.*[min([results_cell{2,2}(:,335:end)';sdata(5).data(335:end,:)],[],'all'), max([results_cell{2,2}(:,335:end)';sdata(5).data(335:end,:)],[],'all')];
 time = obj.theta_motion_time(1:minlen);
+% Sort out the joint angle waveforms
+    shifted_jm = obj.theta_motion(1:minlen,:).*(180/pi)+[98.4373 102.226 116.2473];
+    force_jm = force_jm(1:minlen,:);
+    jointLims = [min([shifted_jm;force_jm],[],'all'), max([shifted_jm;force_jm],[],'all')];
+% Sort out the individual force waveforms
+    desiredForces = results_cell{2,2}(1:minlen,:);
+    simForces = sdata(5).data(1:minlen,:);
+    actLims = 1.05.*[min([desiredForces(1:end-300,:);simForces(1:end-300,:)],[],'all'), max([desiredForces(1:end-300,:);simForces(1:end-300,:)],[],'all')];
+
 titlesize = 15; axsize = 12; legsize = 12;
 subplot(4,1,1)
     plot(time,shifted_jm,'LineWidth',3)
+    xliner = sort([t1,t2]);
+    xliner = xliner(xliner<length(time));
     for ii = 1:length(xliner)
         xline(time(xliner(ii)))
     end
@@ -70,25 +74,53 @@ subplot(4,1,2)
     ylim(jointLims)
     legend({'Hip';'Knee';'Ankle'},'Location','southwest','FontSize',legsize)
 subplot(4,1,3)
-    plot(time,results_cell{2,2}(:,1:minlen)','LineWidth',1.5)
+    plot(time,desiredForces,'LineWidth',1.5)
     title('Desired Forces','FontSize',titlesize)
     xlabel('Time (s)','FontSize',axsize)
     ylabel('Muscle Force (N)','FontSize',axsize)
     ylim(actLims)
     xlim([0 max(time)])
 subplot(4,1,4)
-    plot(time,sdata(5).data(1:minlen,:),'LineWidth',1.5)
+    plot(time,simForces,'LineWidth',1.5)
     title('Force-Driven Simulation Forces','FontSize',titlesize)
     xlabel('Time (s)','FontSize',axsize)
     ylabel('Muscle Force (N)','FontSize',axsize)
     ylim(actLims)
     xlim([0 max(time)])
     return
-%% Plot the muscle forces and rank the "worst offender" muscles 
-jointDiff = sdata(5).data(1:length(results_cell{2,2}),:)-results_cell{2,2}';
-figure;plot(jointDiff);
-for ii = 1:38
-    bigdiffs{ii,1} = obj.musc_obj{ii}.muscle_name;
-    bigdiffs{ii,2} = jointDiff(5765,ii);
+%% Plot the muscle forces and rank the "worst offender" muscles
+minLen = min([length(results_cell{2,2}), length(sdata(5).data)]);
+jointDiff = sdata(5).data(1:minLen,:)-results_cell{2,2}(1:minLen,:);
+muscZones = zoning_sorter(simPath,6);
+%figure;plot(jointDiff);
+for mnum = 1:38
+    musc = obj.musc_obj{mnum};
+    b = musc.damping; ks = musc.Kse; kp = musc.Kpe;
+    bigdiffs{mnum,1} = obj.musc_obj{mnum}.muscle_name;
+    bigdiffs{mnum,2} = muscZones{mnum,2};
+    bigdiffs{mnum,3} = sum(jointDiff(:,mnum).^2);
+    bigdiffs{mnum,4} = obj.musc_obj{mnum}.damping/(obj.musc_obj{mnum}.Kse+obj.musc_obj{mnum}.Kpe);% muscle time constant in (s). big == slow
+    bigdiffs{mnum,5} = ks/kp;
 end
-bigdiffs = sortrows(bigdiffs,2,'descend');
+bigdiffs = sortrows(bigdiffs,3,'descend');
+%%  Plot different muscle values vs force error. Includes zone coloring
+    figure
+    cm = [0,1,0;...
+          1,0,0;...
+          0.9216,0.8235,0.2039;...
+          0,0,1;...
+          1,0,1;...
+          0,1,1];
+    for ii = 1:38
+        xval = bigdiffs{ii,5};
+        scatter(xval,bigdiffs{ii,3},36,cm(bigdiffs{ii,2},:),'o','LineWidth',10)
+        hold on
+    end
+%% 
+desiredTdot = smoothdata(gradient(results_cell{2,2},obj.dt_motion),'gaussian',150);
+simulatedTdot = smoothdata(gradient(sdata(5).data(1:minlen,:),obj.dt_motion),'gaussian',150);
+figure;
+subplot(2,1,1)
+plot(desiredTdot)
+subplot(2,1,2)
+plot(simulatedTdot)

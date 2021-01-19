@@ -1,4 +1,7 @@
 function muscZones = zoning_sorter(simText,numZones)
+    if ischar(simText) || isstring(simText)
+        simText = importdata(simText);
+    end
     mInds = find(contains(simText,'<Type>LinearHillMuscle</Type>'));
     muscZones = cell(38,2);
     for ii = 1:length(mInds)

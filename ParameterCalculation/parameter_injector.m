@@ -18,13 +18,12 @@ function parameter_injector(fPath,params)
     muscle_indices = find(muscle_addresses)-2;
     nummusc = length(muscle_indices);
     
-    load([pwd,'\Data\neutral_lengths.mat'],'lr');
-    load([pwd,'\Data\johnsonMaxForces.mat'],'johnsonMaxForces');
-    %load([pwd,'\Data\muscle_ranges.mat'],'muscle_ranges');
-    
     % If not provided with a param's cell spreadsheet, build one.
     rng(50)
     if nargin == 1
+        load([pwd,'\Data\neutral_lengths.mat'],'neutral_lengths');
+        lr = neutral_lengths.data(:,1:2);
+        load([pwd,'\Data\johnsonMaxForces.mat'],'johnsonMaxForces');
         params = cell(nummusc,4);
         for ii = 1:nummusc
             mInd = muscle_indices(ii);

@@ -924,7 +924,13 @@ classdef CanvasModel < handle
             
             %%%Modify existing datatools such that they terminate before the end of the simulation
             
-            extDTs = {'JointMotion';'PassiveTension'};
+            extDTInds = [find(contains(original_text,'<Name>JointMotion')),find(contains(original_text,'<Name>PassiveTension'))];
+            extDTs = cell(1,length(extDTInds));
+            for ii = 1:length(extDTInds)
+                extDTs{ii} = char(extractBetween(string(original_text{extDTInds(ii)}),'>','</'));
+            end
+            
+            %extDTs = {'JointMotion';'PassiveTension'};
             parCell = {'<CollectEndTime',obj.proj_params.simendtime-.01;...
                        '<CollectDataInterval',aform_dt/1000};
             for ii = 1:length(extDTs)
@@ -986,7 +992,7 @@ classdef CanvasModel < handle
                             ns_tab_text;...
                             modified_text(tab_inject_end:end,1)];
             leaf_num = size(find(contains(modified_text,'&lt;Page Title="')),1);
-            leafInd = find(contains(modified_text,'&lt;Leaf Count'));
+            leafInd = find(contains(modified_text,'&lt;Leaf Count'),1,'first');
             modified_text{leafInd} = ['&lt;Leaf Count="',num2str(leaf_num),'" Unique="7" Space="100"&gt;'];
             
             [~,projName,projExt] = fileparts(revised_file);

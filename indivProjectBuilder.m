@@ -3,15 +3,13 @@ function [nsys] = indivProjectBuilder(projPath,simPath,forces,obj)
     simPath = char(simPath); projPath = char(projPath);
     muscle_out = scrapeFileForMuscleInfo(simPath);
     numMuscles = length(muscle_out);
-    [docDir,docName,docType] = fileparts(simPath);
+    docDir = fileparts(simPath);
     %disp(['Starting to build Animatlab ',docType,' file "',docName,docType,'".'])
     fclose('all');
     delete([docDir,'\Trace*'])
     delete([pwd,'\Data\InjectedCurrent\*'])
 
     nsys = CanvasModel;
-    neurpos = [];
-    equations = cell(38,1);
 
     %% The Time Debacle
     %[beg,ennd] = obj.find_step_indices;
@@ -25,6 +23,8 @@ function [nsys] = indivProjectBuilder(projPath,simPath,forces,obj)
     current2inject = 1000.*(V_musc+.06);
     ci2 = movmean(current2inject',floor(length(current2inject)/3));
     constvals = mean(ci2);
+    
+   % current2inject(:,1:3705) = 0;
 
     %Build a line of motor neurons and muscles first
     for ii = 1:numMuscles
