@@ -1,0 +1,12 @@
+
+JointStiffnessAnalysis/
+
+Data/InjectedCurrent/*.txt
+
+replay_pid12756.log
+
+Data/swing_data.mat
+
+Data/lengthVjointK.mat
+
+*.asv
