@@ -1,0 +1,18 @@
+[DETAIL 03/10/2021 13:29:07_268_73CC] MStdXml.cpp (1672) 
+StdXml::Load: C:\Users\fry16\AppData\Roaming\AnimatLab\AnimatUser.config
+
+[DETAIL 03/10/2021 13:29:07_329_73CC] MStdXml.cpp (211) 
+StdXml::FindElement: Config
+
+[DETAIL 03/10/2021 13:29:07_334_73CC] MStdXml.cpp (325) 
+, Default: 
+
+[DETAIL 03/10/2021 13:29:07_335_73CC] MStdXml.cpp (325) 
+, Default: Daily
+
+[DETAIL 03/10/2021 13:29:07_336_73CC] MStdXml.cpp (325) 
+, Default: 1/1/2001
+
+[NONE 03/10/2021 13:29:07_341_73CC] Logger.cpp (34) 
+LogFile: C:\AnimatLabSDK\AnimatLabPublicSource\bin\Logs\AnimatLab
+

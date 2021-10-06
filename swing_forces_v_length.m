@@ -12,7 +12,7 @@ inSimPath = "G:\My Drive\Rat\SynergyControl\Animatlab\SynergyWalking\SynergyCont
     oneHundredizer = @(inMat,trans) [interp1(1:length(inMat(1:trans,:)),inMat(1:trans,:),linspace(1,length(inMat(1:trans,:)),37)),...
                                      interp1(1:length(inMat(trans:end,:)),inMat(trans:end,:),linspace(1,length(inMat(trans:end,:)),63))];
 
-lengthVals = exp(linspace(log(.05),log(25),5)); 
+lengthVals = exp(linspace(log(.05),log(25),24)); 
 if ~any(lengthVals==1)
     ind = find((1-lengthVals)>0,1,'last');
     lengthVals = [lengthVals(1:ind),1,lengthVals(ind+1:end)]; 
@@ -38,8 +38,12 @@ dat_len = length(obj.theta_motion);
 force_mn = cell(1,length(lengthVals)); force_tot = force_mn;
 body_masses = zeros(4,length(lengthVals)); body_lengths = body_masses; body_densities = body_masses;
 
- exitflags = zeros(dat_len,length(lengthVals)); objCell = cell(1,numLens); torques_active = zeros(length(obj.theta_motion),3,numLens);
- torques_muscle = torques_active; torques_inertial = torques_active; jointmotion = torques_active;
+ exitflags = zeros(dat_len,length(lengthVals)); objCell = cell(1,numLens); 
+ torques_active = zeros(length(obj.theta_motion),3,numLens); 
+ torques_active = objCell;
+ 
+ torques_muscle = torques_active; torques_inertial = torques_active; jointmotion = torques_active; torques_load = torques_active;
+ torques_grav = torques_active;
 
 % Cycle through length scales for data
 for ii = 1:length(lengthVals)
@@ -47,12 +51,14 @@ for ii = 1:length(lengthVals)
     lengthScale = lengthVals(ii);
     outPath = legScaler(inSimPath,lengthScale);
         obj = design_synergy(outPath);
+        [pks,locs] = findpeaks(obj.theta_motion(:,3)); 
+        rangeMat(ii,:) = locs(2:4);
     % Gather data on force production during normal motion
-        jointmotion(:,:,ii) = obj.theta_motion.*(180/pi)+[98.4373 102.226 116.2473];
+        jointmotion{ii} = obj.theta_motion.*(180/pi)+[98.4373 102.226 116.2473];
         %results_cell = pedotti_optimization(obj);
-        [torques_active(:,:,ii),torques_muscle(:,:,ii),torques_inertial(:,:,ii)] = compute_active_joint_torque(obj,0);
-        torques_load(:,:,ii) = compute_load_torques(obj,0);
-        torques_grav(:,:,ii) = compute_grav_torques(obj,0);
+        [torques_active{ii},torques_muscle{ii},torques_inertial{ii}] = compute_active_joint_torque(obj,0);
+        torques_load{ii} = compute_load_torques(obj,0);
+        torques_grav{ii} = compute_grav_torques(obj,0);
         %force_mn{ii} = results_cell{3,2};
         %force_tot{ii} = results_cell{2,2};
         %exitflags(:,ii) = results_cell{9,2};
@@ -99,7 +105,8 @@ for jj = 1:length(lengthVals)
         %moment_output = moment_output(rm{ii},:)'./1000;
         %torque_temp = sum(moment_output.*force_mn{jj}(:,rm{ii}),2);
         %torques_act{ii}(:,jj) = normalizeTorque(torque_temp(beg:ennd),mid-beg);
-        torques_act{ii}(:,jj) = -normalizeTorque(squeeze(torques_active(beg:ennd,ii,jj)),mid-beg);
+        beg = rangeMat(jj,1); mid = rangeMat(jj,2); ennd = rangeMat(jj,3);
+        torques_act{ii}(:,jj) = -normalizeTorque(squeeze(torques_active{jj}(beg:ennd,ii)),mid-beg);
     end
 end
 %% Plot individual zones across the length scale
@@ -267,11 +274,34 @@ end
     figure('Position',[542,2,1378,994]);
     for joint = 1:3
         for len = 1:numLens
-            corrIn(joint,len) = corr(torques_active(range2plot,joint,len),torques_inertial(range2plot,joint,len));
-            corrMs(joint,len) = corr(torques_active(range2plot,joint,len),torques_muscle(range2plot,joint,len));
-            corrGv(joint,len) = corr(torques_active(range2plot,joint,len),torques_grav(range2plot,joint,len));
+            beg = rangeMat(len,1); mid = rangeMat(len,2); ennd = rangeMat(len,3);
+            switch range
+                case 1
+                    endInd = beg + floor((mid-beg)/3);
+                    range2plot = beg:endInd;
+                case 2
+                    endInd1 = beg + floor((mid-beg)/3);
+                    endInd2 = beg + floor(2*(mid-beg)/3);
+                    range2plot = endInd1:endInd2;
+                case 3
+                    endInd = beg + floor(2*(mid-beg)/3);
+                    range2plot = endInd:mid;
+                case 4
+                    range2plot = rangeMat(len,1):rangeMat(len,2);
+                case 5
+                    endInd = mid + floor((ennd-mid)/3);
+                    range2plot = mid:endInd;
+                case 6
+                case 7
+                    
+                case 8
+                    range2plot = rangeMat(len,2):rangeMat(len,3);
+            end
+            corrIn(joint,len) = corr(torques_active{len}(range2plot,joint),torques_inertial{len}(range2plot,joint));
+            corrMs(joint,len) = corr(torques_active{len}(range2plot,joint),torques_muscle{len}(range2plot,joint));
+            corrGv(joint,len) = corr(torques_active{len}(range2plot,joint),torques_grav{len}(range2plot,joint));
             if range >=5
-                corrLd(joint,len) = corr(torques_active(range2plot,joint,len),torques_load(range2plot,joint,len));
+                corrLd(joint,len) = corr(torques_active{len}(range2plot,joint),torques_load{len}(range2plot,joint));
             end
         end
         % Scan across the two correlation vectors and find the point at which they intersect
@@ -364,7 +394,7 @@ end
 figure('Position',[962,2,958,994]);
 lengthNum = 9; range2plot = beg:ennd;
 subplot(4,1,1)
-    plot(obj.theta_motion_time(range2plot),jointmotion(range2plot,:,lengthNum).*(180/pi)+[98.4373 102.226 116.2473],'LineWidth',3)
+    plot(obj.theta_motion_time(range2plot),jointmotion{lengthNum}(range2plot,:).*(180/pi)+[98.4373 102.226 116.2473],'LineWidth',3)
     title('Joint Motion','FontSize',16); ylabel('Joint Angle (deg)','FontSize',14); xlabel('Time (s)','FontSize',14); xlim([obj.theta_motion_time(range2plot(1)),obj.theta_motion_time(range2plot(end))])
     legend({'Hip';'Knee';'Ankle'}); xline(obj.theta_motion_time(mid),'HandleVisibility','off')
 subplot(4,1,2)
@@ -513,16 +543,19 @@ end
     end
     saveas(aa,[savePath,zoneNames{zoneNum},'.png']) 
 %% Plot STICK INSECT, RAT, HORSE example r2 figure
-len = 11; joint = 1; rchLens = [8,13,22]; rchLabels = {'Stick Insect';'Rat';'Horse'};
-h = figure('Position',[7,427,1913,552]); timeVec = objCell{ii}.theta_motion_time(beg:ennd)-objCell{ii}.theta_motion_time(beg);
+len = 11; joint = 1; rchLens = [8,13,22]; rchLabels = {'Stick Insect Sized';'Rat Sized';'Horse Sized'};
+h = figure('Position',[7,427,1913,552]); 
 timeVec = linspace(0,100,length(timeVec));
 for ii = 1:3
     subplot(1,3,ii)
-    plot(timeVec,torques_muscle(beg:ennd,joint,rchLens(ii)),'b','LineWidth',2);hold on;
-    plot(timeVec,torques_inertial(beg:ennd,joint,rchLens(ii)),'r','LineWidth',2);
-    plot(timeVec,torques_active(beg:ennd,joint,rchLens(ii)),'k','LineWidth',2)
-    vCorr = corr(torques_muscle(beg:ennd,joint,rchLens(ii)),torques_active(beg:ennd,joint,rchLens(ii)));
-    iCorr = corr(torques_inertial(beg:ennd,joint,rchLens(ii)),torques_active(beg:ennd,joint,rchLens(ii)));
+    beg = rangeMat(rchLens(ii),1); mid = rangeMat(rchLens(ii),2); ennd = rangeMat(rchLens(ii),3);
+        timeVec = objCell{rchLens(ii)}.theta_motion_time(beg:ennd)-objCell{rchLens(ii)}.theta_motion_time(beg);
+    timeVec = linspace(0,100,length(timeVec));
+    plot(timeVec,torques_active{rchLens(ii)}(beg:ennd,joint),'k','LineWidth',3); hold on;
+    plot(timeVec,torques_muscle{rchLens(ii)}(beg:ennd,joint),'b','LineWidth',3);
+    plot(timeVec,torques_inertial{rchLens(ii)}(beg:ennd,joint),'r','LineWidth',3);
+    vCorr = corr(torques_muscle{rchLens(ii)}(beg:ennd,joint),torques_active{rchLens(ii)}(beg:ennd,joint));
+    iCorr = corr(torques_inertial{rchLens(ii)}(beg:ennd,joint),torques_active{rchLens(ii)}(beg:ennd,joint));
     text(.0169,.1129,0,['r^2 = ',num2str(round(vCorr,2))],'FontSize',15,'Units','normalized','Color','blue'); 
     text(.0169,.0414,0,['r^2 = ',num2str(round(iCorr,2))],'FontSize',15,'Units','normalized','Color','red');
     xlim([0,max(timeVec)])
@@ -530,7 +563,7 @@ for ii = 1:3
     ylabel('Torque (Nm)','FontSize',12)
     xlabel('Stride (%)','FontSize',12)
     title(rchLabels{ii},'FontSize',16)
-    legend({'Viscoelastic';'Inertial';'Active'},'Location','northeast','FontSize',10)
+    legend({'Active';'Viscoelastic';'Inertial'},'Location','northeast','FontSize',10)
 end
 saveas(h,['G:\My Drive\Rat\Swing Paper\r2_example'],'png')
 %% SURF Torque Plots
@@ -544,8 +577,8 @@ saveas(h,['G:\My Drive\Rat\Swing Paper\r2_example'],'png')
         end
         tMat = temp(:,:,1);
 
-        timeVec = objCell{1}.theta_motion_time(range2plot)-objCell{1}.theta_motion_time(range2plot(1));
-        strideVec = linspace(0,100,length(timeVec));
+        %timeVec = objCell{1}.theta_motion_time(range2plot)-objCell{1}.theta_motion_time(range2plot(1));
+        %strideVec = linspace(0,100,length(timeVec));
         strideVec = linspace(0,100,100);
         strideMat = repmat(strideVec,[numLens*bf, 1]);
         scaleMat = repmat(linspace(1,numLens*bf,numLens*bf)',[1 size(tMat,2)]);

@@ -21,7 +21,7 @@ function scaledPathName = legScaler(inPath,factor,inVals)
     end
     
     inText = importdata(inPath);
-    %inText = changeWalkingWaveforms(inText,factor,is_proj);
+    inText = changeWalkingWaveforms(inText,factor,is_proj);
     % Find organism position
     if is_proj
         tempind = find(contains(inText,'<Organism>'))+17;

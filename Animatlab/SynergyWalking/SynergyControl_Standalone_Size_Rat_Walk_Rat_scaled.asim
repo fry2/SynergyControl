@@ -6,7 +6,7 @@
 <EnableSimRecording>True</EnableSimRecording>
 <SetSimEnd>True</SetSimEnd>
 <APIFile/>
-<SimEndTime>1.659</SimEndTime>
+<SimEndTime>4.7375</SimEndTime>
 <PlaybackControlMode>1</PlaybackControlMode>
 <PresetPlaybackTimeStep>0.002</PresetPlaybackTimeStep>
 <Environment>
@@ -94,7 +94,7 @@
 <Texture/>
 <Position x="0" y="0" z="0"/>
 <Rotation x="1.599" y="0.52309" z="3.072"/>
-<DraggerSize>0.005</DraggerSize>
+<DraggerSize>2.5</DraggerSize>
 <Type>Mesh</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Mesh</PartType>
 <SynchWithRobot>False</SynchWithRobot>
@@ -110,7 +110,7 @@
 <Magnus>0</Magnus>
 <EnableFluids>False</EnableFluids>
 <Density>33484</Density>
-<Mass>0.00555</Mass>
+<Mass>693750</Mass>
 <COM x="0" y="0" z="0"/>
 <Freeze>True</Freeze>
 <MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
@@ -130,7 +130,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.0010061" y="-0.0003" z="0.0003"/>
+<Position x="0.50307" y="-0.15" z="0.15"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -157,7 +157,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -176,7 +176,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.00097505" y="-2.855e-05" z="-0.00026925"/>
+<Position x="0.48752" y="-0.014275" z="-0.13462"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -203,7 +203,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -224,7 +224,7 @@
 <Texture/>
 <Position x="0" y="0" z="0"/>
 <Rotation x="0" y="0" z="0"/>
-<DraggerSize>5e-05</DraggerSize>
+<DraggerSize>0.025</DraggerSize>
 <Type>Mesh</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Mesh</PartType>
 <SynchWithRobot>False</SynchWithRobot>
@@ -251,7 +251,7 @@
 <FoodEnergyContent>1000</FoodEnergyContent>
 <MeshFile>G:\My Drive\Rat\SynergyControl\Animatlab\Meshes\Rat\Body\Pelvis_Graph.stl</MeshFile>
 <MeshType>Triangular</MeshType>
-<Scale x="0.05" y="0.05" z="0.05"/>
+<Scale x="25" y="25" z="25"/>
 </RigidBody>
 <RigidBody>
 <Name>AdductorMagnusOrigin Pelvis LH_Knee Flx</Name>
@@ -268,7 +268,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.0008977" y="-0.0001314" z="0.00066405"/>
+<Position x="0.44885" y="-0.0657" z="0.33202"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -295,7 +295,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -314,7 +314,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0009302" y="-0.0007" z="-0.0002114"/>
+<Position x="-0.4651" y="-0.35" z="-0.1057"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -341,7 +341,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -371,29 +371,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.014582</UpperOutput>
+<UpperOutput>91139.7862</UpperOutput>
 <A>-0.05</A>
-<B>0.014582</B>
+<B>91139.7862</B>
 <C>459.512</C>
-<D>-0.00014582</D>
+<D>-911.3979</D>
 </StimulusTension>
 <LengthTension>
 <ID>6a4e2475-0c0c-46d5-89fb-10ec0db8aa1c</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.00034</LowerLimit>
-<UpperLimit>0.00102</UpperLimit>
+<LowerLimit>0.17</LowerLimit>
+<UpperLimit>0.51</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.00068</RestingLength>
-<Lwidth>0.00062</Lwidth>
+<RestingLength>0.34</RestingLength>
+<Lwidth>0.31</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.0039</MaximumTension>
-<Kse>6.7018</Kse>
-<Kpe>18.3565</Kpe>
-<B>0.76585</B>
+<MaximumTension>24375</MaximumTension>
+<Kse>3350.875</Kse>
+<Kpe>9178.275</Kpe>
+<B>382.925</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -422,29 +422,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.1335</UpperOutput>
+<UpperOutput>834383.2</UpperOutput>
 <A>-0.05</A>
-<B>0.1335</B>
+<B>834383.2</B>
 <C>459.512</C>
-<D>-0.001335</D>
+<D>-8343.832</D>
 </StimulusTension>
 <LengthTension>
 <ID>f5da0608-4767-4e83-b175-bd97358a1b81</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.00042</LowerLimit>
-<UpperLimit>0.00126</UpperLimit>
+<LowerLimit>0.21</LowerLimit>
+<UpperLimit>0.63</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.00084</RestingLength>
-<Lwidth>0.00077</Lwidth>
+<RestingLength>0.42</RestingLength>
+<Lwidth>0.385</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.0423</MaximumTension>
-<Kse>21.7798</Kse>
-<Kpe>46.9587</Kpe>
-<B>0.37827</B>
+<MaximumTension>264375</MaximumTension>
+<Kse>10889.925</Kse>
+<Kpe>23479.325</Kpe>
+<B>189.1325</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -473,29 +473,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.13173</UpperOutput>
+<UpperOutput>823315.8252</UpperOutput>
 <A>-0.05</A>
-<B>0.13173</B>
+<B>823315.8252</B>
 <C>459.512</C>
-<D>-0.0013173</D>
+<D>-8233.1583</D>
 </StimulusTension>
 <LengthTension>
 <ID>ccabb86d-5b52-46e6-9224-cc7538a462a7</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.000445</LowerLimit>
-<UpperLimit>0.00133</UpperLimit>
+<LowerLimit>0.2225</LowerLimit>
+<UpperLimit>0.665</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.000885</RestingLength>
-<Lwidth>0.00081</Lwidth>
+<RestingLength>0.4425</RestingLength>
+<Lwidth>0.405</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.034625</MaximumTension>
-<Kse>16.8392</Kse>
-<Kpe>47.2254</Kpe>
-<B>2.7635</B>
+<MaximumTension>216406.25</MaximumTension>
+<Kse>8419.6</Kse>
+<Kpe>23612.7</Kpe>
+<B>1381.7325</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -524,29 +524,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.5305</UpperOutput>
+<UpperOutput>3315623.281</UpperOutput>
 <A>-0.05</A>
-<B>0.5305</B>
+<B>3315623.281</B>
 <C>459.512</C>
-<D>-0.005305</D>
+<D>-33156.2328</D>
 </StimulusTension>
 <LengthTension>
 <ID>6817febd-8289-4df6-b19c-2bfd0722d0db</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.00055</LowerLimit>
-<UpperLimit>0.00165</UpperLimit>
+<LowerLimit>0.275</LowerLimit>
+<UpperLimit>0.825</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.0011</RestingLength>
-<Lwidth>0.001005</Lwidth>
+<RestingLength>0.55</RestingLength>
+<Lwidth>0.5025</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.005825</MaximumTension>
-<Kse>0.31133</Kse>
-<Kpe>28.042</Kpe>
-<B>1.3651</B>
+<MaximumTension>36406.25</MaximumTension>
+<Kse>155.6625</Kse>
+<Kpe>14020.975</Kpe>
+<B>682.5675</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -564,7 +564,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.00087505" y="-0.00015435" z="0.000601"/>
+<Position x="0.43752" y="-0.077175" z="0.3005"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -591,7 +591,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -610,7 +610,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.00078885" y="-0.000325" z="0.00023095"/>
+<Position x="0.39442" y="-0.1625" z="0.11547"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -637,7 +637,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -656,7 +656,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.00010405" y="-0.0006" z="5e-05"/>
+<Position x="0.052025" y="-0.3" z="0.025"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -683,7 +683,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -713,29 +713,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.059994</UpperOutput>
+<UpperOutput>374962.4378</UpperOutput>
 <A>-0.05</A>
-<B>0.059994</B>
+<B>374962.4378</B>
 <C>459.512</C>
-<D>-0.00059994</D>
+<D>-3749.6244</D>
 </StimulusTension>
 <LengthTension>
 <ID>e36d0835-71ff-43c9-8072-92597686053f</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.000505</LowerLimit>
-<UpperLimit>0.00151</UpperLimit>
+<LowerLimit>0.2525</LowerLimit>
+<UpperLimit>0.755</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.001005</RestingLength>
-<Lwidth>0.00092</Lwidth>
+<RestingLength>0.5025</RestingLength>
+<Lwidth>0.46</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.0185</MaximumTension>
-<Kse>9.2846</Kse>
-<Kpe>20.8246</Kpe>
-<B>1.8896</B>
+<MaximumTension>115625</MaximumTension>
+<Kse>4642.3</Kse>
+<Kpe>10412.3</Kpe>
+<B>944.785</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -753,7 +753,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.0009922" y="-0.00042735" z="6.095e-05"/>
+<Position x="0.4961" y="-0.21367" z="0.030475"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -780,7 +780,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -799,7 +799,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.0009942" y="-0.00034" z="0.0001625"/>
+<Position x="0.4971" y="-0.17" z="0.08125"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -826,7 +826,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -856,29 +856,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.13931</UpperOutput>
+<UpperOutput>870673.9231</UpperOutput>
 <A>-0.05</A>
-<B>0.13931</B>
+<B>870673.9231</B>
 <C>459.512</C>
-<D>-0.0013931</D>
+<D>-8706.7392</D>
 </StimulusTension>
 <LengthTension>
 <ID>99e935de-5547-4835-9204-17bc3220c459</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.000355</LowerLimit>
-<UpperLimit>0.001065</UpperLimit>
+<LowerLimit>0.1775</LowerLimit>
+<UpperLimit>0.5325</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.00071</RestingLength>
-<Lwidth>0.00065</Lwidth>
+<RestingLength>0.355</RestingLength>
+<Lwidth>0.325</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.0277</MaximumTension>
-<Kse>2.7373</Kse>
-<Kpe>11.0292</Kpe>
-<B>4.1384</B>
+<MaximumTension>173125</MaximumTension>
+<Kse>1368.665</Kse>
+<Kpe>5514.575</Kpe>
+<B>2069.1975</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -896,7 +896,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0007461" y="-0.00051595" z="5.645e-05"/>
+<Position x="-0.37305" y="-0.25797" z="0.028225"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -923,7 +923,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -942,9 +942,9 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0" y="0" z="0.0005"/>
+<Position x="0" y="0" z="0.25"/>
 <Rotation x="0" y="0" z="0"/>
-<DraggerSize>5e-05</DraggerSize>
+<DraggerSize>0.025</DraggerSize>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
 <SynchWithRobot>False</SynchWithRobot>
@@ -969,7 +969,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>5e-05</Radius>
+<Radius>0.025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -988,7 +988,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.00094135" y="-0.0002425" z="-0.00012"/>
+<Position x="0.47067" y="-0.12125" z="-0.06"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -1015,7 +1015,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -1045,29 +1045,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.1436</UpperOutput>
+<UpperOutput>897506.6148</UpperOutput>
 <A>-0.05</A>
-<B>0.1436</B>
+<B>897506.6148</B>
 <C>459.512</C>
-<D>-0.001436</D>
+<D>-8975.0661</D>
 </StimulusTension>
 <LengthTension>
 <ID>7eef83f8-81a1-4dae-ab0b-4ca9e9fdae96</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.00074</LowerLimit>
-<UpperLimit>0.002225</UpperLimit>
+<LowerLimit>0.37</LowerLimit>
+<UpperLimit>1.1125</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.001485</RestingLength>
-<Lwidth>0.001355</Lwidth>
+<RestingLength>0.7425</RestingLength>
+<Lwidth>0.6775</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.017025</MaximumTension>
-<Kse>0.10949</Kse>
-<Kpe>0.81399</Kpe>
-<B>0.11665</B>
+<MaximumTension>106406.25</MaximumTension>
+<Kse>54.7425</Kse>
+<Kpe>406.995</Kpe>
+<B>58.325</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -1096,29 +1096,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.55652</UpperOutput>
+<UpperOutput>3478266.6662</UpperOutput>
 <A>-0.05</A>
-<B>0.55652</B>
+<B>3478266.6662</B>
 <C>459.512</C>
-<D>-0.0055652</D>
+<D>-34782.6667</D>
 </StimulusTension>
 <LengthTension>
 <ID>c29c3498-5ad1-4346-9927-5f39d80bdbfc</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.00056</LowerLimit>
-<UpperLimit>0.00168</UpperLimit>
+<LowerLimit>0.28</LowerLimit>
+<UpperLimit>0.84</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.00112</RestingLength>
-<Lwidth>0.001025</Lwidth>
+<RestingLength>0.56</RestingLength>
+<Lwidth>0.5125</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.0146</MaximumTension>
-<Kse>0.1959</Kse>
-<Kpe>7.2716</Kpe>
-<B>2.4331</B>
+<MaximumTension>91250</MaximumTension>
+<Kse>97.9525</Kse>
+<Kpe>3635.8</Kpe>
+<B>1216.54</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -1147,29 +1147,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.65723</UpperOutput>
+<UpperOutput>4107699.1419</UpperOutput>
 <A>-0.05</A>
-<B>0.65723</B>
+<B>4107699.1419</B>
 <C>459.512</C>
-<D>-0.0065723</D>
+<D>-41076.9914</D>
 </StimulusTension>
 <LengthTension>
 <ID>ad3bd308-8401-474e-9863-12a6c94ad529</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.000195</LowerLimit>
-<UpperLimit>0.000585</UpperLimit>
+<LowerLimit>0.0975</LowerLimit>
+<UpperLimit>0.2925</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.00039</RestingLength>
-<Lwidth>0.000355</Lwidth>
+<RestingLength>0.195</RestingLength>
+<Lwidth>0.1775</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.026875</MaximumTension>
-<Kse>0.17688</Kse>
-<Kpe>4.1487</Kpe>
-<B>3.934</B>
+<MaximumTension>167968.75</MaximumTension>
+<Kse>88.44</Kse>
+<Kpe>2074.3725</Kpe>
+<B>1967.005</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -1198,29 +1198,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.17841</UpperOutput>
+<UpperOutput>1115052.5476</UpperOutput>
 <A>-0.05</A>
-<B>0.17841</B>
+<B>1115052.5476</B>
 <C>459.512</C>
-<D>-0.0017841</D>
+<D>-11150.5255</D>
 </StimulusTension>
 <LengthTension>
 <ID>02732d6b-044c-4113-b387-adde4af97c90</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.0002</LowerLimit>
-<UpperLimit>0.0006</UpperLimit>
+<LowerLimit>0.1</LowerLimit>
+<UpperLimit>0.3</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.0004</RestingLength>
-<Lwidth>0.000365</Lwidth>
+<RestingLength>0.2</RestingLength>
+<Lwidth>0.1825</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.041775</MaximumTension>
-<Kse>5.0712</Kse>
-<Kpe>16.5862</Kpe>
-<B>3.1562</B>
+<MaximumTension>261093.75</MaximumTension>
+<Kse>2535.575</Kse>
+<Kpe>8293.1</Kpe>
+<B>1578.08</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -1238,7 +1238,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00060015" y="-0.00051915" z="-8.555e-05"/>
+<Position x="-0.30007" y="-0.25957" z="-0.042775"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -1265,7 +1265,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -1284,7 +1284,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.0003532" y="-0.0005006" z="5.09e-05"/>
+<Position x="0.1766" y="-0.2503" z="0.02545"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -1311,7 +1311,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>2.5e-05</Radius>
+<Radius>0.0125</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -1330,7 +1330,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.0006825" y="-0.0002791" z="-0.000135"/>
+<Position x="0.34125" y="-0.13955" z="-0.0675"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -1357,7 +1357,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -1388,29 +1388,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.1565</UpperOutput>
+<UpperOutput>978147.0533</UpperOutput>
 <A>-0.05</A>
-<B>0.1565</B>
+<B>978147.0533</B>
 <C>459.512</C>
-<D>-0.001565</D>
+<D>-9781.4705</D>
 </StimulusTension>
 <LengthTension>
 <ID>d13d23b7-6963-4ebe-b924-5eba8787310a</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.00105</LowerLimit>
-<UpperLimit>0.003155</UpperLimit>
+<LowerLimit>0.525</LowerLimit>
+<UpperLimit>1.5775</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.002105</RestingLength>
-<Lwidth>0.00192</Lwidth>
+<RestingLength>1.0525</RestingLength>
+<Lwidth>0.96</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>0.01</MinPeLength>
 </LengthTension>
-<MaximumTension>0.04685</MaximumTension>
-<Kse>1.9937</Kse>
-<Kpe>4.6663</Kpe>
-<B>1.0618</B>
+<MaximumTension>292812.5</MaximumTension>
+<Kse>996.84</Kse>
+<Kpe>2333.1275</Kpe>
+<B>530.92</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -1428,7 +1428,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.0009641" y="-0.000125" z="0.0006677"/>
+<Position x="0.48205" y="-0.0625" z="0.33385"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -1455,7 +1455,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -1487,29 +1487,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.24326</UpperOutput>
+<UpperOutput>1520400.3845</UpperOutput>
 <A>-0.05</A>
-<B>0.24326</B>
+<B>1520400.3845</B>
 <C>459.512</C>
-<D>-0.0024326</D>
+<D>-15204.0038</D>
 </StimulusTension>
 <LengthTension>
 <ID>8757187c-8706-40fe-be99-2c7ad594baed</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.00105</LowerLimit>
-<UpperLimit>0.003155</UpperLimit>
+<LowerLimit>0.525</LowerLimit>
+<UpperLimit>1.5775</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.002105</RestingLength>
-<Lwidth>0.00192</Lwidth>
+<RestingLength>1.0525</RestingLength>
+<Lwidth>0.96</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.061775</MaximumTension>
-<Kse>16.9039</Kse>
-<Kpe>49.6619</Kpe>
-<B>2.1873</B>
+<MaximumTension>386093.75</MaximumTension>
+<Kse>8451.925</Kse>
+<Kpe>24830.95</Kpe>
+<B>1093.6375</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -1527,7 +1527,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.0010482" y="-7.385e-05" z="-0.00024015"/>
+<Position x="0.5241" y="-0.036925" z="-0.12007"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -1554,7 +1554,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -1573,7 +1573,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.0003532" y="-0.0004006" z="5.1e-05"/>
+<Position x="0.1766" y="-0.2003" z="0.0255"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -1600,7 +1600,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>2.5e-05</Radius>
+<Radius>0.0125</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -1630,29 +1630,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.0020774</UpperOutput>
+<UpperOutput>12983.8711</UpperOutput>
 <A>-0.05</A>
-<B>0.0020774</B>
+<B>12983.8711</B>
 <C>459.512</C>
-<D>-2.0774e-05</D>
+<D>-129.8387</D>
 </StimulusTension>
 <LengthTension>
 <ID>1e96567d-4068-4926-95ed-ea7aefa471d6</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.000455</LowerLimit>
-<UpperLimit>0.00137</UpperLimit>
+<LowerLimit>0.2275</LowerLimit>
+<UpperLimit>0.685</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.000915</RestingLength>
-<Lwidth>0.000835</Lwidth>
+<RestingLength>0.4575</RestingLength>
+<Lwidth>0.4175</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.001375</MaximumTension>
-<Kse>13.5386</Kse>
-<Kpe>6.9162</Kpe>
-<B>0.77887</B>
+<MaximumTension>8593.75</MaximumTension>
+<Kse>6769.3</Kse>
+<Kpe>3458.1</Kpe>
+<B>389.435</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -1670,7 +1670,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.001026" y="-0.00023865" z="0.00042915"/>
+<Position x="0.513" y="-0.11932" z="0.21457"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -1697,7 +1697,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -1716,7 +1716,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.0005261" y="-0.000271" z="0.0004427"/>
+<Position x="0.26305" y="-0.1355" z="0.22135"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -1743,7 +1743,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -1762,7 +1762,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.00070515" y="-5.97e-05" z="-0.00030705"/>
+<Position x="0.35257" y="-0.02985" z="-0.15352"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -1789,7 +1789,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -1821,29 +1821,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.20346</UpperOutput>
+<UpperOutput>1271649.5492</UpperOutput>
 <A>-0.05</A>
-<B>0.20346</B>
+<B>1271649.5492</B>
 <C>459.512</C>
-<D>-0.0020346</D>
+<D>-12716.4955</D>
 </StimulusTension>
 <LengthTension>
 <ID>6b5c3b8d-1531-4562-acb1-b2268f1bb2f1</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.00098</LowerLimit>
-<UpperLimit>0.002935</UpperLimit>
+<LowerLimit>0.49</LowerLimit>
+<UpperLimit>1.4675</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.001955</RestingLength>
-<Lwidth>0.001785</Lwidth>
+<RestingLength>0.9775</RestingLength>
+<Lwidth>0.8925</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.017025</MaximumTension>
-<Kse>0.24762</Kse>
-<Kpe>2.7116</Kpe>
-<B>0.71573</B>
+<MaximumTension>106406.25</MaximumTension>
+<Kse>123.8075</Kse>
+<Kpe>1355.8025</Kpe>
+<B>357.865</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -1861,7 +1861,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0004797" y="-0.0004984" z="-2.665e-05"/>
+<Position x="-0.23985" y="-0.2492" z="-0.013325"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -1888,7 +1888,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -1907,7 +1907,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.0009939" y="-0.00030355" z="-0.00011425"/>
+<Position x="0.49695" y="-0.15177" z="-0.057125"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -1934,7 +1934,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -1966,29 +1966,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.52699</UpperOutput>
+<UpperOutput>3293712.2547</UpperOutput>
 <A>-0.05</A>
-<B>0.52699</B>
+<B>3293712.2547</B>
 <C>459.512</C>
-<D>-0.0052699</D>
+<D>-32937.1225</D>
 </StimulusTension>
 <LengthTension>
 <ID>0de9e525-800b-4afd-98b8-353815dd57f8</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.00089</LowerLimit>
-<UpperLimit>0.002675</UpperLimit>
+<LowerLimit>0.445</LowerLimit>
+<UpperLimit>1.3375</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.001785</RestingLength>
-<Lwidth>0.00163</Lwidth>
+<RestingLength>0.8925</RestingLength>
+<Lwidth>0.815</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.007725</MaximumTension>
-<Kse>0.516</Kse>
-<Kpe>34.6852</Kpe>
-<B>4.496</B>
+<MaximumTension>48281.25</MaximumTension>
+<Kse>258</Kse>
+<Kpe>17342.575</Kpe>
+<B>2248.0125</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -2006,9 +2006,9 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.0003532" y="-0.0005006" z="5.09e-05"/>
+<Position x="0.1766" y="-0.2503" z="0.02545"/>
 <Rotation x="3.142" y="3.142" z="-2.094"/>
-<DraggerSize>0.005</DraggerSize>
+<DraggerSize>2.5</DraggerSize>
 <Type>Mesh</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Mesh</PartType>
 <SynchWithRobot>False</SynchWithRobot>
@@ -2024,8 +2024,8 @@
 <Magnus>0</Magnus>
 <EnableFluids>False</EnableFluids>
 <Density>61963</Density>
-<Mass>0.0016575</Mass>
-<COM x="-0.00041575" y="-9.875e-05" z="0.0007821"/>
+<Mass>207187.5</Mass>
+<COM x="-0.20787" y="-0.049375" z="0.39105"/>
 <Freeze>False</Freeze>
 <MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
 <Joint>
@@ -2050,7 +2050,7 @@
 <PartType>AnimatGUI.DataObjects.Physical.Joints.Hinge</PartType>
 <SynchWithRobot>False</SynchWithRobot>
 <SynchUpdateInterval>0</SynchUpdateInterval>
-<Size>5e-05</Size>
+<Size>0.025</Size>
 <EnableLimits>True</EnableLimits>
 <Relaxation1>
 <ID>63ac8fec-bc87-4e4a-b0a6-d520498eeb63</ID>
@@ -2173,29 +2173,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.066454</UpperOutput>
+<UpperOutput>415337.5078</UpperOutput>
 <A>-0.05</A>
-<B>0.066454</B>
+<B>415337.5078</B>
 <C>459.512</C>
-<D>-0.00066454</D>
+<D>-4153.3751</D>
 </StimulusTension>
 <LengthTension>
 <ID>6269d02a-2e68-409a-ad27-a3207193feb0</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.00096</LowerLimit>
-<UpperLimit>0.002875</UpperLimit>
+<LowerLimit>0.48</LowerLimit>
+<UpperLimit>1.4375</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.001915</RestingLength>
-<Lwidth>0.00175</Lwidth>
+<RestingLength>0.9575</RestingLength>
+<Lwidth>0.875</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.055775</MaximumTension>
-<Kse>136.778</Kse>
-<Kpe>26.1883</Kpe>
-<B>4.4418</B>
+<MaximumTension>348593.75</MaximumTension>
+<Kse>68389</Kse>
+<Kpe>13094.15</Kpe>
+<B>2220.8975</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -2213,7 +2213,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00031005" y="-0.0001988" z="-2.18e-05"/>
+<Position x="-0.15502" y="-0.0994" z="-0.0109"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -2240,7 +2240,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2259,7 +2259,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00063" y="-0.00020905" z="0.001579"/>
+<Position x="-0.315" y="-0.10452" z="0.78947"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -2286,7 +2286,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2305,7 +2305,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00030725" y="7.605e-05" z="-0.000165"/>
+<Position x="-0.15362" y="0.038025" z="-0.0825"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -2332,7 +2332,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2351,7 +2351,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0002" y="-5.845e-05" z="0.0002331"/>
+<Position x="-0.1" y="-0.029225" z="0.11655"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -2378,7 +2378,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2397,7 +2397,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0004832" y="4.58e-05" z="0.0016615"/>
+<Position x="-0.2416" y="0.0229" z="0.83072"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -2424,7 +2424,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2457,29 +2457,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.048057</UpperOutput>
+<UpperOutput>300356.014</UpperOutput>
 <A>-0.05</A>
-<B>0.048057</B>
+<B>300356.014</B>
 <C>459.512</C>
-<D>-0.00048057</D>
+<D>-3003.5601</D>
 </StimulusTension>
 <LengthTension>
 <ID>3d1a42d6-63e4-451e-b92f-07c156410c08</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.00125</LowerLimit>
-<UpperLimit>0.003755</UpperLimit>
+<LowerLimit>0.625</LowerLimit>
+<UpperLimit>1.8775</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.002505</RestingLength>
-<Lwidth>0.002285</Lwidth>
+<RestingLength>1.2525</RestingLength>
+<Lwidth>1.1425</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.04365</MaximumTension>
-<Kse>160.142</Kse>
-<Kpe>16.1682</Kpe>
-<B>0.1253</B>
+<MaximumTension>272812.5</MaximumTension>
+<Kse>80071</Kse>
+<Kpe>8084.075</Kpe>
+<B>62.6525</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -2497,7 +2497,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00035" y="4.655e-05" z="-0.0001436"/>
+<Position x="-0.175" y="0.023275" z="-0.0718"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -2524,7 +2524,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2543,7 +2543,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00065" y="-0.00016655" z="0.0015383"/>
+<Position x="-0.325" y="-0.083275" z="0.76915"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -2570,7 +2570,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2589,7 +2589,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.000375" y="-0.000225" z="0.0004672"/>
+<Position x="-0.1875" y="-0.1125" z="0.2336"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -2616,7 +2616,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2635,7 +2635,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.000347" y="-0.00018" z="0.00075265"/>
+<Position x="-0.1735" y="-0.09" z="0.37632"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -2662,7 +2662,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2681,7 +2681,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00063285" y="-0.0001401" z="0.0016158"/>
+<Position x="-0.31642" y="-0.07005" z="0.8079"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -2708,7 +2708,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2740,29 +2740,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.048206</UpperOutput>
+<UpperOutput>301284.413</UpperOutput>
 <A>-0.05</A>
-<B>0.048206</B>
+<B>301284.413</B>
 <C>459.512</C>
-<D>-0.00048206</D>
+<D>-3012.8441</D>
 </StimulusTension>
 <LengthTension>
 <ID>161a1d52-ecde-42d7-baf1-ee390cd362d3</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.00085</LowerLimit>
-<UpperLimit>0.002545</UpperLimit>
+<LowerLimit>0.425</LowerLimit>
+<UpperLimit>1.2725</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.0017</RestingLength>
-<Lwidth>0.00155</Lwidth>
+<RestingLength>0.85</RestingLength>
+<Lwidth>0.775</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.045375</MaximumTension>
-<Kse>645.36</Kse>
-<Kpe>40.2578</Kpe>
-<B>2.5144</B>
+<MaximumTension>283593.75</MaximumTension>
+<Kse>322680</Kse>
+<Kpe>20128.875</Kpe>
+<B>1257.215</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -2780,7 +2780,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0002033" y="-7.985e-05" z="-6.1e-05"/>
+<Position x="-0.10165" y="-0.039925" z="-0.0305"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -2807,7 +2807,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>2.5e-05</Radius>
+<Radius>0.0125</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2826,7 +2826,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0004508" y="-7.715e-05" z="0.00044425"/>
+<Position x="-0.2254" y="-0.038575" z="0.22212"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -2853,7 +2853,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2872,7 +2872,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0001382" y="-0.00012865" z="-3.12e-05"/>
+<Position x="-0.0691" y="-0.064325" z="-0.0156"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -2899,7 +2899,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2918,7 +2918,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.000637" y="-0.000284" z="0.0014944"/>
+<Position x="-0.3185" y="-0.142" z="0.7472"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -2945,7 +2945,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -2964,9 +2964,9 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0005084" y="-0.0002976" z="0.0016876"/>
+<Position x="-0.2542" y="-0.1488" z="0.84382"/>
 <Rotation x="-3.142" y="0" z="2.618"/>
-<DraggerSize>0.0025</DraggerSize>
+<DraggerSize>1.25</DraggerSize>
 <Type>Mesh</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Mesh</PartType>
 <SynchWithRobot>False</SynchWithRobot>
@@ -2982,8 +2982,8 @@
 <Magnus>0</Magnus>
 <EnableFluids>False</EnableFluids>
 <Density>53609</Density>
-<Mass>0.001132</Mass>
-<COM x="-9.165e-05" y="-0.00086095" z="-0.0002505"/>
+<Mass>141500</Mass>
+<COM x="-0.045825" y="-0.43047" z="-0.12525"/>
 <Freeze>False</Freeze>
 <MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
 <Joint>
@@ -3008,7 +3008,7 @@
 <PartType>AnimatGUI.DataObjects.Physical.Joints.Hinge</PartType>
 <SynchWithRobot>False</SynchWithRobot>
 <SynchUpdateInterval>0</SynchUpdateInterval>
-<Size>5e-05</Size>
+<Size>0.025</Size>
 <EnableLimits>True</EnableLimits>
 <Relaxation1>
 <ID>872a82a9-9c7b-4a8e-8ac5-cbc888584a6a</ID>
@@ -3118,7 +3118,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-8.75e-06" y="-0.0020809" z="-0.00030985"/>
+<Position x="-0.004375" y="-1.0404" z="-0.15492"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -3145,7 +3145,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -3164,7 +3164,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-7.55e-06" y="-0.00031615" z="0.0001938"/>
+<Position x="-0.003775" y="-0.15807" z="0.0969"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -3191,7 +3191,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -3210,7 +3210,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.00017585" y="-0.00030605" z="0.0001963"/>
+<Position x="0.087925" y="-0.15302" z="0.09815"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -3237,7 +3237,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -3256,7 +3256,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.00017455" y="-0.0002689" z="0.00013675"/>
+<Position x="0.087275" y="-0.13445" z="0.068375"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -3283,7 +3283,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -3302,7 +3302,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="6.875e-05" y="-0.0020809" z="-0.00030985"/>
+<Position x="0.034375" y="-1.0404" z="-0.15492"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -3329,7 +3329,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -3348,7 +3348,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0002448" y="-0.0003074" z="5.555e-05"/>
+<Position x="-0.1224" y="-0.1537" z="0.027775"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -3375,7 +3375,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -3394,7 +3394,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0001623" y="-0.0006098" z="-0.00016675"/>
+<Position x="-0.08115" y="-0.3049" z="-0.083375"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -3421,7 +3421,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -3455,29 +3455,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.54367</UpperOutput>
+<UpperOutput>3397927.9943</UpperOutput>
 <A>-0.05</A>
-<B>0.54367</B>
+<B>3397927.9943</B>
 <C>459.512</C>
-<D>-0.0054367</D>
+<D>-33979.2799</D>
 </StimulusTension>
 <LengthTension>
 <ID>0a7ee3d4-dfe7-44bf-99c9-c24473d6dff3</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.001235</LowerLimit>
-<UpperLimit>0.003705</UpperLimit>
+<LowerLimit>0.6175</LowerLimit>
+<UpperLimit>1.8525</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.00247</RestingLength>
-<Lwidth>0.002255</Lwidth>
+<RestingLength>1.235</RestingLength>
+<Lwidth>1.1275</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.00165</MaximumTension>
-<Kse>0.13854</Kse>
-<Kpe>45.5082</Kpe>
-<B>2.2707</B>
+<MaximumTension>10312.5</MaximumTension>
+<Kse>69.2675</Kse>
+<Kpe>22754.1</Kpe>
+<B>1135.3375</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -3495,7 +3495,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-3.5e-05" y="-0.000332" z="0.00012795"/>
+<Position x="-0.0175" y="-0.166" z="0.063975"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -3522,7 +3522,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -3541,7 +3541,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0001445" y="-0.000308" z="-1.59e-05"/>
+<Position x="-0.07225" y="-0.154" z="-0.00795"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -3568,7 +3568,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>2.5e-05</Radius>
+<Radius>0.0125</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -3587,7 +3587,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.0001356" y="-0.0003523" z="0.00019875"/>
+<Position x="0.0678" y="-0.17615" z="0.099375"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -3614,7 +3614,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -3635,7 +3635,7 @@
 <Texture/>
 <Position x="0" y="0" z="0"/>
 <Rotation x="0" y="0" z="0"/>
-<DraggerSize>0.0005</DraggerSize>
+<DraggerSize>0.25</DraggerSize>
 <Type>Mesh</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Mesh</PartType>
 <SynchWithRobot>False</SynchWithRobot>
@@ -3662,7 +3662,7 @@
 <FoodEnergyContent>1000</FoodEnergyContent>
 <MeshFile>G:\My Drive\Rat\SynergyControl\Animatlab\Meshes\Rat\LH\LHTibiag.stl</MeshFile>
 <MeshType>Triangular</MeshType>
-<Scale x="0.05" y="0.05" z="0.05"/>
+<Scale x="25" y="25" z="25"/>
 </RigidBody>
 <RigidBody>
 <Name>FlexorHallucisLongusViaOne Tibia LH_AnkleZ Ext</Name>
@@ -3679,7 +3679,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-9.76e-05" y="-0.002093" z="-0.000319"/>
+<Position x="-0.0488" y="-1.0465" z="-0.1595"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -3706,7 +3706,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -3725,7 +3725,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="2.4239e-06" y="-0.0006669" z="-0.00019255"/>
+<Position x="0.0012119" y="-0.33345" z="-0.096275"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -3752,7 +3752,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -3785,29 +3785,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.050607</UpperOutput>
+<UpperOutput>316295.2327</UpperOutput>
 <A>-0.05</A>
-<B>0.050607</B>
+<B>316295.2327</B>
 <C>459.512</C>
-<D>-0.00050607</D>
+<D>-3162.9523</D>
 </StimulusTension>
 <LengthTension>
 <ID>1667f329-623c-439e-b975-4fc2987f3a92</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.00145</LowerLimit>
-<UpperLimit>0.004355</UpperLimit>
+<LowerLimit>0.725</LowerLimit>
+<UpperLimit>2.1775</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.002905</RestingLength>
-<Lwidth>0.00265</Lwidth>
+<RestingLength>1.4525</RestingLength>
+<Lwidth>1.325</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.0083</MaximumTension>
-<Kse>8.3665</Kse>
-<Kpe>42.6459</Kpe>
-<B>1.0015</B>
+<MaximumTension>51875</MaximumTension>
+<Kse>4183.225</Kse>
+<Kpe>21322.975</Kpe>
+<B>500.745</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -3825,7 +3825,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-7.135e-05" y="-0.0004275" z="9.355e-05"/>
+<Position x="-0.035675" y="-0.21375" z="0.046775"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -3852,7 +3852,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -3886,29 +3886,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.018322</UpperOutput>
+<UpperOutput>114512.8699</UpperOutput>
 <A>-0.05</A>
-<B>0.018322</B>
+<B>114512.8699</B>
 <C>459.512</C>
-<D>-0.00018322</D>
+<D>-1145.1287</D>
 </StimulusTension>
 <LengthTension>
 <ID>42acbd4d-5302-40a7-8594-8c6e7924c342</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.001025</LowerLimit>
-<UpperLimit>0.00308</UpperLimit>
+<LowerLimit>0.5125</LowerLimit>
+<UpperLimit>1.54</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.002055</RestingLength>
-<Lwidth>0.001875</Lwidth>
+<RestingLength>1.0275</RestingLength>
+<Lwidth>0.9375</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.01485</MaximumTension>
-<Kse>39.1453</Kse>
-<Kpe>9.1525</Kpe>
-<B>1.7271</B>
+<MaximumTension>92812.5</MaximumTension>
+<Kse>19572.625</Kse>
+<Kpe>4576.25</Kpe>
+<B>863.55</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -3926,7 +3926,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00013055" y="-0.00076285" z="-0.00019505"/>
+<Position x="-0.065275" y="-0.38142" z="-0.097525"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -3953,7 +3953,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -3972,7 +3972,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="5.795e-05" y="5.11e-05" z="-8.995e-05"/>
+<Position x="0.028975" y="0.02555" z="-0.044975"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -3999,7 +3999,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -4018,7 +4018,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0001958" y="3.565e-05" z="-0.00013075"/>
+<Position x="-0.0979" y="0.017825" z="-0.065375"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4045,7 +4045,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -4064,7 +4064,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.0001662" y="-0.0001375" z="5.57e-05"/>
+<Position x="0.0831" y="-0.06875" z="0.02785"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4091,7 +4091,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -4124,29 +4124,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.034338</UpperOutput>
+<UpperOutput>214615.1778</UpperOutput>
 <A>-0.05</A>
-<B>0.034338</B>
+<B>214615.1778</B>
 <C>459.512</C>
-<D>-0.00034338</D>
+<D>-2146.1518</D>
 </StimulusTension>
 <LengthTension>
 <ID>278e2bfa-2383-47ff-bfa0-1a100da06053</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.001</LowerLimit>
-<UpperLimit>0.003</UpperLimit>
+<LowerLimit>0.5</LowerLimit>
+<UpperLimit>1.5</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.002</RestingLength>
-<Lwidth>0.001825</Lwidth>
+<RestingLength>1</RestingLength>
+<Lwidth>0.9125</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.03225</MaximumTension>
-<Kse>755.58</Kse>
-<Kpe>48.9295</Kpe>
-<B>2.7834</B>
+<MaximumTension>201562.5</MaximumTension>
+<Kse>377790</Kse>
+<Kpe>24464.725</Kpe>
+<B>1391.685</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -4164,7 +4164,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-7.135e-05" y="-0.0004275" z="2.43e-05"/>
+<Position x="-0.035675" y="-0.21375" z="0.01215"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4191,7 +4191,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -4210,7 +4210,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00015" y="-0.0004" z="-5.757e-05"/>
+<Position x="-0.075" y="-0.2" z="-0.028785"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4237,7 +4237,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -4256,9 +4256,9 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-2e-05" y="-0.0021934" z="-0.00047935"/>
+<Position x="-0.01" y="-1.0967" z="-0.23967"/>
 <Rotation x="-3.142" y="1.571" z="3.142"/>
-<DraggerSize>0.005</DraggerSize>
+<DraggerSize>2.5</DraggerSize>
 <Type>Mesh</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Mesh</PartType>
 <SynchWithRobot>False</SynchWithRobot>
@@ -4274,8 +4274,8 @@
 <Magnus>0</Magnus>
 <EnableFluids>False</EnableFluids>
 <Density>20017</Density>
-<Mass>0.00016375</Mass>
-<COM x="0.00029165" y="-0.00015" z="1.49e-05"/>
+<Mass>20468.75</Mass>
+<COM x="0.14582" y="-0.075" z="0.00745"/>
 <Freeze>False</Freeze>
 <MaterialTypeID>DEFAULTMATERIAL</MaterialTypeID>
 <Joint>
@@ -4300,7 +4300,7 @@
 <PartType>AnimatGUI.DataObjects.Physical.Joints.Hinge</PartType>
 <SynchWithRobot>False</SynchWithRobot>
 <SynchUpdateInterval>0</SynchUpdateInterval>
-<Size>5e-05</Size>
+<Size>0.025</Size>
 <EnableLimits>True</EnableLimits>
 <Relaxation1>
 <ID>a1e13d3d-18af-4fe3-8a0b-0a9a58a2326d</ID>
@@ -4410,7 +4410,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.0009624" y="-0.0003481" z="7.325e-05"/>
+<Position x="0.4812" y="-0.17405" z="0.036625"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4437,7 +4437,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -4456,7 +4456,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.00021735" y="-4.77e-05" z="4.54e-05"/>
+<Position x="0.10867" y="-0.02385" z="0.0227"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4483,7 +4483,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -4502,7 +4502,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.00039725" y="-0.0001472" z="-9.825e-05"/>
+<Position x="0.19862" y="-0.0736" z="-0.049125"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4529,7 +4529,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -4548,7 +4548,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0001818" y="-5.82e-05" z="8.805e-05"/>
+<Position x="-0.0909" y="-0.0291" z="0.044025"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4575,7 +4575,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -4594,7 +4594,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-5.765e-05" y="-0.00016055" z="-3.28e-05"/>
+<Position x="-0.028825" y="-0.080275" z="-0.0164"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4621,7 +4621,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -4640,7 +4640,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.00095675" y="-0.0003545" z="-9.645e-05"/>
+<Position x="0.47837" y="-0.17725" z="-0.048225"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4667,7 +4667,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -4686,7 +4686,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.0010367" y="-0.0003433" z="-9.335e-05"/>
+<Position x="0.51832" y="-0.17165" z="-0.046675"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4713,7 +4713,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>2.5e-05</Radius>
+<Radius>0.0125</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -4732,7 +4732,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0001579" y="-0.00013195" z="1.005e-05"/>
+<Position x="-0.07895" y="-0.065975" z="0.005025"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4759,7 +4759,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -4778,7 +4778,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.00012165" y="-0.0001853" z="0.0001176"/>
+<Position x="0.060825" y="-0.09265" z="0.0588"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4805,7 +4805,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -4824,7 +4824,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-5.795e-05" y="-0.0001611" z="-5.15e-06"/>
+<Position x="-0.028975" y="-0.08055" z="-0.002575"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4851,7 +4851,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -4870,7 +4870,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.001029" y="-0.00023285" z="5.115e-05"/>
+<Position x="0.51452" y="-0.11642" z="0.025575"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4897,7 +4897,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -4916,7 +4916,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00021035" y="-7.485e-05" z="-3.3015e-06"/>
+<Position x="-0.10517" y="-0.037425" z="-0.0016507"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4943,7 +4943,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -4962,7 +4962,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.00010395" y="-0.00021145" z="-1.315e-05"/>
+<Position x="0.051975" y="-0.10572" z="-0.006575"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -4989,7 +4989,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5008,7 +5008,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0001941" y="-8.405e-05" z="-2.48e-05"/>
+<Position x="-0.09705" y="-0.042025" z="-0.0124"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5035,7 +5035,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5054,7 +5054,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0001545" y="-0.0001178" z="7.235e-05"/>
+<Position x="-0.07725" y="-0.0589" z="0.036175"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5081,7 +5081,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5100,7 +5100,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.00023865" y="-5.31e-05" z="-6.56e-05"/>
+<Position x="0.11932" y="-0.02655" z="-0.0328"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5127,7 +5127,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5146,7 +5146,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0002179" y="-8.045e-05" z="-1.685e-05"/>
+<Position x="-0.10895" y="-0.040225" z="-0.008425"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5173,7 +5173,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5192,7 +5192,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.0003028" y="-0.00023325" z="4.23e-05"/>
+<Position x="0.1514" y="-0.11662" z="0.02115"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5219,7 +5219,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5238,7 +5238,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.00014815" y="-0.0002145" z="-2.835e-05"/>
+<Position x="0.074075" y="-0.10725" z="-0.014175"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5265,7 +5265,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5284,7 +5284,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00020785" y="-6.67e-05" z="3.98e-05"/>
+<Position x="-0.10392" y="-0.03335" z="0.0199"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5311,7 +5311,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5330,7 +5330,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.0002148" y="-0.0002024" z="-8.435e-05"/>
+<Position x="0.1074" y="-0.1012" z="-0.042175"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5357,7 +5357,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5376,7 +5376,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-7.42e-05" y="-0.00014405" z="7.95e-06"/>
+<Position x="-0.0371" y="-0.072025" z="0.003975"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5403,7 +5403,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5422,7 +5422,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00017805" y="-0.0001377" z="2e-05"/>
+<Position x="-0.089025" y="-0.06885" z="0.01"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5449,7 +5449,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5468,7 +5468,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00017725" y="-6.99e-05" z="-2.73e-05"/>
+<Position x="-0.088625" y="-0.03495" z="-0.01365"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5495,7 +5495,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5514,7 +5514,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.0010226" y="-0.000313" z="-6.99e-05"/>
+<Position x="0.5113" y="-0.1565" z="-0.03495"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5541,7 +5541,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>0.0001</Radius>
+<Radius>0.05</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5560,7 +5560,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00020645" y="-7.07e-05" z="1.95e-05"/>
+<Position x="-0.10322" y="-0.03535" z="0.00975"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5587,7 +5587,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5606,7 +5606,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00017805" y="-0.00013575" z="4.095e-05"/>
+<Position x="-0.089025" y="-0.067875" z="0.020475"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5633,7 +5633,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5652,7 +5652,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00020735" y="-6.17e-05" z="6.545e-05"/>
+<Position x="-0.10367" y="-0.03085" z="0.032725"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5679,7 +5679,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5700,7 +5700,7 @@
 <Texture/>
 <Position x="0" y="0" z="0"/>
 <Rotation x="0" y="0" z="0"/>
-<DraggerSize>0.0005</DraggerSize>
+<DraggerSize>0.25</DraggerSize>
 <Type>Mesh</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Mesh</PartType>
 <SynchWithRobot>False</SynchWithRobot>
@@ -5727,7 +5727,7 @@
 <FoodEnergyContent>1000</FoodEnergyContent>
 <MeshFile>G:\My Drive\Rat\SynergyControl\Animatlab\Meshes\Rat\LH\LHFootg.stl</MeshFile>
 <MeshType>Triangular</MeshType>
-<Scale x="0.05" y="0.05" z="0.05"/>
+<Scale x="25" y="25" z="25"/>
 </RigidBody>
 <RigidBody>
 <Name>PeroneiViaThree Foot LH_AnkleZ Ext</Name>
@@ -5744,7 +5744,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-3.46e-05" y="-0.0001284" z="0.00010185"/>
+<Position x="-0.0173" y="-0.0642" z="0.050925"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5771,7 +5771,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5790,9 +5790,9 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="2.9e-05" y="-0.00024775" z="-1.155e-05"/>
+<Position x="0.0145" y="-0.12387" z="-0.005775"/>
 <Rotation x="0" y="0" z="0"/>
-<DraggerSize>0.0005</DraggerSize>
+<DraggerSize>0.25</DraggerSize>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
 <SynchWithRobot>False</SynchWithRobot>
@@ -5817,7 +5817,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>5e-05</Radius>
+<Radius>0.025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5830,7 +5830,7 @@
 <MeshFile>G:\My Drive\Rat\SynergyControl\Animatlab\Meshes\Rat\LH\LHFoot.stl</MeshFile>
 <MeshType>Convex</MeshType>
 <ConvexMeshFile>G:\My Drive\Rat\SynergyControl\Animatlab\Meshes\Rat\LH\LHFoot_Convex.osg</ConvexMeshFile>
-<Scale x="0.05" y="0.05" z="0.05"/>
+<Scale x="25" y="25" z="25"/>
 </RigidBody>
 <RigidBody>
 <Name>GracilisAnteriorIns Tibia LH_Knee Flx</Name>
@@ -5847,7 +5847,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00015825" y="-0.00048305" z="-0.0001131"/>
+<Position x="-0.079125" y="-0.24152" z="-0.05655"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5874,7 +5874,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5893,7 +5893,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-8.58e-05" y="4.075e-05" z="-0.0001259"/>
+<Position x="-0.0429" y="0.020375" z="-0.06295"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5920,7 +5920,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5939,7 +5939,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-2.635e-05" y="-0.0001799" z="-0.00025"/>
+<Position x="-0.013175" y="-0.08995" z="-0.125"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -5966,7 +5966,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -5985,7 +5985,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-7.155e-05" y="-0.0019602" z="-0.00046225"/>
+<Position x="-0.035775" y="-0.9801" z="-0.23112"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -6012,7 +6012,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6031,7 +6031,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00011285" y="-0.0021164" z="-0.00032785"/>
+<Position x="-0.056425" y="-1.0582" z="-0.16392"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -6058,7 +6058,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6077,7 +6077,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="4.815e-05" y="-0.0020809" z="-0.00030985"/>
+<Position x="0.024075" y="-1.0404" z="-0.15492"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -6104,7 +6104,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6123,7 +6123,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00011645" y="-0.0021934" z="-0.0004793"/>
+<Position x="-0.058225" y="-1.0967" z="-0.23965"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -6150,7 +6150,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>2.5e-05</Radius>
+<Radius>0.0125</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6169,7 +6169,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-1.645e-05" y="-0.0021934" z="-0.0004793"/>
+<Position x="-0.008225" y="-1.0967" z="-0.23965"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -6196,7 +6196,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>2.5e-05</Radius>
+<Radius>0.0125</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6228,29 +6228,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.0053678</UpperOutput>
+<UpperOutput>33548.8446</UpperOutput>
 <A>-0.05</A>
-<B>0.0053678</B>
+<B>33548.8446</B>
 <C>459.512</C>
-<D>-5.3678e-05</D>
+<D>-335.4884</D>
 </StimulusTension>
 <LengthTension>
 <ID>4b3722d5-4a00-4b08-bd39-df97b4f7f4bf</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.00092</LowerLimit>
-<UpperLimit>0.002755</UpperLimit>
+<LowerLimit>0.46</LowerLimit>
+<UpperLimit>1.3775</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.001835</RestingLength>
-<Lwidth>0.001675</Lwidth>
+<RestingLength>0.9175</RestingLength>
+<Lwidth>0.8375</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.005325</MaximumTension>
-<Kse>412.643</Kse>
-<Kpe>3.3178</Kpe>
-<B>2.7897</B>
+<MaximumTension>33281.25</MaximumTension>
+<Kse>206321.5</Kse>
+<Kpe>1658.9075</Kpe>
+<B>1394.8675</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -6268,7 +6268,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0001154" y="-0.0002235" z="-0.0001891"/>
+<Position x="-0.0577" y="-0.11175" z="-0.09455"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -6295,7 +6295,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6329,29 +6329,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.041485</UpperOutput>
+<UpperOutput>259281.263</UpperOutput>
 <A>-0.05</A>
-<B>0.041485</B>
+<B>259281.263</B>
 <C>459.512</C>
-<D>-0.00041485</D>
+<D>-2592.8126</D>
 </StimulusTension>
 <LengthTension>
 <ID>5bc59ca3-e73c-48d2-9344-a20e4a453da9</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.00119</LowerLimit>
-<UpperLimit>0.003575</UpperLimit>
+<LowerLimit>0.595</LowerLimit>
+<UpperLimit>1.7875</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.002385</RestingLength>
-<Lwidth>0.002175</Lwidth>
+<RestingLength>1.1925</RestingLength>
+<Lwidth>1.0875</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.041325</MaximumTension>
-<Kse>442.913</Kse>
-<Kpe>1.7149</Kpe>
-<B>2.338</B>
+<MaximumTension>258281.25</MaximumTension>
+<Kse>221456.5</Kse>
+<Kpe>857.435</Kpe>
+<B>1168.9925</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -6369,7 +6369,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="3.11e-05" y="-0.0019722" z="-0.00045695"/>
+<Position x="0.01555" y="-0.98607" z="-0.22847"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -6396,7 +6396,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6415,7 +6415,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-5.675e-05" y="-0.0020833" z="-0.000325"/>
+<Position x="-0.028375" y="-1.0416" z="-0.1625"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -6442,7 +6442,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6461,7 +6461,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="9.22e-05" y="-0.00044805" z="0.0001438"/>
+<Position x="0.0461" y="-0.22402" z="0.0719"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -6488,7 +6488,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6507,7 +6507,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-1.45e-05" y="3.78e-05" z="-0.0001041"/>
+<Position x="-0.00725" y="0.0189" z="-0.05205"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -6534,7 +6534,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6553,7 +6553,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.000106" y="-0.00073175" z="-0.0003962"/>
+<Position x="-0.053" y="-0.36587" z="-0.1981"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -6580,7 +6580,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6599,7 +6599,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="2.54e-05" y="-0.0020809" z="-0.00030985"/>
+<Position x="0.0127" y="-1.0404" z="-0.15492"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -6626,7 +6626,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6645,7 +6645,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="4.32e-05" y="-0.00075305" z="0.0001007"/>
+<Position x="0.0216" y="-0.37652" z="0.05035"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -6672,7 +6672,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6691,7 +6691,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="4.12e-05" y="-0.00035135" z="0.0002155"/>
+<Position x="0.0206" y="-0.17567" z="0.10775"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -6718,7 +6718,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6737,7 +6737,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00012245" y="-0.0006557" z="-0.00017955"/>
+<Position x="-0.061225" y="-0.32785" z="-0.089775"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -6764,7 +6764,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6783,7 +6783,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-7.77e-05" y="-0.0021095" z="-0.0003225"/>
+<Position x="-0.03885" y="-1.0547" z="-0.16125"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -6810,7 +6810,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -6843,29 +6843,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.022253</UpperOutput>
+<UpperOutput>139079.811</UpperOutput>
 <A>-0.05</A>
-<B>0.022253</B>
+<B>139079.811</B>
 <C>459.512</C>
-<D>-0.00022253</D>
+<D>-1390.7981</D>
 </StimulusTension>
 <LengthTension>
 <ID>7c1b3d99-7219-422f-8456-3a036343e4cf</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.00101</LowerLimit>
-<UpperLimit>0.00303</UpperLimit>
+<LowerLimit>0.505</LowerLimit>
+<UpperLimit>1.515</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.00202</RestingLength>
-<Lwidth>0.001845</Lwidth>
+<RestingLength>1.01</RestingLength>
+<Lwidth>0.9225</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.013275</MaximumTension>
-<Kse>51.587</Kse>
-<Kpe>34.8879</Kpe>
-<B>4.0191</B>
+<MaximumTension>82968.75</MaximumTension>
+<Kse>25793.5</Kse>
+<Kpe>17443.925</Kpe>
+<B>2009.535</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 </ChildBodies>
@@ -6877,7 +6877,7 @@
 <MeshFile>G:\My Drive\Rat\SynergyControl\Animatlab\Meshes\Rat\LH\LHTibia.stl</MeshFile>
 <MeshType>Convex</MeshType>
 <ConvexMeshFile>G:\My Drive\Rat\SynergyControl\Animatlab\Meshes\Rat\LH\LHTibia_Convex.osg</ConvexMeshFile>
-<Scale x="0.05" y="0.05" z="0.05"/>
+<Scale x="25" y="25" z="25"/>
 </RigidBody>
 <RigidBody>
 <Name>LH_Popliteus</Name>
@@ -6907,29 +6907,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.14282</UpperOutput>
+<UpperOutput>892598.9979</UpperOutput>
 <A>-0.05</A>
-<B>0.14282</B>
+<B>892598.9979</B>
 <C>459.512</C>
-<D>-0.0014282</D>
+<D>-8925.99</D>
 </StimulusTension>
 <LengthTension>
 <ID>e44c4dfc-7309-4425-a627-f3ed3bc249ae</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.00042</LowerLimit>
-<UpperLimit>0.001265</UpperLimit>
+<LowerLimit>0.21</LowerLimit>
+<UpperLimit>0.6325</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.000845</RestingLength>
-<Lwidth>0.00077</Lwidth>
+<RestingLength>0.4225</RestingLength>
+<Lwidth>0.385</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.01095</MaximumTension>
-<Kse>2.2352</Kse>
-<Kpe>26.9173</Kpe>
-<B>1.3374</B>
+<MaximumTension>68437.5</MaximumTension>
+<Kse>1117.59</Kse>
+<Kpe>13458.625</Kpe>
+<B>668.68</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -6961,29 +6961,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.022962</UpperOutput>
+<UpperOutput>143511.3939</UpperOutput>
 <A>-0.05</A>
-<B>0.022962</B>
+<B>143511.3939</B>
 <C>459.512</C>
-<D>-0.00022962</D>
+<D>-1435.1139</D>
 </StimulusTension>
 <LengthTension>
 <ID>84eca5f1-52b1-47b9-9a44-c705fdd66609</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.0013</LowerLimit>
-<UpperLimit>0.003905</UpperLimit>
+<LowerLimit>0.65</LowerLimit>
+<UpperLimit>1.9525</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.002605</RestingLength>
-<Lwidth>0.002375</Lwidth>
+<RestingLength>1.3025</RestingLength>
+<Lwidth>1.1875</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.02105</MaximumTension>
-<Kse>523.91</Kse>
-<Kpe>47.5831</Kpe>
-<B>0.46068</B>
+<MaximumTension>131562.5</MaximumTension>
+<Kse>261955</Kse>
+<Kpe>23791.525</Kpe>
+<B>230.34</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -7001,7 +7001,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00018015" y="-5.64e-05" z="0.00018755"/>
+<Position x="-0.090075" y="-0.0282" z="0.093775"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -7028,7 +7028,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7060,29 +7060,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.041354</UpperOutput>
+<UpperOutput>258462.5541</UpperOutput>
 <A>-0.05</A>
-<B>0.041354</B>
+<B>258462.5541</B>
 <C>459.512</C>
-<D>-0.00041354</D>
+<D>-2584.6255</D>
 </StimulusTension>
 <LengthTension>
 <ID>4a2d93eb-251c-42b7-8f6d-a5215472079f</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.000785</LowerLimit>
-<UpperLimit>0.00236</UpperLimit>
+<LowerLimit>0.3925</LowerLimit>
+<UpperLimit>1.18</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.001575</RestingLength>
-<Lwidth>0.001435</Lwidth>
+<RestingLength>0.7875</RestingLength>
+<Lwidth>0.7175</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.0405</MaximumTension>
-<Kse>385.0425</Kse>
-<Kpe>8.1192</Kpe>
-<B>4.5963</B>
+<MaximumTension>253125</MaximumTension>
+<Kse>192521.25</Kse>
+<Kpe>4059.625</Kpe>
+<B>2298.1325</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -7102,7 +7102,7 @@
 <Texture/>
 <Position x="0" y="0" z="0"/>
 <Rotation x="0" y="0" z="0"/>
-<DraggerSize>0.0005</DraggerSize>
+<DraggerSize>0.25</DraggerSize>
 <Type>Mesh</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Mesh</PartType>
 <SynchWithRobot>False</SynchWithRobot>
@@ -7129,7 +7129,7 @@
 <FoodEnergyContent>1000</FoodEnergyContent>
 <MeshFile>G:\My Drive\Rat\SynergyControl\Animatlab\Meshes\Rat\LH\LHFemurg.stl</MeshFile>
 <MeshType>Triangular</MeshType>
-<Scale x="0.05" y="0.05" z="0.05"/>
+<Scale x="25" y="25" z="25"/>
 </RigidBody>
 <RigidBody>
 <Name>GemellusSuperiorIns Femur LH_HipZ Flx</Name>
@@ -7146,7 +7146,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0002498" y="-4.825e-05" z="0.00027715"/>
+<Position x="-0.1249" y="-0.024125" z="0.13857"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -7173,7 +7173,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7192,9 +7192,9 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.000595" y="-0.0003476" z="0.0016876"/>
+<Position x="-0.2975" y="-0.1738" z="0.8438"/>
 <Rotation x="0" y="0" z="0"/>
-<DraggerSize>0.0005</DraggerSize>
+<DraggerSize>0.25</DraggerSize>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
 <SynchWithRobot>False</SynchWithRobot>
@@ -7219,7 +7219,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>2.5e-05</Radius>
+<Radius>0.0125</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7252,29 +7252,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>3.2698</UpperOutput>
+<UpperOutput>20436143.3684</UpperOutput>
 <A>-0.05</A>
-<B>3.2698</B>
+<B>20436143.3684</B>
 <C>459.512</C>
-<D>-0.032698</D>
+<D>-204361.4337</D>
 </StimulusTension>
 <LengthTension>
 <ID>91868d7e-39f5-4bbb-a3fe-a29939962411</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.001125</LowerLimit>
-<UpperLimit>0.00338</UpperLimit>
+<LowerLimit>0.5625</LowerLimit>
+<UpperLimit>1.69</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.002255</RestingLength>
-<Lwidth>0.002055</Lwidth>
+<RestingLength>1.1275</RestingLength>
+<Lwidth>1.0275</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.068475</MaximumTension>
-<Kse>1.0269</Kse>
-<Kpe>48.0091</Kpe>
-<B>4.3315</B>
+<MaximumTension>427968.75</MaximumTension>
+<Kse>513.45</Kse>
+<Kpe>24004.55</Kpe>
+<B>2165.745</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -7292,7 +7292,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00014045" y="-0.00014" z="3.025e-05"/>
+<Position x="-0.070225" y="-0.07" z="0.015125"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -7319,7 +7319,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7338,7 +7338,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0006" y="-0.0001883" z="0.0014458"/>
+<Position x="-0.3" y="-0.09415" z="0.7229"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -7365,7 +7365,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7384,7 +7384,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0003693" y="1.8034e-06" z="0.0016922"/>
+<Position x="-0.18465" y="0.00090167" z="0.8461"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -7411,7 +7411,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7430,7 +7430,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.000645" y="-0.0001912" z="0.00148"/>
+<Position x="-0.3225" y="-0.0956" z="0.74"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -7457,7 +7457,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7476,7 +7476,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0006269" y="-3.275e-05" z="0.0016772"/>
+<Position x="-0.31345" y="-0.016375" z="0.83862"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -7503,7 +7503,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7522,7 +7522,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00028" y="-0.0001013" z="0.0016248"/>
+<Position x="-0.14" y="-0.05065" z="0.81237"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -7549,7 +7549,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7568,7 +7568,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00042995" y="-0.00023245" z="0.0014358"/>
+<Position x="-0.21497" y="-0.11622" z="0.7179"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -7595,7 +7595,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7614,7 +7614,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00045695" y="-2.455e-05" z="0.0010242"/>
+<Position x="-0.22847" y="-0.012275" z="0.5121"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -7641,7 +7641,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7660,7 +7660,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0004697" y="-0.0001184" z="0.00035105"/>
+<Position x="-0.23485" y="-0.0592" z="0.17552"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -7687,7 +7687,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7706,7 +7706,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00039965" y="-0.0001882" z="0.00085"/>
+<Position x="-0.19982" y="-0.0941" z="0.425"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -7733,7 +7733,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7752,7 +7752,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0005084" y="-0.00029755" z="0.0016876"/>
+<Position x="-0.2542" y="-0.14877" z="0.84382"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -7779,7 +7779,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>2.5e-05</Radius>
+<Radius>0.0125</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7798,7 +7798,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00032975" y="4.895e-05" z="-7.985e-05"/>
+<Position x="-0.16487" y="0.024475" z="-0.039925"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -7825,7 +7825,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7844,7 +7844,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0004439" y="-0.00010105" z="8.24e-05"/>
+<Position x="-0.22195" y="-0.050525" z="0.0412"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -7871,7 +7871,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7884,7 +7884,7 @@
 <MeshFile>G:\My Drive\Rat\SynergyControl\Animatlab\Meshes\Rat\LH\LHFemur.stl</MeshFile>
 <MeshType>Convex</MeshType>
 <ConvexMeshFile>G:\My Drive\Rat\SynergyControl\Animatlab\Meshes\Rat\LH\LHFemur_Convex.osg</ConvexMeshFile>
-<Scale x="0.05" y="0.05" z="0.05"/>
+<Scale x="25" y="25" z="25"/>
 </RigidBody>
 <RigidBody>
 <Name>CaudofemoralisViaTwo Pelvis LH_HipZ Ext</Name>
@@ -7901,7 +7901,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.000624" y="-0.0004159" z="4.6e-05"/>
+<Position x="0.312" y="-0.20795" z="0.023"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -7928,7 +7928,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7947,7 +7947,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0002866" y="-0.0005211" z="-0.0001581"/>
+<Position x="-0.1433" y="-0.26055" z="-0.07905"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -7974,7 +7974,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -7993,7 +7993,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.001044" y="-0.00015605" z="0.0006352"/>
+<Position x="0.52197" y="-0.078025" z="0.3176"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -8020,7 +8020,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -8050,29 +8050,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.31773</UpperOutput>
+<UpperOutput>1985791.404</UpperOutput>
 <A>-0.05</A>
-<B>0.31773</B>
+<B>1985791.404</B>
 <C>459.512</C>
-<D>-0.0031773</D>
+<D>-19857.914</D>
 </StimulusTension>
 <LengthTension>
 <ID>c123b9f6-ff7f-40fb-bab0-1637b5057a57</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.000565</LowerLimit>
-<UpperLimit>0.0017</UpperLimit>
+<LowerLimit>0.2825</LowerLimit>
+<UpperLimit>0.85</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.001135</RestingLength>
-<Lwidth>0.001035</Lwidth>
+<RestingLength>0.5675</RestingLength>
+<Lwidth>0.5175</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.011325</MaximumTension>
-<Kse>0.11757</Kse>
-<Kpe>3.1808</Kpe>
-<B>0.99143</B>
+<MaximumTension>70781.25</MaximumTension>
+<Kse>58.7825</Kse>
+<Kpe>1590.38</Kpe>
+<B>495.7125</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -8101,29 +8101,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>1.2545</UpperOutput>
+<UpperOutput>7840843.4223</UpperOutput>
 <A>-0.05</A>
-<B>1.2545</B>
+<B>7840843.4223</B>
 <C>459.512</C>
-<D>-0.012545</D>
+<D>-78408.4342</D>
 </StimulusTension>
 <LengthTension>
 <ID>2a1c4c48-1406-4ee8-a987-b0a5ca48d9c9</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.000765</LowerLimit>
-<UpperLimit>0.00229</UpperLimit>
+<LowerLimit>0.3825</LowerLimit>
+<UpperLimit>1.145</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.00153</RestingLength>
-<Lwidth>0.001395</Lwidth>
+<RestingLength>0.765</RestingLength>
+<Lwidth>0.6975</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.038325</MaximumTension>
-<Kse>0.1621</Kse>
-<Kpe>5.1441</Kpe>
-<B>0.70235</B>
+<MaximumTension>239531.25</MaximumTension>
+<Kse>81.05</Kse>
+<Kpe>2572.05</Kpe>
+<B>351.1725</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -8141,7 +8141,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.0011228" y="-0.0002866" z="-1.81e-05"/>
+<Position x="0.5614" y="-0.1433" z="-0.00905"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -8168,7 +8168,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -8198,29 +8198,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>3.7395</UpperOutput>
+<UpperOutput>23372167.7343</UpperOutput>
 <A>-0.05</A>
-<B>3.7395</B>
+<B>23372167.7343</B>
 <C>459.512</C>
-<D>-0.037395</D>
+<D>-233721.6773</D>
 </StimulusTension>
 <LengthTension>
 <ID>c7316e9a-c0cd-4299-97fe-1181b96c462b</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.000355</LowerLimit>
-<UpperLimit>0.00106</UpperLimit>
+<LowerLimit>0.1775</LowerLimit>
+<UpperLimit>0.53</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.000705</RestingLength>
-<Lwidth>0.000645</Lwidth>
+<RestingLength>0.3525</RestingLength>
+<Lwidth>0.3225</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.0458</MaximumTension>
-<Kse>0.18538</Kse>
-<Kpe>14.9504</Kpe>
-<B>1.7383</B>
+<MaximumTension>286250</MaximumTension>
+<Kse>92.6875</Kse>
+<Kpe>7475.2</Kpe>
+<B>869.1275</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -8238,7 +8238,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.0010955" y="-0.0003" z="0.0001866"/>
+<Position x="0.54772" y="-0.15" z="0.0933"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -8265,7 +8265,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -8284,9 +8284,9 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0" y="0.0005" z="0"/>
+<Position x="0" y="0.25" z="0"/>
 <Rotation x="0" y="0" z="0"/>
-<DraggerSize>5e-05</DraggerSize>
+<DraggerSize>0.025</DraggerSize>
 <Type>Attachment</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Attachment</PartType>
 <SynchWithRobot>False</SynchWithRobot>
@@ -8311,7 +8311,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>5e-05</Radius>
+<Radius>0.025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -8330,7 +8330,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.0008254" y="-0.000575" z="-8.855e-05"/>
+<Position x="-0.4127" y="-0.2875" z="-0.044275"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -8357,7 +8357,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -8376,7 +8376,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.0010528" y="-0.00031515" z="-4.045e-05"/>
+<Position x="0.5264" y="-0.15757" z="-0.020225"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -8403,7 +8403,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -8422,7 +8422,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.00068215" y="3.34e-05" z="0.0001832"/>
+<Position x="0.34107" y="0.0167" z="0.0916"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -8449,7 +8449,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>5e-05</Radius>
+<Radius>0.025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -8481,29 +8481,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.24741</UpperOutput>
+<UpperOutput>1546318.1227</UpperOutput>
 <A>-0.05</A>
-<B>0.24741</B>
+<B>1546318.1227</B>
 <C>459.512</C>
-<D>-0.0024741</D>
+<D>-15463.1812</D>
 </StimulusTension>
 <LengthTension>
 <ID>957fc15a-51f8-499a-b37f-24d0fac6af78</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.001015</LowerLimit>
-<UpperLimit>0.00304</UpperLimit>
+<LowerLimit>0.5075</LowerLimit>
+<UpperLimit>1.52</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.002025</RestingLength>
-<Lwidth>0.00185</Lwidth>
+<RestingLength>1.0125</RestingLength>
+<Lwidth>0.925</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.012725</MaximumTension>
-<Kse>0.68695</Kse>
-<Kpe>12.6694</Kpe>
-<B>1.1946</B>
+<MaximumTension>79531.25</MaximumTension>
+<Kse>343.475</Kse>
+<Kpe>6334.675</Kpe>
+<B>597.275</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -8532,29 +8532,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.022692</UpperOutput>
+<UpperOutput>141822.2636</UpperOutput>
 <A>-0.05</A>
-<B>0.022692</B>
+<B>141822.2636</B>
 <C>459.512</C>
-<D>-0.00022692</D>
+<D>-1418.2226</D>
 </StimulusTension>
 <LengthTension>
 <ID>b6af827f-3e2e-4251-bd1b-f92eb986361e</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.000305</LowerLimit>
-<UpperLimit>0.000915</UpperLimit>
+<LowerLimit>0.1525</LowerLimit>
+<UpperLimit>0.4575</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.00061</RestingLength>
-<Lwidth>0.000555</Lwidth>
+<RestingLength>0.305</RestingLength>
+<Lwidth>0.2775</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.0107</MaximumTension>
-<Kse>24.968</Kse>
-<Kpe>27.9818</Kpe>
-<B>2.4566</B>
+<MaximumTension>66875</MaximumTension>
+<Kse>12483.975</Kse>
+<Kpe>13990.875</Kpe>
+<B>1228.3175</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -8572,7 +8572,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.0010521" y="-0.00023805" z="-0.000125"/>
+<Position x="0.52605" y="-0.11902" z="-0.0625"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -8599,7 +8599,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -8618,7 +8618,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.0011076" y="-0.0002965" z="3.21e-05"/>
+<Position x="0.5538" y="-0.14825" z="0.01605"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -8645,7 +8645,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -8675,29 +8675,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.48189</UpperOutput>
+<UpperOutput>3011798.851</UpperOutput>
 <A>-0.05</A>
-<B>0.48189</B>
+<B>3011798.851</B>
 <C>459.512</C>
-<D>-0.0048189</D>
+<D>-30117.9885</D>
 </StimulusTension>
 <LengthTension>
 <ID>6827ca48-05d3-42a6-b7d8-0a68c32c26b1</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.00077</LowerLimit>
-<UpperLimit>0.00231</UpperLimit>
+<LowerLimit>0.385</LowerLimit>
+<UpperLimit>1.155</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.00154</RestingLength>
-<Lwidth>0.001405</Lwidth>
+<RestingLength>0.77</RestingLength>
+<Lwidth>0.7025</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.008825</MaximumTension>
-<Kse>0.08698</Kse>
-<Kpe>4.6626</Kpe>
-<B>1.1039</B>
+<MaximumTension>55156.25</MaximumTension>
+<Kse>43.49</Kse>
+<Kpe>2331.275</Kpe>
+<B>551.94</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -8715,7 +8715,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0.00018205" y="2.68e-05" z="-0.00068275"/>
+<Position x="0.091025" y="0.0134" z="-0.34137"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -8742,7 +8742,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>5e-05</Radius>
+<Radius>0.025</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -8772,29 +8772,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.014714</UpperOutput>
+<UpperOutput>91962.5195</UpperOutput>
 <A>-0.05</A>
-<B>0.014714</B>
+<B>91962.5195</B>
 <C>459.512</C>
-<D>-0.00014714</D>
+<D>-919.6252</D>
 </StimulusTension>
 <LengthTension>
 <ID>b828d40c-04c4-4664-af0f-e7028ac01045</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.00035</LowerLimit>
-<UpperLimit>0.00105</UpperLimit>
+<LowerLimit>0.175</LowerLimit>
+<UpperLimit>0.525</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.0007</RestingLength>
-<Lwidth>0.00064</Lwidth>
+<RestingLength>0.35</RestingLength>
+<Lwidth>0.32</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.0113</MaximumTension>
-<Kse>11.461</Kse>
-<Kpe>3.4626</Kpe>
-<B>2.2021</B>
+<MaximumTension>70625</MaximumTension>
+<Kse>5730.475</Kse>
+<Kpe>1731.315</Kpe>
+<B>1101.045</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -8823,29 +8823,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.25922</UpperOutput>
+<UpperOutput>1620101.4492</UpperOutput>
 <A>-0.05</A>
-<B>0.25922</B>
+<B>1620101.4492</B>
 <C>459.512</C>
-<D>-0.0025922</D>
+<D>-16201.0145</D>
 </StimulusTension>
 <LengthTension>
 <ID>ac1ded0f-0dba-48fc-9162-988c9c53a17c</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.000435</LowerLimit>
-<UpperLimit>0.001305</UpperLimit>
+<LowerLimit>0.2175</LowerLimit>
+<UpperLimit>0.6525</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.00087</RestingLength>
-<Lwidth>0.000795</Lwidth>
+<RestingLength>0.435</RestingLength>
+<Lwidth>0.3975</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.070275</MaximumTension>
-<Kse>9.6445</Kse>
-<Kpe>25.9301</Kpe>
-<B>1.8555</B>
+<MaximumTension>439218.75</MaximumTension>
+<Kse>4822.225</Kse>
+<Kpe>12965.025</Kpe>
+<B>927.735</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -8874,29 +8874,29 @@
 <LowerLimit>-0.06</LowerLimit>
 <UpperLimit>-0.04</UpperLimit>
 <LowerOutput>0</LowerOutput>
-<UpperOutput>0.014789</UpperOutput>
+<UpperOutput>92431.5966</UpperOutput>
 <A>-0.05</A>
-<B>0.014789</B>
+<B>92431.5966</B>
 <C>459.512</C>
-<D>-0.00014789</D>
+<D>-924.316</D>
 </StimulusTension>
 <LengthTension>
 <ID>b5a8704d-7f84-43aa-a981-4e4bb9328f62</ID>
 <Type>LengthTension</Type>
 <UseLimits>True</UseLimits>
-<LowerLimit>0.000385</LowerLimit>
-<UpperLimit>0.00115</UpperLimit>
+<LowerLimit>0.1925</LowerLimit>
+<UpperLimit>0.575</UpperLimit>
 <LowerOutput>0.7</LowerOutput>
 <UpperOutput>0.7</UpperOutput>
-<RestingLength>0.00077</RestingLength>
-<Lwidth>0.0007</Lwidth>
+<RestingLength>0.385</RestingLength>
+<Lwidth>0.35</Lwidth>
 <PeLength>90</PeLength>
 <MinPeLength>5</MinPeLength>
 </LengthTension>
-<MaximumTension>0.01125</MaximumTension>
-<Kse>26.4365</Kse>
-<Kpe>8.3165</Kpe>
-<B>2.8319</B>
+<MaximumTension>70312.5</MaximumTension>
+<Kse>13218.225</Kse>
+<Kpe>4158.225</Kpe>
+<B>1415.95</B>
 <IbDischarge>100</IbDischarge>
 </RigidBody>
 <RigidBody>
@@ -8914,7 +8914,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="-0.00036955" y="-0.00048655" z="-0.00011385"/>
+<Position x="-0.18477" y="-0.24327" z="-0.056925"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Attachment</Type>
@@ -8941,7 +8941,7 @@
 <MaxFoodQuantity>10000</MaxFoodQuantity>
 <FoodReplenishRate>1</FoodReplenishRate>
 <FoodEnergyContent>1000</FoodEnergyContent>
-<Radius>1.25e-05</Radius>
+<Radius>0.00625</Radius>
 <LatitudeSegments>20</LatitudeSegments>
 <LongtitudeSegments>20</LongtitudeSegments>
 </RigidBody>
@@ -8954,7 +8954,7 @@
 <MeshFile>G:\My Drive\Rat\SynergyControl\Animatlab\Meshes\Rat\Body\Pelvis.stl</MeshFile>
 <MeshType>Convex</MeshType>
 <ConvexMeshFile>G:\My Drive\Rat\SynergyControl\Animatlab\Meshes\Rat\Body\Pelvis_Convex.osg</ConvexMeshFile>
-<Scale x="0.05" y="0.05" z="0.05"/>
+<Scale x="25" y="25" z="25"/>
 </RigidBody>
 <CollisionExclusionPairs/>
 <NervousSystem>
@@ -11334,7 +11334,7 @@
 <Specular Red="0.25098" Green="0.25098" Blue="0.25098" Alpha="1"/>
 <Shininess>64</Shininess>
 <Texture/>
-<Position x="0" y="-0.067163" z="0"/>
+<Position x="0" y="-3.8935" z="0"/>
 <Rotation x="0" y="0" z="0"/>
 <DraggerSize>-1</DraggerSize>
 <Type>Basic</Type>
@@ -11355,7 +11355,7 @@
 <Texture/>
 <Position x="0" y="0" z="0"/>
 <Rotation x="-1.571" y="0" z="0"/>
-<DraggerSize>0.0025</DraggerSize>
+<DraggerSize>1.25</DraggerSize>
 <Type>Plane</Type>
 <PartType>AnimatGUI.DataObjects.Physical.Bodies.Plane</PartType>
 <SynchWithRobot>False</SynchWithRobot>
@@ -11588,9 +11588,9 @@
 <StructureID>e40d2c4f-9c31-49f8-8a5c-5688fb768225</StructureID>
 <JointID>55af1c5f-e200-4870-b3fa-0501ab0b22dd</JointID>
 <StartTime>0</StartTime>
-<EndTime>1.649</EndTime>
+<EndTime>4.6375</EndTime>
 <TargetID>Position</TargetID>
-<Equation>1.7954,1.5987,t,*,2.8668,-,sin,*,1.0661,2.2178,t,*,0.22778,-,sin,*,0.20194,7.9518,t,*,1.8477,-,sin,*,0.18987,8.2817,t,*,5.2808,-,sin,*,0.12158,22.7804,t,*,4.9706,-,sin,*,0.065769,34.1488,t,*,3.9331,-,sin,*,0.014586,45.36,t,*,3.2182,-,sin,*,0.18592,11.3537,t,*,0.67355,+,sin,*,+,+,+,+,+,+,+</Equation>
+<Equation>1.2128,0.62854,t,*,2.9236,-,sin,*,.55523,1.229,t,*,1.066,-,sin,*,.17094,3.9497,t,*,0.69561,+,sin,*,.12062,8.1091,t,*,1.2883,+,sin,*,.10455,2.1926,t,*,0.069685,+,sin,*,.064292,12.1227,t,*,2.3927,+,sin,*,.033408,5.063,t,*,0.90284,-,sin,*,.015464,5.6873,t,*,0.96929,+,sin,*,+,+,+,+,+,+,+</Equation>
 <DisableMotorWhenDone>False</DisableMotorWhenDone>
 </Stimulus>
 <Stimulus>
@@ -11747,9 +11747,9 @@
 <StructureID>e40d2c4f-9c31-49f8-8a5c-5688fb768225</StructureID>
 <JointID>c7df3511-7e4c-411e-be1f-1b71ff30c530</JointID>
 <StartTime>0</StartTime>
-<EndTime>1.649</EndTime>
+<EndTime>4.6375</EndTime>
 <TargetID>Position</TargetID>
-<Equation>1.3885,1.2271,t,*,2.5623,-,sin,*,0.30956,3.2811,t,*,1.0798,-,sin,*,0.072397,8.0265,t,*,1.7541,-,sin,*,0.86782,10.7993,t,*,6.9844,-,sin,*,0.21815,22.7768,t,*,5.5918,-,sin,*,0.12512,34.1339,t,*,4.467,-,sin,*,0.045669,45.3854,t,*,3.7669,-,sin,*,0.84423,10.8859,t,*,3.8858,-,sin,*,+,+,+,+,+,+,+</Equation>
+<Equation>1.7014,0.61261,t,*,2.9544,-,sin,*,.72619,1.2887,t,*,1.3368,-,sin,*,.2176,8.1004,t,*,0.68909,+,sin,*,.22942,2.4745,t,*,0.84134,-,sin,*,.12451,12.139,t,*,1.8149,+,sin,*,.17229,3.3305,t,*,0.48336,+,sin,*,.045303,16.139,t,*,2.519,+,sin,*,.098284,3.7751,t,*,2.8706,+,sin,*,+,+,+,+,+,+,+</Equation>
 <DisableMotorWhenDone>False</DisableMotorWhenDone>
 </Stimulus>
 <Stimulus>
@@ -12001,9 +12001,9 @@
 <StructureID>e40d2c4f-9c31-49f8-8a5c-5688fb768225</StructureID>
 <JointID>b2919ff8-3efa-4549-97b4-a4bc77ad6e0a</JointID>
 <StartTime>0</StartTime>
-<EndTime>1.649</EndTime>
+<EndTime>4.6375</EndTime>
 <TargetID>Position</TargetID>
-<Equation>0.86154,1.1955,t,*,2.5422,-,sin,*,0.46261,1.6738,t,*,0.21105,+,sin,*,0.43812,11.5026,t,*,1.7276,-,sin,*,0.00098908,20.6499,t,*,15.0922,-,sin,*,0.075336,22.7937,t,*,6.086,-,sin,*,0.031948,34.1659,t,*,5.2805,-,sin,*,0.011266,45.3751,t,*,4.5763,-,sin,*,0.069082,12.0404,t,*,5.3381,-,sin,*,+,+,+,+,+,+,+</Equation>
+<Equation>.62997,0.68915,t,*,3.1331,+,sin,*,.41634,4.0742,t,*,1.6638,-,sin,*,.27327,1.3908,t,*,1.6154,-,sin,*,.07513,8.0889,t,*,0.21476,+,sin,*,.061598,2.7344,t,*,1.5374,-,sin,*,.030482,12.123,t,*,1.0208,+,sin,*,.035628,4.8824,t,*,0.2388,-,sin,*,.0086693,6.1213,t,*,0.13869,+,sin,*,+,+,+,+,+,+,+</Equation>
 <DisableMotorWhenDone>False</DisableMotorWhenDone>
 </Stimulus>
 <Stimulus>
@@ -13903,7 +13903,7 @@
 <CollectTimeWindow>-1</CollectTimeWindow>
 <AlwaysActive>False</AlwaysActive>
 <StartTime>0</StartTime>
-<EndTime>1.649</EndTime>
+<EndTime>4.6375</EndTime>
 <CollectInterval>0.00054</CollectInterval>
 <DataColumns>
 <DataColumn>
@@ -13941,7 +13941,7 @@
 <CollectTimeWindow>-1</CollectTimeWindow>
 <AlwaysActive>False</AlwaysActive>
 <StartTime>0</StartTime>
-<EndTime>1.649</EndTime>
+<EndTime>4.6375</EndTime>
 <CollectInterval>0.00054</CollectInterval>
 <DataColumns>
 <DataColumn>

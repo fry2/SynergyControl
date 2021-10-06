@@ -6,7 +6,7 @@
 <EnableSimRecording>True</EnableSimRecording>
 <SetSimEnd>True</SetSimEnd>
 <APIFile/>
-<SimEndTime>1.659</SimEndTime>
+<SimEndTime>3.7666</SimEndTime>
 <PlaybackControlMode>1</PlaybackControlMode>
 <PresetPlaybackTimeStep>0.002</PresetPlaybackTimeStep>
 <Environment>
@@ -11588,9 +11588,9 @@
 <StructureID>e40d2c4f-9c31-49f8-8a5c-5688fb768225</StructureID>
 <JointID>55af1c5f-e200-4870-b3fa-0501ab0b22dd</JointID>
 <StartTime>0</StartTime>
-<EndTime>1.649</EndTime>
+<EndTime>3.6666</EndTime>
 <TargetID>Position</TargetID>
-<Equation>1.7954,1.5987,t,*,2.8668,-,sin,*,1.0661,2.2178,t,*,0.22778,-,sin,*,0.20194,7.9518,t,*,1.8477,-,sin,*,0.18987,8.2817,t,*,5.2808,-,sin,*,0.12158,22.7804,t,*,4.9706,-,sin,*,0.065769,34.1488,t,*,3.9331,-,sin,*,0.014586,45.36,t,*,3.2182,-,sin,*,0.18592,11.3537,t,*,0.67355,+,sin,*,+,+,+,+,+,+,+</Equation>
+<Equation>1.145,0.79013,t,*,2.9419,-,sin,*,.49652,1.6673,t,*,1.313,-,sin,*,.17078,5.0055,t,*,0.66996,+,sin,*,.12033,10.2582,t,*,1.2845,+,sin,*,.11497,2.8375,t,*,0.14198,-,sin,*,.064162,15.3339,t,*,2.3905,+,sin,*,.029391,6.4359,t,*,0.94042,-,sin,*,.012383,7.4865,t,*,0.43893,+,sin,*,+,+,+,+,+,+,+</Equation>
 <DisableMotorWhenDone>False</DisableMotorWhenDone>
 </Stimulus>
 <Stimulus>
@@ -11747,9 +11747,9 @@
 <StructureID>e40d2c4f-9c31-49f8-8a5c-5688fb768225</StructureID>
 <JointID>c7df3511-7e4c-411e-be1f-1b71ff30c530</JointID>
 <StartTime>0</StartTime>
-<EndTime>1.649</EndTime>
+<EndTime>3.6666</EndTime>
 <TargetID>Position</TargetID>
-<Equation>1.3885,1.2271,t,*,2.5623,-,sin,*,0.30956,3.2811,t,*,1.0798,-,sin,*,0.072397,8.0265,t,*,1.7541,-,sin,*,0.86782,10.7993,t,*,6.9844,-,sin,*,0.21815,22.7768,t,*,5.5918,-,sin,*,0.12512,34.1339,t,*,4.467,-,sin,*,0.045669,45.3854,t,*,3.7669,-,sin,*,0.84423,10.8859,t,*,3.8858,-,sin,*,+,+,+,+,+,+,+</Equation>
+<Equation>1.7384,0.7856,t,*,3.0068,-,sin,*,.7227,1.5634,t,*,1.287,-,sin,*,.21656,10.2447,t,*,0.67999,+,sin,*,.13959,3.2105,t,*,1.1566,-,sin,*,.1238,15.3498,t,*,1.8172,+,sin,*,.27276,4.8214,t,*,0.87976,-,sin,*,.04502,20.4038,t,*,2.5341,+,sin,*,.23797,4.9495,t,*,2.1335,+,sin,*,+,+,+,+,+,+,+</Equation>
 <DisableMotorWhenDone>False</DisableMotorWhenDone>
 </Stimulus>
 <Stimulus>
@@ -12001,9 +12001,9 @@
 <StructureID>e40d2c4f-9c31-49f8-8a5c-5688fb768225</StructureID>
 <JointID>b2919ff8-3efa-4549-97b4-a4bc77ad6e0a</JointID>
 <StartTime>0</StartTime>
-<EndTime>1.649</EndTime>
+<EndTime>3.6666</EndTime>
 <TargetID>Position</TargetID>
-<Equation>0.86154,1.1955,t,*,2.5422,-,sin,*,0.46261,1.6738,t,*,0.21105,+,sin,*,0.43812,11.5026,t,*,1.7276,-,sin,*,0.00098908,20.6499,t,*,15.0922,-,sin,*,0.075336,22.7937,t,*,6.086,-,sin,*,0.031948,34.1659,t,*,5.2805,-,sin,*,0.011266,45.3751,t,*,4.5763,-,sin,*,0.069082,12.0404,t,*,5.3381,-,sin,*,+,+,+,+,+,+,+</Equation>
+<Equation>.63201,0.87115,t,*,3.131,+,sin,*,.4123,5.1475,t,*,1.6572,-,sin,*,.27447,1.7487,t,*,1.6024,-,sin,*,.07517,10.2321,t,*,0.20979,+,sin,*,.060572,3.4561,t,*,1.547,-,sin,*,.030438,15.3386,t,*,1.0111,+,sin,*,.030603,6.2079,t,*,0.31501,-,sin,*,.0079561,7.8941,t,*,0.16348,-,sin,*,+,+,+,+,+,+,+</Equation>
 <DisableMotorWhenDone>False</DisableMotorWhenDone>
 </Stimulus>
 <Stimulus>
@@ -13903,7 +13903,7 @@
 <CollectTimeWindow>-1</CollectTimeWindow>
 <AlwaysActive>False</AlwaysActive>
 <StartTime>0</StartTime>
-<EndTime>1.649</EndTime>
+<EndTime>3.6666</EndTime>
 <CollectInterval>0.00054</CollectInterval>
 <DataColumns>
 <DataColumn>
@@ -13941,7 +13941,7 @@
 <CollectTimeWindow>-1</CollectTimeWindow>
 <AlwaysActive>False</AlwaysActive>
 <StartTime>0</StartTime>
-<EndTime>1.649</EndTime>
+<EndTime>3.6666</EndTime>
 <CollectInterval>0.00054</CollectInterval>
 <DataColumns>
 <DataColumn>

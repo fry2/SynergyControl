@@ -2431,8 +2431,10 @@ classdef FullLeg < matlab.mixin.SetGet
                 %that the joints should be able to apply.
 
                 [beg,ennd,~] = find_step_indices(obj);
-                beg = 654;
-                ennd = 1676;
+                [pks,locs] = findpeaks(obj.theta_motion(:,3));
+                beg = locs(2); mid = locs(3); ennd = locs(4);
+%                 beg = 654;
+%                 ennd = 1676;
 
                 %Midstance, ToeOff, MidSwing, ToeContact
                 load([pwd,'\Data\MuirGRFData.mat'])
@@ -2445,11 +2447,12 @@ classdef FullLeg < matlab.mixin.SetGet
                 verticalF = interp1(1:n,VerticalNoSwing,linspace(1,n,m))*animalmass;
                 propulsiveF = interp1(1:n,PropulsiveNoSwing,linspace(1,n,m))*animalmass;
 
-                    forcesmooth = [lateralF,lateralF,lateralF;verticalF,verticalF,verticalF;propulsiveF,propulsiveF,propulsiveF]';
+                    forcesmooth = [propulsiveF,propulsiveF,propulsiveF;verticalF,verticalF,verticalF;lateralF,lateralF,lateralF]';
                     forcesmooth = smoothdata(forcesmooth,'gaussian',30);
 
                     %sizer = floor(size(forcesmooth,1)/6);
-                    forcesmooth = forcesmooth(425:1448,:);
+                    temp = find(diff(forcesmooth(:,1)==0)==-1);
+                    forcesmooth = forcesmooth(temp(1):temp(2),:);
                     
                     %This needs to be rotated to match the Animatlab xyz environment. This is relatively simple at the moment, we just need to rotate planar
                     %forces by about 16 degrees clockwise along the global Z axis.
@@ -2459,17 +2462,13 @@ classdef FullLeg < matlab.mixin.SetGet
                               0 0 1];
                     forcesmooth = rotmat*forcesmooth';
                     
-                    lateralF = forcesmooth(1,:);
-                    verticalF = forcesmooth(2,:)';
-                    propulsiveF = forcesmooth(3,:)';
-                    
-                    % A sloppy way to incorporate scaling into the model. The Muir data is for a normal sized rat. In order to scale GRF, we'll
-                    % simply check the current pelvis mass against its known "normal, 1x" mass. Then multiply the forces by that factor
-%                     scale = obj.body_obj{1}.mass/31.824;
-%                     forcesmooth = scale*forcesmooth;
-                    
                     load_torque = zeros(size(lateralF,2),3);
                     foot_position = load_torque;
+                    
+                    gWH = [[obj.body_obj{1}.CR [0;0;0]];[zeros(1,3) 1]];
+                    gHF = [[obj.body_obj{2}.CR obj.body_obj{2}.position'];[zeros(1,3) 1]];
+                    gFT = [[obj.body_obj{3}.CR obj.body_obj{3}.position'];[zeros(1,3) 1]];
+                    gTX = [[obj.body_obj{4}.CR obj.body_obj{4}.position'];[zeros(1,3) 1]];
                 for i=beg:ennd
                     pointer = i-beg+1;
 
@@ -2485,11 +2484,26 @@ classdef FullLeg < matlab.mixin.SetGet
                     force_vec = forcesmooth(:,pointer);
 
                     %Calculate J'*F to find the joint torques. 
-                    %J is in the spatial frame, so we don't need to modify it to the body frame as was done in the past
                     %For reference, consult Sastry 1994 p. 121 (Eq 3.60)
                     %foot_wrench_body = [force_vec(:,k);cross(foot_position(:,i),force_vec(:,k))];
                     foot_wrench = [force_vec;0;0;0];
-                    current_torques = J'*foot_wrench;
+                    
+                    a = [[axis_angle_rotation(obj,current_config(1),obj.joint_obj{1}.uu_joint);zeros(1,3)],[zeros(3,1);1]];
+                    b = [[axis_angle_rotation(obj,current_config(2),obj.joint_obj{2}.uu_joint);zeros(1,3)],[zeros(3,1);1]];
+                    c = [[axis_angle_rotation(obj,current_config(3),obj.joint_obj{3}.uu_joint);zeros(1,3)],[zeros(3,1);1]];
+                    gTot = gWH*a*gHF*b*gFT*c*gTX;
+                    gTotR = obj.body_obj{1}.CR*axis_angle_rotation(obj,current_config(1),obj.joint_obj{1}.uu_joint)*...
+                        obj.body_obj{2}.CR*axis_angle_rotation(obj,current_config(2),obj.joint_obj{2}.uu_joint)*...
+                        obj.body_obj{3}.CR*axis_angle_rotation(obj,current_config(3),obj.joint_obj{3}.uu_joint)*obj.body_obj{4}.CR;
+                    gTotP = obj.musc_obj{20}.pos_attachments{5,4}(i,:)';
+                    
+%                     gTotR = gTot(1:3,1:3);
+%                     gTotP = gTot(1:3,4);
+                    
+                    invAd = [[gTotR';zeros(3,3)],[-gTotR'*wedge(gTotP);gTotR']];
+                    Js = invAd*J;
+                    
+                    current_torques = Js'*foot_wrench;
                     
                     %The torques in each joint as generated only by the force of the ground on the foot
                     load_torque(pointer,:) = current_torques';
@@ -2498,8 +2512,9 @@ classdef FullLeg < matlab.mixin.SetGet
                 % Fit the load torque to the walking waveform. Find a way to do this automatically. In the meantime, just say explcitly when stance
                 % and swing happen in the walking waveform (obj.theta_motion)
                 % translocs represent the beginning of motion, the peaks and troughs of the hip motion, and the end of motion
-                translocs = [1,565,937,1587,1959,2609,2979,3064];
-                stance = load_torque(1:1575,:); swing = load_torque(1576:end,:);
+                translocs = [1,locs(2:end)',length(obj.theta_motion)];
+                loadEnd = find(diff(load_torque(:,3)==0)==1,1,'first');
+                stance = load_torque(1:loadEnd-1,:); swing = load_torque(loadEnd:end,:);
                 lt_walk = [];
                 for ii = 3:2:length(translocs)
                     st = interp1(1:length(stance),stance,linspace(1,length(stance),translocs(ii-1)-translocs(ii-2)));
@@ -2518,7 +2533,7 @@ classdef FullLeg < matlab.mixin.SetGet
                         ylimms2(1) = 1.1*min(min(1000*load_torque));
                         ylimms2(2) = 1.1*max(max(1000*load_torque));
                         subA = subplot(3,1,1);
-                            plot(100*linspace(0,1,size(obj.theta_motion(beg:ennd,:),1)),obj.theta_motion(beg:ennd,:).*(180/pi)+[98.4373,102.226,116.2473],'LineWidth',2)
+                            plot(100*linspace(0,1,size(obj.theta_motion(locs(3):locs(5),:),1)),obj.theta_motion(locs(3):locs(5),:).*(180/pi)+[98.4373,102.226,116.2473],'LineWidth',2)
                             title('Joint Angles for Stance and Swing')
                             ylabel('Angle (deg)')
                             xlabel('% Stride')
@@ -2531,7 +2546,7 @@ classdef FullLeg < matlab.mixin.SetGet
                             title('Ground Reaction Forces')
                             xlabel('% Stride')
                             ylabel('Force (N)')
-                            legend({'Lateral','Vertical','Propulsive'},'Location','eastoutside')
+                            legend({'Propulsive','Vertical','Lateral'},'Location','eastoutside')
                             ylim(ylimms1)
                             grid on
                         subC = subplot(3,1,3);
@@ -2559,7 +2574,7 @@ classdef FullLeg < matlab.mixin.SetGet
                 end
         end
         %% Function: Compute BODY TORQUE
-        function body_torque = compute_body_torques(obj,toplot)
+        function grav_torque = compute_grav_torques(obj,toplot)
             [beg,ennd,~] = find_step_indices(obj);
             %Higher div, the longer the program takes.
             div = 500;
@@ -2573,7 +2588,7 @@ classdef FullLeg < matlab.mixin.SetGet
                 bodyMass(ii) = obj.body_obj{ii}.mass./1000;
             end
                 
-            body_torque = zeros(length(xx),length(obj.joint_obj));
+            grav_torque = zeros(length(xx),length(obj.joint_obj));
             for jj = 1:length(obj.joint_obj)
                 [bodyArm] = compute_gravity_moment_arm(obj,obj.body_obj{jj+1},jj,0);
                 bodyTorque = (bodyArm(:,3)./1000).*bodyMass(jj+1).*9.8;
@@ -2583,15 +2598,15 @@ classdef FullLeg < matlab.mixin.SetGet
                     [nJointArm] = compute_gravity_moment_arm(obj,obj.joint_obj{jj+1},jj,0);
                 end
                 nJointTorque = (nJointArm(:,3)./1000).*sum(bodyMass(jj+2:end)).*9.8;
-                body_torque(:,jj) = bodyTorque'+nJointTorque';
+                grav_torque(:,jj) = bodyTorque'+nJointTorque';
             end
-            body_torque = -body_torque;
+            grav_torque = -grav_torque;
             
             clearTheta = obj.theta_motion.*(180/pi)+[98.4373 102.226 116.2473];
             if toplot
                 figure('name','GravTorques','Position',[962,2,958,994]);
                 subplot(2,1,1)
-                    plot(obj.theta_motion_time(xx),-body_torque,'LineWidth',3)
+                    plot(obj.theta_motion_time(xx),-grav_torque,'LineWidth',3)
                     legend({'Hip';'Knee';'Ankle'})
                     ylabel('Joint Torque (mNm)')
                     xlabel('Time (s)')
@@ -2623,7 +2638,8 @@ classdef FullLeg < matlab.mixin.SetGet
                     % This will trim the rapid changes in passive tension at the beginning and end of the sim, which are artifacts
                     % of moving the leg into and out of position. Doing this avoids huge values for the passive torque, which can affect
                     % the force optimization process. Feel free to remove this line and things will still work (set pt = musc.passive_tension)
-                    pTemp = [repmat(musc.passive_tension(34),33,1);musc.passive_tension(34:3055);repmat(musc.passive_tension(3055),9,1)];
+                    lenDat = length(musc.passive_tension);
+                    pTemp = [repmat(musc.passive_tension(34),33,1);musc.passive_tension(34:lenDat-9);repmat(musc.passive_tension(lenDat-9),9,1)];
                     pt = smoothdata(pTemp,'movmedian',25);
                     Tpass_profile(muscle_num,:) = pt;
                     passive_muscle_torque(muscle_num,:,k) = pt'.*moment_output(muscle_num,:)./1000;
@@ -2664,14 +2680,15 @@ classdef FullLeg < matlab.mixin.SetGet
         function [inertial_torque] = compute_inertial_torque(obj)
             % Find angular acceleration
             g = 9.81;
-            jm = [repmat(obj.theta_motion(21,:),20,1);obj.theta_motion(21:3055,:);repmat(obj.theta_motion(3055,:),9,1)];
+            lenDat = length(obj.theta_motion);
+            jm = [repmat(obj.theta_motion(21,:),20,1);obj.theta_motion(21:lenDat-9,:);repmat(obj.theta_motion(lenDat-9,:),9,1)];
             jm = smoothdata(jm,'movmean',50);
             gjm = zeros(length(jm),3); gjm2 = gjm;
             for ii = 1:3
                 gjm(:,ii) = smoothdata(gradient(jm(:,ii),obj.dt_motion),'movmean',100);
                 gjm2(:,ii) = smoothdata(gradient(gjm(:,ii),obj.dt_motion),'movmean',100);
             end
-            gjm2 = [repmat(gjm2(56,:),56,1);gjm2(56:3028,:);repmat(gjm2(3029,:),35,1)];
+            gjm2 = [repmat(gjm2(56,:),56,1);gjm2(56:lenDat-33,:);repmat(gjm2(lenDat-33,:),35,1)];
             moi2 = zeros(3,1);
             % Computing the moments of inertia
             % These are just approximations, assuming femur and tibia are solid rods and the foot is a box
@@ -2706,10 +2723,10 @@ classdef FullLeg < matlab.mixin.SetGet
 %                     footpos = com_pos_on_demand(obj,jm(ii,:),4)';
 %                     h(ii,3) = footpos(2)-hippos;
 %                     V(ii,:) = [m1*g,m2*g,m3*g].*h(ii,:);
-                inertial_torque(ii,:) = -1*(M*gjm2(ii,:)')';
+                inertial_torque(ii,:) = -19.42*(M*gjm2(ii,:)')';
             end
         end
-        %% Function: Compute TOTAL TORQUE: Passive Joint Torque
+        %% Function: Compute ACTIVE TORQUE: Passive Joint Torque
         function  [total_joint_torques,passive_muscle_torque,inertial_torque] = compute_active_joint_torque(obj,toplot)
                         
             % Muscle torque
@@ -2719,7 +2736,7 @@ classdef FullLeg < matlab.mixin.SetGet
             load_torque = compute_load_torques(obj,0);
             
             % Body Torque
-            passive_body_torque = compute_body_torques(obj,0);
+            passive_grav_torque = compute_grav_torques(obj,0);
             
             % Inertial Torque
             inertial_torque = compute_inertial_torque(obj);
@@ -2727,12 +2744,12 @@ classdef FullLeg < matlab.mixin.SetGet
 %             %
 %             passive_muscle_torque = -passive_muscle_torque;
 %             load_torque = -load_torque;
-%             passive_body_torque = -passive_body_torque;
+%             passive_grav_torque = -passive_grav_torque;
 %             inertial_torque = -inertial_torque;
             
-            load_torque_on = 0;
+            load_torque_on = 1;
             if load_torque_on
-                total_joint_torques = passive_body_torque+passive_muscle_torque+inertial_torque+load_torque;
+                total_joint_torques = passive_grav_torque+passive_muscle_torque+inertial_torque+load_torque;
 
                 %Plotting
                 if toplot
@@ -2752,7 +2769,7 @@ classdef FullLeg < matlab.mixin.SetGet
                         ylimms2(2) = 1000*scale*max(passive_muscle_torque(50:end,:),[],'all');
                         ylim(ylimms2); xlim([0 max(obj.theta_motion_time)])
                     subplot(6,1,3)
-                        plot(obj.theta_motion_time,1000.*passive_body_torque,'LineWidth',2)
+                        plot(obj.theta_motion_time,1000.*passive_grav_torque,'LineWidth',2)
                         title('Body Torques'); ylabel('Torque (mN-m)'); xlabel('Time (s)')
                         legend('Hip','Knee','Ankle','Location','eastoutside')
                         xlim([0 max(obj.theta_motion_time)])
@@ -2775,7 +2792,7 @@ classdef FullLeg < matlab.mixin.SetGet
                         ylim(ylimms2); xlim([0 max(obj.theta_motion_time)])
                 end
             else
-                total_joint_torques = passive_body_torque+passive_muscle_torque+inertial_torque;
+                total_joint_torques = passive_grav_torque+passive_muscle_torque+inertial_torque;
 
                 %Plotting
                 if toplot
@@ -2795,7 +2812,7 @@ classdef FullLeg < matlab.mixin.SetGet
                         ylimms2(2) = 1000*scale*max(passive_muscle_torque(50:end,:),[],'all');
                         ylim(ylimms2); xlim([0 max(obj.theta_motion_time)])
                     subplot(5,1,3)
-                        plot(obj.theta_motion_time,1000.*passive_body_torque,'LineWidth',2)
+                        plot(obj.theta_motion_time,1000.*passive_grav_torque,'LineWidth',2)
                         title('Body Torques'); ylabel('Torque (mN-m)'); xlabel('Time (s)')
                         legend('Hip','Knee','Ankle','Location','eastoutside')
                         xlim([0 max(obj.theta_motion_time)])
