@@ -81,9 +81,9 @@ for ii = 1:length(lengthVals)
     disp(['Completed ',num2str(count),' out of ',num2str(length(lengthVals)),'. ',timeStr])
     count = count +1;
 end
-% Zoning Sorter
-muscZones = zoning_sorter(inSimPath,6); mDataZone = cell(6,1); am_all = cell(1,length(lengthVals));torques_act = cell(1,3); torques_tot = cell(1,3);
-for jj = 1:length(lengthVals)
+%% Zoning Sorter
+%muscZones = zoning_sorter(inSimPath,6); mDataZone = cell(6,1); am_all = cell(1,length(lengthVals));torques_act = cell(1,3); torques_tot = cell(1,3);
+for jj = 26%1:length(lengthVals)
     mTemp = cell(6,1);
     %[Am_musc,V_musc,Am_musc_raw] = Am_generator(objCell{jj},force_tot{jj});
     %am_all{jj} = Am_musc';
@@ -106,7 +106,8 @@ for jj = 1:length(lengthVals)
         %torque_temp = sum(moment_output.*force_mn{jj}(:,rm{ii}),2);
         %torques_act{ii}(:,jj) = normalizeTorque(torque_temp(beg:ennd),mid-beg);
         beg = rangeMat(jj,1); mid = rangeMat(jj,2); ennd = rangeMat(jj,3);
-        torques_act{ii}(:,jj) = -normalizeTorque(squeeze(torques_active{jj}(beg:ennd,ii)),mid-beg);
+        torques_act{ii}(:,jj) = -normalizeTorque(squeeze(torques_active{jj}(beg:ennd,ii)),mid-beg,0);
+        torques_full{ii}(:,jj) = -normalizeTorque(squeeze(torques_active{jj}(beg:ennd,ii)),mid-beg,1);
     end
 end
 %% Plot individual zones across the length scale
@@ -274,29 +275,7 @@ end
     figure('Position',[542,2,1378,994]);
     for joint = 1:3
         for len = 1:numLens
-            beg = rangeMat(len,1); mid = rangeMat(len,2); ennd = rangeMat(len,3);
-            switch range
-                case 1
-                    endInd = beg + floor((mid-beg)/3);
-                    range2plot = beg:endInd;
-                case 2
-                    endInd1 = beg + floor((mid-beg)/3);
-                    endInd2 = beg + floor(2*(mid-beg)/3);
-                    range2plot = endInd1:endInd2;
-                case 3
-                    endInd = beg + floor(2*(mid-beg)/3);
-                    range2plot = endInd:mid;
-                case 4
-                    range2plot = rangeMat(len,1):rangeMat(len,2);
-                case 5
-                    endInd = mid + floor((ennd-mid)/3);
-                    range2plot = mid:endInd;
-                case 6
-                case 7
-                    
-                case 8
-                    range2plot = rangeMat(len,2):rangeMat(len,3);
-            end
+            range2plot = range_finder(range,len,rangeMat);
             corrIn(joint,len) = corr(torques_active{len}(range2plot,joint),torques_inertial{len}(range2plot,joint));
             corrMs(joint,len) = corr(torques_active{len}(range2plot,joint),torques_muscle{len}(range2plot,joint));
             corrGv(joint,len) = corr(torques_active{len}(range2plot,joint),torques_grav{len}(range2plot,joint));
@@ -304,19 +283,7 @@ end
                 corrLd(joint,len) = corr(torques_active{len}(range2plot,joint),torques_load{len}(range2plot,joint));
             end
         end
-        % Scan across the two correlation vectors and find the point at which they intersect
-        aa = corrMs(joint,:); bb = corrIn(joint,:); % rename the vectors for simplicity
-        for ii = 2:length(aa)
-            if aa(ii) < bb(ii) && aa(ii-1) > bb(ii-1) % if we just passed the crossover point, find the intersection
-                m2 = (bb(ii)-bb(ii-1))/(lengthVals(ii)-lengthVals(ii-1));
-                x = lengthVals(ii-1);
-                y2 = bb(ii-1);
-                m1 = (aa(ii)-aa(ii-1))/(lengthVals(ii)-lengthVals(ii-1));
-                y1 = aa(ii-1);
-                x0 = ((m2-m1)*x+y1-y2)/(m2-m1);
-                y0 = (m2*y1-m1*y2)/(m2-m1);
-            end
-        end
+        [x0,y0] = find_crossover_point(corrMs,corrIn,lengthVals);
         subplot(3,1,joint) 
             semilogx([x0 x0],[y0-.5 y0+.5],'Color',[.75,.75,.75],'LineWidth',2); hold on
             semilogx(lengthVals,corrIn(joint,:),'r','LineWidth',2);
@@ -347,66 +314,23 @@ end
             end
         title([jointNames{joint},' - ',phaseString],'FontSize',16)
     end
-%% Find Crossover Points
-   range = 2; jointNames = {'Hip';'Knee';'Ankle'}; corrIn = zeros(3,numLens); corrMs = corrIn; 
-   for range = 1:8
-    switch range
-        case 1
-            range2plot = 654:780; % EARLY SWING
-        case 2
-            range2plot = 780:906; % MID SWING
-        case 3
-            range2plot = 906:1034; % LATE SWING
-        case 4
-            range2plot = 654:1034; % FULL SWING
-        case 5
-            range2plot = 1034:1248; % EARLY STANCE
-        case 6
-            range2plot = 1248:1462; % MID STANCE
-        case 7
-            range2plot = 1462:1676; % LATE STANCE
-        case 8
-            range2plot = 1034:1676; % FULL STANCE
-    end
-    for jj = 1:3
-        for ii = 1:numLens
-            corrIn(jj,ii) = corr(torques_active(range2plot,jj,ii),torques_inertial(range2plot,jj,ii));
-            corrMs(jj,ii) = corr(torques_active(range2plot,jj,ii),torques_muscle(range2plot,jj,ii));
-            %corrLd(jj,ii) = corr(torques_active(range2plot,jj,ii),torques_load(range2plot,jj,ii));
-        end
-        aa = corrMs(jj,:); bb = corrIn(jj,:);
-        for ii = 2:length(aa)
-            if aa(ii) < bb(ii) && aa(ii-1) > bb(ii-1) % if we just passed the crossover point
-                m2 = (bb(ii)-bb(ii-1))/(lengthVals(ii)-lengthVals(ii-1));
-                x = lengthVals(ii-1);
-                y2 = bb(ii-1);
-                m1 = (aa(ii)-aa(ii-1))/(lengthVals(ii)-lengthVals(ii-1));
-                y1 = aa(ii-1);
-                x0 = ((m2-m1)*x+y1-y2)/(m2-m1);
-            end
-        end
-        crossovers(range,jj) = x0;
-    end
-        %filename = 'G:\My Drive\Rat\Swing Paper\Crossovers.csv';
-        %writematrix(crossovers,filename)
-   end
 %% Plot ALL TORQUES for a given length scale
 figure('Position',[962,2,958,994]);
-lengthNum = 9; range2plot = beg:ennd;
+lengthNum = 9; range2plot = rangeMat(lengthNum,1):rangeMat(lengthNum,3); obj = objCell{lengthNum}; mid = rangeMat(lengthNum,2);
 subplot(4,1,1)
     plot(obj.theta_motion_time(range2plot),jointmotion{lengthNum}(range2plot,:).*(180/pi)+[98.4373 102.226 116.2473],'LineWidth',3)
     title('Joint Motion','FontSize',16); ylabel('Joint Angle (deg)','FontSize',14); xlabel('Time (s)','FontSize',14); xlim([obj.theta_motion_time(range2plot(1)),obj.theta_motion_time(range2plot(end))])
     legend({'Hip';'Knee';'Ankle'}); xline(obj.theta_motion_time(mid),'HandleVisibility','off')
 subplot(4,1,2)
-    plot(obj.theta_motion_time(range2plot),torques_muscle(range2plot,:,lengthNum),'LineWidth',3);
+    plot(obj.theta_motion_time(range2plot),torques_muscle{lengthNum}(range2plot,:),'LineWidth',3);
     title('Passive Muscle Torque','FontSize',16); ylabel('Torque (Nm)','FontSize',14); xlabel('Time (s)','FontSize',14); xlim([obj.theta_motion_time(range2plot(1)),obj.theta_motion_time(range2plot(end))])
     legend({'Hip';'Knee';'Ankle'});xline(obj.theta_motion_time(mid),'HandleVisibility','off')
 subplot(4,1,3)
-    plot(obj.theta_motion_time(range2plot),-torques_inertial(range2plot,:,lengthNum),'LineWidth',3);
+    plot(obj.theta_motion_time(range2plot),-torques_inertial{lengthNum}(range2plot,:),'LineWidth',3);
     title('Inertial Torque','FontSize',16); ylabel('Torque (Nm)','FontSize',14); xlabel('Time (s)','FontSize',14); xlim([obj.theta_motion_time(range2plot(1)),obj.theta_motion_time(range2plot(end))])
     legend({'Hip';'Knee';'Ankle'});xline(obj.theta_motion_time(mid),'HandleVisibility','off')
 subplot(4,1,4)
-    plot(obj.theta_motion_time(range2plot),-torques_active(range2plot,:,lengthNum),'LineWidth',3);
+    plot(obj.theta_motion_time(range2plot),-torques_active{lengthNum}(range2plot,:),'LineWidth',3);
     title('Total Joint Torque','FontSize',16); ylabel('Torque (Nm)','FontSize',14); xlabel('Time (s)','FontSize',14); xlim([obj.theta_motion_time(range2plot(1)),obj.theta_motion_time(range2plot(end))])
     legend({'Hip';'Knee';'Ankle'});xline(obj.theta_motion_time(mid),'HandleVisibility','off')
 %% Plot Swing Phase Forces for a Zone
@@ -551,22 +475,23 @@ for ii = 1:3
     beg = rangeMat(rchLens(ii),1); mid = rangeMat(rchLens(ii),2); ennd = rangeMat(rchLens(ii),3);
         timeVec = objCell{rchLens(ii)}.theta_motion_time(beg:ennd)-objCell{rchLens(ii)}.theta_motion_time(beg);
     timeVec = linspace(0,100,length(timeVec));
-    plot(timeVec,torques_active{rchLens(ii)}(beg:ennd,joint),'k','LineWidth',3); hold on;
-    plot(timeVec,torques_muscle{rchLens(ii)}(beg:ennd,joint),'b','LineWidth',3);
-    plot(timeVec,torques_inertial{rchLens(ii)}(beg:ennd,joint),'r','LineWidth',3);
-    vCorr = corr(torques_muscle{rchLens(ii)}(beg:ennd,joint),torques_active{rchLens(ii)}(beg:ennd,joint));
-    iCorr = corr(torques_inertial{rchLens(ii)}(beg:ennd,joint),torques_active{rchLens(ii)}(beg:ennd,joint));
-    text(.0169,.1129,0,['r^2 = ',num2str(round(vCorr,2))],'FontSize',15,'Units','normalized','Color','blue'); 
-    text(.0169,.0414,0,['r^2 = ',num2str(round(iCorr,2))],'FontSize',15,'Units','normalized','Color','red');
-    xlim([0,max(timeVec)])
+    ta = -torques_active{rchLens(ii)}(beg:ennd,joint); tv = -torques_muscle{rchLens(ii)}(beg:ennd,joint); ti = -torques_inertial{rchLens(ii)}(beg:ennd,joint);
+    plot(timeVec,ta,'k','LineWidth',3); hold on;
+    plot(timeVec,tv,'b','LineWidth',3);
+    plot(timeVec,ti,'r','LineWidth',3);
+    vCorr = corr(tv,ta);
+    iCorr = corr(ti,ta);
+    text(.7816,.1129,0,['r^2 = ',num2str(round(vCorr,2))],'FontSize',15,'Units','normalized','Color','blue'); 
+    text(.7816,.0414,0,['r^2 = ',num2str(round(iCorr,2))],'FontSize',15,'Units','normalized','Color','red');
+    xlim([0,max(timeVec)]); ylim([1.6*min([ta,ti,tv],[],'all'),1.1*max([ta,ti,tv],[],'all')])
     pbaspect([1,1,1]);
     ylabel('Torque (Nm)','FontSize',12)
     xlabel('Stride (%)','FontSize',12)
     title(rchLabels{ii},'FontSize',16)
-    legend({'Active';'Viscoelastic';'Inertial'},'Location','northeast','FontSize',10)
+    legend({'Active';'Viscoelastic';'Inertial'},'Location','southwest','FontSize',10)
 end
 saveas(h,['G:\My Drive\Rat\Swing Paper\r2_example'],'png')
-%% SURF Torque Plots
+%% SURF Torque Plots, 3 JOINTS
     aa = figure('Position',[1,1,1920,1003],'Name','Torques Across Scales'); range2plot = beg:ennd;yScaleLabels = 10; jointNames = {'Hip';'Knee';'Ankle'};
     for kk = 1:3
         tMat = torques_act{kk}';
@@ -623,6 +548,76 @@ saveas(h,['G:\My Drive\Rat\Swing Paper\r2_example'],'png')
             title([jointNames{kk},'- Active Joint Torque'],'FontSize',16)
     end
     %saveas(aa,[savePath,zoneNames{zoneNum},'.png'])
+%% HIP SURF Torque Plot
+    aa = figure('Position',[1,1,1920,1003],'Name','Torques Across Scales'); range2plot = beg:ennd;yScaleLabels = 10; jointNames = {'Hip';'Knee';'Ankle'};
+    jointNum = 1;
+    titleSize = 20; labelSize = 18; inWordSize = 16; lineWidth = 3; tickSize = 16;
+    tMat = torques_act{jointNum}';
+        % Make the activation matrix more "dense" with a beef factor which duplicates each activation waveform a desired number of times.
+        bf = 3; temp = [];
+        for ii = 1:numLens
+            temp(bf*(ii-1)+1:bf*ii,:,1) = repmat(tMat(ii,:),[bf,1]);
+        end
+        tMat = temp(:,:,1);
+
+        %timeVec = objCell{1}.theta_motion_time(range2plot)-objCell{1}.theta_motion_time(range2plot(1));
+        %strideVec = linspace(0,100,length(timeVec));
+        strideVec = linspace(0,100,100);
+        strideMat = repmat(strideVec,[numLens*bf, 1]);
+        scaleMat = repmat(linspace(1,numLens*bf,numLens*bf)',[1 size(tMat,2)]);
+
+        % For defining a custom color map between two colors
+        color1 = [0,0,1]; color2 = [1,0,0];
+        r = linspace(color1(1),color2(1),500)'; g = linspace(color1(2),color2(2),500)'; b = linspace(color1(3),color2(3),500)';  cm = [r,g,b];
+        cm = flipud(cool(500));
+        
+        % For defining a custom color map between three colors
+%         color1 = [0,0,1]; color2 = [1,1,1]; color3 = [1,0,0];
+%         r = [linspace(color1(1),color2(1),250)';linspace(color2(1),color3(1),250)']; 
+%         g = [linspace(color1(2),color2(2),250)';linspace(color2(2),color3(2),250)']; 
+%         b = [linspace(color1(3),color2(3),250)';linspace(color2(3),color3(3),250)']; 
+%         cm = [r,g,b];
+
+        subplot(1,2,1)
+        torqueVec = -torques_active{13}(rangeMat(13,1):rangeMat(13,3),1); torqueVec = torqueVec./max(torqueVec);timeVec = linspace(0,100,length(torqueVec));
+            plot(timeVec,torqueVec,'LineWidth',3)
+            set(gca,'FontSize',14,'Position',[0.132,0.168,0.335,0.815])
+            ylim([-1 1])
+            xline(37,'r--','LineWidth',2.5); yline(0);
+            set(gca,'YTick',[-1,0,1],'YTickLabels',{'FLX';'0';'EXT'},'FontSize',tickSize)
+            set(gca,'XTick',0:20:100,'FontSize',tickSize)
+            ylabel('Normalized Joint Torque','FontSize',labelSize); xlabel('Stride (%)','FontSize',labelSize) 
+            title('Active Hip Torque - Rat','FontSize',titleSize)
+            text(14.5,-0.92,'Swing','FontSize',16); text(64.5,-.92,'Stance','FontSize',inWordSize);
+            text(-.1553,1.0482,1,'A','Units','normalized','FontSize',32)
+            pbaspect([1,1,1])
+        subplot(1,2,2);
+            surf(strideMat,scaleMat,tMat,'EdgeAlpha',0);view([0 90]); hold on; colormap(cm) %colormap parula %colormap(cm)
+            %set(gca,'yscale','log')
+            %pPic = pcolor(strideMat,scaleMat,amMat); pPic.EdgeAlpha = 0;
+            % Create accurate values for the Y Ticks
+                yTickLabelVals = round(lengthVals(floor(linspace(1,numLens,yScaleLabels))),2);
+                yTickVals = floor(linspace(ceil(bf/2),numLens*bf-floor(bf/2),yScaleLabels)); 
+                yTickLabels = num2cell(yTickLabelVals);
+                set(gca,'YTick',yTickVals,'YTickLabels',yTickLabels,'FontSize',tickSize)
+            % Add labels
+                [~,ratInd] = min(abs(1-lengthVals)); [~,catInd] = min(abs(2.66-lengthVals)); 
+                [~,stickInd] = min(abs(.375-lengthVals)); [~,horseInd] = min(abs(12-lengthVals));
+                xline(strideVec(37),'r--','LineWidth',3,'HandleVisibility','off')
+                yline(bf*ratInd,'b-.','LineWidth',2.5,'HandleVisibility','off','Alpha',.4)
+                yline(bf*catInd,'g-.','LineWidth',2.5,'HandleVisibility','off','Alpha',.4)
+                yline(bf*horseInd,'y-.','LineWidth',2.5,'HandleVisibility','off','Alpha',.4)
+                yline(bf*stickInd,'w-.','LineWidth',2.5,'HandleVisibility','off','Alpha',.4)
+                % Add text
+                text(101,bf*ratInd,1,'\leftarrow Rat','FontSize',tickSize); 
+                text(101,bf*catInd,1,'\leftarrow Cat','FontSize',tickSize); 
+                text(101,bf*horseInd,1,'\leftarrow Horse','FontSize',tickSize);
+                text(101,bf*stickInd,1,'\leftarrow Stick Insect','FontSize',tickSize);
+            colorbar('Location','southoutside','Ticks',[-1,1],'TickLabels',{'Flexion','Extension'},'FontSize',labelSize)
+            xlim([0 max(strideVec)]); ylim([1 numLens*bf]); pbaspect([1 1 1]);
+            ylabel('x Size Relative to Rat','FontSize',labelSize); xlabel('Stride (%)','FontSize',labelSize);
+            text(-.1258,1.048,1,'B','Units','normalized','FontSize',32)
+            title(['Active Hip Torque - All Scales'],'FontSize',titleSize)
 %% Calculate Swing Data
 stepInds = [654,1034,1676]; range2plot = stepInds(1):stepInds(3); ft = []; legender = cell(1,1); showStance = 0; clear sw
 
@@ -669,7 +664,12 @@ bPlot = bar(sw(lens2plot,:)','FaceAlpha',1,'EdgeAlpha',0,'FaceColor','flat');hol
     ylabel('Normalized Joint Torque','FontSize',18); xlabel('Stride Phase','FontSize',18)
     title(['Active Joint Torques of the ',objCell{1}.joint_obj{joint}.name(4:end)],'FontSize',20)
 %% Normalize a torque matrix
-function outMat = normalizeTorque(torque_temp,trans)
+function outMat = normalizeTorque(torque_temp,trans,allTogether)
+    if allTogether
+        torque_temp = interp1(1:length(torque_temp),torque_temp,linspace(1,length(torque_temp),100));
+        outMat = torque_temp./max(abs(torque_temp));
+        return
+    end
     if size(torque_temp,2) == 1
         oneHundredizer = @(inMat,trans) [interp1(1:length(inMat(1:trans,:)),inMat(1:trans,:),linspace(1,length(inMat(1:trans,:)),37)),...
                                          interp1(1:length(inMat(trans:end,:)),inMat(trans:end,:),linspace(1,length(inMat(trans:end,:)),63))]';
@@ -687,5 +687,47 @@ function outMat = normalizeTorque(torque_temp,trans)
         stanceNorm = torque_temp(38:end,:)./max(abs(torque_temp(38:end,:)));
         outMat = [swingNorm;stanceNorm];
         %outMat = torque_temp./max(abs(torque_temp));
+    end
+end
+%% Find_Crossover_Point
+function [outX,outY] = find_crossover_point(corr1,corr2,lengthVals)
+    % Scan across the two correlation vectors and find the point at which they intersect
+    aa = corr1; bb = corr2;    
+    for ii = 2:length(aa)
+        if aa(ii) < bb(ii) && aa(ii-1) > bb(ii-1) % if we just passed the crossover point, find the intersection
+            m2 = (bb(ii)-bb(ii-1))/(lengthVals(ii)-lengthVals(ii-1));
+            x = lengthVals(ii-1);
+            y2 = bb(ii-1);
+            m1 = (aa(ii)-aa(ii-1))/(lengthVals(ii)-lengthVals(ii-1));
+            y1 = aa(ii-1);
+            outX = ((m2-m1)*x+y1-y2)/(m2-m1);
+            outY = (m2*y1-m1*y2)/(m2-m1);
+        end
+    end
+end
+%% Range_finder: Output Indices for Range of Motion
+function range2plot = range_finder(range,len,rangeMat)
+    beg = rangeMat(len,1); mid = rangeMat(len,2); ennd = rangeMat(len,3);
+    switch range
+        case 1
+            endInd = beg + floor((mid-beg)/3);
+            range2plot = beg:endInd;
+        case 2
+            endInd1 = beg + floor((mid-beg)/3);
+            endInd2 = beg + floor(2*(mid-beg)/3);
+            range2plot = endInd1:endInd2;
+        case 3
+            endInd = beg + floor(2*(mid-beg)/3);
+            range2plot = endInd:mid;
+        case 4
+            range2plot = rangeMat(len,1):rangeMat(len,2);
+        case 5
+            endInd = mid + floor((ennd-mid)/3);
+            range2plot = mid:endInd;
+        case 6
+        case 7
+
+        case 8
+            range2plot = rangeMat(len,2):rangeMat(len,3);
     end
 end
