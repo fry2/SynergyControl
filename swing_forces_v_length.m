@@ -81,9 +81,9 @@ for ii = 1:length(lengthVals)
     disp(['Completed ',num2str(count),' out of ',num2str(length(lengthVals)),'. ',timeStr])
     count = count +1;
 end
-%% Zoning Sorter
-%muscZones = zoning_sorter(inSimPath,6); mDataZone = cell(6,1); am_all = cell(1,length(lengthVals));torques_act = cell(1,3); torques_tot = cell(1,3);
-for jj = 26%1:length(lengthVals)
+% Zoning Sorter
+muscZones = zoning_sorter(inSimPath,6); mDataZone = cell(6,1); am_all = cell(1,length(lengthVals));torques_act = cell(1,3); torques_tot = cell(1,3);
+for jj = 1:length(lengthVals)
     mTemp = cell(6,1);
     %[Am_musc,V_musc,Am_musc_raw] = Am_generator(objCell{jj},force_tot{jj});
     %am_all{jj} = Am_musc';

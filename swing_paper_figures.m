@@ -465,7 +465,7 @@ figure('Position',[602,508,1318,481],'Name',strideName); subSize = []; bPlot = [
     subPlotPos = {[0.0716,0.58,0.34,0.34];[0.4927,0.58,0.34,0.34];...
                   [0.0716,0.11,0.34,0.34];[0.4927,0.11,0.34,0.34]};
     legPos = {[];[0.8419,0.7,0.1247,0.09];[];[0.8419,0.18,0.155,0.198]};
-    lineStyles = {'-';':';'-';'--';'--';'-.';':';'-';'-';'-';'-'};
+    lineStyles = {'-';':';'-';'-';'--';'--';'-.';':';'-';'-';'-';'-'};
     strideNames = {'Swing';'Swing';'Stance';'Stance'};
     range2plot = {1:37; 1:37; 38:100; 38:100};
     figure('Position',[446,2,1475,994]);
@@ -476,7 +476,7 @@ figure('Position',[602,508,1318,481],'Name',strideName); subSize = []; bPlot = [
                 data2plot = ~all(isnan(d)); data2plot_inds = find(data2plot);
                 aPlot = plot(linspace(0,100,length(d)),d(:,data2plot),'LineWidth',lineWidth); grid on; pbaspect([1.5,1,1])
                     % Set scale colors
-                    for ii = 1:length(find(data2plot))
+                    for ii = 1:length(data2plot_inds)
                        dataScale = scaleLookup{contains(scaleLookup(:,1),char(extractBetween(string(dTorque_legender{data2plot_inds(ii)}),'',' ('))),2};
                        [~,minVal] = min(abs(dataScale-lengthVals));
                        dataInds(ii) = minVal;

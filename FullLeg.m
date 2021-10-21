@@ -2448,7 +2448,7 @@ classdef FullLeg < matlab.mixin.SetGet
                 propulsiveF = interp1(1:n,PropulsiveNoSwing,linspace(1,n,m))*animalmass;
 
                     forcesmooth = [propulsiveF,propulsiveF,propulsiveF;verticalF,verticalF,verticalF;lateralF,lateralF,lateralF]';
-                    forcesmooth = smoothdata(forcesmooth,'gaussian',30);
+                    forcesmooth = smoothdata(forcesmooth,'gaussian',100);
 
                     %sizer = floor(size(forcesmooth,1)/6);
                     temp = find(diff(forcesmooth(:,1)==0)==-1);
@@ -2456,7 +2456,7 @@ classdef FullLeg < matlab.mixin.SetGet
                     
                     %This needs to be rotated to match the Animatlab xyz environment. This is relatively simple at the moment, we just need to rotate planar
                     %forces by about 16 degrees clockwise along the global Z axis.
-                    theta = 16.3*(pi/180);
+                    theta = -16.3*(pi/180);
                     rotmat = [cos(theta) -sin(theta) 0;...
                               sin(theta) cos(theta) 0;...
                               0 0 1];
@@ -2488,13 +2488,16 @@ classdef FullLeg < matlab.mixin.SetGet
                     %foot_wrench_body = [force_vec(:,k);cross(foot_position(:,i),force_vec(:,k))];
                     foot_wrench = [force_vec;0;0;0];
                     
-                    a = [[axis_angle_rotation(obj,current_config(1),obj.joint_obj{1}.uu_joint);zeros(1,3)],[zeros(3,1);1]];
-                    b = [[axis_angle_rotation(obj,current_config(2),obj.joint_obj{2}.uu_joint);zeros(1,3)],[zeros(3,1);1]];
-                    c = [[axis_angle_rotation(obj,current_config(3),obj.joint_obj{3}.uu_joint);zeros(1,3)],[zeros(3,1);1]];
+%                     a = [[axis_angle_rotation(obj,current_config(1),obj.joint_obj{1}.uu_joint);zeros(1,3)],[zeros(3,1);1]];
+%                     b = [[axis_angle_rotation(obj,current_config(2),obj.joint_obj{2}.uu_joint);zeros(1,3)],[zeros(3,1);1]];
+%                     c = [[axis_angle_rotation(obj,current_config(3),obj.joint_obj{3}.uu_joint);zeros(1,3)],[zeros(3,1);1]];
+                    a = [[axis_angle_rotation(obj,current_config(1),obj.joint_obj{1}.uuw_joint(:,i));zeros(1,3)],[zeros(3,1);1]];
+                    b = [[axis_angle_rotation(obj,current_config(2),obj.joint_obj{2}.uuw_joint(:,i));zeros(1,3)],[zeros(3,1);1]];
+                    c = [[axis_angle_rotation(obj,current_config(3),obj.joint_obj{3}.uuw_joint(:,i));zeros(1,3)],[zeros(3,1);1]];
                     gTot = gWH*a*gHF*b*gFT*c*gTX;
-                    gTotR = obj.body_obj{1}.CR*axis_angle_rotation(obj,current_config(1),obj.joint_obj{1}.uu_joint)*...
-                        obj.body_obj{2}.CR*axis_angle_rotation(obj,current_config(2),obj.joint_obj{2}.uu_joint)*...
-                        obj.body_obj{3}.CR*axis_angle_rotation(obj,current_config(3),obj.joint_obj{3}.uu_joint)*obj.body_obj{4}.CR;
+                    gTotR = obj.body_obj{1}.CR*axis_angle_rotation(obj,current_config(1),obj.joint_obj{1}.uuw_joint(:,i))*...
+                        obj.body_obj{2}.CR*axis_angle_rotation(obj,current_config(2),obj.joint_obj{2}.uuw_joint(:,i))*...
+                        obj.body_obj{3}.CR*axis_angle_rotation(obj,current_config(3),obj.joint_obj{3}.uuw_joint(:,i))*obj.body_obj{4}.CR;
                     gTotP = obj.musc_obj{20}.pos_attachments{5,4}(i,:)';
                     
 %                     gTotR = gTot(1:3,1:3);
@@ -2513,6 +2516,14 @@ classdef FullLeg < matlab.mixin.SetGet
                 % and swing happen in the walking waveform (obj.theta_motion)
                 % translocs represent the beginning of motion, the peaks and troughs of the hip motion, and the end of motion
                 translocs = [1,locs(2:end)',length(obj.theta_motion)];
+                shifter = floor((translocs(3)-translocs(2))*.95);
+                translocs = translocs - [0,0,shifter,0,shifter,0,0];
+                translocs = [1 657 853 1682 1878 2706 length(obj.theta_motion)];
+                translocs = [1 584 665 1611 1694 2638 2709 length(obj.theta_motion)];
+                % Find translocs
+                [~,hlocs] = findpeaks(obj.theta_motion(:,1));
+                [~,alocs] = findpeaks(obj.theta_motion(:,3));
+                translocs = [1 hlocs(2) alocs(2) hlocs(3) alocs(4) hlocs(4) alocs(5) length(obj.theta_motion)];
                 loadEnd = find(diff(load_torque(:,3)==0)==1,1,'first');
                 stance = load_torque(1:loadEnd-1,:); swing = load_torque(loadEnd:end,:);
                 lt_walk = [];
